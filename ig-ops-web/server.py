@@ -331,7 +331,7 @@ def list_profiles():
             p = profile(n)
             if p:
                 p["handle"] = n
-                out.append({k: p.get(k) for k in ("handle", "name", "positioning", "short", "followers", "avatar", "createdAt", "source")})
+                out.append({k: p.get(k) for k in ("handle", "name", "positioning", "short", "followers", "avatar", "createdAt", "source", "quick")})
     return out
 
 

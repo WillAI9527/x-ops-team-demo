@@ -1132,6 +1132,9 @@ def handle_add_account(h, body):
             jsave(os.path.join(S.acct_dir(u), "self.json"), doc)
         if old.get("builtin") and not body.get("reinfer"):
             pos = {}
+        elif body.get("quick"):   # silent default account on first open: no LLM call, positioning from the bio
+            bio = ((doc or {}).get("user", {}).get("description") or "").strip()
+            pos = {"positioning": old.get("positioning") or bio[:60], "quick": True} if (old.get("positioning") or bio) else {"quick": True}
         elif doc and S.api_key():
             prev = getattr(S._TL, "handle", None)
             S._TL.handle = u   # personalise the positioning prompt for THIS account, not the active one
@@ -1142,6 +1145,8 @@ def handle_add_account(h, body):
         else:
             pos = {"positioning": old.get("positioning") or ((doc or {}).get("user", {}).get("description") or "【待确认】")[:60]}
         prof = dict(old)
+        if not body.get("quick"):
+            prof.pop("quick", None)   # a real positioning run replaces the quick sample placeholder
         prof.update({k: v for k, v in pos.items() if v})
         prof["platform"] = "instagram"
         prof.update({"handle": u, "createdAt": old.get("createdAt") or S.iso(), "updatedAt": S.iso(),

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+<link rel="icon" type="image/png" href="/assets/luca-wolf.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
@@ -1346,16 +1347,16 @@ if (location.hash.startsWith('#debate')) { const m = location.hash.match(/^#deba
     if (!h) { $('#acctName').textContent = T('未设置账号', 'No account'); $('#acctPos').textContent = T('点击添加', 'Click to add'); return; }
     $('#acctAv').innerHTML = esc(ini(h)) + img(p.avatar);
     $('#acctName').textContent = title(h);
-    $('#acctPos').textContent = (p.short || p.positioning || T('定位待确认', 'Positioning pending')) + (p.followers != null ? T(' · 粉丝 ', ' · ') + p.followers + (isEn() ? ' followers' : '') : '');
+    $('#acctPos').textContent = (p.quick ? T('示例数据', 'Sample data') : (p.short || p.positioning || T('定位待确认', 'Positioning pending'))) + (p.followers != null ? T(' · 粉丝 ', ' · ') + p.followers + (isEn() ? ' followers' : '') : '');
     btn.title = (p.positioning || '') + (p.audience ? '\n' + T('受众：', 'Audience: ') + p.audience : '');
     $('#tbCrumb').textContent = title(h) + ' /';
     $('#sbAcct').textContent = T('账号：', 'Account: ') + title(h);
-    menu.innerHTML = (A.accounts || []).map(x => `<button type="button" class="mi${same(x.handle, h) ? ' cur' : ''}" role="menuitem" data-h="${esc(x.handle)}">${avatar(x)}<span class="mi-t" data-no-i18n><span>${esc(title(x.handle))}</span><small>${esc(x.short || x.positioning || '')}</small></span></button>`).join('') +
+    menu.innerHTML = (A.accounts || []).map(x => `<button type="button" class="mi${same(x.handle, h) ? ' cur' : ''}" role="menuitem" data-h="${esc(x.handle)}">${avatar(x)}<span class="mi-t" data-no-i18n><span>${esc(title(x.handle))}</span><small>${esc(x.quick ? T('示例数据', 'Sample data') : (x.short || x.positioning || ''))}</small></span></button>`).join('') +
       `<hr><button type="button" class="mi" role="menuitem" data-act="add">＋ ${T('添加账号…', 'Add account…')}</button><button type="button" class="mi" role="menuitem" data-act="re">↻ ${T('重新识别当前账号定位', 'Re-detect positioning')}</button>`;
     menu.querySelectorAll('.mi').forEach(m => m.onclick = () => act(m));
   }
   function toggle(v) { card.classList.toggle('open', v); btn.setAttribute('aria-expanded', String(v)); }
-  btn.onclick = e => { e.stopPropagation(); if (A && !A.active) return startPage(false); toggle(!card.classList.contains('open')); };
+  btn.onclick = e => { e.stopPropagation(); if (A && !A.active) return startPage(true); toggle(!card.classList.contains('open')); };
   document.addEventListener('click', e => { if (!card.contains(e.target)) toggle(false); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
   async function act(m) {
@@ -1408,9 +1409,27 @@ if (location.hash.startsWith('#debate')) { const m = location.hash.match(/^#deba
   window.openStartPage = startPage;
   async function init() {
     try { A = await j('/api/accounts'); } catch (e) { $('#acctName').textContent = T('账号读取失败', 'Accounts unavailable'); $('#acctPos').textContent = e.message; return; }
+    if (!A.active) {
+      // no start-page popup on open: quietly use the last account (browser cache), else an existing one, else the first sample
+      const G = 'opsAutoAcct';
+      try {
+        let last = null; try { last = JSON.parse(localStorage.getItem('opsc:active')); } catch (e) {}
+        const acc = A.accounts || [], hit = acc.find(x => same(x.handle, last)) || acc[0];
+        if (hit) await j('/api/accounts/switch', { method: 'POST', body: JSON.stringify({ handle: hit.handle }) });
+        else {
+          const c = await api('/api/bench/config'); const ss = (c.samples || []).filter(s => !isDefaultAcct(s));
+          const pick = ss.find(s => same(s, 'BTCdayu')) || ss[0];
+          if (pick) await j('/api/accounts', { method: 'POST', body: JSON.stringify({ sample: pick, quick: true }) });
+        }
+        A = await j('/api/accounts');
+        // panels loaded before the account existed → reload once so they show its data (guarded against loops)
+        if (A.active && !sessionStorage.getItem(G)) { sessionStorage.setItem(G, '1'); location.hash = location.hash; location.reload(); return; }
+      } catch (e) {}
+    }
+    sessionStorage.removeItem('opsAutoAcct');
     window.ACCOUNT = A.active || null;
     render();
-    if (!A.active) return startPage(false);
+    if (!A.active) return;
     // another tab switched/added an account → reload so this window never shows stale data
     const recheck = async () => { try { const x = await j('/api/accounts'); if (!same(x.active, window.ACCOUNT)) { location.hash = ''; location.reload(); } } catch (e) {} };
     window.addEventListener('focus', recheck); document.addEventListener('visibilitychange', () => { if (!document.hidden) recheck(); });
