@@ -168,19 +168,75 @@ def fetch_x_api(username, max_posts=300):
 
 
 FX_API = os.environ.get("FX_API_BASE", "https://api.fxtwitter.com")
+FX_HOSTS = [h for h in dict.fromkeys([FX_API, "https://api.fxtwitter.com", "https://api.fixupx.com"])]
 
 
-def fx_get(path, params=None):
-    url = FX_API + path + ("?" + urllib.parse.urlencode(params) if params else "")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh) LucaXOps/1.5",
-                                               "Accept": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=25, context=S.SSL_CTX) as r:
-            return json.loads(r.read().decode())
-    except urllib.error.HTTPError as e:
-        raise RuntimeError("公开接口 HTTP %s" % e.code)
-    except ValueError:
-        raise RuntimeError("公开接口返回的不是 JSON（可能被风控拦截）")
+def fx_get(path, params=None, tries=3):
+    """GET the keyless FxTwitter API with retries + backoff, rotating mirror hosts."""
+    q = ("?" + urllib.parse.urlencode(params) if params else "")
+    last = None
+    for i in range(tries * len(FX_HOSTS)):
+        host = FX_HOSTS[i % len(FX_HOSTS)]
+        req = urllib.request.Request(host + path + q, headers={"User-Agent": "Mozilla/5.0 (Macintosh) LucaXOps/1.5",
+                                                               "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=20, context=S.SSL_CTX) as r:
+                return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            last = RuntimeError("公开接口 HTTP %s" % e.code)
+            if e.code == 404 and i >= len(FX_HOSTS):   # 404 on every mirror: really not found
+                raise last
+        except ValueError:
+            last = RuntimeError("公开接口返回的不是 JSON（可能被风控拦截）")
+        except Exception as e:
+            last = RuntimeError("公开接口连接失败：%s" % (getattr(e, "reason", None) or e))
+        time.sleep(min(0.6 * (2 ** (i // len(FX_HOSTS))), 4))
+    raise last
+
+
+def fetch_syndication(username, max_posts=100):
+    """Keyless fallback: X's public embed timeline (syndication.twitter.com)."""
+    url = "https://syndication.twitter.com/srv/timeline-profile/screen-name/" + urllib.parse.quote(username)
+    last = None
+    for i in range(3):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36",
+                                                       "Accept": "text/html"})
+            with urllib.request.urlopen(req, timeout=20, context=S.SSL_CTX) as r:
+                html = r.read().decode("utf-8", "replace")
+            m = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html, re.S)
+            if not m:
+                raise RuntimeError("嵌入时间线没有数据")
+            entries = (((json.loads(m.group(1)).get("props") or {}).get("pageProps") or {}).get("timeline") or {}).get("entries") or []
+            break
+        except Exception as e:
+            last = e
+            time.sleep(1.5 * (i + 1))
+    else:
+        raise RuntimeError("嵌入时间线：%s" % last)
+    user, posts = None, []
+    for en in entries:
+        t = ((en.get("content") or {}).get("tweet")) or {}
+        au = t.get("user") or {}
+        if (au.get("screen_name") or "").lower() != username.lower() or t.get("retweeted_status") or t.get("in_reply_to_status_id_str"):
+            continue
+        if not user:
+            user = {"id": au.get("id_str"), "username": au.get("screen_name"), "name": au.get("name"),
+                    "description": au.get("description"), "location": au.get("location"), "url": "",
+                    "profile_image_url": (au.get("profile_image_url_https") or "").replace("_normal", "_400x400"),
+                    "verified": bool(au.get("verified") or au.get("is_blue_verified")), "created_at": au.get("created_at"),
+                    "public_metrics": {"followers_count": au.get("followers_count"), "following_count": au.get("friends_count"),
+                                       "tweet_count": au.get("statuses_count"), "listed_count": au.get("listed_count") or 0}}
+        media = [{"type": md.get("type"), "url": md.get("media_url_https"), "preview_image_url": md.get("media_url_https")}
+                 for md in ((t.get("extended_entities") or t.get("entities") or {}).get("media") or [])]
+        posts.append({"id": t.get("id_str"), "text": t.get("full_text") or t.get("text") or "", "created_at": _fx_iso(t),
+                      "lang": t.get("lang"), "url": "https://x.com/%s/status/%s" % (username, t.get("id_str")), "media": media,
+                      "urls": [x.get("expanded_url") for x in ((t.get("entities") or {}).get("urls") or []) if x.get("expanded_url")],
+                      "metrics": {"likes": t.get("favorite_count"), "reposts": t.get("retweet_count"), "replies": t.get("reply_count"),
+                                  "quotes": t.get("quote_count"), "bookmarks": t.get("bookmark_count"), "views": None}})
+    if not posts:
+        raise RuntimeError("嵌入时间线没有 @%s 的原创帖子" % username)
+    return normalize({"source": "x-syndication (keyless)", "user": user, "posts": posts[:max_posts]})
 
 
 def _fx_iso(t):
@@ -212,9 +268,16 @@ def fetch_fx(username, max_posts=200, max_pages=12):
         try:
             j = fx_get("/2/profile/%s/statuses" % username, {"cursor": cursor} if cursor else None)
         except RuntimeError:
-            if posts:
+            if len(posts) >= min(max_posts, 20):
                 break
-            raise
+            if posts:
+                time.sleep(1.5)
+                try:
+                    j = fx_get("/2/profile/%s/statuses" % username, {"cursor": cursor} if cursor else None, tries=2)
+                except RuntimeError:
+                    break
+            else:
+                raise
         res = j.get("results") or []
         for t in res:
             if t.get("reposted_by") or t.get("replying_to") or str(t.get("id")) in seen:
@@ -250,8 +313,12 @@ def fetch_x(username, max_posts=300):
     try:
         return fetch_fx(username, min(max_posts, 200))
     except Exception as e:
-        errs.append("免密公开接口(api.fxtwitter.com)：%s" % e)
-    raise RuntimeError("抓取 @%s 失败。%s。可以稍后重试、换个网络，或在 .env.local 配置 X_BEARER_TOKEN，或用「导入 JSON」/「载入示例」。"
+        errs.append("免密公开接口(FxTwitter)：%s" % e)
+    try:
+        return fetch_syndication(username, min(max_posts, 200))
+    except Exception as e:
+        errs.append("备用公开接口(X 嵌入时间线)：%s" % e)
+    raise RuntimeError("抓取 @%s 失败。%s。公开接口偶尔会限流，请点「重试」或稍后再试；也可以用「导入 JSON」/「载入示例」。"
                        % (username, "；".join(errs)))
 
 
@@ -288,6 +355,21 @@ def intent_url(text):
 # ---------------------------------------------------------------------------
 # Storage
 # ---------------------------------------------------------------------------
+
+
+def _t(zh, en):
+    return en if S.req_lang() == "en" else zh
+
+
+def _err(e):
+    m = str(e)
+    return S.en_error(m) if S.req_lang() == "en" and re.search(r"[\u4e00-\u9fff]", m) else m
+
+def an_file(u, lang=None):
+    """AI analysis is stored per UI language, so English mode never shows a Chinese analysis (and vice versa)."""
+    lang = lang or S.req_lang()
+    return os.path.join(adir(u), "analysis.en.json" if lang == "en" else "analysis.json")
+
 def adir(u):
     return os.path.join(bench_dir(), u.lower())
 
@@ -541,17 +623,17 @@ def analyze(username, emit=None):
         raise RuntimeError("还没有 @%s 的数据，请先抓取或导入" % username)
     t0 = time.time()
     ev = emit or (lambda e: None)
-    ev({"event": "step", "msg": "计算粉丝指数 / 互动率 / 发帖热力图…"})
+    ev({"event": "step", "msg": _t("计算粉丝指数 / 互动率 / 发帖热力图…", "Computing follower index / engagement rate / posting heatmap…")})
     stats = compute_stats(acc)
     money = monetization_signals(acc["posts"], acc["user"])
-    ev({"event": "step", "msg": "Gemini 正在给 %d 条帖子做主题聚类…" % len(acc["posts"])})
+    ev({"event": "step", "msg": _t("Gemini 正在给 %d 条帖子做主题聚类…", "Gemini is clustering %d posts into topics…") % len(acc["posts"])})
     try:
         topics = cluster_topics(acc)
     except Exception as e:
         topics, terr = [], str(e)
     else:
         terr = None
-    ev({"event": "step", "msg": "Claude 正在写分析报告（含变现判断）…"})
+    ev({"event": "step", "msg": _t("Claude 正在写分析报告（含变现判断）…", "Claude is writing the analysis report (incl. monetization)…")})
     try:
         rep = report(acc, stats, topics, money)
         rerr = None
@@ -560,8 +642,8 @@ def analyze(username, emit=None):
     an = {"username": acc["user"]["username"], "analyzed_at": S.iso(), "stats": stats, "topics": topics,
           "monetization": money, "report": rep, "forMe": advice_for_me(stats), "errors": [x for x in (terr, rerr) if x],
           "ms": int((time.time() - t0) * 1000)}
-    jsave(os.path.join(adir(username), "analysis.json"), an)
-    ev({"event": "step", "msg": "下载热度前 20% 的帖子到知识库…"})
+    jsave(an_file(username), an)
+    ev({"event": "step", "msg": _t("下载热度前 20% 的帖子到知识库…", "Saving the top 20% posts to the knowledge base…")})
     kb = build_kb(username, acc, an)
     an["kbCount"] = len(kb["items"])
     return an
@@ -572,7 +654,7 @@ def analyze(username, emit=None):
 # ---------------------------------------------------------------------------
 def build_kb(username, acc=None, an=None):
     acc = acc or jload(os.path.join(adir(username), "account.json"))
-    an = an or jload(os.path.join(adir(username), "analysis.json")) or {}
+    an = an or jload(an_file(username)) or {}
     pct = float(os.environ.get("KB_TOP_PERCENT", "20"))
     ranked = sorted(acc["posts"], key=lambda p: -score(p["metrics"]))
     top = ranked[:max(5, int(round(len(ranked) * pct / 100)))]
@@ -732,7 +814,7 @@ def save_queue(q):
 
 
 def next_slot(username, taken):
-    an = jload(os.path.join(adir(username), "analysis.json")) if username else None
+    an = jload(an_file(username)) if username else None
     fr = (an or {}).get("stats", {}).get("frequency", {})
     slots = [(s["weekday"], s["hour"]) for s in fr.get("bestSlots", [])]
     hours = [h["hour"] for h in fr.get("bestHours", [])] or [9, 12, 20]
@@ -877,7 +959,7 @@ def handle_get(h, path):
         acc = jload(os.path.join(adir(u), "account.json"))
         if not acc:
             return h.send_json(404, {"error": "account not found"})
-        an = jload(os.path.join(adir(u), "analysis.json"))
+        an = jload(an_file(u))
         kb = jload(os.path.join(adir(u), "kb", "kb.json"))
         return h.send_json(200, {"user": acc["user"], "source": acc.get("source"), "fetched_at": acc.get("fetched_at"),
                                  "postCount": len(acc["posts"]), "analysis": an, "kb": kb})
@@ -920,6 +1002,16 @@ def infer_positioning(doc):
 def handle_add_account(h, body):
     """POST /api/accounts {username, data?, sample?} -> fetch own profile/posts, infer positioning, make active."""
     try:
+        if isinstance(body.get("restore"), dict):   # serverless: re-seed a profile the browser cached (no fetch / LLM)
+            rp = dict(body["restore"]); ru = S.canon_handle(str(rp.get("handle") or "").lstrip("@"))
+            if not S.HANDLE_RE.match(ru):
+                return h.send_json(400, {"error": "bad handle"})
+            if not S.profile(ru):
+                rp["handle"] = ru
+                jsave(os.path.join(S.acct_dir(ru), "profile.json"), {k: v for k, v in rp.items() if isinstance(v, (str, int, float, bool)) or v is None})
+            if body.get("activate"):
+                S.set_active(ru)
+            return h.send_json(200, {"ok": True, "restored": ru})
         u = (body.get("username") or "").strip().lstrip("@")
         u = re.sub(r"^https?://(x|twitter)\.com/", "", u).split("/")[0].split("?")[0]
         doc, warn = None, None
@@ -980,7 +1072,8 @@ def handle_post(h, path, body):
             n = n if isinstance(n, int) and 10 <= n <= 1000 else 300
             doc = fetch_x(u, n)
             save_account(doc)
-            return h.send_json(200, {"ok": True, "username": doc["user"]["username"], "posts": len(doc["posts"])})
+            return h.send_json(200, {"ok": True, "username": doc["user"]["username"], "posts": len(doc["posts"]),
+                                     "source": doc.get("source"), "doc": doc})
         if path == "/api/bench/import":
             if body.get("sample"):
                 name = str(body["sample"])
@@ -991,7 +1084,13 @@ def handle_post(h, path, body):
                 doc = body.get("data")
             doc = normalize(doc)
             u = save_account(doc)
-            return h.send_json(200, {"ok": True, "username": u, "posts": len(doc["posts"])})
+            # serverless: the browser may hand back an analysis / knowledge base it cached for this account
+            if isinstance(body.get("analysis"), dict):
+                lg = body.get("lang") if body.get("lang") in ("zh", "en") else None
+                jsave(an_file(u, lg), body["analysis"])
+            if isinstance(body.get("kb"), dict) and body["kb"].get("items") is not None:
+                jsave(os.path.join(adir(u), "kb", "kb.json"), body["kb"])
+            return h.send_json(200, {"ok": True, "username": u, "posts": len(doc["posts"]), "doc": doc})
         m = re.match(r"^/api/bench/([A-Za-z0-9_]{1,15})/(analyze|imitate|kb)$", path)
         if m:
             u, act = m.groups()
@@ -1007,7 +1106,7 @@ def handle_post(h, path, body):
                     try:
                         emit({"event": "done", "ok": True, "analysis": analyze(u, emit)})
                     except Exception as e:
-                        emit({"event": "done", "ok": False, "error": str(e)})
+                        emit({"event": "done", "ok": False, "error": _err(e)})
                     return
                 return h.send_json(200, {"ok": True, "analysis": analyze(u)})
             opts = h.review_opts(body)
@@ -1026,7 +1125,7 @@ def handle_post(h, path, body):
                 try:
                     emit({"event": "done", **imitate(u, pid, roles, *opts, emit=safe)})
                 except Exception as e:
-                    emit({"event": "done", "ok": False, "error": str(e)})
+                    emit({"event": "done", "ok": False, "error": _err(e)})
                 return
             return h.send_json(200, imitate(u, pid, roles, *opts))
         if path == "/api/queue":

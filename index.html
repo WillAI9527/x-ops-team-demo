@@ -356,6 +356,7 @@
   .acct-menu hr { border:0; border-top:1px solid var(--line); margin:5px 2px; }
   .acct-busy { position:absolute; right:22px; top:22px; }
   #startPage { position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; background:rgba(6,8,12,.72); backdrop-filter:blur(8px); animation:viewIn .2s var(--ease); }
+  #startPage .sp-plat { display:inline-flex; margin-top:16px; }
   #startPage .sp-box { width:min(520px,92vw); background:linear-gradient(180deg,#171d2b,#11151f); border:1px solid var(--line-2); border-radius:18px; box-shadow:var(--shadow-lg); padding:26px 26px 22px; }
   #startPage .sp-head { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
   #startPage .sp-head img { width:52px; height:52px; border-radius:15px; object-fit:contain; background:radial-gradient(circle at 50% 80%,#3a4b69,#1a2233 70%); box-shadow:0 0 0 1px #2c3852 inset; }
@@ -372,13 +373,71 @@
   #spMsg.err { color:var(--err); }
   @media (max-width:900px) { .acct { padding:10px 8px 2px; } .acct-btn { justify-content:center; padding:7px; } .acct-text, .acct-chev { display:none; } .acct-menu { width:260px; right:auto; } }
   .acct-av img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:50%; }
+  .tb-lang { flex:0 0 auto; display:flex; align-items:center; gap:2px; padding:3px 3px 3px 9px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.04); color:var(--muted); }
+  .tb-lang svg { margin-right:4px; opacity:.85; }
+  .tb-lang button { border:0; background:transparent; color:var(--muted); font:inherit; font-size:12.5px; font-weight:600; padding:5px 12px; border-radius:999px; cursor:pointer; min-width:44px; transition:background .15s,color .15s; }
+  .tb-lang button:hover { color:var(--text, #e8edf5); background:rgba(255,255,255,.06); }
+  .tb-lang button.selected { color:#fff; background:var(--ig-grad, var(--accent, #4f8cff)); box-shadow:0 1px 6px rgba(0,0,0,.35); }
+  .tb-lang button:focus-visible { outline:2px solid var(--accent, #4f8cff); outline-offset:1px; }
+  .plat-switch { flex:0 0 auto; display:inline-flex; align-items:center; gap:7px; padding:6px 14px; border-radius:999px; font-size:12.5px; font-weight:650; text-decoration:none; color:#fff; white-space:nowrap;
+    background:linear-gradient(90deg,#833ab4,#fd1d1d,#fcb045); box-shadow:0 2px 10px rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.15); transition:transform .12s, filter .12s; }
+  .plat-switch:hover { transform:translateY(-1px); filter:brightness(1.1); }
+  .plat-switch .ps-ico { font-size:14px; }
+  #loginGate { position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; background:rgba(5,8,14,.82); backdrop-filter:blur(6px); }
+  #loginGate .lg-box { width:min(380px,92vw); background:#121826; border:1px solid var(--line); border-radius:16px; padding:22px; box-shadow:0 20px 60px rgba(0,0,0,.5); }
+  #loginGate h3 { margin:0 0 6px; font-size:17px; } #loginGate p { margin:0 0 14px; color:var(--muted); font-size:13px; line-height:1.5; }
+  #loginGate input { width:100%; box-sizing:border-box; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:#0c111b; color:var(--text,#e8edf5); font:inherit; }
+  #loginGate .lg-row { display:flex; gap:8px; align-items:center; margin-top:12px; } #loginGate .lg-err { color:var(--err); font-size:12.5px; }
 </style>
+<script>
+// serverless resilience: each Vercel instance has its own temporary /tmp data. Cache fetched accounts in the browser
+// and quietly re-seed an instance that has lost them (404 / missing profile), then retry once.
+(() => {
+  const _f = window.fetch.bind(window), P = 'opsc:', J = { 'Content-Type': 'application/json' };
+  const get = k => { try { return JSON.parse(localStorage.getItem(P + k)); } catch (e) { return null; } };
+  const put = (k, v) => { try { localStorage.setItem(P + k, JSON.stringify(v)); } catch (e) { try { localStorage.removeItem(P + 'doc:' + (get('docs') || [])[0]); } catch (_) {} } };
+  const saveDoc = d => { if (!d || !d.user || !d.user.username) return; const k = d.user.username.toLowerCase(); put('doc:' + k, d);
+    let l = (get('docs') || []).filter(x => x !== k); l.push(k); while (l.length > 6) { localStorage.removeItem(P + 'doc:' + l.shift()); } put('docs', l); };
+  const restoreDoc = async u => { const d = get('doc:' + u.toLowerCase()); if (!d) return false;
+    const r = await _f('/api/bench/import', { method: 'POST', headers: J, body: JSON.stringify({ data: d }) }).catch(() => null); return !!(r && r.ok); };
+  let reseeding = null;
+  const reseedProfiles = (missing, active) => reseeding || (reseeding = Promise.all(missing.map(p => _f('/api/accounts', { method: 'POST', headers: J,
+    body: JSON.stringify({ restore: p, activate: p.handle === active }) }).catch(() => null))).finally(() => { reseeding = null; }));
+  window.fetch = async (u, o) => {
+    const url = String(u && u.url || u), method = ((o && o.method) || 'GET').toUpperCase();
+    let r = await _f(u, o);
+    try {
+      if (/\/api\/accounts$/.test(url.split('?')[0]) && method === 'GET' && r.ok) {
+        const j = await r.clone().json(), profs = get('profiles') || {};
+        const have = new Set((j.accounts || []).map(p => (p.handle || '').toLowerCase()));
+        const missing = Object.values(profs).filter(p => p && p.handle && !have.has(p.handle.toLowerCase()));
+        (j.accounts || []).forEach(p => { if (p && p.handle) profs[p.handle.toLowerCase()] = Object.assign({}, profs[p.handle.toLowerCase()], p); });
+        if (j.profile && j.active) profs[j.active.toLowerCase()] = Object.assign({}, profs[j.active.toLowerCase()], j.profile, { handle: j.active });
+        if (j.active) put('active', j.active);
+        put('profiles', profs);
+        if (missing.length) { await reseedProfiles(missing, get('active')); r = await _f(u, o); }
+      } else if (/\/api\/bench\/(fetch|import)$/.test(url) && method === 'POST' && r.ok) {
+        const j = await r.clone().json(); let b = {}; try { b = JSON.parse((o && o.body) || '{}'); } catch (e) {}
+        saveDoc(j.doc || b.data);
+        if (j.doc) { const t = await r.clone().text(); const s = JSON.parse(t); delete s.doc; r = new Response(JSON.stringify(s), { status: r.status, headers: r.headers }); }
+      } else if (r.status === 404 || r.status === 400) {
+        const m = url.match(/\/api\/bench\/([A-Za-z0-9_.]{1,30})(\/|$|\?)/);
+        if (m && !/^(fetch|import|config|avatar)$/.test(m[1])) {
+          const e = r.status === 400 ? await r.clone().text() : '';
+          if ((r.status === 404 || /not found|没有|不存在|先抓取|找不到/.test(e)) && await restoreDoc(m[1])) r = await _f(u, o);
+        }
+      }
+    } catch (e) {}
+    return r;
+  };
+})();
+</script>
 </head>
 <body>
 <div class="app">
 <aside class="sidebar" aria-label="主导航">
   <div class="sb-brand">
-    <img class="sb-logo" src="/assets/luca-wolf.png" alt="Luca 小狼助手">
+    <img class="sb-logo" src="/assets/luca-wolf.png" alt="小狼助手">
     <div class="sb-brand-text"><b>X 运营团队</b><span>5 岗位智能体工作台</span></div>
   </div>
   <div class="acct" id="acctCard">
@@ -389,7 +448,7 @@
     </button>
     <div class="acct-menu" id="acctMenu" role="menu"></div>
   </div>
-  <div class="sb-section">工作区</div>
+  <div style="padding:12px 16px" data-no-i18n><a class="copy" id="switchToXhs" style="display:block;text-align:center" href="http://127.0.0.1:8790/">⇄ 切换小红书版</a></div><div class="sb-section">工作区</div>
   <nav class="tabs" aria-label="功能">
     <button class="tab active" data-tab="ask" title="问答（单岗位 / 全员）">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 10h6M9 14h4"/></svg>
@@ -424,13 +483,19 @@
       <label title="每条输出先由代码规则 + 另一个模型审查；不通过就让同一个角色重写，最多 2 次"><input type="checkbox" id="rvOn" checked> AI 审查（Make It Fail）</label>
       <label title="故意让每个角色先写一版有问题的初稿，用来演示 AI 如何抓错并修复"><input type="checkbox" id="demoOn"> DEMO 出错模式</label>
     </div>
+      <a class="plat-switch" id="platSwitch" href="http://127.0.0.1:8789/" title="切换到 Instagram 版"><span class="ps-ico">⇄</span><span>切换到 Instagram 版</span></a>
+    <div class="tb-lang" role="group" aria-label="界面语言 / Language" data-no-i18n title="切换界面语言 / Switch language">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+      <button type="button" data-ui-language="zh" aria-pressed="true" class="selected" lang="zh-CN">中文</button>
+      <button type="button" data-ui-language="en" aria-pressed="false" lang="en">EN</button>
+    </div>
   </header>
   <div id="demoBanner">⚠️ DEMO 出错模式已开启：每个角色的<b>第一版都是故意写坏的</b>（编造数字、假装已发布、超字数等），只为演示审查与修复。最终文本是修正后的版本，仍需你本人审核。</div>
   <main class="content" id="content">
     <section id="tab-ask">
       <div class="wolf-welcome">
         <div class="wolf-portrait"><img src="/assets/luca-wolf.png" alt="穿深蓝西装的灰白小狼"></div>
-        <div><div class="wolf-eyebrow">LUCA · 你的 AI 运营搭档</div><h2>今天，我们一起做点什么？</h2><p>从一个灵感，到一份好内容。<br>和小狼一起，让 5 位 AI 伙伴帮你推进。</p></div>
+        <div><div class="wolf-eyebrow">X 运营工作室 · 你的 AI 运营搭档</div><h2>今天，我们一起做点什么？</h2><p>从一个灵感，到一份好内容。<br>和小狼一起，让 5 位 AI 伙伴帮你推进。</p></div>
       </div>
       <div class="panel">
         <div class="modes" id="modes"></div>
@@ -858,7 +923,7 @@ async function loadStrategies(selectId) {
     const box = $('#sList'); box.innerHTML = j.strategies.length ? '' : '<div class="hint">还没有策略，先新建一份。</div>';
     for (const s of j.strategies) {
       const d = document.createElement('div'); d.className = 'item' + (cur && cur.id === s.id ? ' active' : '');
-      d.innerHTML = esc(s.title) + `<small>v${s.latestVersion} · 跟进 ${s.followups} 次 · ${fmt(s.updatedAt)}</small>`;
+      d.innerHTML = `<span data-no-i18n>${esc(s.title)}</span><small>v${s.latestVersion} · 跟进 ${s.followups} 次 · ${fmt(s.updatedAt)}</small>`;
       d.onclick = () => openStrategy(s.id); box.appendChild(d);
     }
     const want = selectId || (cur && cur.id) || (j.strategies[0] && j.strategies[0].id);
@@ -877,7 +942,7 @@ async function openStrategy(id, v) {
 async function loadStrategiesListOnly() {
   const j = await api('/api/strategies'); const box = $('#sList'); box.innerHTML = '';
   for (const s of j.strategies) { const d = document.createElement('div'); d.className = 'item' + (cur && cur.id === s.id ? ' active' : '');
-    d.innerHTML = esc(s.title) + `<small>v${s.latestVersion} · 跟进 ${s.followups} 次 · ${fmt(s.updatedAt)}</small>`; d.onclick = () => openStrategy(s.id); box.appendChild(d); }
+    d.innerHTML = `<span data-no-i18n>${esc(s.title)}</span><small>v${s.latestVersion} · 跟进 ${s.followups} 次 · ${fmt(s.updatedAt)}</small>`; d.onclick = () => openStrategy(s.id); box.appendChild(d); }
 }
 function renderStrategy() {
   const v = cur.versions[curV - 1], latest = curV === cur.versions.length;
@@ -891,7 +956,7 @@ function renderStrategy() {
   const vl = $('#sVersions'); vl.innerHTML = '';
   for (const x of [...cur.versions].reverse()) {
     const d = document.createElement('div'); d.className = 'v' + (x.v === curV ? ' active' : '');
-    d.innerHTML = `<b>v${x.v}</b> · ${SRC[x.source] || x.source}<small>${fmt(x.createdAt)}</small>` + (x.changelog ? `<div class="cl">${esc(x.changelog.replace(/\*\*/g, '').slice(0, 160))}${x.changelog.length > 160 ? '…' : ''}</div>` : '');
+    d.innerHTML = `<b>v${x.v}</b> · ${SRC[x.source] || x.source}<small>${fmt(x.createdAt)}</small>` + (x.changelog ? `<div class="cl" data-no-i18n>${esc(x.changelog.replace(/\*\*/g, '').slice(0, 160))}${x.changelog.length > 160 ? '…' : ''}</div>` : '');
     d.onclick = () => { curV = x.v; renderStrategy(); }; vl.appendChild(d);
   }
   $('#sLog').innerHTML = (cur.dailyLog || []).length ? [...cur.dailyLog].reverse().map(d => `<div style="margin-bottom:8px"><b>${fmt(d.at)}</b> → v${d.version}<br>${esc(d.note)}</div>`).join('') : '还没有跟进记录。';
@@ -971,12 +1036,12 @@ function untype(id) { const t = document.getElementById('typing-' + id); if (t) 
 function voteBox() { let b = $('#dVotes'); if (!b) { b = document.createElement('div'); b.className = 'votes'; b.id = 'dVotes'; $('#dChat').appendChild(b); } return b; }
 function voteCard(v) {
   const d = document.createElement('div'); d.className = 'vote'; d.style.setProperty('--c', COLORS[v.agent]);
-  d.innerHTML = `<div class="spk">${av(v.agent)}<b style="color:${COLORS[v.agent]}">${esc(v.name)}</b></div><div class="v v-${esc(v.vote)}">${esc(v.vote)}</div><div class="hint">${esc(v.reason || v.error || '')}</div>${rvBadge(v.review)}${rvDetails(v.review)}`;
+  d.innerHTML = `<div class="spk">${av(v.agent)}<b style="color:${COLORS[v.agent]}">${esc(v.name)}</b></div><div class="v v-${esc(v.vote)}">${esc(v.vote)}</div><div class="hint" data-no-i18n>${esc(v.reason || v.error || '')}</div>${rvBadge(v.review)}${rvDetails(v.review)}`;
   voteBox().appendChild(d); wireRv(d);
 }
 function proposalBox(p) {
   const d = document.createElement('div'); d.className = 'msg'; d.style.setProperty('--c', COLORS.chief);
-  d.innerHTML = av('chief') + `<div style="flex:1"><div class="hint" style="margin-bottom:4px"><b style="color:${COLORS.chief}">${esc(p.name)}</b> 的提案${p.ms ? ' · ' + (p.ms / 1000).toFixed(0) + 's' : ''}</div><div class="proposal">${p.ok ? inline(p.text).replace(/\n/g, '<br>') : '提案失败：' + esc(p.error || '')}</div></div>`;
+  d.innerHTML = av('chief') + `<div style="flex:1"><div class="hint" style="margin-bottom:4px"><b style="color:${COLORS.chief}">${esc(p.name)}</b> 的提案${p.ms ? ' · ' + (p.ms / 1000).toFixed(0) + 's' : ''}</div><div class="proposal" data-no-i18n>${p.ok ? inline(p.text).replace(/\n/g, '<br>') : '提案失败：' + esc(p.error || '')}</div></div>`;
   $('#dChat').appendChild(d);
 }
 function verdictBox(v) {
@@ -1016,7 +1081,7 @@ async function loadDebates(selectId) {
     box.innerHTML = j.debates.length ? '' : '<div class="hint">还没有辩论记录。</div>';
     for (const d of j.debates) {
       const el = document.createElement('div'); el.className = 'item' + (dCur && dCur.id === d.id ? ' active' : '');
-      el.innerHTML = esc(d.title) + `<small>${fmt(d.createdAt)} · ${d.decision || ({ running: '进行中', failed: '未完成' }[d.status] || '')}${d.tally ? ' · ' + tallyLine(d.tally) : ''}${d.applied && d.applied.length ? ' · 已应用' : ''}${d.review && d.review.demo ? ' · DEMO' : ''}</small>`;
+      el.innerHTML = `<span data-no-i18n>${esc(d.title)}</span><small>${fmt(d.createdAt)} · ${d.decision || ({ running: '进行中', failed: '未完成' }[d.status] || '')}${d.tally ? ' · ' + tallyLine(d.tally) : ''}${d.applied && d.applied.length ? ' · 已应用' : ''}${d.review && d.review.demo ? ' · DEMO' : ''}</small>`;
       el.onclick = () => { if (!dBusy) openDebate(d.id); }; box.appendChild(el);
     }
     if (selectId) openDebate(selectId);
@@ -1075,6 +1140,7 @@ $('#dDownload').onclick = async () => { if (!dCur) return;
 if (location.hash.startsWith('#debate')) { const m = location.hash.match(/^#debate\/([0-9A-Za-z_-]+)$/); document.querySelector('.tab[data-tab=debate]').click(); if (m) openDebate(m[1]); }
 </script>
 <script src="/bench.js"></script>
+
 <script src="/i18n.js"></script>
 <script>
 // ---------------- desktop shell: toolbar title, status bar, hash routing ----------------
@@ -1351,6 +1417,41 @@ if (location.hash.startsWith('#debate')) { const m = location.hash.match(/^#deba
   }
   document.querySelectorAll('[data-ui-language]').forEach(b => b.addEventListener('click', () => setTimeout(render, 0)));
   init();
+})();
+</script>
+<script>
+// platform switch (X <-> Instagram): URL comes from the server (PLATFORM_SWITCH_URL) on the public site; locally the sibling port
+(() => {
+  const a = document.getElementById('platSwitch'); const local = /^(127\.0\.0\.1|localhost)$/.test(location.hostname);
+  if (local) a.href = location.protocol + '//' + location.hostname + ':8789/';
+  if (!local) a.href = '#';
+  const ready = fetch('/api/health').then(r => r.json()).then(h => { if (h.switchUrl) a.href = h.switchUrl; else if (!local) a.style.display = 'none'; return a.href; }).catch(() => a.href);
+  // on the public site the target comes from the server; if clicked before it arrives, wait for it
+  document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('.plat-switch'); if (!t || local || !/#$/.test(t.href)) return;
+    e.preventDefault(); ready.then(u => { if (!/#$/.test(u)) location.href = u; }); }, true);
+  const x = document.getElementById('switchToXhs'); if (x && !local) x.parentElement.style.display = 'none';
+  // the "your account" start page covers the toolbar, so put a copy of the switch inside it
+  const addSp = () => { const box = document.querySelector('#startPage .sp-box'); if (!box || box.querySelector('.sp-plat') || a.style.display === 'none') return;
+    const c = a.cloneNode(true); c.removeAttribute('id'); c.classList.add('sp-plat'); c.addEventListener('mousedown', () => { c.href = a.href; }); c.addEventListener('click', () => { c.href = a.href; }); box.appendChild(c); };
+  new MutationObserver(addSp).observe(document.body, { childList: true, subtree: true }); addSp();
+})();
+// access password gate (public deployment sets AGENTS_API_TOKEN on the server)
+(() => {
+  const KEY = 'luca_token', isEn = () => window.LANG === 'en';
+  function gate(wrong) {
+    if (document.getElementById('loginGate')) return;
+    const d = document.createElement('div'); d.id = 'loginGate'; d.setAttribute('data-no-i18n', '');
+    d.innerHTML = `<form class="lg-box"><h3>${isEn() ? 'Access password' : '访问密码'}</h3><p>${isEn() ? 'This demo uses the owner\'s AI and data credits. Enter the access password to continue.' : '这个演示会消耗主人的 AI 和数据额度，请输入访问密码后使用。'}</p>
+      <input type="password" id="lgPw" autocomplete="current-password" placeholder="${isEn() ? 'Password' : '密码'}"><div class="lg-row"><button class="run" type="submit">${isEn() ? 'Enter' : '进入'}</button><span class="lg-err">${wrong ? (isEn() ? 'Wrong password, or too many attempts.' : '密码不对，或尝试次数过多。') : ''}</span></div></form>`;
+    document.body.appendChild(d); d.querySelector('#lgPw').focus();
+    d.querySelector('form').onsubmit = async e => { e.preventDefault(); const v = d.querySelector('#lgPw').value.trim(); if (!v) return;
+      const r = await fetch('/api/accounts', { headers: { Authorization: 'Bearer ' + v } });
+      if (r.status === 401) { d.remove(); return gate(true); }
+      localStorage.setItem(KEY, v); location.reload(); };
+  }
+  const _f = window.fetch.bind(window);
+  window.fetch = async (u, o) => { const r = await _f(u, o); if (r.status === 401 && String(u).includes('/api/') && !document.getElementById('loginGate')) { localStorage.removeItem(KEY); gate(!!(o && o.headers && (o.headers.Authorization || o.headers.authorization))); } return r; };
+  _f('/api/health').then(r => r.json()).then(h => { if (h.authRequired && !localStorage.getItem(KEY)) gate(false); }).catch(() => {});
 })();
 </script>
 </body>

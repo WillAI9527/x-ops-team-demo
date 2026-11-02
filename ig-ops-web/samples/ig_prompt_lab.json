@@ -1,0 +1,672 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "示例数据（虚构，仅供演示；实时数据需 Instagram Graph API）",
+ "fetched_at": "2026-11-02T09:00:00+08:00",
+ "user": {
+  "id": "demo-ig_prompt_lab",
+  "username": "ig_prompt_lab",
+  "name": "提示词实验室（示例）",
+  "description": "Reels 教你用好 AI｜虚构示例账号",
+  "created_at": "2024-03-01T00:00:00.000Z",
+  "location": "",
+  "url": "",
+  "profile_image_url": "",
+  "verified": false,
+  "public_metrics": {
+   "followers_count": 126000,
+   "following_count": 310,
+   "tweet_count": 36,
+   "listed_count": 0
+  }
+ },
+ "posts": [
+  {
+   "id": "ig_1000",
+   "text": "【Reels】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#学习方法 #AI工具 #科技生活 #工作流 #提示词 #数字游民 #效率提升",
+   "created_at": "2026-11-01T11:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0000/",
+   "metrics": {
+    "likes": 1831,
+    "reposts": 321,
+    "replies": 126,
+    "quotes": 0,
+    "bookmarks": 313,
+    "views": 51835
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1001",
+   "text": "【轮播】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#数字游民 #ChatGPT #人工智能 #科技生活 #提示词 #AI科普 #AIGC",
+   "created_at": "2026-10-31T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0001/",
+   "metrics": {
+    "likes": 6652,
+    "reposts": 1076,
+    "replies": 315,
+    "quotes": 0,
+    "bookmarks": 4074,
+    "views": 100928
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1002",
+   "text": "【轮播】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#科技生活 #工作流 #提示词 #人工智能 #效率提升 #数字游民 #职场效率",
+   "created_at": "2026-10-29T14:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0002/",
+   "metrics": {
+    "likes": 3128,
+    "reposts": 178,
+    "replies": 352,
+    "quotes": 0,
+    "bookmarks": 1557,
+    "views": 94600
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1003",
+   "text": "【Reels】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#工作流 #提示词 #数字游民 #ChatGPT #学习方法 #科技生活 #职场效率",
+   "created_at": "2026-10-28T12:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0003/",
+   "metrics": {
+    "likes": 4658,
+    "reposts": 702,
+    "replies": 208,
+    "quotes": 0,
+    "bookmarks": 949,
+    "views": 152743
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1004",
+   "text": "【Reels】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#学习方法 #数字游民 #ChatGPT #职场效率 #提示词 #人工智能 #AI工具",
+   "created_at": "2026-10-26T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0004/",
+   "metrics": {
+    "likes": 4823,
+    "reposts": 573,
+    "replies": 554,
+    "quotes": 0,
+    "bookmarks": 740,
+    "views": 69774
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1005",
+   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#人工智能 #AI科普 #提示词 #数字游民 #学习方法 #AIGC #AI工具",
+   "created_at": "2026-10-24T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0005/",
+   "metrics": {
+    "likes": 7113,
+    "reposts": 898,
+    "replies": 359,
+    "quotes": 0,
+    "bookmarks": 2233,
+    "views": 104439
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1006",
+   "text": "【轮播】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#AI科普 #AI工具 #工作流 #AIGC #职场效率 #科技生活 #人工智能",
+   "created_at": "2026-10-23T14:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0006/",
+   "metrics": {
+    "likes": 2771,
+    "reposts": 269,
+    "replies": 142,
+    "quotes": 0,
+    "bookmarks": 1455,
+    "views": 65874
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1007",
+   "text": "【Reels】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#职场效率 #ChatGPT #AI工具 #科技生活 #人工智能 #AIGC #AI科普",
+   "created_at": "2026-10-21T12:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0007/",
+   "metrics": {
+    "likes": 5647,
+    "reposts": 587,
+    "replies": 677,
+    "quotes": 0,
+    "bookmarks": 1512,
+    "views": 123527
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1008",
+   "text": "【轮播】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#职场效率 #AI工具 #工作流 #学习方法 #提示词 #AI科普 #科技生活",
+   "created_at": "2026-10-20T04:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0008/",
+   "metrics": {
+    "likes": 4922,
+    "reposts": 825,
+    "replies": 321,
+    "quotes": 0,
+    "bookmarks": 3598,
+    "views": 103732
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1009",
+   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#学习方法 #效率提升 #科技生活 #数字游民 #职场效率 #AIGC #工作流",
+   "created_at": "2026-10-18T13:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0009/",
+   "metrics": {
+    "likes": 3872,
+    "reposts": 723,
+    "replies": 424,
+    "quotes": 0,
+    "bookmarks": 2296,
+    "views": 108946
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1010",
+   "text": "【轮播】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#效率提升 #人工智能 #提示词 #学习方法 #数字游民 #ChatGPT #科技生活",
+   "created_at": "2026-10-16T12:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0010/",
+   "metrics": {
+    "likes": 4755,
+    "reposts": 357,
+    "replies": 402,
+    "quotes": 0,
+    "bookmarks": 2611,
+    "views": 113131
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1011",
+   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#AI科普 #提示词 #工作流 #ChatGPT #科技生活 #AI工具 #AIGC",
+   "created_at": "2026-10-15T12:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0011/",
+   "metrics": {
+    "likes": 6840,
+    "reposts": 912,
+    "replies": 407,
+    "quotes": 0,
+    "bookmarks": 1264,
+    "views": 131775
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1012",
+   "text": "【单图】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#AIGC #AI科普 #效率提升 #学习方法 #提示词 #AI工具 #工作流",
+   "created_at": "2026-10-13T13:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0012/",
+   "metrics": {
+    "likes": 2504,
+    "reposts": 312,
+    "replies": 154,
+    "quotes": 0,
+    "bookmarks": 752,
+    "views": 65218
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1013",
+   "text": "【单图】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#效率提升 #AI工具 #职场效率 #数字游民 #学习方法 #科技生活 #AIGC",
+   "created_at": "2026-10-12T13:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0013/",
+   "metrics": {
+    "likes": 2826,
+    "reposts": 551,
+    "replies": 183,
+    "quotes": 0,
+    "bookmarks": 884,
+    "views": 59782
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1014",
+   "text": "【Reels】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#工作流 #科技生活 #数字游民 #人工智能 #AI工具 #AIGC #学习方法",
+   "created_at": "2026-10-10T14:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0014/",
+   "metrics": {
+    "likes": 2578,
+    "reposts": 392,
+    "replies": 134,
+    "quotes": 0,
+    "bookmarks": 656,
+    "views": 75026
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1015",
+   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#人工智能 #工作流 #科技生活 #ChatGPT #提示词 #数字游民 #效率提升",
+   "created_at": "2026-10-08T00:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0015/",
+   "metrics": {
+    "likes": 5829,
+    "reposts": 673,
+    "replies": 525,
+    "quotes": 0,
+    "bookmarks": 3576,
+    "views": 85103
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1016",
+   "text": "【轮播】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#提示词 #数字游民 #学习方法 #工作流 #AIGC #AI工具 #科技生活",
+   "created_at": "2026-10-07T00:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0016/",
+   "metrics": {
+    "likes": 5042,
+    "reposts": 886,
+    "replies": 314,
+    "quotes": 0,
+    "bookmarks": 2580,
+    "views": 72184
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1017",
+   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#科技生活 #职场效率 #AI科普 #提示词 #数字游民 #AI工具 #AIGC",
+   "created_at": "2026-10-05T12:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0017/",
+   "metrics": {
+    "likes": 3553,
+    "reposts": 314,
+    "replies": 333,
+    "quotes": 0,
+    "bookmarks": 831,
+    "views": 71169
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1018",
+   "text": "【Reels】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#提示词 #数字游民 #工作流 #ChatGPT #AIGC #人工智能 #科技生活",
+   "created_at": "2026-10-04T13:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0018/",
+   "metrics": {
+    "likes": 6442,
+    "reposts": 809,
+    "replies": 668,
+    "quotes": 0,
+    "bookmarks": 1918,
+    "views": 169896
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1019",
+   "text": "【轮播】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#科技生活 #AI工具 #AIGC #效率提升 #职场效率 #工作流 #人工智能",
+   "created_at": "2026-10-02T12:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0019/",
+   "metrics": {
+    "likes": 7139,
+    "reposts": 803,
+    "replies": 392,
+    "quotes": 0,
+    "bookmarks": 3335,
+    "views": 143278
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1020",
+   "text": "【轮播】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#工作流 #人工智能 #科技生活 #效率提升 #AI科普 #AIGC #职场效率",
+   "created_at": "2026-09-30T04:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0020/",
+   "metrics": {
+    "likes": 1194,
+    "reposts": 217,
+    "replies": 85,
+    "quotes": 0,
+    "bookmarks": 944,
+    "views": 36847
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1021",
+   "text": "【Reels】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#人工智能 #AI工具 #工作流 #ChatGPT #AIGC #效率提升 #提示词",
+   "created_at": "2026-09-29T14:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0021/",
+   "metrics": {
+    "likes": 4826,
+    "reposts": 561,
+    "replies": 517,
+    "quotes": 0,
+    "bookmarks": 1674,
+    "views": 81788
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1022",
+   "text": "【单图】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#职场效率 #人工智能 #AI工具 #数字游民 #提示词 #效率提升 #ChatGPT",
+   "created_at": "2026-09-27T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0022/",
+   "metrics": {
+    "likes": 2108,
+    "reposts": 365,
+    "replies": 144,
+    "quotes": 0,
+    "bookmarks": 662,
+    "views": 55061
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1023",
+   "text": "【单图】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#职场效率 #AI工具 #工作流 #科技生活 #数字游民 #学习方法 #AIGC",
+   "created_at": "2026-09-26T11:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0023/",
+   "metrics": {
+    "likes": 2093,
+    "reposts": 359,
+    "replies": 88,
+    "quotes": 0,
+    "bookmarks": 485,
+    "views": 31775
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1024",
+   "text": "【轮播】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#工作流 #AI科普 #ChatGPT #AIGC #AI工具 #科技生活 #学习方法",
+   "created_at": "2026-09-24T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0024/",
+   "metrics": {
+    "likes": 2361,
+    "reposts": 210,
+    "replies": 275,
+    "quotes": 0,
+    "bookmarks": 1549,
+    "views": 57747
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1025",
+   "text": "【单图】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#ChatGPT #职场效率 #数字游民 #效率提升 #AIGC #人工智能 #AI工具",
+   "created_at": "2026-09-22T04:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0025/",
+   "metrics": {
+    "likes": 1704,
+    "reposts": 283,
+    "replies": 165,
+    "quotes": 0,
+    "bookmarks": 414,
+    "views": 49696
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1026",
+   "text": "【单图】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#AIGC #人工智能 #学习方法 #提示词 #职场效率 #数字游民 #科技生活",
+   "created_at": "2026-09-21T12:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0026/",
+   "metrics": {
+    "likes": 3620,
+    "reposts": 377,
+    "replies": 239,
+    "quotes": 0,
+    "bookmarks": 774,
+    "views": 66683
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1027",
+   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#人工智能 #ChatGPT #AIGC #工作流 #提示词 #AI工具 #数字游民",
+   "created_at": "2026-09-19T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0027/",
+   "metrics": {
+    "likes": 1851,
+    "reposts": 337,
+    "replies": 122,
+    "quotes": 0,
+    "bookmarks": 1537,
+    "views": 35539
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1028",
+   "text": "【Reels】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#科技生活 #人工智能 #ChatGPT #AIGC #学习方法 #数字游民 #效率提升",
+   "created_at": "2026-09-18T14:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0028/",
+   "metrics": {
+    "likes": 3430,
+    "reposts": 556,
+    "replies": 307,
+    "quotes": 0,
+    "bookmarks": 976,
+    "views": 73503
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1029",
+   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#提示词 #AI科普 #人工智能 #职场效率 #ChatGPT #AIGC #数字游民",
+   "created_at": "2026-09-16T12:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0029/",
+   "metrics": {
+    "likes": 4999,
+    "reposts": 930,
+    "replies": 294,
+    "quotes": 0,
+    "bookmarks": 1031,
+    "views": 133564
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1030",
+   "text": "【Reels】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#数字游民 #AI科普 #AI工具 #ChatGPT #提示词 #AIGC #职场效率",
+   "created_at": "2026-09-14T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0030/",
+   "metrics": {
+    "likes": 3085,
+    "reposts": 261,
+    "replies": 124,
+    "quotes": 0,
+    "bookmarks": 1007,
+    "views": 98020
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1031",
+   "text": "【轮播】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#AI工具 #人工智能 #AIGC #AI科普 #提示词 #工作流 #效率提升",
+   "created_at": "2026-09-13T11:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0031/",
+   "metrics": {
+    "likes": 3889,
+    "reposts": 648,
+    "replies": 295,
+    "quotes": 0,
+    "bookmarks": 1885,
+    "views": 60160
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1032",
+   "text": "【Reels】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#AI科普 #职场效率 #工作流 #效率提升 #ChatGPT #AI工具 #人工智能",
+   "created_at": "2026-09-11T00:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0032/",
+   "metrics": {
+    "likes": 4893,
+    "reposts": 842,
+    "replies": 482,
+    "quotes": 0,
+    "bookmarks": 1628,
+    "views": 155218
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1033",
+   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#学习方法 #人工智能 #效率提升 #职场效率 #ChatGPT #提示词 #AIGC",
+   "created_at": "2026-09-10T14:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0033/",
+   "metrics": {
+    "likes": 3162,
+    "reposts": 231,
+    "replies": 327,
+    "quotes": 0,
+    "bookmarks": 2146,
+    "views": 68257
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1034",
+   "text": "【Reels】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#AI科普 #科技生活 #提示词 #职场效率 #学习方法 #人工智能 #AI工具",
+   "created_at": "2026-09-08T13:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0034/",
+   "metrics": {
+    "likes": 6034,
+    "reposts": 1083,
+    "replies": 413,
+    "quotes": 0,
+    "bookmarks": 1407,
+    "views": 114584
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1035",
+   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#效率提升 #AI工具 #科技生活 #学习方法 #工作流 #AI科普 #提示词",
+   "created_at": "2026-09-06T04:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0035/",
+   "metrics": {
+    "likes": 2038,
+    "reposts": 338,
+    "replies": 175,
+    "quotes": 0,
+    "bookmarks": 454,
+    "views": 60627
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  }
+ ]
+}

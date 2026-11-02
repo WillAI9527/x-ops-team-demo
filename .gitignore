@@ -9,3 +9,10 @@ data/
 _backup_*/
 .DS_Store
 ._*
+.env.*
+!.env.example
+!.env.local.example
+.vercel/
+node_modules/
+*.zip
+**/__pycache__/

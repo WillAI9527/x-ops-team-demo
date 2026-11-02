@@ -21,6 +21,7 @@ owner put the X_API_KEY/X_API_SECRET/X_ACCESS_TOKEN/X_ACCESS_SECRET keys in .env
 optional reads with X_BEARER_TOKEN.
 Key: env ZENMUX_API_KEY (or .env.local). Optional auth: env AGENTS_API_TOKEN.
 """
+import hmac
 import json, os, re, ssl, sys, time, threading, urllib.parse, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
@@ -91,9 +92,9 @@ def clean(text):
 LANG_FORCE = {
     "en": "\n\n[OUTPUT LANGUAGE] The user interface is set to English. Write your ENTIRE reply in English "
           "(headings, analysis, JSON string values, review reasons, post drafts). Do not answer in Chinese even if the "
-          "instructions or source posts are Chinese; keep Chinese only inside direct quotes of source posts.\n",
+          "instructions or source posts are Chinese; keep Chinese only inside direct quotes of source posts. Quote source posts VERBATIM in their original language — never translate fetched posts, captions or comments.\n",
     "zh": "\n\n【输出语言】界面语言是中文：全部内容（标题、分析、JSON 字段值、审查理由、帖子草稿）都用简体中文输出；"
-          "引用原帖时可保留原文。\n",
+          "引用原帖必须一字不改、保留原文语言（英文帖就引用英文原文），不要翻译抓取到的帖子、文案或评论。\n",
 }
 
 
@@ -205,6 +206,30 @@ HANDLE_RE = re.compile(r"^[A-Za-z0-9_]{1,15}$")
 _TL = threading.local()   # per-thread account override (scheduler)
 ACTIVE = {"handle": None}
 
+
+
+def en_error(msg, code=None):
+    """English UI: replace a Chinese server error with an English one (never mix languages)."""
+    h = re.search(r"@([A-Za-z0-9_.]{1,30})", msg); u = ("@" + h.group(1)) if h else "this account"
+    http = re.search(r"HTTP (\d{3})", msg); hc = (" (HTTP %s)" % http.group(1)) if http else ""
+    rules = [
+        (r"抓取 @?\S* ?失败", "Couldn't fetch %s%s. The free public sources may be rate-limited or the account wasn't found. Click Retry in a moment, or use Import JSON / Load sample." % (u, hc)),
+        (r"Apify 拒绝请求", "Apify rejected the request%s: the token is invalid or out of credits." % hc),
+        (r"Apify 额度不足", "Apify is out of credits (HTTP 402). Check usage in the Apify console."),
+        (r"连接 Apify 失败", "Couldn't reach Apify. Please retry in a moment."),
+        (r"Apify 没有返回|Apify 返回空", "Apify returned no data for %s (the account may not exist, was renamed or is restricted)." % u),
+        (r"没有配置 APIFY_TOKEN", "APIFY_TOKEN isn't configured on the server. Use Import JSON or Load sample instead."),
+        (r"没有可读取的公开帖子|没有读到原创帖子|没有 .*原创帖子", "%s has no readable public posts (it may be private)." % u),
+        (r"受保护账号", "%s is a protected account; its posts can't be read." % u),
+        (r"找不到账号", "Account %s wasn't found." % u),
+        (r"用户名不合法", "Invalid username."),
+        (r"ZENMUX_API_KEY", "The AI key isn't configured on the server."),
+        (r"请求过于频繁|太频繁|too many", "Too many requests. Please wait a few minutes and try again."),
+    ]
+    for pat, en in rules:
+        if re.search(pat, msg):
+            return en
+    return "Request failed%s. Please retry in a moment." % ((" (HTTP %s)" % code) if code else "")
 
 def req_lang():
     """v1.6: UI language for this request (X-Lang header / body lang), 'zh' | 'en' | None."""
@@ -1383,6 +1408,25 @@ def apply_debate(did, sid=None):
     return {"ok": True, "strategy": s, "version": v["v"], "debate": debate_summary(d), "ms": chief["ms"]}
 
 
+# ---- basic abuse protection for the public deployment (per IP, in memory, per instance) ----
+RATE_LIMIT = int(os.environ.get("RATE_LIMIT_PER_10MIN", "40"))        # AI / fetch POSTs per IP per 10 min
+AUTH_FAIL_LIMIT = int(os.environ.get("AUTH_FAIL_LIMIT_PER_10MIN", "15"))
+_RL, _RL_LOCK = {}, threading.Lock()
+
+
+def rate_ok(key, limit, window, peek=False):
+    now = time.time()
+    with _RL_LOCK:
+        q = [t for t in _RL.get(key, []) if now - t < window]
+        if len(q) >= limit:
+            _RL[key] = q
+            return False
+        if not peek:
+            q.append(now)
+        _RL[key] = q
+        return True
+
+
 class Handler(BaseHTTPRequestHandler):
     server_version = "LucaAgents/1.4"
 
@@ -1395,6 +1439,9 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Account")
 
     def send_json(self, code, obj):
+        if code >= 400 and isinstance(obj, dict) and isinstance(obj.get("error"), str) and req_lang() == "en" \
+                and re.search(r"[\u4e00-\u9fff]", obj["error"]):
+            obj = dict(obj, error=en_error(obj["error"], code))
         data = json.dumps(obj, ensure_ascii=False).encode()
         self.send_response(code)
         self.cors()
@@ -1415,11 +1462,20 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def client_ip(self):
+        return (self.headers.get("X-Forwarded-For") or self.headers.get("X-Real-IP") or self.client_address[0] or "?").split(",")[0].strip()
+
     def authorized(self):
         token = os.environ.get("AGENTS_API_TOKEN")
         if not token:
             return True
-        return self.headers.get("Authorization", "") == "Bearer " + token
+        ip = self.client_ip()
+        if not rate_ok("authfail:" + ip, AUTH_FAIL_LIMIT, 600, peek=True):
+            return False   # too many wrong passwords from this IP in 10 min
+        ok = hmac.compare_digest(self.headers.get("Authorization", ""), "Bearer " + token)
+        if not ok:
+            rate_ok("authfail:" + ip, AUTH_FAIL_LIMIT, 600)
+        return ok
 
     def do_OPTIONS(self):
         self.send_response(204)
@@ -1477,7 +1533,8 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_file("openapi.yaml", "application/yaml; charset=utf-8")
         if path == "/api/health":
             return self.send_json(200, {"ok": True, "keyConfigured": bool(api_key()), "version": "1.6", "account": None if active() == "_none" else active(),
-                                        "authRequired": bool(os.environ.get("AGENTS_API_TOKEN"))})
+                                        "authRequired": bool(os.environ.get("AGENTS_API_TOKEN")), "platform": "x",
+                                        "switchUrl": os.environ.get("PLATFORM_SWITCH_URL", "")})
         if not path.startswith("/api/"):
             return self.send_json(404, {"error": "not found"})
         if not self.authorized():
@@ -1543,6 +1600,8 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_json(404, {"error": "not found"})
         if not self.authorized():
             return self.send_json(401, {"error": "unauthorized"})
+        if (os.environ.get("AGENTS_API_TOKEN") or os.environ.get("VERCEL")) and not rate_ok("post:" + self.client_ip(), RATE_LIMIT, 600):
+            return self.send_json(429, {"error": "请求太频繁，请 10 分钟后再试 / Too many requests, try again in 10 minutes"})
         try:
             body = self.read_body()
             if not isinstance(body, dict):

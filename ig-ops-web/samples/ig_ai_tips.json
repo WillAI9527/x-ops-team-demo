@@ -1,0 +1,672 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "示例数据（虚构，仅供演示；实时数据需 Instagram Graph API）",
+ "fetched_at": "2026-11-02T09:00:00+08:00",
+ "user": {
+  "id": "demo-ig_ai_tips",
+  "username": "ig_ai_tips",
+  "name": "AI 小技巧（示例）",
+  "description": "每天 1 个 AI 小技巧｜轮播图解｜虚构示例账号",
+  "created_at": "2024-03-01T00:00:00.000Z",
+  "location": "",
+  "url": "",
+  "profile_image_url": "",
+  "verified": false,
+  "public_metrics": {
+   "followers_count": 48000,
+   "following_count": 310,
+   "tweet_count": 36,
+   "listed_count": 0
+  }
+ },
+ "posts": [
+  {
+   "id": "ig_1000",
+   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#学习方法 #提示词 #AI工具 #人工智能 #职场效率 #科技生活 #AIGC",
+   "created_at": "2026-11-01T04:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0000/",
+   "metrics": {
+    "likes": 1008,
+    "reposts": 59,
+    "replies": 83,
+    "quotes": 0,
+    "bookmarks": 539,
+    "views": 30643
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1001",
+   "text": "【轮播】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#AIGC #工作流 #职场效率 #AI工具 #提示词 #学习方法 #ChatGPT",
+   "created_at": "2026-10-31T13:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0001/",
+   "metrics": {
+    "likes": 1738,
+    "reposts": 333,
+    "replies": 100,
+    "quotes": 0,
+    "bookmarks": 1149,
+    "views": 49728
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1002",
+   "text": "【单图】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#AIGC #工作流 #提示词 #AI科普 #人工智能 #ChatGPT #学习方法",
+   "created_at": "2026-10-29T12:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0002/",
+   "metrics": {
+    "likes": 430,
+    "reposts": 33,
+    "replies": 27,
+    "quotes": 0,
+    "bookmarks": 134,
+    "views": 12393
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1003",
+   "text": "【轮播】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#数字游民 #AI科普 #ChatGPT #提示词 #效率提升 #科技生活 #人工智能",
+   "created_at": "2026-10-28T00:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0003/",
+   "metrics": {
+    "likes": 1047,
+    "reposts": 144,
+    "replies": 77,
+    "quotes": 0,
+    "bookmarks": 534,
+    "views": 18309
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1004",
+   "text": "【轮播】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#学习方法 #职场效率 #效率提升 #AI科普 #AIGC #提示词 #科技生活",
+   "created_at": "2026-10-26T12:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0004/",
+   "metrics": {
+    "likes": 1611,
+    "reposts": 98,
+    "replies": 122,
+    "quotes": 0,
+    "bookmarks": 1050,
+    "views": 36854
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1005",
+   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#AIGC #数字游民 #人工智能 #工作流 #ChatGPT #提示词 #AI科普",
+   "created_at": "2026-10-24T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0005/",
+   "metrics": {
+    "likes": 1852,
+    "reposts": 257,
+    "replies": 120,
+    "quotes": 0,
+    "bookmarks": 1284,
+    "views": 28484
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1006",
+   "text": "【Reels】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#职场效率 #科技生活 #AI科普 #AI工具 #数字游民 #效率提升 #人工智能",
+   "created_at": "2026-10-23T00:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0006/",
+   "metrics": {
+    "likes": 2626,
+    "reposts": 243,
+    "replies": 313,
+    "quotes": 0,
+    "bookmarks": 825,
+    "views": 46999
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1007",
+   "text": "【Reels】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#数字游民 #人工智能 #效率提升 #工作流 #职场效率 #ChatGPT #AIGC",
+   "created_at": "2026-10-21T14:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0007/",
+   "metrics": {
+    "likes": 1134,
+    "reposts": 212,
+    "replies": 112,
+    "quotes": 0,
+    "bookmarks": 260,
+    "views": 27351
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1008",
+   "text": "【单图】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#效率提升 #人工智能 #工作流 #AIGC #提示词 #AI科普 #科技生活",
+   "created_at": "2026-10-20T13:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0008/",
+   "metrics": {
+    "likes": 707,
+    "reposts": 136,
+    "replies": 48,
+    "quotes": 0,
+    "bookmarks": 231,
+    "views": 15170
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1009",
+   "text": "【轮播】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#效率提升 #学习方法 #AIGC #AI工具 #数字游民 #职场效率 #AI科普",
+   "created_at": "2026-10-18T04:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0009/",
+   "metrics": {
+    "likes": 731,
+    "reposts": 71,
+    "replies": 60,
+    "quotes": 0,
+    "bookmarks": 477,
+    "views": 20415
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1010",
+   "text": "【单图】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#提示词 #数字游民 #效率提升 #人工智能 #AI科普 #ChatGPT #AI工具",
+   "created_at": "2026-10-16T13:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0010/",
+   "metrics": {
+    "likes": 603,
+    "reposts": 36,
+    "replies": 54,
+    "quotes": 0,
+    "bookmarks": 97,
+    "views": 17665
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1011",
+   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#效率提升 #科技生活 #ChatGPT #AI科普 #学习方法 #提示词 #AI工具",
+   "created_at": "2026-10-15T04:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0011/",
+   "metrics": {
+    "likes": 686,
+    "reposts": 97,
+    "replies": 28,
+    "quotes": 0,
+    "bookmarks": 534,
+    "views": 15412
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1012",
+   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#数字游民 #效率提升 #学习方法 #AI工具 #提示词 #ChatGPT #科技生活",
+   "created_at": "2026-10-13T14:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0012/",
+   "metrics": {
+    "likes": 1100,
+    "reposts": 177,
+    "replies": 56,
+    "quotes": 0,
+    "bookmarks": 791,
+    "views": 25916
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1013",
+   "text": "【轮播】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#效率提升 #AI科普 #提示词 #学习方法 #科技生活 #数字游民 #人工智能",
+   "created_at": "2026-10-12T00:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0013/",
+   "metrics": {
+    "likes": 1162,
+    "reposts": 148,
+    "replies": 54,
+    "quotes": 0,
+    "bookmarks": 889,
+    "views": 20863
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1014",
+   "text": "【Reels】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#AI工具 #工作流 #ChatGPT #数字游民 #AIGC #人工智能 #AI科普",
+   "created_at": "2026-10-10T11:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0014/",
+   "metrics": {
+    "likes": 3084,
+    "reposts": 318,
+    "replies": 179,
+    "quotes": 0,
+    "bookmarks": 781,
+    "views": 51750
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1015",
+   "text": "【Reels】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#人工智能 #提示词 #数字游民 #科技生活 #AI科普 #工作流 #学习方法",
+   "created_at": "2026-10-08T12:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0015/",
+   "metrics": {
+    "likes": 4236,
+    "reposts": 262,
+    "replies": 287,
+    "quotes": 0,
+    "bookmarks": 1461,
+    "views": 71894
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1016",
+   "text": "【Reels】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#职场效率 #提示词 #数字游民 #效率提升 #工作流 #AIGC #AI科普",
+   "created_at": "2026-10-07T00:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0016/",
+   "metrics": {
+    "likes": 2426,
+    "reposts": 164,
+    "replies": 221,
+    "quotes": 0,
+    "bookmarks": 768,
+    "views": 55444
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1017",
+   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#效率提升 #AIGC #数字游民 #工作流 #科技生活 #AI科普 #学习方法",
+   "created_at": "2026-10-05T13:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0017/",
+   "metrics": {
+    "likes": 2254,
+    "reposts": 155,
+    "replies": 220,
+    "quotes": 0,
+    "bookmarks": 995,
+    "views": 33217
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1018",
+   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#职场效率 #提示词 #科技生活 #AI工具 #ChatGPT #人工智能 #效率提升",
+   "created_at": "2026-10-04T04:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0018/",
+   "metrics": {
+    "likes": 894,
+    "reposts": 169,
+    "replies": 82,
+    "quotes": 0,
+    "bookmarks": 547,
+    "views": 12994
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1019",
+   "text": "【Reels】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#科技生活 #AIGC #学习方法 #职场效率 #效率提升 #ChatGPT #人工智能",
+   "created_at": "2026-10-02T12:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0019/",
+   "metrics": {
+    "likes": 3602,
+    "reposts": 665,
+    "replies": 161,
+    "quotes": 0,
+    "bookmarks": 1073,
+    "views": 56855
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1020",
+   "text": "【Reels】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#AIGC #人工智能 #学习方法 #AI工具 #AI科普 #数字游民 #ChatGPT",
+   "created_at": "2026-09-30T00:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0020/",
+   "metrics": {
+    "likes": 2719,
+    "reposts": 193,
+    "replies": 277,
+    "quotes": 0,
+    "bookmarks": 489,
+    "views": 50049
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1021",
+   "text": "【Reels】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#数字游民 #学习方法 #AI工具 #人工智能 #工作流 #效率提升 #ChatGPT",
+   "created_at": "2026-09-29T14:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0021/",
+   "metrics": {
+    "likes": 1755,
+    "reposts": 113,
+    "replies": 97,
+    "quotes": 0,
+    "bookmarks": 278,
+    "views": 54388
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1022",
+   "text": "【单图】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#学习方法 #ChatGPT #工作流 #提示词 #数字游民 #人工智能 #AIGC",
+   "created_at": "2026-09-27T11:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0022/",
+   "metrics": {
+    "likes": 544,
+    "reposts": 47,
+    "replies": 56,
+    "quotes": 0,
+    "bookmarks": 136,
+    "views": 10817
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1023",
+   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#效率提升 #科技生活 #AI科普 #工作流 #ChatGPT #人工智能 #提示词",
+   "created_at": "2026-09-26T14:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0023/",
+   "metrics": {
+    "likes": 578,
+    "reposts": 96,
+    "replies": 26,
+    "quotes": 0,
+    "bookmarks": 393,
+    "views": 14610
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1024",
+   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#学习方法 #职场效率 #AI科普 #科技生活 #提示词 #效率提升 #工作流",
+   "created_at": "2026-09-24T04:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0024/",
+   "metrics": {
+    "likes": 1355,
+    "reposts": 211,
+    "replies": 126,
+    "quotes": 0,
+    "bookmarks": 633,
+    "views": 37130
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1025",
+   "text": "【轮播】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#ChatGPT #学习方法 #人工智能 #AIGC #提示词 #AI工具 #职场效率",
+   "created_at": "2026-09-22T12:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0025/",
+   "metrics": {
+    "likes": 1486,
+    "reposts": 189,
+    "replies": 143,
+    "quotes": 0,
+    "bookmarks": 809,
+    "views": 30756
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1026",
+   "text": "【轮播】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#ChatGPT #职场效率 #效率提升 #学习方法 #数字游民 #AI科普 #AIGC",
+   "created_at": "2026-09-21T00:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0026/",
+   "metrics": {
+    "likes": 707,
+    "reposts": 122,
+    "replies": 52,
+    "quotes": 0,
+    "bookmarks": 563,
+    "views": 20096
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1027",
+   "text": "【轮播】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#ChatGPT #人工智能 #AIGC #提示词 #科技生活 #效率提升 #AI工具",
+   "created_at": "2026-09-19T00:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0027/",
+   "metrics": {
+    "likes": 1163,
+    "reposts": 73,
+    "replies": 71,
+    "quotes": 0,
+    "bookmarks": 428,
+    "views": 17682
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1028",
+   "text": "【轮播】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#人工智能 #效率提升 #ChatGPT #AI工具 #科技生活 #工作流 #数字游民",
+   "created_at": "2026-09-18T12:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0028/",
+   "metrics": {
+    "likes": 2255,
+    "reposts": 352,
+    "replies": 202,
+    "quotes": 0,
+    "bookmarks": 858,
+    "views": 33852
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1029",
+   "text": "【Reels】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#AI工具 #工作流 #科技生活 #学习方法 #提示词 #ChatGPT #数字游民",
+   "created_at": "2026-09-16T11:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0029/",
+   "metrics": {
+    "likes": 2081,
+    "reposts": 414,
+    "replies": 128,
+    "quotes": 0,
+    "bookmarks": 646,
+    "views": 36599
+   },
+   "media": [],
+   "urls": [],
+   "format": "reels"
+  },
+  {
+   "id": "ig_1030",
+   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#学习方法 #ChatGPT #提示词 #AIGC #AI科普 #人工智能 #数字游民",
+   "created_at": "2026-09-14T14:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0030/",
+   "metrics": {
+    "likes": 1727,
+    "reposts": 316,
+    "replies": 159,
+    "quotes": 0,
+    "bookmarks": 1074,
+    "views": 30848
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1031",
+   "text": "【单图】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#ChatGPT #职场效率 #效率提升 #AI工具 #人工智能 #AI科普 #提示词",
+   "created_at": "2026-09-13T04:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0031/",
+   "metrics": {
+    "likes": 1478,
+    "reposts": 212,
+    "replies": 158,
+    "quotes": 0,
+    "bookmarks": 225,
+    "views": 21347
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1032",
+   "text": "【单图】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#ChatGPT #AI科普 #科技生活 #学习方法 #AIGC #人工智能 #AI工具",
+   "created_at": "2026-09-11T12:30:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0032/",
+   "metrics": {
+    "likes": 601,
+    "reposts": 70,
+    "replies": 46,
+    "quotes": 0,
+    "bookmarks": 109,
+    "views": 14421
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1033",
+   "text": "【单图】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#提示词 #工作流 #学习方法 #AI工具 #人工智能 #效率提升 #AIGC",
+   "created_at": "2026-09-10T12:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0033/",
+   "metrics": {
+    "likes": 504,
+    "reposts": 63,
+    "replies": 35,
+    "quotes": 0,
+    "bookmarks": 123,
+    "views": 16788
+   },
+   "media": [],
+   "urls": [],
+   "format": "photo"
+  },
+  {
+   "id": "ig_1034",
+   "text": "【轮播】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#效率提升 #科技生活 #AIGC #职场效率 #AI科普 #数字游民 #提示词",
+   "created_at": "2026-09-08T00:15:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0034/",
+   "metrics": {
+    "likes": 557,
+    "reposts": 72,
+    "replies": 32,
+    "quotes": 0,
+    "bookmarks": 357,
+    "views": 13223
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  },
+  {
+   "id": "ig_1035",
+   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#学习方法 #效率提升 #工作流 #AIGC #AI工具 #职场效率 #AI科普",
+   "created_at": "2026-09-06T04:00:00.000Z",
+   "lang": "zh",
+   "url": "https://www.instagram.com/p/DEMOIG_0035/",
+   "metrics": {
+    "likes": 2078,
+    "reposts": 322,
+    "replies": 168,
+    "quotes": 0,
+    "bookmarks": 1176,
+    "views": 35465
+   },
+   "media": [],
+   "urls": [],
+   "format": "carousel"
+  }
+ ]
+}

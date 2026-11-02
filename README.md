@@ -16,6 +16,19 @@
 | data | MiniMax | 数据分析·流程 | minimax/minimax-m2.1 | 输出里的 `<think>` 会被自动去掉 |
 | chief | Claude | 负责人·主编 | anthropic/claude-haiku-5.5 | **不传 temperature**（会报 400）；策略模式 max_tokens 8000 |
 
+## 最新版本（2026-11）：X 版 + Instagram 版
+
+| 应用 | 代码位置 | 线上地址 | 本地端口 |
+|---|---|---|---|
+| X 运营团队 | 仓库根目录 | https://x-ops-team-demo.vercel.app/ | 8788 |
+| Instagram 运营团队 | `ig-ops-web/` | https://ig-ops-team-demo.vercel.app/ | 8789 |
+
+- 两个版本顶部都有「X ⇄ Instagram」切换按钮，中文 / EN 一键切换：中文模式界面全中文，EN 模式全英文；抓取到的帖子保持原文，不做翻译。
+- X 版对标抓取免密钥（fxtwitter + 镜像 + 备用通道，带重试和缓存）；Instagram 版通过 Apify 读取公开主页数据（24 小时缓存）。
+- **密钥放在各自目录的 `.env.local`**（复制 `.env.local.example` 后填写）：X 版需要 `ZENMUX_API_KEY`；Instagram 版需要 `ZENMUX_API_KEY` 和 `APIFY_TOKEN`。`.env.local` 已在 `.gitignore` 里，不会被提交。
+- 本地运行：`python3 server.py`（Instagram 版在 `ig-ops-web/` 里运行），或双击 `start.command`。
+- 线上部署用的 Vercel 包装在 `deploy/`，说明见 `deploy/README.md`。
+
 ## 运行
 
 ```bash

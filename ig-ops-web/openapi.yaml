@@ -1,0 +1,515 @@
+openapi: 3.0.3
+info:
+  title: default 5-Role Agents API
+  version: 1.6.0
+  description: |
+    当前账号（X运营团队）5 个岗位智能体：选题研究员、内容编辑·视觉、社区运营、数据分析·流程、负责人·主编。
+    每个岗位使用 agents.json 里各自的 system prompt 和 ZenMux 模型。
+    **只产出草稿**：服务不连接 X，不会发帖、关注、评论或私信。
+    v1.1 新增「运营策略」：4 个岗位并行出建议，Claude（主编）整合成完整 X 运营策略；每次修订都存成新版本
+    （data/<id>/strategy.json + <账号>_策略_<日期>_v<N>.md），支持每日跟进和手动编辑。/api/ask 的行为不变。
+    鉴权：服务端设置了环境变量 AGENTS_API_TOKEN 时，除 /api/health 以外的 /api/* 都需要带 `Authorization: Bearer <token>`。
+servers:
+  - url: http://127.0.0.1:8787
+security:
+  - bearerAuth: []
+paths:
+  /api/health:
+    get:
+      summary: 健康检查（不需要鉴权）
+      security: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: { type: boolean }
+                  keyConfigured: { type: boolean, description: 服务端是否配置了 ZENMUX_API_KEY }
+                  authRequired: { type: boolean }
+  /api/agents:
+    get:
+      summary: 列出 5 个岗位智能体
+      responses:
+        "200":
+          description: 岗位列表
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  account: { type: string, example: "当前账号" }
+                  pipeline:
+                    type: array
+                    items: { type: string }
+                    example: [researcher, editor, community, data, chief]
+                  finalAgent: { type: string, example: chief }
+                  agents:
+                    type: array
+                    items: { $ref: "#/components/schemas/AgentInfo" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+  /api/ask:
+    post:
+      summary: 向一个岗位或全员提问
+      description: |
+        - `agent` 为岗位 id：只问这一个岗位，`final` 就是它的输出。
+        - `agent` 为 `all`：按 pipeline 顺序接力（researcher → editor → community → data → chief），
+          每一棒都能看到前面的产出，最后由 chief（负责人·主编）整合，结果放在 `final`。
+        - `stream: true`：返回 NDJSON（application/x-ndjson），每行一个事件：
+          `{"event":"start",...}`、`{"event":"agent",...AgentOutput}`，最后一行是 `{"event":"done",...AskResponse}`。
+        单个岗位失败时 `ok=false` 并带 `error`，全员流程会继续往下跑。
+        v1.3：默认开启 AI 审查（`review: true`）。每条输出先过代码检查 + 另一个模型的 AI 检查，不通过就让同一岗位重写并复查（最多 2 次）。
+        `output` 是最终文本，`review` 字段里有原稿、检查项、修正稿。流式时多出 `review_start` / `review` / `fix` 事件。
+        `demo: true`（或 `"fail"`）开启 DEMO 出错模式：初稿故意写坏，用于演示抓错与修复。同样适用于 /api/strategy、followup、/api/debate。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/AskRequest" }
+            example: { agent: all, question: "帮我写一条介绍 GPT-6.1 Terra 降价的中文帖", lang: zh }
+      responses:
+        "200":
+          description: 结果（stream=false 时）
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/AskResponse" }
+            application/x-ndjson:
+              schema: { type: string, description: 见上面的 stream 说明 }
+        "400":
+          description: 参数错误（缺 question、未知 agent、lang 不合法、问题超过 8000 字）
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "500":
+          description: 服务端没有配置 ZENMUX_API_KEY
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+  /api/strategy:
+    post:
+      summary: 新建一份 X 运营策略（v1）
+      description: |
+        researcher / editor / community / data 4 个岗位并行给建议，然后 chief（Claude）整合成完整策略，
+        固定章节：0 结论摘要、1 定位、2 内容支柱、3 每周日历、4 形式与模板、5 社区互动、6 指标与 KPI、7 风险与合规、8 未来 7 天行动、9 待核实清单。
+        只出草稿；未提供的数字写【待核实】或"基线待采集"。耗时约 2–4 分钟，建议用 `stream: true`
+        （NDJSON：start / agent 事件，最后一行 `{"event":"done", ...CreateResponse}`）。`POST /api/strategies` 是同一个接口的别名。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [question]
+              properties:
+                question: { type: string, maxLength: 8000 }
+                stream: { type: boolean, default: false }
+                review: { type: boolean, default: true, description: v1.3 AI 审查 }
+                demo: { oneOf: [ { type: boolean }, { type: string, enum: [fail] } ], default: false, description: v1.3 DEMO 出错模式 }
+            example: { question: "当前账号 刚起步，想在 30 天内把 AI 科普账号做起来，每天 1 小时，帮我出一份 X 运营策略" }
+      responses:
+        "200":
+          description: 已保存为 v1
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/StrategyResult" }
+        "400": { description: 缺 question 或超过 8000 字, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "502": { description: 主编整合失败（未保存），outputs 里有各岗位结果, content: { application/json: { schema: { $ref: "#/components/schemas/StrategyResult" } } } }
+  /api/strategies:
+    get:
+      summary: 列出所有策略（按最近更新排序）
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  strategies: { type: array, items: { $ref: "#/components/schemas/StrategySummary" } }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+  /api/strategies/{id}:
+    get:
+      summary: 读取一份策略（全部版本、每日日志）
+      parameters: [ { $ref: "#/components/parameters/StrategyId" } ]
+      responses:
+        "200": { description: OK, content: { application/json: { schema: { $ref: "#/components/schemas/Strategy" } } } }
+        "404": { description: 不存在, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+  /api/strategies/{id}/followup:
+    post:
+      summary: 每日跟进：写下今天的进展 / 数据 / 想改的地方，主编修订成新版本
+      description: |
+        chief 基于最新版本 + 以往日志 + 今天的 note 输出修订后的完整策略和变更说明；可选 `roles` 让相关岗位先给调整建议（并行）。
+        新版本 source=followup，带 note、changelog、basedOn；同时在 dailyLog 里加一条。支持 `stream: true`。
+      parameters: [ { $ref: "#/components/parameters/StrategyId" } ]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [note]
+              properties:
+                note: { type: string, maxLength: 8000 }
+                roles: { type: array, items: { type: string, enum: [researcher, editor, community, data] }, default: [] }
+                stream: { type: boolean, default: false }
+                review: { type: boolean, default: true, description: v1.3 AI 审查 }
+                demo: { oneOf: [ { type: boolean }, { type: string, enum: [fail] } ], default: false, description: v1.3 DEMO 出错模式 }
+            example: { note: "今天发了 2 条，第一条浏览 320、赞 6；想少做图，多做短线程", roles: [data] }
+      responses:
+        "200": { description: 已保存新版本, content: { application/json: { schema: { $ref: "#/components/schemas/StrategyResult" } } } }
+        "400": { description: 缺 note / roles 不合法, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+        "404": { description: 策略不存在, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+        "502": { description: 主编修订失败（未保存）, content: { application/json: { schema: { $ref: "#/components/schemas/StrategyResult" } } } }
+  /api/strategies/{id}/edit:
+    post:
+      summary: 手动编辑：把编辑后的 Markdown 存成新版本（不调用模型）
+      parameters: [ { $ref: "#/components/parameters/StrategyId" } ]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [markdown]
+              properties:
+                markdown: { type: string }
+                changelog: { type: string, description: 这次改了什么（可选） }
+      responses:
+        "200":
+          description: 已保存
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: { type: boolean }
+                  strategy: { $ref: "#/components/schemas/Strategy" }
+        "404": { description: 策略不存在, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+  /api/strategies/{id}/versions/{n}:
+    get:
+      summary: 读取某个版本（JSON）；路径末尾加 `.md` 则下载该版本的 Markdown 文件
+      parameters:
+        - { $ref: "#/components/parameters/StrategyId" }
+        - { name: n, in: path, required: true, schema: { type: integer, minimum: 1 } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json: { schema: { $ref: "#/components/schemas/StrategyVersion" } }
+            text/markdown: { schema: { type: string } }
+        "404": { description: 不存在, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+  /api/debate:
+    post:
+      summary: 发起一场 5 岗位辩论（立论 → 反驳 → 主编提案 → 投票 → 主编裁决），别名 POST /api/debates
+      description: |
+        `stream: true` 时返回 NDJSON，每行一个事件：debate（开始，含 id / file / speakers）、phase（阶段分隔）、
+        start（某人开始发言）、turn（一条发言）、proposal、vote、tally、verdict，最后一行 `{"event":"done", ok, debate, ms}`。
+        辩论边跑边保存到 data/debates/，客户端断开也会继续跑完。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/DebateRequest" }
+      responses:
+        "200":
+          description: 完成（非流式）或 NDJSON 流
+          content:
+            application/json: { schema: { $ref: "#/components/schemas/DebateResult" } }
+            application/x-ndjson: { schema: { type: string } }
+        "400": { description: 参数错误, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+        "502": { description: 主编提案或裁决失败（已保存为 status=failed）, content: { application/json: { schema: { $ref: "#/components/schemas/DebateResult" } } } }
+  /api/debates:
+    get:
+      summary: 辩论记录列表（新的在前）
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  debates: { type: array, items: { $ref: "#/components/schemas/DebateSummary" } }
+  /api/debates/{id}:
+    get:
+      summary: 一场辩论的完整记录；路径末尾加 `.md` 则返回 Markdown 文件
+      parameters:
+        - { $ref: "#/components/parameters/DebateId" }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json: { schema: { $ref: "#/components/schemas/Debate" } }
+            text/markdown: { schema: { type: string } }
+        "404": { description: 不存在, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+  /api/debates/{id}/apply:
+    post:
+      summary: 把裁决写进策略：带 strategyId 则由主编修订该策略并存为新版本（source=debate）；不带则用裁决新建一份策略
+      parameters:
+        - { $ref: "#/components/parameters/DebateId" }
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                strategyId: { type: string, description: 留空表示新建策略 }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: { type: boolean }
+                  version: { type: integer }
+                  strategy: { $ref: "#/components/schemas/Strategy" }
+                  debate: { $ref: "#/components/schemas/DebateSummary" }
+                  ms: { type: integer }
+        "404": { description: 辩论或策略不存在, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+        "409": { description: 辩论还没有裁决, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+        "502": { description: 主编调用失败，未保存, content: { application/json: { schema: { $ref: "#/components/schemas/Error" } } } }
+components:
+  parameters:
+    DebateId: { name: id, in: path, required: true, schema: { type: string, pattern: "^[0-9A-Za-z_-]{1,64}$" }, example: 20261102-143345 }
+    StrategyId: { name: id, in: path, required: true, schema: { type: string, pattern: "^[0-9A-Za-z_-]{1,64}$" }, example: 20261102-141259 }
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }
+  responses:
+    Unauthorized:
+      description: 缺少 token 或 token 错误
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+  schemas:
+    AgentInfo:
+      type: object
+      properties:
+        id: { type: string, enum: [researcher, editor, community, data, chief] }
+        name: { type: string, example: DeepSeek }
+        nameEn: { type: string, example: DeepSeek }
+        role: { type: string, example: 选题研究员 }
+        model: { type: string, example: deepseek/deepseek-v3.2 }
+        order: { type: integer }
+    AskRequest:
+      type: object
+      required: [question]
+      properties:
+        agent:
+          type: string
+          default: all
+          enum: [all, researcher, editor, community, data, chief]
+        question: { type: string, maxLength: 8000 }
+        lang: { type: string, enum: [zh, en, auto], description: 不传或 auto 时跟随问题语言 }
+        stream: { type: boolean, default: false }
+        review: { type: boolean, default: true, description: "v1.3 AI 审查（Make It Fail）。false = 关闭审查，行为同 v1.2" }
+        demo: { oneOf: [ { type: boolean }, { type: string, enum: [fail] } ], default: false, description: "v1.3 DEMO 出错模式：每个角色先故意写一版有问题的初稿，再由审查抓错修复；需 review=true" }
+    AgentOutput:
+      type: object
+      properties:
+        agent: { type: string }
+        name: { type: string }
+        nameEn: { type: string }
+        model: { type: string }
+        ok: { type: boolean }
+        output: { type: string, description: Markdown 文本 }
+        error: { type: string, description: 只在 ok=false 时出现 }
+        finishReason: { type: string }
+        usage: { type: object, additionalProperties: true }
+        ms: { type: integer, description: 耗时（毫秒） }
+        review: { $ref: "#/components/schemas/Review" }
+    AskResponse:
+      type: object
+      properties:
+        mode: { type: string, enum: [single, all] }
+        question: { type: string }
+        ok: { type: boolean, description: 所有岗位都成功时为 true }
+        finalAgent: { type: string }
+        final: { type: string, description: 最终交付（全员模式下是主编的整合稿） }
+        outputs:
+          type: array
+          items: { $ref: "#/components/schemas/AgentOutput" }
+        review: { $ref: "#/components/schemas/ReviewSummary" }
+    Check:
+      type: object
+      properties:
+        id: { type: string, enum: [turn_length, vote_format, post_length, no_action_claims, no_trained_claim, language, fabrication, false_verified, responds, in_role, account_scope, no_auto_interaction] }
+        name: { type: string, description: 中文检查项名称 }
+        by: { type: string, enum: [code, ai] }
+        pass: { type: boolean }
+        reason: { type: string }
+        skipped: { type: boolean, description: 不适用或审查模型不可用时为 true（不阻塞） }
+    Review:
+      type: object
+      description: "v1.3：单条输出的审查记录。output/text 字段始终是最终文本（修正后）。"
+      properties:
+        enabled: { type: boolean }
+        demo: { type: boolean }
+        demoNote: { type: string, description: DEMO 出错模式下的说明 }
+        kind: { type: string, enum: [turn, vote, contrib, strategy, ask] }
+        passed: { type: boolean, description: 最终文本是否通过 }
+        originalPassed: { type: boolean, description: 原稿是否一次通过 }
+        attempts: { type: integer, description: 重写次数（0–2） }
+        fixedCount: { type: integer, description: 修正的问题数 }
+        fixed: { type: array, items: { type: string } }
+        reviewer: { type: string, description: 审查模型（默认 Claude；Claude 发言时用 Gemini；JSON 无效时 DeepSeek 重试） }
+        original: { type: string }
+        originalChecks: { type: array, items: { $ref: "#/components/schemas/Check" } }
+        final: { type: string }
+        finalChecks: { type: array, items: { $ref: "#/components/schemas/Check" } }
+        steps: { type: array, items: { type: object, additionalProperties: true } }
+        generateMs: { type: integer }
+        ms: { type: integer }
+    ReviewSummary:
+      type: object
+      properties:
+        enabled: { type: boolean }
+        demo: { type: boolean }
+        reviewed: { type: integer }
+        passedFirstTime: { type: integer }
+        fixed: { type: integer }
+        stillFailing: { type: integer }
+        issuesFixed: { type: integer }
+    StrategySummary:
+      type: object
+      properties:
+        id: { type: string }
+        title: { type: string }
+        question: { type: string }
+        createdAt: { type: string, format: date-time, description: 带 +08:00 时区 }
+        updatedAt: { type: string, format: date-time }
+        latestVersion: { type: integer }
+        versions: { type: integer }
+        followups: { type: integer }
+        file: { type: string, description: 最新版本 Markdown 的相对路径 }
+    StrategyVersion:
+      type: object
+      properties:
+        v: { type: integer }
+        createdAt: { type: string, format: date-time }
+        source: { type: string, enum: [create, followup, manual, debate] }
+        debateId: { type: string, description: source=debate 时对应的辩论 ID }
+        by: { type: string, description: chief 或 owner }
+        markdown: { type: string, description: 策略正文 }
+        note: { type: string, description: 当天跟进记录（followup） }
+        changelog: { type: string }
+        basedOn: { type: integer }
+        truncated: { type: boolean, description: 主编输出达到长度上限 }
+        file: { type: string, example: <账号>_策略_2026-11-02_v1.md }
+        contributions: { type: array, items: { $ref: "#/components/schemas/AgentOutput" } }
+        review: { $ref: "#/components/schemas/ReviewSummary" }
+        demo: { type: boolean }
+    Strategy:
+      type: object
+      properties:
+        id: { type: string }
+        account: { type: string }
+        title: { type: string }
+        question: { type: string }
+        createdAt: { type: string, format: date-time }
+        versions: { type: array, items: { $ref: "#/components/schemas/StrategyVersion" } }
+        dailyLog:
+          type: array
+          items:
+            type: object
+            properties:
+              at: { type: string, format: date-time }
+              date: { type: string }
+              note: { type: string }
+              version: { type: integer }
+    StrategyResult:
+      type: object
+      properties:
+        ok: { type: boolean, description: 所有参与的岗位都成功时为 true }
+        error: { type: string }
+        strategy: { $ref: "#/components/schemas/Strategy" }
+        outputs: { type: array, items: { $ref: "#/components/schemas/AgentOutput" } }
+        review: { $ref: "#/components/schemas/ReviewSummary" }
+    DebateRequest:
+      type: object
+      required: [topic]
+      properties:
+        topic: { type: string, maxLength: 4000, example: "当前账号 起步期应该日更 3 条短帖，还是每周 2 条深度线程？" }
+        rounds: { type: integer, minimum: 1, maximum: 3, default: 2, description: "1 = 只立论；2 = 立论 + 反驳；3 = 再反驳一次" }
+        stream: { type: boolean, default: false }
+        review: { type: boolean, default: true, description: "v1.3 AI 审查（Make It Fail）。false = 关闭审查，行为同 v1.2" }
+        demo: { oneOf: [ { type: boolean }, { type: string, enum: [fail] } ], default: false, description: "v1.3 DEMO 出错模式：每个角色先故意写一版有问题的初稿，再由审查抓错修复；需 review=true" }
+    DebateTurn:
+      type: object
+      properties:
+        round: { type: integer }
+        agent: { type: string }
+        name: { type: string }
+        role: { type: string }
+        model: { type: string }
+        ok: { type: boolean }
+        text: { type: string }
+        error: { type: string }
+        ms: { type: integer }
+        review: { $ref: "#/components/schemas/Review" }
+    DebateVote:
+      type: object
+      properties:
+        agent: { type: string }
+        name: { type: string }
+        model: { type: string }
+        ok: { type: boolean }
+        vote: { type: string, enum: [支持, 反对, 有条件支持, 弃权] }
+        reason: { type: string }
+        raw: { type: string }
+        ms: { type: integer }
+        review: { $ref: "#/components/schemas/Review" }
+    Tally:
+      type: object
+      properties:
+        支持: { type: integer }
+        有条件支持: { type: integer }
+        反对: { type: integer }
+        弃权: { type: integer }
+    DebateSummary:
+      type: object
+      properties:
+        id: { type: string }
+        topic: { type: string }
+        title: { type: string }
+        createdAt: { type: string, format: date-time }
+        status: { type: string, enum: [running, done, failed] }
+        rounds: { type: integer }
+        tally: { $ref: "#/components/schemas/Tally" }
+        decision: { type: string, nullable: true, description: 通过 / 修改后通过 / 否决 }
+        applied: { type: array, items: { type: object, properties: { at: { type: string }, strategyId: { type: string }, version: { type: integer } } } }
+        file: { type: string, example: data/debates/<账号>_辩论_2026-11-02_1.md }
+        review: { $ref: "#/components/schemas/ReviewSummary" }
+    Debate:
+      allOf:
+        - { $ref: "#/components/schemas/DebateSummary" }
+        - type: object
+          properties:
+            file: { type: string, example: <账号>_辩论_2026-11-02_1.md }
+            turns: { type: array, items: { $ref: "#/components/schemas/DebateTurn" } }
+            proposal: { $ref: "#/components/schemas/DebateTurn" }
+            votes: { type: array, items: { $ref: "#/components/schemas/DebateVote" } }
+            verdict:
+              allOf:
+                - { $ref: "#/components/schemas/DebateTurn" }
+                - { type: object, properties: { truncated: { type: boolean } } }
+            ms: { type: integer }
+            finishedAt: { type: string, format: date-time }
+    DebateResult:
+      type: object
+      properties:
+        ok: { type: boolean }
+        error: { type: string }
+        debate: { $ref: "#/components/schemas/Debate" }
+        ms: { type: integer }
+        review: { $ref: "#/components/schemas/ReviewSummary" }
+    Error:
+      type: object
+      properties:
+        error: { type: string }
+        valid: { type: array, items: { type: string } }
