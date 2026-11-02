@@ -1,0 +1,3372 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "fxtwitter-public (keyless)",
+ "fetched_at": "2026-11-02T18:35:56+08:00",
+ "user": {
+  "id": "1669276256",
+  "username": "op7418",
+  "name": "歸藏(guizang.ai)",
+  "description": "关注人工智能、LLM 、 AI 图像视频和设计（Interested in AI, LLM, Stable Diffusion, and design）\n\n歸藏的 AIGC 周刊｜公众号：歸藏的AI工具箱",
+  "created_at": "Wed Aug 14 02:18:36 +0000 2013",
+  "location": "",
+  "url": "https://www.guizang.ai/",
+  "verified": true,
+  "profile_image_url": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+  "followers": 185425,
+  "following": 1311,
+  "tweets": 26384,
+  "listed": 0
+ },
+ "posts": [
+  {
+   "id": "2117092326690726075",
+   "text": "马斯克也顶不住，没办法持续补贴 Grok Bot 了。\n\n前几天说用 Opus 5.5 驱动 Grok Bot，刚开始的几天确实很多任务都用的 Opus 5.5。\n\n但最近大家发现，路由到 Opus 5.5 的几率越来越低了。\n\n同时昨天，很多人发现 Grok Bot 的使用额度一瞬间跳了 20%、30% 甚至 40%，原来是用不完的，现在一夜之间就没有额度了。\n\n马斯克说，Grok Bot 的成本相对于他们的收入来说太高了，是不可持续的。\n\n所以目前来看，Personal Agent 这条路具体的收益到底怎么样，其实很难算。我相信 Meta，但 Muse 免费肯定也不是很好受。",
+   "created_at": "2026-11-02T03:11:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2117092326690726075",
+   "metrics": {
+    "likes": 105,
+    "reposts": 6,
+    "replies": 132,
+    "quotes": 14,
+    "bookmarks": 15,
+    "views": 37196
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HWFr3Yua0AArgYy.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2117067687943909881",
+   "text": "Karpathy 的新项目：\n\n他实在是受不了 YouTube 的推荐了，自己做了一个新的视频网站，内容来自于 Hacker News 20 年中反复被推荐的视频。\n\n然后他日常用的居然是 Opus 5.5 的中等推理强度。",
+   "created_at": "2026-11-02T01:34:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2117067687943909881",
+   "metrics": {
+    "likes": 98,
+    "reposts": 8,
+    "replies": 57,
+    "quotes": 2,
+    "bookmarks": 99,
+    "views": 23543
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116888871057473746",
+   "text": "麻了，微信输入法这个语音输入现在比 Typeless 好多了呀！\n\nTypeless 最近越来越弱智了。",
+   "created_at": "2026-11-01T13:43:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116888871057473746",
+   "metrics": {
+    "likes": 164,
+    "reposts": 2,
+    "replies": 153,
+    "quotes": 12,
+    "bookmarks": 28,
+    "views": 59372
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116711094622593292",
+   "text": "Twitter 设计师的一个 skill 可以帮你制作更好的 UI 元素。\n\n比如在动效、交互体验的结果以及排版上都能有一些优化。\n\n如果有页面设计的需求，可以试试它。",
+   "created_at": "2026-11-01T01:57:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116711094622593292",
+   "metrics": {
+    "likes": 240,
+    "reposts": 24,
+    "replies": 83,
+    "quotes": 5,
+    "bookmarks": 255,
+    "views": 33119
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116546563053178884",
+   "text": "最近越来越喜欢刷 threads 了。\n\n一个是那边没有 AI 评论 和一眼是 AI 生成的内容。\n\n第二个是各种体验和交互设计得太好了 刷得很舒服。",
+   "created_at": "2026-10-31T15:03:18.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116546563053178884",
+   "metrics": {
+    "likes": 211,
+    "reposts": 4,
+    "replies": 97,
+    "quotes": 11,
+    "bookmarks": 69,
+    "views": 68090
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116442573296513082",
+   "text": "Grok bot 居然支持支付宝和银联卡支付了，还是老马呀，管你这那的。",
+   "created_at": "2026-10-31T08:10:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116442573296513082",
+   "metrics": {
+    "likes": 244,
+    "reposts": 6,
+    "replies": 99,
+    "quotes": 17,
+    "bookmarks": 28,
+    "views": 59953
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116398126546526443",
+   "text": "这次随之发布的，还有大家以前一直想要的网页排版 skill（guizang-pages-skill），也内置在插件里了。\n\n它会帮你把图文、视频排成一个非常精美的网页，所有的字体、字号、间距和细节都是为了阅读而设计的，尤其针对中文排版做了很多优化。\n\n右下角可以自定义样式，也做了移动端优化。\n\n同时它还可以帮你导出 PDF，非常适合将自己写的内容和 AI 的内容分享给朋友们",
+   "created_at": "2026-10-31T05:13:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116398126546526443",
+   "metrics": {
+    "likes": 93,
+    "reposts": 13,
+    "replies": 37,
+    "quotes": 4,
+    "bookmarks": 100,
+    "views": 14340
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV70bWrbAAAPwBQ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116357353566302376",
+   "text": "这次给 Deepseek Harness 做的这个新插件 dsh-guizang-design，旧的 PPT Skill 也进行了很多优化。\n\n如果你已经安装过其中的几个 Skill 的话，建议更新一下\n\n这个插件内置的几个 Skill，比如 PPT Skill、社交媒体卡片 Skill 都获得了更新。\n\n比如 PPT Skill 那个杂志风格的 WebGL 背景加回来了，而且大幅优化了性能，不会再因为这个东西变得卡顿发热了",
+   "created_at": "2026-10-31T02:31:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116357353566302376",
+   "metrics": {
+    "likes": 160,
+    "reposts": 17,
+    "replies": 29,
+    "quotes": 3,
+    "bookmarks": 151,
+    "views": 24129
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV7Peg7bwAAyleT.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116351174253359293",
+   "text": "Claude 200 美元的订阅计划移除了 5 小时的限制\n\n200 美元的计划现在叫 Ultra 会员\n\n不过跟我们关系不大。移除 5 小时的限制，也需要他们自动进行验证，通过了才会移除。估计是为了防止蒸馏之类的东西",
+   "created_at": "2026-10-31T02:06:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116351174253359293",
+   "metrics": {
+    "likes": 32,
+    "reposts": 0,
+    "replies": 44,
+    "quotes": 2,
+    "bookmarks": 3,
+    "views": 14255
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116348058254647552",
+   "text": "苹果 AI 功能终于要在国内上线了！\n\n不过 Siri 这部分应该是之前的版本，不是最新的，是 24 年那个版本。\n\n里面也写了是千问驱动。\n\n然后会在 iOS 27.3 更新，应该是 12 月。\n\n最主要的不是 Siri，Siri 倒无所谓，是一些比如说关于实时翻译呀之类的其他设备的 AI 功能挺有用的。",
+   "created_at": "2026-10-31T01:54:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116348058254647552",
+   "metrics": {
+    "likes": 22,
+    "reposts": 0,
+    "replies": 37,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 12116
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV7HVmKbgAE4bTW.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116203707318841379",
+   "text": "终于把自己的几个设计 Skill 合并了！\n\n做成了一个 DSH 的插件 dsh-guizang-design\n\n共用一套设计系统和 Design Token，还加了几个有用的功能",
+   "created_at": "2026-10-30T16:20:55.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116203707318841379",
+   "metrics": {
+    "likes": 636,
+    "reposts": 65,
+    "replies": 71,
+    "quotes": 11,
+    "bookmarks": 767,
+    "views": 98178
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV5EDJ6awAAnT26.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116119701487337890",
+   "text": "夸克网盘有 Skill了，这个牛逼啊！\n\n这下所有的 AI 直接能读你夸克网盘里所有的内容了：\n\n你的图片、你的视频，还有你以前的一些信息。\n\n而且会员的话还支持智能搜索和相册整理。\n\n你对话生成的文件还可以让它直接上传网盘，它也能帮你自动去备份一些重要的资料什么的，就是 Agent 都可以做了。",
+   "created_at": "2026-10-30T10:47:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116119701487337890",
+   "metrics": {
+    "likes": 134,
+    "reposts": 10,
+    "replies": 73,
+    "quotes": 7,
+    "bookmarks": 170,
+    "views": 24561
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV33pGJawAA_l6m.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116010660735881602",
+   "text": "Claude 已经能在 CarPlay 上使用了\n\n而且 CarPlay 上可以直接用语音跟 Claude 交流，这个很方便呀。\n\n什么时候 Codex 支持一下？",
+   "created_at": "2026-10-30T03:33:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116010660735881602",
+   "metrics": {
+    "likes": 42,
+    "reposts": 2,
+    "replies": 65,
+    "quotes": 6,
+    "bookmarks": 5,
+    "views": 15306
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116005477805154537",
+   "text": "Grok  bot 也适配了 iPhone duo 了",
+   "created_at": "2026-10-30T03:13:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2116005477805154537",
+   "metrics": {
+    "likes": 12,
+    "reposts": 1,
+    "replies": 14,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 9008
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV2Pw0FacAABl4b.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115977382092046406",
+   "text": "现在这个安全形势真是严峻啊，币安都被黑了，总共损失超过了 56 亿美元",
+   "created_at": "2026-10-30T01:21:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115977382092046406",
+   "metrics": {
+    "likes": 13,
+    "reposts": 2,
+    "replies": 6,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 10779
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115976609148834301",
+   "text": "我去！\n\nOpenAI 把 Pro 会员的所有使用限额翻倍了！\n\n也就是说他们把之前去掉的那个额度加回来了，这下可以开极高推理爽用了",
+   "created_at": "2026-10-30T01:18:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115976609148834301",
+   "metrics": {
+    "likes": 36,
+    "reposts": 0,
+    "replies": 53,
+    "quotes": 5,
+    "bookmarks": 2,
+    "views": 20570
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115646335458349480",
+   "text": "又有鸡蛋领了！\n\nOpenAI 也学 Claude，开始给每个档级的会员送 API 额度了。\n\n也是跟你的订阅费一样，比如说 $200 的 Pro 就送你 $200 的 API 额度。\n\n但我发现我这个设置页面怎么没有领取的按钮啊，卧槽？看了一下评论区，有这种问题的人还不在少数\n\n领取的位置是在你网页的 ChatGPT 设置-账单页面",
+   "created_at": "2026-10-29T03:26:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115646335458349480",
+   "metrics": {
+    "likes": 65,
+    "reposts": 4,
+    "replies": 92,
+    "quotes": 10,
+    "bookmarks": 55,
+    "views": 44453
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVxI95zawAAWGDG.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115637160208691485",
+   "text": "Claude 和视频模型结合可能性太大了！\n\n一下午就做出来很火的“性转马尔福”的桌面软件。\n\n里面有好感度系统，会随着好感度的增长解锁新的剧情动画和着装。\n\n平时它就住在你的桌面里，预置了很多动作和交互，而且每一个都是 4K 素材。\n\n文章有详细的制作教程。代码已经开源，可以替换你的素材。",
+   "created_at": "2026-10-29T02:49:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115637160208691485",
+   "metrics": {
+    "likes": 82,
+    "reposts": 9,
+    "replies": 29,
+    "quotes": 2,
+    "bookmarks": 87,
+    "views": 17626
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2115636944042676224/img/_EdUoBsN1f59hk9v.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115636944042676224/img/_EdUoBsN1f59hk9v.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115635880363016637",
+   "text": "https://x.com/i/article/2115633309565026304",
+   "created_at": "2026-10-29T02:44:35.000Z",
+   "lang": null,
+   "url": "https://x.com/op7418/status/2115635880363016637",
+   "metrics": {
+    "likes": 85,
+    "reposts": 8,
+    "replies": 23,
+    "quotes": 5,
+    "bookmarks": 141,
+    "views": 38372
+   },
+   "media": [],
+   "urls": [
+    "https://x.com/i/article/2115633309565026304"
+   ]
+  },
+  {
+   "id": "2115632483501052029",
+   "text": "影之刃零上了，估计不少朋友已经在游戏里了吧。",
+   "created_at": "2026-10-29T02:31:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115632483501052029",
+   "metrics": {
+    "likes": 41,
+    "reposts": 0,
+    "replies": 16,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 17691
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVw8hIsbQAADINI.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115622357146730681",
+   "text": "Pond 又一个 Linux 发行版，但是这个非常漂亮，改天装一下试试，颜值太高了",
+   "created_at": "2026-10-29T01:50:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115622357146730681",
+   "metrics": {
+    "likes": 25,
+    "reposts": 0,
+    "replies": 4,
+    "quotes": 0,
+    "bookmarks": 14,
+    "views": 10258
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2115146971606614016/img/g0BWKXiQhylecxUE.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115146971606614016/img/g0BWKXiQhylecxUE.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115622019429781887",
+   "text": "Suno 终于有 MCP 了！\n\n这样你再让 Claude 创建视频，需要音乐的时候，就可以直接调用 Suno 去创建，不需要你自己创建再发给它了",
+   "created_at": "2026-10-29T01:49:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115622019429781887",
+   "metrics": {
+    "likes": 174,
+    "reposts": 19,
+    "replies": 66,
+    "quotes": 4,
+    "bookmarks": 163,
+    "views": 24580
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115517927730606478",
+   "text": "我去，谷歌是咋了？这分数对吗？\n\n他们又发布了一个 Gemini 4 模型，叫Gemini 4 Carbon。\n\n在所有的测评上几乎都超过了 Fable 5.1 和 Opus 5.5\n\nTerminal bench 4.0 比其他几个模型高了非常多。",
+   "created_at": "2026-10-28T18:55:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115517927730606478",
+   "metrics": {
+    "likes": 39,
+    "reposts": 1,
+    "replies": 47,
+    "quotes": 4,
+    "bookmarks": 11,
+    "views": 23946
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115402119952085409",
+   "text": "随着好感度的提升，Malfoy 也会给你一些奖励",
+   "created_at": "2026-10-28T11:15:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115402119952085409",
+   "metrics": {
+    "likes": 22,
+    "reposts": 0,
+    "replies": 5,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 10845
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVtq6BeasAAldle.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115384469033230801",
+   "text": "还有剧情动画会随着你的使用时长和好感度解锁，到时候他对你的态度、场景和服装之类的也会发生变化",
+   "created_at": "2026-10-28T10:05:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115384469033230801",
+   "metrics": {
+    "likes": 6,
+    "reposts": 0,
+    "replies": 8,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 6851
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115380683749429279",
+   "text": "我去，好像不小心整了个大活！\n\n谁不想在桌面上天天看到穿不同衣服的性转马尔福呢？",
+   "created_at": "2026-10-28T09:50:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115380683749429279",
+   "metrics": {
+    "likes": 48,
+    "reposts": 2,
+    "replies": 31,
+    "quotes": 5,
+    "bookmarks": 25,
+    "views": 35219
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVtXS4Va0AAlddw.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115357210457100743",
+   "text": "最近这个 AI 破解和移植风潮已经离谱得很了\n\n刚才刷到小米 15 已经能用上 iOS 16 系统了，这他妈以前哪敢想\n\n我刚好还有个小米 15，一会儿试试去",
+   "created_at": "2026-10-28T08:17:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115357210457100743",
+   "metrics": {
+    "likes": 322,
+    "reposts": 5,
+    "replies": 106,
+    "quotes": 10,
+    "bookmarks": 101,
+    "views": 163983
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115307286784876767",
+   "text": "蓝色大肥鱼金属键帽都出来了\n\n感觉 DeepSeek 这个形象和 DSH 相辅相成，两个都越来越火。\n\n你只要刷到一个蓝色大肥鱼，你的信息流里就全是蓝色大肥鱼了",
+   "created_at": "2026-10-28T04:58:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115307286784876767",
+   "metrics": {
+    "likes": 23,
+    "reposts": 1,
+    "replies": 26,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 8271
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVsUwr7bwAAdLNl.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115281467236585804",
+   "text": "Anthropic 工程负责人暴论：传统的编码面试已经死了\n\n他们不在面试过程中让面试人写代码了，比如做算法题和用代码实现小功能。\n\n借助 AI ，初级工程师是非常有希望快速超过那些资历更老的工程师的，他给了一些建议：\n\n1. 追求商业影响力，而不是只埋头看需求列表。公司雇你是为了让你创造商业价值，而不是仅仅为了编程\n\n2. 一定要有一些大胆的想法，尤其是在 AI 能力突飞猛进的今天，这更重要\n\n3. 用一个周末把它做出来，快速完成\n\n4. 专注一个非常好的想法。不要想把多个想法塞到一个原型和一个产品里面，一个产品主要做一件事\n\n5. 善用你作为新人的新鲜视角和用户视角。因为你很年轻，对用户有共情能力，可以敏锐地感知到产品的问题",
+   "created_at": "2026-10-28T03:16:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115281467236585804",
+   "metrics": {
+    "likes": 134,
+    "reposts": 12,
+    "replies": 60,
+    "quotes": 6,
+    "bookmarks": 118,
+    "views": 24913
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVr9Rw1bUAAq0eT.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115128743408828720",
+   "text": "来了！世界模型领域最高的山！\n\n谷歌发布 Genie 4 世界模型。\n\n这次可以实时生成周围原声的音频，而且感觉画质和物理效果有了大幅提升，同时终于实装了在生成过程中通过提示词生成事件的能力。\n\n这演示效果太好了，希望 Ultra 会员早日能体验上，现在还不行。",
+   "created_at": "2026-10-27T17:09:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115128743408828720",
+   "metrics": {
+    "likes": 186,
+    "reposts": 11,
+    "replies": 44,
+    "quotes": 5,
+    "bookmarks": 70,
+    "views": 43270
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2115114850510897152/img/24FwWtGfWuUoSP9z.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115114850510897152/img/24FwWtGfWuUoSP9z.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115000078104691168",
+   "text": "装了几个热门的 DeepSeek Harness 插件，感觉这生态现在他妈的蓬勃发展\n\n主要是 DeepSeek 太便宜，能力又中不溜的很强。\n\n现在很多人就只用 DeepSeek Harness 了，尤其是爱折腾的年轻人，感觉跟以前刷机、搞搞 ROM 的是一类人",
+   "created_at": "2026-10-27T08:38:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2115000078104691168",
+   "metrics": {
+    "likes": 2346,
+    "reposts": 206,
+    "replies": 358,
+    "quotes": 44,
+    "bookmarks": 2134,
+    "views": 391288
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVn9KCbbEAA6d5r.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114928011569213603",
+   "text": "优化了一下我的个人 Memory 和多 Agent 的协作体系\n\n目前是 Codex、Muse 和 Grokbot 一起协作，每个有各自的职能，Claude 没敢让他加入",
+   "created_at": "2026-10-27T03:51:46.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114928011569213603",
+   "metrics": {
+    "likes": 118,
+    "reposts": 12,
+    "replies": 84,
+    "quotes": 6,
+    "bookmarks": 176,
+    "views": 30773
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVm7tAQaUAAWMur.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114733881312293241",
+   "text": "豆包也已经完成了对 iPhone Duo 的适配",
+   "created_at": "2026-10-26T15:00:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114733881312293241",
+   "metrics": {
+    "likes": 22,
+    "reposts": 0,
+    "replies": 10,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 11342
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVkLQC9asAA3qn4.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114716867327918392",
+   "text": "又到了我的 AIGC Weekly 很多朋友续费的时间。今年因为 Quaily 有点问题，所以先推荐大家从小报童买了\n\n我也弄了一些 75 折的优惠券，有续费需求的话可以领一下。\n\n快到期的或者没到期的都可以领，反正时间是叠加的嘛。\n\n小报童的返利我也依然开着，如果有推荐给朋友买的可以试试，还能挣点小钱：\n\nhttps://xiaobot.net/coupon/a43c3bfc-bcf1-4428-99e4-944453ec33e6",
+   "created_at": "2026-10-26T13:52:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114716867327918392",
+   "metrics": {
+    "likes": 17,
+    "reposts": 0,
+    "replies": 5,
+    "quotes": 1,
+    "bookmarks": 5,
+    "views": 16874
+   },
+   "media": [],
+   "urls": [
+    "https://xiaobot.net/coupon/a43c3bfc-bcf1-4428-99e4-944453ec33e6"
+   ]
+  },
+  {
+   "id": "2114716247531417771",
+   "text": "Anthropic 已经正式提交了纳斯达克上市的 S-1 文件，股票代码是 ANT，承销商是高盛和摩根士丹利。\n\n目前注册声明还没有被 SEC 宣布生效。在 SEC 审阅完成之后，需要修订 S-1 文件并进行路演，之后在 SEC 宣布生效和定价时才能交易。\n\n所以大概会在 11 月中下旬正式 IPO。",
+   "created_at": "2026-10-26T13:50:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114716247531417771",
+   "metrics": {
+    "likes": 14,
+    "reposts": 1,
+    "replies": 12,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 10542
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVj7Nh7aIAAfIin.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114712956571435277",
+   "text": "不是，这模型中间怎么有条黑线？\n\n这也能致敬苹果的铰链问题啊！",
+   "created_at": "2026-10-26T13:37:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114712956571435277",
+   "metrics": {
+    "likes": 8,
+    "reposts": 0,
+    "replies": 7,
+    "quotes": 0,
+    "bookmarks": 6,
+    "views": 16119
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114710451884089845",
+   "text": "即览 1.0.2 版本已经正式适配了 iPhone DUO！\n\n同时还新增了记住上次观看位置的能力。\n\n让 Codex 做了一个展示的动画，没想到做得还挺好。\n\n找了半天都没有类似的 iPhone DUO样机，只好自己做一个了",
+   "created_at": "2026-10-26T13:27:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114710451884089845",
+   "metrics": {
+    "likes": 22,
+    "reposts": 0,
+    "replies": 20,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 24617
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2114710186313289729/img/23sB4wTAcQ5WM4J0.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114710186313289729/img/23sB4wTAcQ5WM4J0.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114253200056631752",
+   "text": "即览即将完成 iPhone Duo 的适配！\n\n同时会新增记住上次阅读位置的能力",
+   "created_at": "2026-10-25T07:10:18.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114253200056631752",
+   "metrics": {
+    "likes": 14,
+    "reposts": 0,
+    "replies": 13,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 9525
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVdV_NNbcAAKN1c.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114229075514651001",
+   "text": "Notion 这个在 iPhone Duo 上的适配相当不错。\n\n我现在很多让 Grok bot 和 Muse 生成的内容 都会让它直接发到 Notion 里我去读。",
+   "created_at": "2026-10-25T05:34:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114229075514651001",
+   "metrics": {
+    "likes": 30,
+    "reposts": 1,
+    "replies": 34,
+    "quotes": 1,
+    "bookmarks": 12,
+    "views": 17076
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVdAIlda4AASYzP.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114216604741550466",
+   "text": "Grokbot 的这个问题反馈机制也非常好。\n\n你跟他聊天时，一旦发现了 bug，并告诉他这可能是有问题的，他就会问你要不要反馈给团队。\n\n接着，他会直接帮你把日志和问题描述都发给 Grokbot 团队。\n\n这避免了用户自己反馈时写不清楚问题，也避免了用户为了少写内容而不反馈的情况",
+   "created_at": "2026-10-25T04:44:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2114216604741550466",
+   "metrics": {
+    "likes": 45,
+    "reposts": 2,
+    "replies": 45,
+    "quotes": 3,
+    "bookmarks": 14,
+    "views": 13336
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVc0yuSaAAEWcl9.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113989933564330298",
+   "text": "昨天说完，今天 WorkBuddy 就适配了",
+   "created_at": "2026-10-24T13:44:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113989933564330298",
+   "metrics": {
+    "likes": 40,
+    "reposts": 0,
+    "replies": 26,
+    "quotes": 0,
+    "bookmarks": 13,
+    "views": 32083
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVZmlS8asAA47PE.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113874915430699223",
+   "text": "Thariq 官宣从 Anthropic 离职了",
+   "created_at": "2026-10-24T06:07:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113874915430699223",
+   "metrics": {
+    "likes": 36,
+    "reposts": 1,
+    "replies": 31,
+    "quotes": 2,
+    "bookmarks": 7,
+    "views": 29117
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVX-BxEaYAAerEf.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113815343173116124",
+   "text": "有人爆料说，Claude Code 的作者 Thariq，离职了。\n\n他是一直以来代表 Anthropic 跟大家沟通的人，他在 Anthropic 的地位类似于 Tibo。这是一个非常重要的信号",
+   "created_at": "2026-10-24T02:10:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113815343173116124",
+   "metrics": {
+    "likes": 284,
+    "reposts": 3,
+    "replies": 94,
+    "quotes": 11,
+    "bookmarks": 60,
+    "views": 127267
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113639194484670628",
+   "text": "录个视频，让大家看看 AI 应用在 iPhone Duo上的识别情况。",
+   "created_at": "2026-10-23T14:30:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113639194484670628",
+   "metrics": {
+    "likes": 72,
+    "reposts": 5,
+    "replies": 16,
+    "quotes": 5,
+    "bookmarks": 34,
+    "views": 78084
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2113638412372897793/img/_fBkG9r_n2F4J1Ul.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113638412372897793/img/_fBkG9r_n2F4J1Ul.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113559861581484129",
+   "text": "神奇， B 站也还行了",
+   "created_at": "2026-10-23T09:15:13.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113559861581484129",
+   "metrics": {
+    "likes": 20,
+    "reposts": 0,
+    "replies": 21,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 7351
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVTffTUakAAUYKl.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113454985237364948",
+   "text": "1 Password 的 Agent 连接器全量上线了\n\n可以直接授权像 muse 和 grokbot 这样的 Agent 登录对应的网页\n\n登录的时候，1 Password 会完成密码和账号的填写，所以 Agent 是不会看到密码的",
+   "created_at": "2026-10-23T02:18:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113454985237364948",
+   "metrics": {
+    "likes": 110,
+    "reposts": 11,
+    "replies": 62,
+    "quotes": 10,
+    "bookmarks": 84,
+    "views": 28009
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113454437662670869",
+   "text": "Grokbot 现在已经可以连接你的手机上的应用了，比如说日历、通讯录和位置。\n\n更重要的是，它可以连接你的苹果“家庭”，不知道能不能控制里面的设备，还是说只能读取信息\n\n手机打开设置，然后在连接应用里会有一个手机的选项",
+   "created_at": "2026-10-23T02:16:18.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113454437662670869",
+   "metrics": {
+    "likes": 36,
+    "reposts": 1,
+    "replies": 34,
+    "quotes": 0,
+    "bookmarks": 19,
+    "views": 14800
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVR_mzXa0AA7yCo.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113193055922921619",
+   "text": "影视飓风都出海了。不过凭影视飓风这个视频质量，确实是吊打一众海外做数码测评的。\n\n但我觉着他们现在的视频没啥意思，看完以后只记得那些花里胡哨的转场和一些非常漂亮的样片\n\n就是把测评做的不像测评了，反倒是昨天看何同学的感觉不错",
+   "created_at": "2026-10-22T08:57:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113193055922921619",
+   "metrics": {
+    "likes": 52,
+    "reposts": 0,
+    "replies": 42,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 33401
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113186912076980242",
+   "text": "Claude 里面还有一个存着的重置呢，没用的话大家可以用一下",
+   "created_at": "2026-10-22T08:33:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113186912076980242",
+   "metrics": {
+    "likes": 7,
+    "reposts": 0,
+    "replies": 14,
+    "quotes": 3,
+    "bookmarks": 2,
+    "views": 9177
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113134055680262324",
+   "text": "这哥们儿做的宝可梦版本《吸血鬼幸存者》游戏是真的火\n\n 叫 PokeBonk，我去，玩家非常多，各种自传播，国内也特别火。\n\n玩法就是你扮演其中一个宝可梦，在一个类似吸血鬼幸存者的地图里升级、自动打怪，宝可梦本身也能升级，打完 Boss 之后进下一个地图。\n\n整个游戏非常完整，而且特别上瘾，就不知道任天堂怎么看",
+   "created_at": "2026-10-22T05:03:13.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113134055680262324",
+   "metrics": {
+    "likes": 328,
+    "reposts": 36,
+    "replies": 44,
+    "quotes": 4,
+    "bookmarks": 266,
+    "views": 52457
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2113133807117430784/img/CdO8R6pTA-nag97W.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113133807117430784/img/CdO8R6pTA-nag97W.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113101644334551095",
+   "text": "笑死！整了个大活儿！\n\n我把 Codex 连接到我电视上了，直接就可以跟它聊天",
+   "created_at": "2026-10-22T02:54:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2113101644334551095",
+   "metrics": {
+    "likes": 129,
+    "reposts": 9,
+    "replies": 69,
+    "quotes": 4,
+    "bookmarks": 110,
+    "views": 28189
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2113101522792009729/img/sOzR4BiKQOf9gN6S.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113101522792009729/img/sOzR4BiKQOf9gN6S.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112934386475946308",
+   "text": "笑死！即刻这哥们说\n\n问题的严重程度分别是轻度、中度、重度和印度",
+   "created_at": "2026-10-21T15:49:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112934386475946308",
+   "metrics": {
+    "likes": 32,
+    "reposts": 0,
+    "replies": 3,
+    "quotes": 0,
+    "bookmarks": 8,
+    "views": 16360
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVKmkQvbEAAttgZ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112932713900744986",
+   "text": "全世界 70% 的网站都是 PHP 的，所以这个漏洞的影响真的很大",
+   "created_at": "2026-10-21T15:43:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112932713900744986",
+   "metrics": {
+    "likes": 9,
+    "reposts": 0,
+    "replies": 3,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 9120
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112931729547936037",
+   "text": "今天安全领域的整个时间线上都是两件大事，对所有的互联网用户和产品应该都有影响。\n\n第一个是有个印度证书颁发机构用了一个非常容易被猜到的数字当做私钥：\n\n强度极弱，基本上任何人都能猜出来。\n\n其中一个私钥就是个位数\"4\"，原本长达七十多位的密钥变成了单个数字 4；剩下的也是 56、66、115、155 这种数字。\n\n这相当于给保险柜设了个密码\"4\"，试不到十下就能试出来。\n\n更离谱的是，多次审计居然都没发现这几个私钥有问题。\n\n目前 Chrome 和 Firefox 已经在几个小时内把这些私钥拉黑了，官方也把这 8 个私钥全部吊销。\n\n真是很难想象这个机构草台班子到了什么程度。\n\n现在浏览器端是安全的，但非浏览器端可能需要排查一下，尤其是你自己的项目如果涉及类似证书，建议让 AI 帮忙查一下。\n\n第二个是严重 PHP 漏洞：\n\n这个漏洞极其严重，官方说唯一真正安全的做法是立刻升级，但很多老旧网页已经多年没有升级过了。\n更关键的是，有研究人员在 PHP 官方还没修复漏洞的情况下就直接公开了细节，导致所有人都能利用它发起攻击。\n\n该漏洞是 OpenAI 资助的 Patch the Plane 项目用 GPT-5.6 Sol 发现的，无需登录即可远程拿下服务器。\n\n漏洞覆盖面极大，比如大量依赖 PHP 的 WordPress 站点都会受到攻击。\n\n目前荷兰议会、荷兰国家安全中心、芬兰中央政府网站，以及日本著名的 Pixiv 应用都因此关闭了一段时间。\n\n感觉 AI 出来以后，攻防对抗变得异常剧烈，漏洞暴露和修复的频率都极快。\n\nOpenAI 还表示，他们已经发现了更多具有这种规模效应的漏洞。",
+   "created_at": "2026-10-21T15:39:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112931729547936037",
+   "metrics": {
+    "likes": 96,
+    "reposts": 7,
+    "replies": 16,
+    "quotes": 3,
+    "bookmarks": 69,
+    "views": 52052
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVKkM-WaQAAKD6S.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVKkM-VbQAETHgq.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112890839269888361",
+   "text": "看了一堆解禁的 iPhone Duo 测评\n\n他妈的，还得是龙哥呀，一点儿不适配",
+   "created_at": "2026-10-21T12:56:46.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112890839269888361",
+   "metrics": {
+    "likes": 121,
+    "reposts": 0,
+    "replies": 31,
+    "quotes": 4,
+    "bookmarks": 22,
+    "views": 173962
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112835248870592903",
+   "text": "最近让 AI 给电视去广告很火。\n\n昨天发了项目以后，很多朋友还是有一些问题，所以录了一个详细的教程",
+   "created_at": "2026-10-21T09:15:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112835248870592903",
+   "metrics": {
+    "likes": 312,
+    "reposts": 46,
+    "replies": 49,
+    "quotes": 8,
+    "bookmarks": 340,
+    "views": 70415
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2112835050668728320/img/kR6GYB_0caGdSyFk.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112835050668728320/img/kR6GYB_0caGdSyFk.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112574142562304491",
+   "text": "现在 AI 真是厉害，连电视界面都能改！\n\n我参考了比较流行的两个项目，给自己做了一个新的启动器\n\n现在这个启动器完美符合我的需求：\n\n只展示常用的应用，比如我的 PS5 和 Apple TV 的连接，还有我常看的哔哩哔哩以及投屏。\n\n同时我还改了 UI，增加了壁纸轮播和一些内置的非常好看的壁纸\n\n我基于这个比较流行的 CleanFrame 和 cleanyourtv 重新打了一个guizang TV 的包。\n\n如果你是小米电视，然后喜欢我这个新增的功能的话，可以试试",
+   "created_at": "2026-10-20T15:58:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112574142562304491",
+   "metrics": {
+    "likes": 260,
+    "reposts": 26,
+    "replies": 81,
+    "quotes": 19,
+    "bookmarks": 255,
+    "views": 82854
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVFedk6bwAAg8VQ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112477307550183920",
+   "text": "Deepseek 已经开源了自己的内部推理框架\n\n可以实现跟他们类似的高吞吐量和低延迟表现",
+   "created_at": "2026-10-20T09:33:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112477307550183920",
+   "metrics": {
+    "likes": 59,
+    "reposts": 0,
+    "replies": 20,
+    "quotes": 3,
+    "bookmarks": 12,
+    "views": 17761
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112374841039044992",
+   "text": "上小宇宙最热榜了",
+   "created_at": "2026-10-20T02:46:22.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112374841039044992",
+   "metrics": {
+    "likes": 24,
+    "reposts": 1,
+    "replies": 11,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 8628
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVCpuD_asAAAYt9.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112155703309926729",
+   "text": "抖音对于搬运的内容真是非常的纵容啊！\n\n尤其是搬运外网的，这哥们拿 Higgsfield 做的视频说是自己的，还编了一堆提示词出来",
+   "created_at": "2026-10-19T12:15:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112155703309926729",
+   "metrics": {
+    "likes": 47,
+    "reposts": 4,
+    "replies": 45,
+    "quotes": 4,
+    "bookmarks": 33,
+    "views": 23821
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU_iaG7bMAAXX1A.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112125082562929018",
+   "text": "思琦他们做的这个关于 Apple 开发者生态里 AI 方向的调研还挺有意思的。\n\n其实 Apple 整个开发生态跟外部还是不太一样，比较独立，所以在 AI 的采用率和想法上，可能未必跟我们有些不做 Apple 生态的人的体感接近。感兴趣可以看看",
+   "created_at": "2026-10-19T10:13:55.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112125082562929018",
+   "metrics": {
+    "likes": 14,
+    "reposts": 1,
+    "replies": 16,
+    "quotes": 0,
+    "bookmarks": 8,
+    "views": 8690
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU_GZxxbYAA4Tzo.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112114363624800300",
+   "text": "笑死 DHH 很懂了，来中国用 Tailscale 访问 Claude Code",
+   "created_at": "2026-10-19T09:31:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112114363624800300",
+   "metrics": {
+    "likes": 328,
+    "reposts": 14,
+    "replies": 77,
+    "quotes": 5,
+    "bookmarks": 139,
+    "views": 85308
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112022611228230108",
+   "text": "我们在这一期《Next Token》播客里的一些核心认知：\n\n橘子说的：只要 AI 把一个东西打到了 60 分，这个东西就变成了 0 分。所以一个东西越火，越容易变成 AI slop，然后被大家抛弃\n\n所有的 skill prompt 软件，唯一价值其实就是流量价值。目前随着 AI 破解能力和复刻能力越来越强，开源作品换注意力、然后再做转化，是一个非常常见的方式\n\n多 Agent 拉群其实只有情绪价值，没办法带来能力上的提升\n\n我还分享了一下我是如何不开电脑做自媒体的，包括发图文、剪视频等等。\n\n这期昨天已经更新了，欢迎收听！\n\n早上一起床已经有 4000 多个播放，同时收听有几百个人在听。作为一个只更新了 6 期的播客，还是挺吊的",
+   "created_at": "2026-10-19T03:26:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2112022611228230108",
+   "metrics": {
+    "likes": 55,
+    "reposts": 4,
+    "replies": 41,
+    "quotes": 4,
+    "bookmarks": 18,
+    "views": 18405
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU9pXH2aYAAaCyY.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2111427699520749951",
+   "text": "简单试了一下 Deepseek V4.1 Flash 1017，感觉不错呀！\n\n用的是我之前给 Opus 5.5 写的那个做我的游戏特效的提示词。\n\n虽然细节上和创造性上差 Opus 5.5 还是不少吧，但是是能用的",
+   "created_at": "2026-10-17T12:02:46.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2111427699520749951",
+   "metrics": {
+    "likes": 51,
+    "reposts": 1,
+    "replies": 48,
+    "quotes": 4,
+    "bookmarks": 7,
+    "views": 18544
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2111427462676819968/img/1MIqLLrcAPVOo0D_.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2111427462676819968/img/1MIqLLrcAPVOo0D_.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2111380782174683300",
+   "text": "Deepseek 发布了 V4.1 Flash 1017 版本\n\n他这个 DeepSeek SWE V1.1 测评，他自己这个基准上这个图有点离谱了啊，完爆了所有模型！\n\n整体能力再次大幅提升，同时缩短了模型的任务运行时间和输出长度，能以更低的成本完成同样的任务。\n\n另外，他们这次着重强调了可以从零开始完成整个项目的开发：\n\n不用人工干预，用非常简单的提示词就行，类似 OpenAI 5.5 这种一句话做个视频或一句话做个游戏。\n\n还有一个比较重要的点是它开放了自研的搜索 API。\n\nDeepseek 在国内信息数据的搜索结果上非常精准且强大，所以这个 API 挺有用的，可以给你的 Harness 配上",
+   "created_at": "2026-10-17T08:56:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2111380782174683300",
+   "metrics": {
+    "likes": 154,
+    "reposts": 4,
+    "replies": 64,
+    "quotes": 5,
+    "bookmarks": 82,
+    "views": 60005
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU0hnmWbYAAoDwD.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU0hnmSaoAAs_S3.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU0hnmUbkAAIKl5.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU0hnmUbYAAlPPV.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2111082519777194281",
+   "text": "大家都不傻，都预料到了 iPhone Duo 的火爆。\n\n今天真是人人都在抢 iPhone 12，就连刚才播客录影棚的两个工作人员小哥也都在抢，居然还抢到了。\n\n现在抢到第一批，基本上就起飞了",
+   "created_at": "2026-10-16T13:11:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2111082519777194281",
+   "metrics": {
+    "likes": 53,
+    "reposts": 1,
+    "replies": 46,
+    "quotes": 3,
+    "bookmarks": 9,
+    "views": 81353
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110987435874431392",
+   "text": "马斯克在八年前就说这过这个设想\n\n当时评论区很多人觉得他在开玩笑",
+   "created_at": "2026-10-16T06:53:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110987435874431392",
+   "metrics": {
+    "likes": 531,
+    "reposts": 42,
+    "replies": 70,
+    "quotes": 7,
+    "bookmarks": 53,
+    "views": 54036
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUu74bTbEAAnECm.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110912965876838704",
+   "text": "卧槽，特斯拉这个新的跑车太离谱了\n\n居然能短暂飞行并且在空中调整姿态\n\n演示的时候可以直接跳起来反转然后正常落地",
+   "created_at": "2026-10-16T01:57:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110912965876838704",
+   "metrics": {
+    "likes": 301,
+    "reposts": 18,
+    "replies": 134,
+    "quotes": 25,
+    "bookmarks": 77,
+    "views": 153440
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2110901301412515840/img/aV55bt5oYxAmsw3i.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110901301412515840/img/aV55bt5oYxAmsw3i.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110786960080155103",
+   "text": "Meta 又开始发布开源模型了，发布了 Muse Spark Open。\n\n他们说是迄今为止美国最强大的开源模型。\n\n基于苹果的 MLX 框架做了深度优化。\n\n这个 800B 的模型，居然可以在两台 M5 Ultra Mac Studio 上本地运行。\n\n在长时任务、复杂软件工程和多步骤推理上很出色。\n\n总参数是 816B，活跃参数 42B，支持 1T 的上下文窗口，原生支持文本、图像、视频、音频全模态输入。\n\n在测评基准的分数上，跟 K3 和 GLM-5.3 差不多。\n\n感觉这波美国全员进步，每家都有新进展。",
+   "created_at": "2026-10-15T17:36:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110786960080155103",
+   "metrics": {
+    "likes": 55,
+    "reposts": 1,
+    "replies": 30,
+    "quotes": 3,
+    "bookmarks": 25,
+    "views": 21210
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUsFi5zaEAAbUgY.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUsFi52bgAAxcxI.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110668428105363721",
+   "text": "DeepSeek 居然给他们服务挂机影响的用户补偿了，破天荒啊\n\n补偿是过去 7 天账户消耗的所有 API 的金额，会以赠金的形式退到账户里",
+   "created_at": "2026-10-15T09:45:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110668428105363721",
+   "metrics": {
+    "likes": 51,
+    "reposts": 0,
+    "replies": 34,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 18171
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110656210685071604",
+   "text": "OpenCode 现在直接把 DeepSeek V4.1 Flash 免费了！\n\n不过免费版只有 200K 的上下文，付费版有 1M",
+   "created_at": "2026-10-15T08:57:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110656210685071604",
+   "metrics": {
+    "likes": 37,
+    "reposts": 0,
+    "replies": 17,
+    "quotes": 0,
+    "bookmarks": 12,
+    "views": 19565
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110605686086529470",
+   "text": "顺便说一句，JEV 模型这次的更新几乎都命中了我们在 Next Token  20 多天前提到的它需要改进的部分",
+   "created_at": "2026-10-15T05:36:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110605686086529470",
+   "metrics": {
+    "likes": 47,
+    "reposts": 2,
+    "replies": 8,
+    "quotes": 0,
+    "bookmarks": 32,
+    "views": 13078
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUpgorfaoAA29iE.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110584734342627390",
+   "text": "字节 Seed成立了专门的模型安全与对齐部门，感觉确实很有必要。\n\n这次他们计划在这个部门全球招募 10 位顶尖研究员。\n\n研究课题有：\n大模型及Agent安全的前沿评测方法和Benchmark建设\n模型前沿能力对齐的训练方法\n自动化Red Teaming\n模型行为可解释性\n模型能力和行为监控\n\n字节的待遇向来非常顶，事情本身也极具挑战性，最近刚好在看类似方向工作的朋友不妨试试。\n\n最近不管是大模型还是小模型，都频繁出现模型越狱和突破沙箱隔离环境的问题。\n\n而且这种风险要么是小打小闹，要么就是憋个大的。提前有这样的储备并持续进行研究，起码在出问题时能快速反应。\n\n随着模型能力越来越高、自主性越来越强，在一些危险领域的隐患也越来越大：\n比如 CBRN 领域（化学、生物、放射性及核领域）\n可能很多人觉得上面的四个离我们太远，但是互联网上针对个人的内容攻击离我们可太近了。\nAI 甚至有可能直接篡改应用，甚至控制家里的其他设备。\n\n随着 AI 能破解一切软件，那 AI 写出非常厉害的病毒也是一个顺理成章的事情。\n\n包括对于我们整个互联网赖以生存的密码学破解，应该也是进展神速。\n\n客观来说，国内在这方面的进展其实比 OpenAI 和 Anthropic 慢。\n\nAnthropic 成立初衷就是为了安全，长期在做对齐和可解释性研究；而海外 AI 圈几乎每隔一两周就会爆出安全热点，比如前几天 OpenAI 的安全研究员辞职、之前 Hugging Face 被入侵等。\n\n模型安全是一个非常前沿的跨学科领域，需要大量的探索，对研究者的综合要求比较高。\n\n这也是为什么他们要去全球或者公开招聘这种顶尖人才的原因，感兴趣的可以关注一下",
+   "created_at": "2026-10-15T04:13:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110584734342627390",
+   "metrics": {
+    "likes": 17,
+    "reposts": 1,
+    "replies": 18,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 8770
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUpNmoIaAAAHQSn.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUpNmoObsAESM3H.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUpNmoMbYAAtXFn.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUpNmoUbkAAu16r.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110574294564839439",
+   "text": "让我的 BOT 帮我做了一张类似的图，感觉在 Twitter 上光是发东西互动比较少",
+   "created_at": "2026-10-15T03:31:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110574294564839439",
+   "metrics": {
+    "likes": 19,
+    "reposts": 1,
+    "replies": 16,
+    "quotes": 3,
+    "bookmarks": 3,
+    "views": 7667
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUpEIbYakAA-H_5.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110565405752496445",
+   "text": "JEV 昨天更新了一个大版本 1.14.0\n\n终于支持多模态了：官方说这模型原本就是多模态的，只是第一个版本时没加上支持。\n\n有了多模态以后能做的事情就非常多了，很多图像类型的处理、视频剪辑、拼图，包括图像编辑，都需要快速的反应和决策。\n\n新增了一个类型（box）：模型能够返回目标在图里的位置。\n\n上下文和多语言能力提升：每次请求和每个问题的回答都提高到了 262K 的上下文，长了非常多；最重要的是多语言也变得更好了",
+   "created_at": "2026-10-15T02:56:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110565405752496445",
+   "metrics": {
+    "likes": 300,
+    "reposts": 31,
+    "replies": 51,
+    "quotes": 9,
+    "bookmarks": 266,
+    "views": 49245
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUo7er9a8AA3T74.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUo7er6aAAA7v8H.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUo7er9aUAAM9_Y.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUo7er6aUAAhQ85.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110380300618637704",
+   "text": "好像说 Muse 在大规模封号啊。\n\n不过毕竟免费，薅得太狠，小扎也顶不住",
+   "created_at": "2026-10-14T14:40:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110380300618637704",
+   "metrics": {
+    "likes": 76,
+    "reposts": 0,
+    "replies": 71,
+    "quotes": 4,
+    "bookmarks": 12,
+    "views": 63011
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110331992621605278",
+   "text": "YOUWARE 的新产品，一套视频创作 Skill\n\n可以让 AI 帮你创作、剪辑你的商品广告或者短片等视频",
+   "created_at": "2026-10-14T11:28:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110331992621605278",
+   "metrics": {
+    "likes": 42,
+    "reposts": 5,
+    "replies": 16,
+    "quotes": 2,
+    "bookmarks": 57,
+    "views": 12433
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110331012043649527",
+   "text": "OpenAI 有一个员工偷偷在他们高管会议室装窃听器被发现了。\n\n这过程还挺有意思的，有些人也发掘了一些这个员工的信息。\n\n我让 Grokbot 把这些素材和过程做成了一个讲解视频，想了解的话直接看这个视频就行",
+   "created_at": "2026-10-14T11:24:55.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110331012043649527",
+   "metrics": {
+    "likes": 15,
+    "reposts": 0,
+    "replies": 8,
+    "quotes": 0,
+    "bookmarks": 9,
+    "views": 9494
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2110330535293956096/img/EMLksivKG-gvkT0W.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110330535293956096/img/EMLksivKG-gvkT0W.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110284372956037409",
+   "text": "搞了一批，清净多了，我就不信那些人有多少个 8 美元开号",
+   "created_at": "2026-10-14T08:19:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110284372956037409",
+   "metrics": {
+    "likes": 88,
+    "reposts": 0,
+    "replies": 47,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 24621
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110235096716591145",
+   "text": "前段时间换了怒喵的鼠标，鼠标很好用，也很轻量。\n\n但这个 macOS 的网页驱动实在是我不太会用，按键绑定也没有 macOS 办公用的那些设置。\n\n所以自己写了一个原生的怒喵鼠标 macOS 驱动软件，重新设计了整个 UI 交互和功能。\n\n这个用的人确实不多，我就先没开源。如果大家确实有需求，我就开源一下",
+   "created_at": "2026-10-14T05:03:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110235096716591145",
+   "metrics": {
+    "likes": 39,
+    "reposts": 0,
+    "replies": 26,
+    "quotes": 2,
+    "bookmarks": 21,
+    "views": 18746
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUkPn-ubcAABVBS.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110223456830885975",
+   "text": "他妈的，向伪人宣战，搞个自动拉黑插件，误伤的不要怪我哈",
+   "created_at": "2026-10-14T04:17:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110223456830885975",
+   "metrics": {
+    "likes": 213,
+    "reposts": 1,
+    "replies": 183,
+    "quotes": 8,
+    "bookmarks": 8,
+    "views": 78582
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110201776125480997",
+   "text": "只能说谷歌还是那个谷歌，基础设施垃圾到模型再牛逼都没用。\n\n昨天晚上我想在 Antigravity 试一下 Gemini 4，结果他妈的那个思考连续卡住，动不动卡个几千秒。\n\n然后我停止发送指令，再次卡住。那个自动审批跟没有一样，还是每一步都需要我手动操作。\n\n即使是 API，我操，我自己的 Agent 适配以后也是各种问题。别干了，真的别干了，老老实实卖你的算力吧",
+   "created_at": "2026-10-14T02:51:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110201776125480997",
+   "metrics": {
+    "likes": 91,
+    "reposts": 0,
+    "replies": 95,
+    "quotes": 5,
+    "bookmarks": 5,
+    "views": 21572
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUjxFh8awAAa8Kw.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110039924435288217",
+   "text": "来了，Gemini 4 Argon正式发布！\n\n在 Gemini API 下，Gemini APP 的 Pro 和 Ultra 用户。\n\n然后 Google AI Ultra 会员的 Antigravity  和 AI Studio 也可以用。",
+   "created_at": "2026-10-13T16:08:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110039924435288217",
+   "metrics": {
+    "likes": 56,
+    "reposts": 2,
+    "replies": 29,
+    "quotes": 2,
+    "bookmarks": 14,
+    "views": 40251
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110032798656676194",
+   "text": "太狠了，京东自己当黄牛了。\n\n这 7999 只是你有购买的资格，你手机的钱还是得另付",
+   "created_at": "2026-10-13T15:39:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110032798656676194",
+   "metrics": {
+    "likes": 31,
+    "reposts": 0,
+    "replies": 40,
+    "quotes": 4,
+    "bookmarks": 8,
+    "views": 43571
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUhXpBebcAARMQn.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110031290020110454",
+   "text": "哎呀，突然想到自己还有很多 skill 没发\n\n看大家想要哪个：\n\n1. 口播视频字幕生成和剪辑 skill\n2. 视频包装 skill\n3. 微信公众号排版 skill\n4. HTML 文档排版 skill\n5. 半成品 Personal Agent 个人上下文挂载工具",
+   "created_at": "2026-10-13T15:33:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110031290020110454",
+   "metrics": {
+    "likes": 175,
+    "reposts": 9,
+    "replies": 82,
+    "quotes": 5,
+    "bookmarks": 110,
+    "views": 26880
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110029627263709637",
+   "text": "让我想起来还有个 skill 没发过，就是将复杂内容排版成非常优秀的 HTML 页面帮你阅读的 skill。\n\n刚好搭配 GrokBot，太爽了！\n\n不想看的长视频，直接让它转成排版非常优秀的长文去阅读",
+   "created_at": "2026-10-13T15:27:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2110029627263709637",
+   "metrics": {
+    "likes": 337,
+    "reposts": 41,
+    "replies": 33,
+    "quotes": 5,
+    "bookmarks": 363,
+    "views": 30345
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUhURsuaoAAyJqb.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUhUgeNagAA5mSU.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUhUnIUacAAd8yk.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUhUvEGbMAAtVKr.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109981486393016590",
+   "text": "试了一下《风暴怕死队》，还行，而且我在玩这个游戏的时候还开着内录呢，也没怎么卡",
+   "created_at": "2026-10-13T12:16:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109981486393016590",
+   "metrics": {
+    "likes": 20,
+    "reposts": 0,
+    "replies": 7,
+    "quotes": 1,
+    "bookmarks": 9,
+    "views": 13114
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2109981084406738945/img/gGTtdvB5JDgRMNox.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2109981084406738945/img/gGTtdvB5JDgRMNox.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109941901868834836",
+   "text": "最近 AI 破解一切的风潮，感觉游戏行业是最惨的。\n\n现在你都能在安卓手机上直接玩 Steam 游戏了！\n\n我自己试了一下，这个叫 DroidDeck 的项目，那些常玩的独立游戏（比如说《哈迪斯》之类的）都能跑，这下就爽了呀！\n\n出门直接带个简易的小游戏手柄，再带个支持 DP in 的 Pad，就能爽玩 Steam 游戏了。",
+   "created_at": "2026-10-13T09:38:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109941901868834836",
+   "metrics": {
+    "likes": 199,
+    "reposts": 16,
+    "replies": 54,
+    "quotes": 11,
+    "bookmarks": 210,
+    "views": 45563
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2109941498641039360/img/AI8llXTRGXK5Ladc.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2109941498641039360/img/AI8llXTRGXK5Ladc.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109852753875075242",
+   "text": "Anthropic 发布了他们是如何反蒸馏的文章。\n\n但是这文章也告诉我们，如何在一定程度上避免被封！\n\n我们很多被封的用户，很大程度上是被系统误认为在对模型进行蒸馏而误封的，尤其是那些刚注册完就被快速封禁的账号。\n\n你可以看一下如何避免某些操作，别让他们误以为你在做蒸馏，从而减少被封禁的风险：\n\n不要让 Claude 展示思考过程，不要诱导它输出思维链\n\n不要搬运或尝试篡改它的思维链，更不要反复尝试让它吐出思维过程\n\n账号与付款方面：他们重点打击的是代理 IP 请求以及转售账号，所以账号注册和付款渠道要干净\n\n环境隔离：不要在同一个 Agent 环境里同时共用国产模型和 Claude 模型\n\n所以目前来看，最大的两个风险还是账号本身（包括付款渠道），以及在提示词中诱导模型展示思维链的操作",
+   "created_at": "2026-10-13T03:44:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109852753875075242",
+   "metrics": {
+    "likes": 281,
+    "reposts": 21,
+    "replies": 89,
+    "quotes": 16,
+    "bookmarks": 222,
+    "views": 77437
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUez5G9bAAAq58A.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUez5G9bAAEyvB-.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109846692443161040",
+   "text": "没活了又重置",
+   "created_at": "2026-10-13T03:20:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109846692443161040",
+   "metrics": {
+    "likes": 13,
+    "reposts": 0,
+    "replies": 16,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 12017
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109839549706969259",
+   "text": "很多人问我，随着玩 Grok bot 越来越多，什么时候订阅合适？\n\n我一直都让大家再等等，但感觉现在时间到了。\n\n他们终于推出了将 Twitter、Cursor、Grok bot 和 Grok 四合一的订阅，总共有 4 个档位：\n\n$8（Plus）：包含 Twitter Premium\n$30 (Premium)：Plus 的 4 倍用量\n$100（Super）：Plus 的 15 倍用量\n$200（Ultra）：Plus 的 50 倍用量\n\n跟之前旧订阅的核心区别是，xAI 的 API 积分和 Cursor 的 API 积分会合并。\n\nCursor 依然有一些第三方模型，但相较于原始计划，第三方模型的用量大概率会缩减。\n\n不过这次 Grok bot 的用量增加了：在 $30 以上的计划中，至少能获得双倍的 Grok bot 用量。\n\n相较于你单独想用 Grok bot，如果你对 Cursor 及其第三方模型没有需求，只想要用 Grok bot 的话，我觉得是比较划算的，而且统一之后各种计算逻辑也能少点。\n\n如果是之前通过 bug 订阅了 $99 会员的，就不要换；\n\n没赶上之前旧方案的新增用户、想玩 Grok bot 的，我觉得可以换，毕竟确实比原来额度多了不少，而且更方便管理。",
+   "created_at": "2026-10-13T02:52:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109839549706969259",
+   "metrics": {
+    "likes": 108,
+    "reposts": 10,
+    "replies": 81,
+    "quotes": 3,
+    "bookmarks": 75,
+    "views": 34124
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUen4eab0AAvuiN.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUen4eaa4AAiibk.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUen4ega4AEoZRW.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUen4ebbUAAYxil.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109693353633927310",
+   "text": "无人深空居然上线 iOS 端了",
+   "created_at": "2026-10-12T17:11:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109693353633927310",
+   "metrics": {
+    "likes": 11,
+    "reposts": 2,
+    "replies": 3,
+    "quotes": 0,
+    "bookmarks": 7,
+    "views": 10072
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109679880438989160",
+   "text": "Anatomy 应该是这周最火的 Skill\n\n能将复杂的机械结构变成一个风格非常独特的等轴立体动画。\n\n然后我在想，用这个风格做那种科普视频是不是很爽？\n\n于是结合了 Grok bot，还用即梦生成了一些图片和视频，\n\n最后用这个 skill 做了个“芯片是如何制造的”科普视频，讲解得挺清楚的",
+   "created_at": "2026-10-12T16:17:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109679880438989160",
+   "metrics": {
+    "likes": 401,
+    "reposts": 60,
+    "replies": 50,
+    "quotes": 8,
+    "bookmarks": 490,
+    "views": 35979
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2109679699693809664/img/cv6eCdmtUBkJwFy8.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2109679699693809664/img/cv6eCdmtUBkJwFy8.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109675087729492472",
+   "text": "今天下午去了 Apple 孵化器的 Demo Day，见到了非常多不错的产品和开发者。\n\n顺便没想到库克也来了，感谢苹果邀请。\n\n就是这个合影，我感觉我又被广角镜头给坑了，怎么感觉如此肥大。",
+   "created_at": "2026-10-12T15:58:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109675087729492472",
+   "metrics": {
+    "likes": 78,
+    "reposts": 1,
+    "replies": 24,
+    "quotes": 3,
+    "bookmarks": 10,
+    "views": 24341
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUcSSw7bkAA20KE.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUcSSw7aEAAXUiF.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUcSSw6aIAAxYsJ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109515395749310821",
+   "text": "Opus 5.5 + 即梦 CLI\n\n试了一下，让 Opus 5.5 结合视频模型做故事片表达\n\n没想到效果还不错，所有的编排、视频特效、提示词、视频剪辑都是 Opus 5.5 决定\n\n即梦 CLI 负责对应分镜的图片和视频生成。\n\n在视频上叠加了非常多的代码做的动画效果，看起来质感好了不少",
+   "created_at": "2026-10-12T05:23:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109515395749310821",
+   "metrics": {
+    "likes": 338,
+    "reposts": 39,
+    "replies": 68,
+    "quotes": 4,
+    "bookmarks": 329,
+    "views": 35363
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2109514681971007488/img/Vq5uToY_ZavWGLzt.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2109514681971007488/img/Vq5uToY_ZavWGLzt.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109471885960647082",
+   "text": "我的 Grok Bot 工作室配置",
+   "created_at": "2026-10-12T02:31:04.000Z",
+   "lang": "ja",
+   "url": "https://x.com/op7418/status/2109471885960647082",
+   "metrics": {
+    "likes": 128,
+    "reposts": 11,
+    "replies": 18,
+    "quotes": 0,
+    "bookmarks": 100,
+    "views": 19652
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUZZcy6aYAAv31G.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109469928852230518",
+   "text": "教一下怎么让 Grok Bot 食用\n\n公众号文章在这里：https://mp.weixin.qq.com/s/1afnn-WeU4KvD03lqSIv2w",
+   "created_at": "2026-10-12T02:23:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109469928852230518",
+   "metrics": {
+    "likes": 55,
+    "reposts": 3,
+    "replies": 10,
+    "quotes": 2,
+    "bookmarks": 93,
+    "views": 19164
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUZXtvJboAIGJqT.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://mp.weixin.qq.com/s/1afnn-WeU4KvD03lqSIv2w"
+   ]
+  },
+  {
+   "id": "2109467496298516760",
+   "text": "介绍一下新的 GrokBot 玩法：\n\n让它从一个复杂的推文串里，剪出了一条 3 分钟的学习视频。\n\n注意这一切（包括我这个介绍教程视频）都是在床上完成的，全程没有使用我的电脑。\n\n而且做完这一堆以后，我的额度消耗还不到 4%\n\n他帮我做的原始视频，放下面了。",
+   "created_at": "2026-10-12T02:13:37.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109467496298516760",
+   "metrics": {
+    "likes": 267,
+    "reposts": 30,
+    "replies": 72,
+    "quotes": 10,
+    "bookmarks": 257,
+    "views": 69593
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2109462764960067584/img/uviMFWTfhU3OEHP-.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2109462764960067584/img/uviMFWTfhU3OEHP-.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109159416599883861",
+   "text": "Next Token 上周的观察，再次领先国内其他媒体\n\n关于“一切都会被开源”和“游戏破解”这事，我们在前几天的播客里就非常详细地讨论过，今天突然就火了。\n\n业内的人还是可以多看看我们聊的这些东西。\n\n总结一下我们在播客里面的观点。",
+   "created_at": "2026-10-11T05:49:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109159416599883861",
+   "metrics": {
+    "likes": 43,
+    "reposts": 4,
+    "replies": 28,
+    "quotes": 2,
+    "bookmarks": 32,
+    "views": 13077
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUU9TYoaIAAycUV.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUU9TYfbUAE-Rc9.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUU9TYkbEAATMFy.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUU9TYeagAAUoQM.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109102136890180034",
+   "text": "重置了",
+   "created_at": "2026-10-11T02:01:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2109102136890180034",
+   "metrics": {
+    "likes": 12,
+    "reposts": 0,
+    "replies": 30,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 17026
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108966708740505828",
+   "text": "超有用的 GrokBot 用法：\n\n将复杂难阅读的推串内容变成长文档，在手机上阅读\n\n有人让 LLM 通过纯代码完成了一次细节非常丰富的 3D 龙建模，分享了整个过程，内容极其复杂。\n\n我直接让 Grok bot 帮我拉取了所有内容：\n\n不仅把推文串拉全了，还补充了解析所有生僻概念的内容和相关链接信息，重新排版成了一篇完整的中文文章。\n\n在这种场景下简直太好用了，我直接在手机上就能看、能消化这些信息",
+   "created_at": "2026-10-10T17:03:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108966708740505828",
+   "metrics": {
+    "likes": 107,
+    "reposts": 14,
+    "replies": 61,
+    "quotes": 2,
+    "bookmarks": 162,
+    "views": 83569
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUSNUMibAAEVOgy.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108961526635983040",
+   "text": "给我的 Grok Bot 换个新头像",
+   "created_at": "2026-10-10T16:43:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108961526635983040",
+   "metrics": {
+    "likes": 16,
+    "reposts": 0,
+    "replies": 16,
+    "quotes": 0,
+    "bookmarks": 7,
+    "views": 12525
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108961427117789184/img/6burQxyJ16CkwNK1.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108961427117789184/img/6burQxyJ16CkwNK1.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108917380600791463",
+   "text": "谁能想到只播了 5 期 订阅就超 7000 了",
+   "created_at": "2026-10-10T13:47:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108917380600791463",
+   "metrics": {
+    "likes": 27,
+    "reposts": 1,
+    "replies": 21,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 10102
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HURhLVcawAAvsfP.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108750890480078899",
+   "text": "Midjourney 终于要有 MCP 了",
+   "created_at": "2026-10-10T02:46:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108750890480078899",
+   "metrics": {
+    "likes": 25,
+    "reposts": 1,
+    "replies": 22,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 7597
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108649243301081319",
+   "text": "Grok Bot 的邮箱正式推出了，推荐让你的 Bot 赶紧领一下你需要的对应前缀的邮箱\n\n直接在评论区 @ 或者把这个推特发给他就行",
+   "created_at": "2026-10-09T20:02:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108649243301081319",
+   "metrics": {
+    "likes": 118,
+    "reposts": 12,
+    "replies": 115,
+    "quotes": 5,
+    "bookmarks": 136,
+    "views": 61963
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108604299383337210",
+   "text": "顺便再次感叹一下老马的豪横！\n\n我这几天疯狂拿 Grok 做视频（就是代码类的视频），看了一下，每周的用量才消耗了 15%。\n\n我这个是之前 99 美元买的 Grok 会员",
+   "created_at": "2026-10-09T17:03:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108604299383337210",
+   "metrics": {
+    "likes": 74,
+    "reposts": 3,
+    "replies": 20,
+    "quotes": 1,
+    "bookmarks": 49,
+    "views": 36296
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUNEVrcbEAEMm32.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108599286984561073",
+   "text": "我让 Grok @bot 读取我的 GitHub 项目，做个宣传视频\n\n他给了我这个",
+   "created_at": "2026-10-09T16:43:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108599286984561073",
+   "metrics": {
+    "likes": 60,
+    "reposts": 3,
+    "replies": 27,
+    "quotes": 2,
+    "bookmarks": 36,
+    "views": 51060
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108599185364934656/img/Pifjdqo2MQmCJolW.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108599185364934656/img/Pifjdqo2MQmCJolW.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108566650350170411",
+   "text": "我把这个流程直接做成了一个 bot 并发布了。\n\n你现在可以一键安装了：https://x.ai/bot/8mi67EcgDUS2FDtOAIKcJ",
+   "created_at": "2026-10-09T14:33:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108566650350170411",
+   "metrics": {
+    "likes": 101,
+    "reposts": 10,
+    "replies": 11,
+    "quotes": 3,
+    "bookmarks": 148,
+    "views": 22060
+   },
+   "media": [],
+   "urls": [
+    "https://x.ai/bot/8mi67EcgDUS2FDtOAIKcJ"
+   ]
+  },
+  {
+   "id": "2108566423115350121",
+   "text": "my Grok @bot turns my AI newsletter into a 2-min video now. \n\nmade it a template so you can steal it\n\nhttps://x.ai/bot/8mi67EcgDUS2FDtOAIKcJ",
+   "created_at": "2026-10-09T14:33:05.000Z",
+   "lang": "en",
+   "url": "https://x.com/op7418/status/2108566423115350121",
+   "metrics": {
+    "likes": 22,
+    "reposts": 2,
+    "replies": 7,
+    "quotes": 4,
+    "bookmarks": 12,
+    "views": 10400
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108566338734321664/img/up3AzpeD3w4_hKr1.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108566338734321664/img/up3AzpeD3w4_hKr1.jpg"
+    }
+   ],
+   "urls": [
+    "https://x.ai/bot/8mi67EcgDUS2FDtOAIKcJ"
+   ]
+  },
+  {
+   "id": "2108545983647023493",
+   "text": "有了 Grok bot 以后，真的以前特别懒得干但应该干的事，都开始去做了。\n\n比如说让 Grok bot 给我在 Notion 里做了一个自媒体的看板。\n\n做自媒体干了这么长时间，都没有监控过自己的一些数据，刚才跟他花了 15 分钟一起就把这些东西建起来了。",
+   "created_at": "2026-10-09T13:11:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108545983647023493",
+   "metrics": {
+    "likes": 177,
+    "reposts": 11,
+    "replies": 47,
+    "quotes": 5,
+    "bookmarks": 139,
+    "views": 36539
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUMPK6IaYAAjmjC.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108430748101570855",
+   "text": "在野外跟 Grok bot 搏斗",
+   "created_at": "2026-10-09T05:33:57.000Z",
+   "lang": "ja",
+   "url": "https://x.com/op7418/status/2108430748101570855",
+   "metrics": {
+    "likes": 22,
+    "reposts": 1,
+    "replies": 15,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 8236
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUKmklUbwAAt33a.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108377835970953349",
+   "text": "Grok Bot 自动给跑的 AI 早报视频定时任务执行了，效果不错的",
+   "created_at": "2026-10-09T02:03:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108377835970953349",
+   "metrics": {
+    "likes": 38,
+    "reposts": 5,
+    "replies": 18,
+    "quotes": 0,
+    "bookmarks": 28,
+    "views": 11803
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108377721009217536/img/mqQb_U32jMbpU-Lu.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108377721009217536/img/mqQb_U32jMbpU-Lu.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108376538056212876",
+   "text": "Next Token 第 5 期更新了！如果你不太清楚国庆节期间发生了什么，刚好可以来补补课。\n\n我们继续聊了聊关于 personal agent 的话题：\n• 为什么 Dots 这么难用\n• 为什么国内 personal agent 可能不成立\n\n也详细聊了聊关于 AI 复刻任何软件可能会带来什么影响，最后还探讨了一些小硬件带来的机会。\n\n第 4 期在小宇宙获得了 1 万播放，我们才做了 5 期就到了 5,000 订阅，进展相当快！",
+   "created_at": "2026-10-09T01:58:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108376538056212876",
+   "metrics": {
+    "likes": 37,
+    "reposts": 3,
+    "replies": 16,
+    "quotes": 3,
+    "bookmarks": 17,
+    "views": 28307
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUJ0zZXawAAbmpN.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108229061529239705",
+   "text": "3D 这一块还是 GPT-6 Astra 牛皮啊\n\n让它读取了一下我的 Memory，根据我的喜好，用 Blender 建模的几个模型做了张海报\n\n模型的细节、材质、光影都能做得很好",
+   "created_at": "2026-10-08T16:12:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108229061529239705",
+   "metrics": {
+    "likes": 72,
+    "reposts": 5,
+    "replies": 19,
+    "quotes": 2,
+    "bookmarks": 31,
+    "views": 13176
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUHuRrNawAAlgyt.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108195841949446528",
+   "text": "Grok bot 跟折叠屏手机真是绝配，左边跟他聊天，右边直接就发布了",
+   "created_at": "2026-10-08T14:00:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108195841949446528",
+   "metrics": {
+    "likes": 20,
+    "reposts": 1,
+    "replies": 18,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 14132
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUHQ8GmbkAEGoGF.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108162381000093893",
+   "text": "再分享个邪修用法：\n\n在 Agent 的云电脑里装个 Pi 或者 DeepSeek Harness 这类编程 Agent，把你其他 Code plan 用不完的额度配进去。\n\n然后让 Grok Bot 调这些 token 去写代码、渲染视频，闲着的额度也就不浪费了",
+   "created_at": "2026-10-08T11:47:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108162381000093893",
+   "metrics": {
+    "likes": 79,
+    "reposts": 3,
+    "replies": 23,
+    "quotes": 5,
+    "bookmarks": 91,
+    "views": 25274
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108161410517930397",
+   "text": "顺便，Grok Bot 的模型不会已经是 Opus 5.5 了吧，复杂任务效果巨好",
+   "created_at": "2026-10-08T11:43:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108161410517930397",
+   "metrics": {
+    "likes": 28,
+    "reposts": 4,
+    "replies": 19,
+    "quotes": 0,
+    "bookmarks": 21,
+    "views": 15222
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108150460037444094",
+   "text": "Muse、Dots 或者其他有云端电脑的 Agent 都可以用",
+   "created_at": "2026-10-08T11:00:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108150460037444094",
+   "metrics": {
+    "likes": 23,
+    "reposts": 1,
+    "replies": 5,
+    "quotes": 0,
+    "bookmarks": 33,
+    "views": 11472
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108148604447883464",
+   "text": "让 Grok bot 每天早上定时出一个 AI 早报的视频，没想到效果还真挺不错的！\n\n全程都没用我本地电脑，全跑在它的云端虚拟机上，包括内容收集、写代码和视频渲染。\n\n我写了个提示词，直接复制过去的话，你的 Grok bot 也能执行这些任务\n\n提示词太长放下面了",
+   "created_at": "2026-10-08T10:52:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108148604447883464",
+   "metrics": {
+    "likes": 368,
+    "reposts": 48,
+    "replies": 111,
+    "quotes": 23,
+    "bookmarks": 526,
+    "views": 139910
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108148339204382720/img/3xsxx3VnE20b3QfW.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108148339204382720/img/3xsxx3VnE20b3QfW.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108126537044353334",
+   "text": "怎么这么多精神 Anthropic 公司人\n\n我发这个信息说了句降价，这个定价专门用来狙击国产模型，说了句恶心，一堆人来骂\n\n好像这模型一便宜就忘了 Anthropic 之前干过啥了",
+   "created_at": "2026-10-08T09:25:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108126537044353334",
+   "metrics": {
+    "likes": 127,
+    "reposts": 2,
+    "replies": 89,
+    "quotes": 3,
+    "bookmarks": 6,
+    "views": 27313
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108113214944985394",
+   "text": "妈的，当时为了抢那 99 美元的额度，用的另一个账号买的 Gork Bot，导致现在我的 Twitter @它，它不回我",
+   "created_at": "2026-10-08T08:32:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108113214944985394",
+   "metrics": {
+    "likes": 28,
+    "reposts": 0,
+    "replies": 18,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 25075
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108110101076902078",
+   "text": "笑死，你永远不知道一个设计师会在产品的哪个地方开始抠细节，做着做着就跑偏了。\n\n把“关于”页面这个罗盘做成 3D 的，细节非常丰富，设计比较现代，而且指针还会跟随你的鼠标去转动",
+   "created_at": "2026-10-08T08:19:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108110101076902078",
+   "metrics": {
+    "likes": 10,
+    "reposts": 1,
+    "replies": 2,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 6577
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108109906008240128/img/uuLYSGJD9pWnD_kW.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108109906008240128/img/uuLYSGJD9pWnD_kW.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108104962911928376",
+   "text": "嘿 @bot  我能为我的机器人要 guziang@mail.grokbot.com 吗？",
+   "created_at": "2026-10-08T07:59:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108104962911928376",
+   "metrics": {
+    "likes": 7,
+    "reposts": 0,
+    "replies": 3,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 16944
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108050013054271544",
+   "text": "Opus 5.5 做的奇门遁甲排盘教学网站上线了！\n\n本来是自己做着玩的，没想到大家还真有需求，优化了一下加了一些题目和讲解，更像学习网站了\n\nhttps://qimen-jiugong-xuetang.op7418.chatgpt.site",
+   "created_at": "2026-10-08T04:21:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108050013054271544",
+   "metrics": {
+    "likes": 152,
+    "reposts": 22,
+    "replies": 36,
+    "quotes": 6,
+    "bookmarks": 139,
+    "views": 31221
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2108049766559203329/img/VspbFWRCRNU218wz.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2108049766559203329/img/VspbFWRCRNU218wz.jpg"
+    }
+   ],
+   "urls": [
+    "https://qimen-jiugong-xuetang.op7418.chatgpt.site"
+   ]
+  },
+  {
+   "id": "2108025814227009681",
+   "text": "Codex 今天送重置卡",
+   "created_at": "2026-10-08T02:44:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108025814227009681",
+   "metrics": {
+    "likes": 8,
+    "reposts": 0,
+    "replies": 4,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 8984
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108017913030717443",
+   "text": "Anthropic 这个 Haiku 5.5 真是盯着中国的这几个甜点级模型打，太恶心了！\n\n我对比了一下它和几个中国竞品的价格和测试评分\n\n从价格来看，它比 DeepSeek-V4.1 flash 和智谱的 GLM 5.3 flash 都便宜\n\n从测试集和一些分数来看，在 Terminal Bench 4.0 上，AA 的测试比 5.3 flash 高一分，也跟 5.3 flash 相同，比其他两个更高",
+   "created_at": "2026-10-08T02:13:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108017913030717443",
+   "metrics": {
+    "likes": 343,
+    "reposts": 28,
+    "replies": 130,
+    "quotes": 17,
+    "bookmarks": 125,
+    "views": 159161
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUEvHYZacAACZ-K.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUEvHYcbwAAseee.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108015400286048474",
+   "text": "Anthropic 这个决定真是王炸\n\n他们现在会给每个 Max 和 Team 用户直接送对应额度的 API 金额\n\n我把对应额度和怎么领取做了两张图\n\n这个 API 你在哪里用都行，只要这个产品支持输入 API\n\n结合昨天晚上发布的 haiku 5.5 的价格，这 100 美金相当够用了\n\n这下轮到 OpenAI 难受了",
+   "created_at": "2026-10-08T02:03:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108015400286048474",
+   "metrics": {
+    "likes": 126,
+    "reposts": 15,
+    "replies": 29,
+    "quotes": 4,
+    "bookmarks": 105,
+    "views": 36996
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUEs1H0a4AAhZzP.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUEs1H0bsAAeMhj.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108010689889767493",
+   "text": "Grok bot 最近真猛啊！\n\n现在可以搜索、阅读甚至监控指定的推特内容\n\n比如你可以让他在 tibo 重置 Codex 额度的时候通知你\n\n这些都是免费的，不通过以前的 xapi 实现",
+   "created_at": "2026-10-08T01:44:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2108010689889767493",
+   "metrics": {
+    "likes": 82,
+    "reposts": 5,
+    "replies": 23,
+    "quotes": 5,
+    "bookmarks": 52,
+    "views": 47624
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107794249051951205",
+   "text": "开始抢入口了，不硬推模型了，Personal agent 这一仗估计是要硬打了",
+   "created_at": "2026-10-07T11:24:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107794249051951205",
+   "metrics": {
+    "likes": 50,
+    "reposts": 1,
+    "replies": 12,
+    "quotes": 1,
+    "bookmarks": 16,
+    "views": 28942
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107788042929160367",
+   "text": "我操，Grok bot 现在无敌了！\n\n老马刚才说，Grokbot 会根据特定任务使用当前任务的最佳模型。\n\n也就是说，它不止使用 Grok 4.7 或者 4.6 了。\n\n还会使用 Opus 5.5、Midjourney、Suno 等各种 API 帮你构建内容或者是执行任务。",
+   "created_at": "2026-10-07T11:00:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107788042929160367",
+   "metrics": {
+    "likes": 120,
+    "reposts": 3,
+    "replies": 51,
+    "quotes": 6,
+    "bookmarks": 40,
+    "views": 64624
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107696000899158404",
+   "text": "尝试让 Opus 5.5 做个网站解释奇门遁甲",
+   "created_at": "2026-10-07T04:54:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107696000899158404",
+   "metrics": {
+    "likes": 80,
+    "reposts": 4,
+    "replies": 30,
+    "quotes": 4,
+    "bookmarks": 33,
+    "views": 42606
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUAKQ1YaAAAS1xV.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107676475336044892",
+   "text": "重置了居然！",
+   "created_at": "2026-10-07T03:36:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107676475336044892",
+   "metrics": {
+    "likes": 28,
+    "reposts": 0,
+    "replies": 11,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 15373
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107523062619054174",
+   "text": "新的 personal agent：Hark Pro，这个产品的设计实在是太顶了！\n\n会给早期用户送一个月的 Pro 会员，据说是由 Opus 5.5 和 Sonnet 5.5 驱动的。这送的 Pro 会员太值了呀！\n\n整体非常漂亮，而且细节很丰富，那些动效非常的细腻。\n\n然后他们左侧这个卡片也很有意思，它是 AI 自定义的。而且\n\n不知道现在还有没有？我是前几天就申请了，所以上来就送了",
+   "created_at": "2026-10-06T17:27:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107523062619054174",
+   "metrics": {
+    "likes": 172,
+    "reposts": 22,
+    "replies": 31,
+    "quotes": 7,
+    "bookmarks": 271,
+    "views": 49428
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT9tBIxaEAAtLIh.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107515249360597365",
+   "text": "谷歌发布了 Nano Banana 2.1 图像模型\n\n中文的文字清晰度和错字问题大幅改善！\n\n中文字体设计和排版的美学也非常好，主要是没有 GPT 那种破碎感，画面干净！\n\n它比 GPT 的主要优势在于可以生成 4K 图片，感觉一下又有用了呀！\n\n当然，价格还是挺贵的。",
+   "created_at": "2026-10-06T16:56:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107515249360597365",
+   "metrics": {
+    "likes": 212,
+    "reposts": 27,
+    "replies": 27,
+    "quotes": 7,
+    "bookmarks": 116,
+    "views": 45061
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT9kW-CbIAALhow.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT9lOJhasAAekOr.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT9lm1tboAArkcj.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT9l8DBbwAAXh27.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107291622539251838",
+   "text": "Next Token 04 在小宇宙正式一万播放了\n\n作为一个新播客，冷启动相当成功，可能也跟大家国庆出游没时间看手机开车和走路需要听点东西有关\n\nB 站的视频播客这一期播放量也不低",
+   "created_at": "2026-10-06T02:07:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107291622539251838",
+   "metrics": {
+    "likes": 21,
+    "reposts": 2,
+    "replies": 19,
+    "quotes": 0,
+    "bookmarks": 6,
+    "views": 8331
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT6Z8xtbgAARcBq.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107057203274461508",
+   "text": "M5 Stack Stop Watch + Muse Gadgets + MiniMax API\n\n用视频演示一下，基于 Muse Gadgets 做的硬件。\n\n我做了一些 UI 优化，更改了语言、加上了语音输出，并且可以磁吸在电脑屏幕旁边。",
+   "created_at": "2026-10-05T10:35:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107057203274461508",
+   "metrics": {
+    "likes": 49,
+    "reposts": 2,
+    "replies": 108,
+    "quotes": 2,
+    "bookmarks": 35,
+    "views": 15877
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2107056681679216640/img/QK4ssTdwOSBK348Y.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2107056681679216640/img/QK4ssTdwOSBK348Y.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107017257763426381",
+   "text": "神奇，没想到即览在国区限免结束之后还有人购买，确实说明确实有用。\n\n回本了，起码把苹果开发者的 100 美元注册费用挣回来了",
+   "created_at": "2026-10-05T07:57:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107017257763426381",
+   "metrics": {
+    "likes": 47,
+    "reposts": 0,
+    "replies": 25,
+    "quotes": 1,
+    "bookmarks": 30,
+    "views": 23376
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT2g9FobEAA964G.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107015036493615446",
+   "text": "它原始的 Muse Gadgets SDK 在这个设备上的设计有点问题，就是太臃肿、太拥挤了，而且默认也不是中文。\n\n然后我就改了一下，整个 UI 看着更协调，同时界面改成了中文，还把中间的形象换成了和我 Muse 一样的那个橘猫",
+   "created_at": "2026-10-05T07:48:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2107015036493615446",
+   "metrics": {
+    "likes": 19,
+    "reposts": 0,
+    "replies": 14,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 9161
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT2eyxZb0AAOU6e.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2106976063620632944",
+   "text": "专门为安卓折叠屏做了一个模仿 iPhone Duo那个半折状态下的屏保应用。\n\n考虑到实在是没几个人用，所以就没发，有需要的话我开源一下",
+   "created_at": "2026-10-05T05:13:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106976063620632944",
+   "metrics": {
+    "likes": 6,
+    "reposts": 0,
+    "replies": 9,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 9753
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT17jeXa8AASNwS.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2106974366722662786",
+   "text": "搞定了 Muse 那个小玩具 哈哈\n\n我用的 M5 Stack 的 Stop Watch Meta 搞得\n\n这个 Muse Gadgets SDK 真的很方便\n\n而且已经内置了好几个常见 ESP 32 设备的固件，直接刷进去就行",
+   "created_at": "2026-10-05T05:06:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106974366722662786",
+   "metrics": {
+    "likes": 99,
+    "reposts": 11,
+    "replies": 37,
+    "quotes": 2,
+    "bookmarks": 90,
+    "views": 46188
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT14pDaa0AAdmLV.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2106351873372615020",
+   "text": "他妈的，现在评论区的伪人是真的多，而且他们的 AI 回复的调教都是一样的，都从哪儿买的提示词和课",
+   "created_at": "2026-10-03T11:53:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106351873372615020",
+   "metrics": {
+    "likes": 117,
+    "reposts": 1,
+    "replies": 114,
+    "quotes": 1,
+    "bookmarks": 15,
+    "views": 42414
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106220877872345298",
+   "text": "有了 AI 以后，这些玩法出众的老游戏感觉没有什么壁垒了呀。\n\n只要你想，比如说任天堂的那些老游戏，你完全可以自己反编译，然后在自己的设备上去玩，也可以疯狂拿它的素材去融合。\n\n只要你不发行，感觉人人都可以有游戏玩。\n\n比如说《光环3》已经被完全反编译了，可能以后想怎么改就怎么改，基于它来做自己的那部分模组，或者是发布到其他平台的版本",
+   "created_at": "2026-10-03T03:12:43.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106220877872345298",
+   "metrics": {
+    "likes": 38,
+    "reposts": 3,
+    "replies": 10,
+    "quotes": 3,
+    "bookmarks": 35,
+    "views": 22021
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106219171914932515",
+   "text": "我去，这个好玩！\n\nMuse 出了一个开源的 Linux SDK：Muse Gadgets，可以让你将你的这个 ESP32 设备跟 Muse 连接起来。\n\n获得关于 Muse 的一些信息，然后来构建 Muse 的周边硬件。这个太爽了呀！\n\n不用羡慕他们刚发布的那个 Muse 硬件了，你现在可以自己做。",
+   "created_at": "2026-10-03T03:05:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106219171914932515",
+   "metrics": {
+    "likes": 191,
+    "reposts": 16,
+    "replies": 27,
+    "quotes": 5,
+    "bookmarks": 224,
+    "views": 57640
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTrKd_2aUAAAExd.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2106218041780711815",
+   "text": "哈哈 这个 Claude Mod 好玩，在等待任务的时候启动一个游戏，里面匹配的全是等待 Claude 完成任务的人",
+   "created_at": "2026-10-03T03:01:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106218041780711815",
+   "metrics": {
+    "likes": 68,
+    "reposts": 2,
+    "replies": 28,
+    "quotes": 0,
+    "bookmarks": 32,
+    "views": 23314
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106037504642277451",
+   "text": "Grok Bot 更新了一个叫 Grok Bot 的主 Agent 角色\n\n它可以帮你分配任务和创建各种不同的 Bot 分配任务\n\n易用性一下好了不少，让普通用户上来自己自定义多个 Bot 这个事情太烦了\n\n用户对工具完全没感知，也不知道应该怎么基于任务给 Bot 分类，估计也是看 Muse 改的",
+   "created_at": "2026-10-02T15:04:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2106037504642277451",
+   "metrics": {
+    "likes": 46,
+    "reposts": 2,
+    "replies": 33,
+    "quotes": 3,
+    "bookmarks": 19,
+    "views": 13575
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTolm2IawAAlbIe.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105883326599032937",
+   "text": "最近 Agent 也像以前的一些软件一样出现了分化：\n\n1. Personal Agent（面向大众与生活类工具）：\n\n这是为 C 端非专业用户设计的工具，比如 Muse 和 dot 帮助他们更好地生活、处理简单的工作。\n\n它的特点是上手门槛非常低，只需要通过对话就可以完成任务，并且还会配有一个远程虚拟机供用户自己使用。\n\n2. 极致自定义与自我构建的 Agent（面向专家与专业技能人群）：\n\n这部分强调极致的自定义和丰富的自我构建，类似于通过迭代式（如 RSI 方式）去构建自己的软件，让专家和拥有专业技能的人构建自己的 Agent。\n\n在底层 Agent 的框架上（例如 Claude Mode、DeepSeek Harness、新的 Pi 1.0 的更新，以及 Codex 的插件），用户可以通过自然语言构建自己的工具并内嵌在 Agent 里，甚至可以更改 Agent 的界面，从而更改 Agent 的体系和系统。",
+   "created_at": "2026-10-02T04:51:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105883326599032937",
+   "metrics": {
+    "likes": 37,
+    "reposts": 1,
+    "replies": 29,
+    "quotes": 1,
+    "bookmarks": 27,
+    "views": 14086
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105867869749993678",
+   "text": "昨天晚上 Anthropic 推出了 Claude mods，PI最近 1.0 更新也推出了 code mode，再加上 Codex 更新的插件系统和 DeepSeek harness 的一切皆插件。\n\n似乎所有的这种超级 Agent 都在开发类似的功能，可以让用户自己往 Agent 上叠加功能的插件体系。\n\n但是这几个的作用位置以及工作原理都不太一样。我跟Muse 讨论了一下，收集了信息，然后做了张图，让大家用更简单的方式去理解这 4 个产品，以及它们这套插件系统不同的能力。",
+   "created_at": "2026-10-02T03:49:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105867869749993678",
+   "metrics": {
+    "likes": 115,
+    "reposts": 19,
+    "replies": 29,
+    "quotes": 5,
+    "bookmarks": 133,
+    "views": 36241
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTmLp45aoAAW4Ne.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105675440409174160",
+   "text": "Opus 5.5 做这种科普和人文视频也很牛批啊\n\n让他做了一个关于榫卯的科普介绍视频，质量非常好",
+   "created_at": "2026-10-01T15:05:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105675440409174160",
+   "metrics": {
+    "likes": 135,
+    "reposts": 7,
+    "replies": 29,
+    "quotes": 2,
+    "bookmarks": 97,
+    "views": 24423
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2105674819899703296/img/CHGY08ejITFDONX-.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2105674819899703296/img/CHGY08ejITFDONX-.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105578214970237149",
+   "text": "还是对谷歌的 Gemini 4 比较期待，它的价格相较于 GPT-6 Astra 确实不是很贵。\n\n而且这次比较亮眼、独有的，应该是它首次将输出长度扩展到了 100 万。\n\n之前我们说的 100 万上下文只是输入长度可以很长，输出的话大部分都是 64K，直接把输出长度扩展到 100 万还是挺顶的。\n\n我对谷歌的希望，就是它能有一个接近于国产模型头部的 Agent 或者 coding 能力，同时依旧维持它比较长板的写作能力和多模态能力，这样就已经很能打了",
+   "created_at": "2026-10-01T08:39:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105578214970237149",
+   "metrics": {
+    "likes": 38,
+    "reposts": 2,
+    "replies": 20,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 17929
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105490925518815618",
+   "text": "最近 Personal Agent 很火\n\n对比了一下主流的 Personal Agent 的虚拟机配置，这么看老马是真下本啊。\n\nGrokbot 从 CPU、内存、硬盘都给得很够，Dot 的配置也很高。\n\n不过 Dot 好像不是独享虚拟机的，可能存在共用情况",
+   "created_at": "2026-10-01T02:52:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105490925518815618",
+   "metrics": {
+    "likes": 70,
+    "reposts": 8,
+    "replies": 28,
+    "quotes": 3,
+    "bookmarks": 52,
+    "views": 22656
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTg0eOsb0AAs6l_.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTg0eOva8AAAdIe.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTg0eOxacAAwbKZ.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTg0eO7boAAM_yW.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105339488969036268",
+   "text": "🐂🍺 把我的世界的所有能力和物品技能以及模式移植到了艾尔登法环里面",
+   "created_at": "2026-09-30T16:50:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105339488969036268",
+   "metrics": {
+    "likes": 4,
+    "reposts": 0,
+    "replies": 1,
+    "quotes": 0,
+    "bookmarks": 2,
+    "views": 11428
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105320934072865260",
+   "text": "Muse 用法+1，每天早上帮我生成一个 AI 资讯早报视频\n\n写一下实践的步骤：\n\n1. 基于我日常的内容渠道和喜好先整理文案来源到 Notion 和聊天里面\n\n2. 查找下载相关内容的图片和视频素材\n\n3. 在虚拟机里面通过 Pi 调用我的 K3 和 GLM 5.3 模型利用 guizang-product-video-skill 将所有的信息组装成视频\n\n4. 通过 Mues 聊天界面发给我",
+   "created_at": "2026-09-30T15:36:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105320934072865260",
+   "metrics": {
+    "likes": 109,
+    "reposts": 11,
+    "replies": 41,
+    "quotes": 2,
+    "bookmarks": 129,
+    "views": 20342
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2105318020075937792/img/HJt17i7gYddL4Uyj.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2105318020075937792/img/HJt17i7gYddL4Uyj.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105289078971437268",
+   "text": "收到 OpenAI 发的邮件了。\n\n应该是在调整 200 美元 Pro 会员额度以后，给所有受影响的 200 美元 Pro 用户增加了 62,500 点积分。\n\n这个是长期的，会在今年年底过期，看起来积分挺多的。\n\n我觉得他们如果在宣传的时候，把这些补偿措施一下子说完，昨天大家抵触情绪可能也不会这么强烈",
+   "created_at": "2026-09-30T13:30:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/op7418/status/2105289078971437268",
+   "metrics": {
+    "likes": 23,
+    "reposts": 0,
+    "replies": 27,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 33261
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTd9DI9aUAABq49.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  }
+ ]
+}

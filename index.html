@@ -1,0 +1,1357 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>运营团队 · 5 岗位智能体 · 运营策略</title>
+<script>/* v1.6: UI language for X-Lang before any request */ (() => { const q = new URLSearchParams(location.search).get('lang'); if (q === 'en' || q === 'zh') localStorage.setItem('luca_ui_lang', q); window.LANG = (localStorage.getItem('luca_ui_lang') || localStorage.getItem('luca_ui_language')) === 'en' ? 'en' : 'zh'; })();</script>
+<style>
+  :root {
+    --bg:#0a0d13; --bg-2:#0d1118; --sidebar:#0c1017; --panel:#121722; --panel-2:#161c29; --raised:#1b2232;
+    --line:#222a3b; --line-2:#2c3549; --text:#e8ebf2; --text-2:#c3c9d6; --muted:#8890a3; --faint:#5d6578;
+    --accent:#6e8bff; --accent-2:#8f72ff; --accent-soft:rgba(110,139,255,.14); --accent-line:rgba(110,139,255,.45);
+    --gold:#d8b47a; --ok:#3fcf8e; --err:#f26b6b; --warn:#f2c25b;
+    --r-sm:7px; --r:10px; --r-lg:14px;
+    --shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 8px 24px -12px rgba(0,0,0,.6);
+    --shadow-lg:0 24px 60px -16px rgba(0,0,0,.75), 0 0 0 1px rgba(255,255,255,.04);
+    --ease:cubic-bezier(.2,.7,.2,1);
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  * { box-sizing:border-box; }
+  html, body { height:100%; }
+  body { margin:0; font:13.5px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg); color:var(--text); overflow:hidden; -webkit-font-smoothing:antialiased; letter-spacing:.1px; }
+  a { color:#9db2ff; text-decoration:none; } a:hover { text-decoration:underline; }
+  ::selection { background:rgba(110,139,255,.35); }
+  ::-webkit-scrollbar { width:10px; height:10px; }
+  ::-webkit-scrollbar-thumb { background:#252d3f; border-radius:10px; border:3px solid transparent; background-clip:padding-box; }
+  ::-webkit-scrollbar-thumb:hover { background:#323c53; background-clip:padding-box; border:3px solid transparent; }
+  ::-webkit-scrollbar-track { background:transparent; }
+  .hidden { display:none !important; }
+
+  /* ---------- App shell ---------- */
+  .app { display:grid; grid-template-columns:236px minmax(0,1fr); height:100vh; height:100dvh; }
+  .sidebar { display:flex; flex-direction:column; min-height:0; background:linear-gradient(180deg,#0e131c,#0a0e14); border-right:1px solid var(--line); }
+  .sb-brand { display:flex; align-items:center; gap:11px; padding:16px 16px 14px; border-bottom:1px solid #1a2130; }
+  .sb-logo { width:38px; height:38px; border-radius:11px; flex-shrink:0; object-fit:contain; background:radial-gradient(circle at 50% 80%,#3a4b69,#1a2233 70%); box-shadow:0 0 0 1px #2c3852 inset, 0 6px 16px -6px #000; }
+  .sb-brand-text { min-width:0; }
+  .sb-brand-text b { display:block; font-size:14px; font-weight:650; letter-spacing:.3px; }
+  .sb-brand-text span { display:block; font-size:11px; color:var(--muted); margin-top:1px; }
+  .sb-section { padding:14px 10px 6px; font-size:10.5px; letter-spacing:1.4px; color:var(--faint); font-weight:600; text-transform:uppercase; padding-left:18px; }
+  .tabs { display:flex; flex-direction:column; gap:2px; padding:0 8px; }
+  .tab { position:relative; display:flex; align-items:center; gap:11px; width:100%; text-align:left; background:transparent; border:0; color:var(--muted);
+    padding:8px 10px; border-radius:8px; cursor:pointer; font:inherit; transition:background .15s, color .15s; }
+  .tab svg { width:18px; height:18px; flex-shrink:0; opacity:.85; }
+  .tab-text { display:flex; flex-direction:column; min-width:0; line-height:1.3; }
+  .tab-label { font-size:13.5px; font-weight:550; color:var(--text-2); }
+  .tab-sub { font-size:11px; color:var(--faint); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .tab:hover { background:#151b27; color:var(--text); }
+  .tab:hover .tab-label { color:var(--text); }
+  .tab.active { background:linear-gradient(90deg,rgba(110,139,255,.18),rgba(110,139,255,.06)); color:#cdd7ff; box-shadow:0 0 0 1px rgba(110,139,255,.22) inset; }
+  .tab.active .tab-label { color:#fff; }
+  .tab.active .tab-sub { color:#93a3d6; }
+  .tab.active::before { content:""; position:absolute; left:-8px; top:9px; bottom:9px; width:3px; border-radius:0 3px 3px 0; background:linear-gradient(var(--accent),var(--accent-2)); }
+  .sb-spacer { flex:1; }
+  .sb-foot { padding:10px 12px 12px; border-top:1px solid #1a2130; display:flex; flex-direction:column; gap:10px; }
+  .sb-info { font-size:11.5px; color:var(--muted); background:#10151f; border:1px solid var(--line); border-radius:var(--r); padding:8px 10px; }
+  .sb-info summary { cursor:pointer; color:var(--text-2); font-size:12px; list-style:none; display:flex; align-items:center; gap:6px; }
+  .sb-info summary::-webkit-details-marker { display:none; }
+  .sb-info summary::before { content:""; width:6px; height:6px; border-radius:50%; background:var(--ok); box-shadow:0 0 0 3px rgba(63,207,142,.15); }
+  .sb-info p { margin:8px 0 2px; line-height:1.6; }
+  .language-switch { display:flex; gap:2px; padding:3px; border:1px solid var(--line); border-radius:9px; background:#0f141d; }
+  .language-switch button { flex:1; border:0; background:transparent; color:var(--muted); border-radius:6px; padding:5px 10px; font-size:12px; cursor:pointer; transition:.15s; }
+  .language-switch button:hover { color:var(--text); }
+  .language-switch button.selected { background:#26314a; color:#fff; box-shadow:0 1px 3px #0006; }
+
+  .workspace { display:flex; flex-direction:column; min-width:0; min-height:0; background:radial-gradient(1200px 500px at 70% -200px,rgba(110,139,255,.07),transparent 60%),var(--bg); }
+  .toolbar { flex:0 0 52px; height:52px; display:flex; align-items:center; gap:16px; padding:0 18px 0 22px; border-bottom:1px solid var(--line); background:rgba(12,16,23,.82); backdrop-filter:blur(10px); min-width:0; }
+  .tb-title { display:flex; align-items:baseline; gap:10px; min-width:0; flex:1; }
+  .tb-title #viewTitle { font-size:15px; font-weight:650; white-space:nowrap; }
+  .tb-sub { color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .tb-crumb { color:var(--faint); font-size:12px; white-space:nowrap; }
+  .reviewbar { display:flex; align-items:center; gap:6px; margin:0; font-size:12.5px; color:var(--text-2); }
+  .reviewbar label { display:flex; align-items:center; gap:8px; cursor:pointer; padding:5px 10px; border-radius:8px; border:1px solid transparent; transition:.15s; white-space:nowrap; }
+  .reviewbar label:hover { background:#141a26; border-color:var(--line); }
+  .reviewbar input[type=checkbox] { appearance:none; -webkit-appearance:none; margin:0; width:30px; height:17px; border-radius:20px; background:#2a3245; position:relative; cursor:pointer; transition:background .2s; flex-shrink:0; border:0; padding:0; }
+  .reviewbar input[type=checkbox]::after { content:""; position:absolute; top:2px; left:2px; width:13px; height:13px; border-radius:50%; background:#cfd5e2; transition:transform .2s var(--ease); box-shadow:0 1px 2px #0008; }
+  .reviewbar input[type=checkbox]:checked { background:linear-gradient(90deg,var(--accent),var(--accent-2)); }
+  .reviewbar input[type=checkbox]:checked::after { transform:translateX(13px); background:#fff; }
+  .reviewbar #demoOn:checked { background:var(--err); }
+  .reviewbar input[type=checkbox]:disabled { opacity:.4; cursor:not-allowed; }
+  .tb-sep { width:1px; height:22px; background:var(--line); }
+
+  #demoBanner { display:none; margin:0; border:0; border-bottom:1px solid #5a1f24; border-radius:0; background:linear-gradient(90deg,#3a1215,#2a1013); color:#ffc1c1; padding:8px 22px; font-size:12.5px; }
+  #demoBanner.on { display:block; }
+  main.content { flex:1 1 auto; overflow:auto; min-height:0; padding:22px 26px 90px; scroll-behavior:smooth; }
+  main.content > section { max-width:1240px; margin:0 auto; animation:viewIn .28s var(--ease); }
+  @keyframes viewIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+
+  .statusbar { flex:0 0 28px; height:28px; display:flex; align-items:center; gap:14px; padding:0 14px; border-top:1px solid var(--line); background:#0b0f16; color:var(--muted); font-size:11.5px; white-space:nowrap; overflow:hidden; }
+  .statusbar .sb-item { display:inline-flex; align-items:center; gap:6px; }
+  .statusbar .grow { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; }
+  .dot { width:7px; height:7px; border-radius:50%; background:var(--faint); display:inline-block; flex-shrink:0; }
+  .dot.ok { background:var(--ok); box-shadow:0 0 0 3px rgba(63,207,142,.14); }
+  .dot.warn { background:var(--warn); box-shadow:0 0 0 3px rgba(242,194,91,.14); }
+  .dot.err { background:var(--err); box-shadow:0 0 0 3px rgba(242,107,107,.14); }
+  #rvLive { color:var(--text-2); }
+
+  /* ---------- Surfaces ---------- */
+  .panel { background:linear-gradient(180deg,var(--panel-2),var(--panel)); border:1px solid var(--line); border-radius:var(--r-lg); padding:18px; margin-bottom:14px; box-shadow:var(--shadow); }
+  .card { background:linear-gradient(180deg,var(--panel-2),var(--panel)); border:1px solid var(--line); border-radius:var(--r-lg); margin-bottom:12px; overflow:hidden; box-shadow:var(--shadow); transition:border-color .2s; animation:viewIn .3s var(--ease); }
+  .card:hover { border-color:var(--line-2); }
+  .card.final { border-color:var(--accent-line); box-shadow:0 0 0 1px rgba(110,139,255,.25) inset, 0 12px 32px -16px rgba(110,139,255,.35); }
+  .card .head { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-bottom:1px solid var(--line); gap:8px; background:rgba(255,255,255,.015); }
+  .card .title { font-weight:620; font-size:13.5px; }
+  .body { padding:14px 16px; white-space:pre-wrap; line-height:1.7; font-size:13.5px; color:var(--text-2); }
+  h2.sec { font-size:13px; font-weight:650; margin:0 0 10px; color:var(--text); letter-spacing:.2px; }
+  .hint { color:var(--muted); font-size:12px; }
+  p.hint { line-height:1.65; margin:0 0 12px; }
+  .note { font-size:12px; color:var(--warn); margin-top:10px; opacity:.9; }
+  .warn { color:var(--warn); font-size:12.5px; margin:6px 0; }
+  .badge { font-size:10.5px; color:var(--muted); border:1px solid var(--line-2); background:#0f141d; border-radius:6px; padding:1px 6px; margin-left:6px; font-family:var(--mono); white-space:nowrap; }
+  .status { font-size:12px; color:var(--muted); } .status.ok { color:var(--ok); } .status.err { color:var(--err); }
+
+  /* ---------- Controls ---------- */
+  .modes { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+  .mode { border:1px solid var(--line-2); background:#10151f; color:var(--text-2); padding:6px 12px; border-radius:999px; cursor:pointer; font-size:12.5px; transition:all .15s var(--ease); }
+  .mode small { color:var(--faint); margin-left:6px; font-size:11px; }
+  .mode:hover { border-color:#3a4560; color:var(--text); background:#141a27; }
+  .mode.active { background:linear-gradient(135deg,var(--accent),var(--accent-2)); border-color:transparent; color:#fff; box-shadow:0 4px 14px -4px rgba(110,139,255,.55); }
+  .mode.active small { color:#e4e9ff; }
+  textarea, select, input { font:inherit; color:var(--text); background:#0c1017; border:1px solid var(--line-2); border-radius:var(--r); transition:border-color .15s, box-shadow .15s, background .15s; }
+  textarea { width:100%; min-height:96px; padding:11px 13px; font-size:13.5px; line-height:1.65; resize:vertical; }
+  select, input { padding:6px 10px; font-size:12.5px; height:32px; }
+  input[type=checkbox], input[type=file] { height:auto; }
+  textarea:hover, select:hover, input:hover { border-color:#38425a; }
+  textarea:focus, select:focus, input:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); background:#0d121b; }
+  textarea::placeholder, input::placeholder { color:var(--faint); }
+  .row { display:flex; gap:10px; align-items:center; margin-top:12px; flex-wrap:wrap; }
+  label.hint { display:inline-flex; align-items:center; gap:7px; }
+  button.run { display:inline-flex; align-items:center; justify-content:center; gap:6px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border:0; height:34px; padding:0 18px; border-radius:var(--r); font-size:13px; font-weight:600; cursor:pointer;
+    box-shadow:0 1px 0 rgba(255,255,255,.2) inset, 0 6px 16px -8px rgba(110,139,255,.8); transition:transform .12s, filter .15s, box-shadow .15s; }
+  button.run:hover { filter:brightness(1.08); box-shadow:0 1px 0 rgba(255,255,255,.2) inset, 0 8px 20px -8px rgba(110,139,255,.9); }
+  button.run:active { transform:translateY(1px); }
+  button.run:disabled { opacity:.55; cursor:wait; filter:saturate(.6); }
+  button.ghost, .copy { display:inline-flex; align-items:center; gap:6px; background:#121824; border:1px solid var(--line-2); color:var(--text-2); border-radius:8px; padding:6px 12px; font-size:12.5px; cursor:pointer; transition:.15s; }
+  .copy { padding:3px 10px; font-size:12px; border-radius:7px; }
+  button.ghost:hover, .copy:hover { background:#192031; border-color:#3a4560; color:var(--text); }
+  .copy:disabled { opacity:.45; cursor:default; }
+  label.chk { display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--text-2); margin-right:4px; padding:4px 10px; border:1px solid var(--line); border-radius:999px; background:#0f141d; cursor:pointer; }
+  label.chk:hover { border-color:var(--line-2); }
+  input[type=checkbox] { accent-color:var(--accent); }
+  button:focus-visible, .tab:focus-visible, input[type=checkbox]:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+  .spin { display:inline-block; width:11px; height:11px; border:2px solid rgba(150,165,200,.35); border-top-color:var(--accent); border-radius:50%; animation:s .8s linear infinite; margin-right:6px; vertical-align:-1px; }
+  @keyframes s { to { transform:rotate(360deg); } }
+
+  /* ---------- Two-pane views ---------- */
+  .grid { display:grid; grid-template-columns:272px minmax(0,1fr); gap:16px; align-items:start; }
+  .grid > aside { position:sticky; top:0; }
+  .slist .item { padding:9px 11px; border:1px solid var(--line); border-radius:9px; margin-bottom:6px; cursor:pointer; font-size:12.5px; background:#0f141d; transition:.15s; color:var(--text-2); }
+  .slist .item:hover { border-color:var(--line-2); background:#131926; color:var(--text); }
+  .slist .item.active { border-color:var(--accent-line); background:linear-gradient(90deg,rgba(110,139,255,.14),rgba(110,139,255,.04)); color:#fff; }
+  .slist .item small, .vlist small { display:block; color:var(--muted); margin-top:3px; font-size:11px; }
+  .vlist .v { padding:8px 10px; border-left:2px solid var(--line-2); margin-bottom:6px; cursor:pointer; font-size:12.5px; border-radius:0 8px 8px 0; transition:.15s; }
+  .vlist .v:hover { background:#131926; }
+  .vlist .v.active { border-left-color:var(--accent); background:rgba(110,139,255,.1); }
+  .vlist .v .cl { white-space:pre-wrap; color:var(--muted); font-size:11.5px; margin-top:4px; }
+
+  /* ---------- Markdown ---------- */
+  .md { line-height:1.75; font-size:13.5px; overflow-x:auto; color:var(--text-2); }
+  .md h1 { font-size:19px; margin:4px 0 12px; color:var(--text); } .md h2 { font-size:16px; margin:22px 0 8px; border-bottom:1px solid var(--line); padding-bottom:6px; color:var(--text); }
+  .md h3 { font-size:14px; margin:16px 0 6px; color:var(--text); } .md b { color:var(--text); }
+  .md table { border-collapse:separate; border-spacing:0; margin:10px 0; font-size:12.5px; border:1px solid var(--line); border-radius:9px; overflow:hidden; }
+  .md th, .md td { border-bottom:1px solid var(--line); border-right:1px solid var(--line); padding:6px 10px; vertical-align:top; text-align:left; }
+  .md tr > :last-child { border-right:0; } .md tbody tr:last-child td { border-bottom:0; }
+  .md th { background:#182033; color:var(--text); font-weight:600; }
+  .md code { background:#0c1017; border:1px solid var(--line); padding:1px 5px; border-radius:5px; font-family:var(--mono); font-size:12px; }
+  .md pre { background:#0c1017; border:1px solid var(--line); padding:12px; border-radius:var(--r); overflow-x:auto; }
+  .md pre code { border:0; padding:0; }
+  .md blockquote { border-left:3px solid var(--accent-line); margin:10px 0; padding:4px 14px; color:var(--muted); background:rgba(110,139,255,.04); border-radius:0 8px 8px 0; }
+  .md hr { border:0; border-top:1px solid var(--line); margin:18px 0; }
+  .md ul, .md ol { padding-left:22px; margin:6px 0; }
+  .md .verify { color:var(--warn); background:rgba(242,194,91,.12); border-radius:4px; padding:0 2px; }
+  textarea.big { min-height:480px; font-family:var(--mono); font-size:12.5px; }
+
+  /* ---------- Progress / pills ---------- */
+  .progress { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+  .pill { display:inline-flex; align-items:center; font-size:11.5px; border:1px solid var(--line-2); border-radius:999px; padding:3px 10px; color:var(--muted); background:#0f141d; margin-right:4px; }
+  .pill.ok, .pill.posted { color:var(--ok); border-color:rgba(63,207,142,.45); background:rgba(63,207,142,.07); }
+  .pill.err, .pill.failed, .pill.manual { color:var(--err); border-color:rgba(242,107,107,.45); background:rgba(242,107,107,.07); }
+  .pill.run { color:var(--text); border-color:var(--accent-line); background:var(--accent-soft); }
+  .pill.approved { color:var(--warn); border-color:rgba(242,194,91,.45); }
+  details { margin-top:8px; } details summary { cursor:pointer; color:var(--muted); font-size:12.5px; }
+  details summary:hover { color:var(--text); }
+
+  /* ---------- Debate ---------- */
+  .chat { display:flex; flex-direction:column; gap:12px; }
+  .msg { display:flex; gap:10px; align-items:flex-start; animation:viewIn .3s var(--ease); }
+  .av { flex:0 0 36px; width:36px; height:36px; border-radius:11px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; color:#fff; box-shadow:0 4px 10px -4px #000, 0 0 0 1px rgba(255,255,255,.08) inset; }
+  .bubble { background:#111723; border:1px solid var(--line); border-left:3px solid var(--c, var(--accent)); border-radius:4px 12px 12px 12px; padding:10px 13px; max-width:820px; line-height:1.7; font-size:13.5px; color:var(--text-2); }
+  .bubble .who { font-size:11.5px; color:var(--muted); margin-bottom:4px; white-space:normal; }
+  .bubble .who b { color:var(--c, var(--text)); font-size:12.5px; }
+  .phase { text-align:center; color:var(--muted); font-size:11.5px; margin:8px 0; display:flex; align-items:center; gap:10px; letter-spacing:.5px; }
+  .phase::before, .phase::after { content:""; flex:1; border-top:1px dashed var(--line-2); }
+  .typing .bubble { color:var(--muted); }
+  .votes { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:8px; }
+  .vote { border:1px solid var(--line); border-top:3px solid var(--c); border-radius:10px; padding:10px 12px; font-size:12.5px; background:#111723; }
+  .vote .v { font-weight:700; margin:4px 0; }
+  .v-支持 { color:var(--ok); } .v-反对 { color:var(--err); } .v-有条件支持 { color:var(--warn); } .v-弃权 { color:var(--muted); }
+  .proposal { border:1px solid rgba(216,180,122,.45); background:linear-gradient(180deg,#1f1a12,#18140e); border-radius:12px; padding:11px 14px; line-height:1.7; font-size:13.5px; }
+  .speakers { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+  .spk { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
+  .spk .av { flex-basis:22px; width:22px; height:22px; font-size:9.5px; border-radius:7px; }
+
+  /* ---------- Review ---------- */
+  .rv { display:inline-block; font-size:10.5px; border-radius:999px; padding:1px 8px; margin-left:6px; cursor:pointer; border:1px solid var(--line-2); vertical-align:middle; user-select:none; transition:.15s; }
+  .rv:hover { filter:brightness(1.2); }
+  .rv.pass { color:var(--ok); border-color:rgba(63,207,142,.5); background:rgba(63,207,142,.08); }
+  .rv.fixed { color:var(--warn); border-color:rgba(242,194,91,.5); background:rgba(242,194,91,.08); }
+  .rv.fail { color:var(--err); border-color:rgba(242,107,107,.5); background:rgba(242,107,107,.08); }
+  .rv.demo::after { content:" · DEMO"; color:var(--err); }
+  .rvd { display:none; margin-top:8px; border-top:1px dashed var(--line-2); padding:10px 14px; font-size:12.5px; line-height:1.6; white-space:normal; }
+  .rvd.open { display:block; animation:viewIn .2s var(--ease); }
+  .rvd h5 { margin:10px 0 4px; font-size:11.5px; color:var(--muted); font-weight:600; }
+  .rvd .txt { background:#0c1017; border:1px solid var(--line); border-radius:8px; padding:7px 10px; white-space:pre-wrap; max-height:260px; overflow:auto; }
+  .rvd .orig { border-left:3px solid var(--err); } .rvd .fin { border-left:3px solid var(--ok); }
+  .ck { display:flex; gap:6px; align-items:baseline; margin:3px 0; }
+  .ck .m { font-weight:700; } .ck.ok .m { color:var(--ok); } .ck.bad .m { color:var(--err); } .ck.skip .m { color:var(--muted); }
+  .ck .by { font-size:10px; border:1px solid var(--line-2); border-radius:4px; padding:0 4px; color:var(--muted); }
+  .ck .by.ai { color:#a9bcff; border-color:var(--accent-line); }
+  .rvsum { font-size:12px; color:var(--muted); margin:6px 0 12px; padding:8px 12px; border:1px solid var(--line); border-radius:var(--r); background:#0f141d; }
+
+  /* ---------- Benchmark ---------- */
+  .bgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
+  .kpi { background:linear-gradient(180deg,#121826,#0e131c); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+  .kpi b { display:block; font-size:21px; margin-top:4px; font-weight:650; letter-spacing:.3px; } .kpi span { color:var(--muted); font-size:11.5px; }
+  table.heat { border-collapse:separate; border-spacing:2px; font-size:10.5px; margin-top:8px; }
+  table.heat td, table.heat th { width:26px; height:20px; text-align:center; border:0; border-radius:4px; color:var(--muted); font-weight:normal; }
+  table.heat td { background:#141a26; }
+  .tbar { height:7px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); border-radius:4px; }
+  .kbitem { border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:10px; background:#0f141d; transition:border-color .15s; }
+  .kbitem:hover { border-color:var(--line-2); }
+  .kbitem img { max-height:110px; border-radius:8px; margin:6px 6px 0 0; }
+  .qitem { border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:8px; background:#0f141d; }
+  #bQueueBox > .head { padding-bottom:6px; }
+
+  /* ---------- Ask view / wolf character ---------- */
+  .wolf-avatar { display:block; width:48px; height:48px; object-fit:contain; flex-shrink:0; }
+  .wolf-welcome { display:flex; align-items:center; gap:20px; padding:6px 4px 20px; }
+  .wolf-portrait { width:84px; height:84px; position:relative; display:flex; align-items:center; justify-content:center; flex-shrink:0; border-radius:22px;
+    background:radial-gradient(circle at 50% 75%,#344566,#151c2b 72%); box-shadow:0 0 0 1px #2a3550 inset, 0 14px 30px -14px #000; }
+  .wolf-portrait img { width:82px; height:82px; position:relative; filter:drop-shadow(0 6px 10px #0005); }
+  .wolf-eyebrow { color:var(--gold); font-size:10.5px; font-weight:650; letter-spacing:2px; margin-bottom:6px; }
+  .wolf-welcome h2 { font-size:23px; font-weight:650; margin:0 0 6px; letter-spacing:.3px; background:linear-gradient(90deg,#fff,#b9c6ff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .wolf-welcome p { color:var(--muted); font-size:13px; margin:0; line-height:1.75; }
+  #tab-ask > .panel { padding:18px 20px; border-radius:16px; }
+  #tab-ask > .panel:focus-within { border-color:#34405c; }
+  #q { min-height:120px; padding:14px 15px; line-height:1.7; font-size:14px; }
+  #run { margin-left:auto; min-width:96px; }
+  .wolf-empty { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:10px; color:var(--muted); font-size:12.5px; padding:48px 0; border:1px dashed var(--line); border-radius:16px; margin-top:4px; }
+  .wolf-empty img { width:40px; height:40px; opacity:.75; }
+  #out:not(:empty) + .wolf-empty { display:none; }
+  .answer-identity { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .answer-identity > .wolf-avatar { width:30px; height:30px; border-radius:9px; background:#23304a; }
+  .av.wolf-chief { background:#29384f !important; overflow:hidden; }
+  .av.wolf-chief img { width:100%; height:100%; object-fit:contain; }
+
+  /* ---------- Floating agent chat ---------- */
+  .cw-launcher { position:fixed; right:24px; bottom:42px; z-index:60; width:56px; height:56px; border-radius:50%; border:0; cursor:pointer; color:#fff;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2)); box-shadow:0 12px 30px -8px rgba(110,139,255,.75), 0 0 0 1px rgba(255,255,255,.12) inset;
+    display:flex; align-items:center; justify-content:center; transition:transform .2s var(--ease), box-shadow .2s; }
+  .cw-launcher:hover { transform:translateY(-2px) scale(1.04); box-shadow:0 16px 36px -8px rgba(110,139,255,.9), 0 0 0 1px rgba(255,255,255,.16) inset; }
+  .cw-launcher svg { width:24px; height:24px; position:absolute; transition:opacity .2s, transform .25s var(--ease); }
+  .cw-launcher .i-close { opacity:0; transform:rotate(-90deg) scale(.6); }
+  .cw-launcher.open .i-chat { opacity:0; transform:rotate(90deg) scale(.6); }
+  .cw-launcher.open .i-close { opacity:1; transform:none; }
+  .cw-launcher::after { content:""; position:absolute; inset:-4px; border-radius:50%; border:2px solid rgba(143,114,255,.5); animation:cwPulse 2.6s ease-out infinite; pointer-events:none; }
+  .cw-launcher.open::after, .cw-launcher.seen::after { display:none; }
+  @keyframes cwPulse { 0% { transform:scale(.95); opacity:.9; } 80%,100% { transform:scale(1.35); opacity:0; } }
+  .cw-panel { position:fixed; right:24px; bottom:108px; z-index:59; width:396px; height:min(600px, calc(100vh - 140px)); display:flex; flex-direction:column;
+    background:linear-gradient(180deg,#151b28,#10141d); border:1px solid var(--line-2); border-radius:18px; box-shadow:var(--shadow-lg); overflow:hidden;
+    opacity:0; visibility:hidden; transform:translateY(14px) scale(.97); transform-origin:bottom right; transition:opacity .22s var(--ease), transform .25s var(--ease), visibility 0s linear .25s; }
+  .cw-panel.open { opacity:1; visibility:visible; transform:none; transition:opacity .22s var(--ease), transform .25s var(--ease), visibility 0s; }
+  .cw-head { display:flex; align-items:center; gap:10px; padding:12px 12px 12px 14px; border-bottom:1px solid var(--line); background:linear-gradient(90deg,rgba(110,139,255,.12),rgba(143,114,255,.04)); }
+  .cw-avatar { width:34px; height:34px; border-radius:10px; object-fit:contain; background:radial-gradient(circle at 50% 80%,#3a4b69,#1a2233 70%); box-shadow:0 0 0 1px #2c3852 inset; flex-shrink:0; }
+  .cw-id { flex:1; min-width:0; line-height:1.3; }
+  .cw-id b { display:block; font-size:13.5px; }
+  .cw-id span { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .cw-head select { height:28px; max-width:128px; font-size:12px; padding:3px 8px; border-radius:8px; }
+  .cw-icon { width:28px; height:28px; border-radius:8px; border:1px solid var(--line); background:#121826; color:var(--text-2); cursor:pointer; display:flex; align-items:center; justify-content:center; transition:.15s; flex-shrink:0; }
+  .cw-icon:hover { background:#1c2334; color:var(--text); border-color:var(--line-2); }
+  .cw-icon svg { width:16px; height:16px; }
+  .cw-list { flex:1; overflow-y:auto; padding:16px 14px; display:flex; flex-direction:column; gap:12px; scroll-behavior:smooth; }
+  .cw-m { display:flex; flex-direction:column; max-width:88%; animation:viewIn .25s var(--ease); }
+  .cw-m.user { align-self:flex-end; align-items:flex-end; }
+  .cw-m.bot { align-self:flex-start; }
+  .cw-b { padding:9px 12px; border-radius:14px; font-size:13px; line-height:1.65; word-break:break-word; }
+  .cw-m.user .cw-b { background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border-bottom-right-radius:4px; white-space:pre-wrap; box-shadow:0 6px 16px -10px rgba(110,139,255,.9); }
+  .cw-m.bot .cw-b { background:#1a2131; border:1px solid var(--line); color:var(--text-2); border-bottom-left-radius:4px; }
+  .cw-m.bot .cw-b.md p { margin:0 0 6px; } .cw-m.bot .cw-b.md p:last-child { margin-bottom:0; }
+  .cw-m.bot .cw-b.md h1, .cw-m.bot .cw-b.md h2, .cw-m.bot .cw-b.md h3 { font-size:13.5px; margin:8px 0 4px; border:0; padding:0; }
+  .cw-m.err .cw-b { background:rgba(242,107,107,.08); border-color:rgba(242,107,107,.4); color:#ffc4c4; }
+  .cw-meta { display:flex; align-items:center; gap:8px; font-size:10.5px; color:var(--faint); margin-top:4px; padding:0 4px; flex-wrap:wrap; }
+  .cw-meta button { background:none; border:0; color:var(--muted); cursor:pointer; font-size:10.5px; padding:0; }
+  .cw-meta button:hover { color:var(--text); }
+  .cw-meta .rv { margin-left:0; cursor:default; }
+  .cw-typing { display:flex; align-items:center; gap:8px; color:var(--muted); font-size:12px; }
+  .cw-dots { display:inline-flex; gap:3px; }
+  .cw-dots i { width:5px; height:5px; border-radius:50%; background:#8f9bc0; animation:cwDot 1.2s infinite ease-in-out; }
+  .cw-dots i:nth-child(2) { animation-delay:.15s; } .cw-dots i:nth-child(3) { animation-delay:.3s; }
+  @keyframes cwDot { 0%,80%,100% { opacity:.25; transform:translateY(0); } 40% { opacity:1; transform:translateY(-3px); } }
+  .cw-welcome { text-align:center; color:var(--muted); font-size:12.5px; padding:14px 8px 4px; }
+  .cw-welcome img { width:56px; height:56px; margin:0 auto 8px; display:block; }
+  .cw-welcome b { display:block; color:var(--text); font-size:14px; margin-bottom:4px; }
+  .cw-chips { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-top:12px; }
+  .cw-chips button { border:1px solid var(--line-2); background:#121826; color:var(--text-2); border-radius:999px; padding:5px 11px; font-size:12px; cursor:pointer; transition:.15s; }
+  .cw-chips button:hover { border-color:var(--accent-line); color:#fff; background:var(--accent-soft); }
+  .cw-input { display:flex; align-items:flex-end; gap:8px; padding:10px 12px 8px; border-top:1px solid var(--line); background:#0f131c; }
+  .cw-input textarea { flex:1; min-height:40px; max-height:140px; resize:none; padding:9px 12px; font-size:13px; line-height:1.5; border-radius:12px; }
+  .cw-send { width:40px; height:40px; border-radius:12px; border:0; cursor:pointer; color:#fff; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:filter .15s, transform .12s; }
+  .cw-send:hover { filter:brightness(1.1); } .cw-send:active { transform:scale(.96); }
+  .cw-send:disabled { opacity:.45; cursor:default; }
+  .cw-send.stop { background:#2a3245; }
+  .cw-send svg { width:18px; height:18px; }
+  .cw-foot { font-size:10.5px; color:var(--faint); text-align:center; padding:0 12px 8px; background:#0f131c; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1100px) { .tb-sub { display:none; } }
+  @media (max-width:900px) {
+    .app { grid-template-columns:64px minmax(0,1fr); }
+    .sb-brand { justify-content:center; padding:14px 8px; } .sb-brand-text, .tab-text, .sb-section, .sb-info { display:none; }
+    .tab { justify-content:center; padding:10px; } .tab.active::before { left:-8px; }
+    .language-switch { flex-direction:column; }
+    .grid { grid-template-columns:1fr; } .grid > aside { position:static; }
+    .reviewbar label span.lbl-long { display:none; }
+  }
+  @media (max-width:640px) {
+    .toolbar { padding:0 10px; gap:8px; overflow-x:auto; } .tb-crumb { display:none; } .tb-title { flex:0 0 auto; } .reviewbar label { font-size:11px; padding:4px 6px; }
+    main.content { padding:14px 12px 90px; }
+    .wolf-welcome { gap:12px; } .wolf-portrait { width:64px; height:64px; } .wolf-portrait img { width:62px; height:62px; } .wolf-welcome h2 { font-size:19px; }
+    .cw-panel { right:8px; left:8px; width:auto; bottom:98px; height:calc(100vh - 120px); }
+    .cw-launcher { right:14px; bottom:36px; }
+    .statusbar .sb-hide-sm { display:none; }
+  }
+  @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
+
+  /* ---------- v1.6 accounts: sidebar switcher + start page ---------- */
+  .acct { position:relative; padding:10px 10px 2px; }
+  .acct-btn { display:flex; align-items:center; gap:10px; width:100%; padding:8px 10px; border-radius:10px; border:1px solid var(--line); background:#10151f; color:var(--text); cursor:pointer; text-align:left; font:inherit; transition:.15s; }
+  .acct-btn:hover, .acct.open .acct-btn { border-color:var(--line-2); background:#141a27; }
+  .acct-av { position:relative; overflow:hidden; width:30px; height:30px; border-radius:50%; flex-shrink:0; object-fit:cover; background:linear-gradient(135deg,#34406a,#232c45); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:#cbd5ff; box-shadow:0 0 0 1px #2c3852; }
+  .acct-text { display:flex; flex-direction:column; min-width:0; flex:1; line-height:1.3; }
+  .acct-text b { font-size:12.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .acct-text span { font-size:11px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .acct-chev { width:14px; height:14px; color:var(--faint); flex-shrink:0; transition:transform .2s; }
+  .acct.open .acct-chev { transform:rotate(180deg); }
+  .acct-menu { position:absolute; left:10px; right:10px; top:calc(100% + 4px); z-index:70; background:#161c29; border:1px solid var(--line-2); border-radius:12px; box-shadow:var(--shadow-lg); padding:6px; display:none; max-height:360px; overflow:auto; }
+  .acct.open .acct-menu { display:block; animation:viewIn .16s var(--ease); }
+  .acct-menu .mi { display:flex; align-items:center; gap:9px; width:100%; padding:7px 8px; border:0; background:transparent; color:var(--text-2); border-radius:8px; cursor:pointer; text-align:left; font:inherit; font-size:12.5px; }
+  .acct-menu .mi:hover { background:#1e2638; color:var(--text); }
+  .acct-menu .mi .acct-av { width:24px; height:24px; font-size:10px; }
+  .acct-menu .mi .mi-t { display:flex; flex-direction:column; min-width:0; flex:1; line-height:1.3; }
+  .acct-menu .mi .mi-t small { color:var(--faint); font-size:10.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .acct-menu .mi.cur { background:rgba(110,139,255,.12); color:#fff; }
+  .acct-menu .mi.cur::after { content:"✓"; color:var(--accent); font-weight:700; }
+  .acct-menu hr { border:0; border-top:1px solid var(--line); margin:5px 2px; }
+  .acct-busy { position:absolute; right:22px; top:22px; }
+  #startPage { position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; background:rgba(6,8,12,.72); backdrop-filter:blur(8px); animation:viewIn .2s var(--ease); }
+  #startPage .sp-box { width:min(520px,92vw); background:linear-gradient(180deg,#171d2b,#11151f); border:1px solid var(--line-2); border-radius:18px; box-shadow:var(--shadow-lg); padding:26px 26px 22px; }
+  #startPage .sp-head { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
+  #startPage .sp-head img { width:52px; height:52px; border-radius:15px; object-fit:contain; background:radial-gradient(circle at 50% 80%,#3a4b69,#1a2233 70%); box-shadow:0 0 0 1px #2c3852 inset; }
+  #startPage h2 { margin:0; font-size:18px; font-weight:650; }
+  #startPage .sp-eyebrow { color:var(--gold); font-size:10.5px; letter-spacing:2px; font-weight:650; margin-bottom:3px; }
+  #startPage p { color:var(--muted); font-size:12.5px; line-height:1.7; margin:0 0 14px; }
+  #startPage .sp-field { display:flex; align-items:center; gap:0; border:1px solid var(--line-2); border-radius:11px; background:#0c1017; transition:.15s; }
+  #startPage .sp-field:focus-within { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); }
+  #startPage .sp-field span { padding:0 4px 0 13px; color:var(--faint); font-size:15px; }
+  #startPage .sp-field input { flex:1; border:0; background:transparent; height:44px; font-size:15px; padding:0 12px 0 2px; box-shadow:none; }
+  #startPage .sp-row { display:flex; align-items:center; gap:10px; margin-top:14px; flex-wrap:wrap; }
+  #startPage .sp-or { display:flex; align-items:center; gap:8px; margin-top:16px; padding-top:14px; border-top:1px dashed var(--line); font-size:12px; color:var(--muted); flex-wrap:wrap; }
+  #spMsg { font-size:12px; color:var(--muted); flex-basis:100%; min-height:18px; }
+  #spMsg.err { color:var(--err); }
+  @media (max-width:900px) { .acct { padding:10px 8px 2px; } .acct-btn { justify-content:center; padding:7px; } .acct-text, .acct-chev { display:none; } .acct-menu { width:260px; right:auto; } }
+  .acct-av img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:50%; }
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" aria-label="主导航">
+  <div class="sb-brand">
+    <img class="sb-logo" src="/assets/luca-wolf.png" alt="Luca 小狼助手">
+    <div class="sb-brand-text"><b>X 运营团队</b><span>5 岗位智能体工作台</span></div>
+  </div>
+  <div class="acct" id="acctCard">
+    <button type="button" class="acct-btn" id="acctBtn" aria-haspopup="menu" aria-expanded="false" title="切换账号">
+      <span class="acct-av" id="acctAv" data-no-i18n>·</span>
+      <span class="acct-text"><b id="acctName" data-no-i18n>…</b><span id="acctPos" data-no-i18n>账号</span></span>
+      <svg class="acct-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="acct-menu" id="acctMenu" role="menu"></div>
+  </div>
+  <div class="sb-section">工作区</div>
+  <nav class="tabs" aria-label="功能">
+    <button class="tab active" data-tab="ask" title="问答（单岗位 / 全员）">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 10h6M9 14h4"/></svg>
+      <span class="tab-text"><span class="tab-label">问答</span><span class="tab-sub">单岗位 / 全员</span></span>
+    </button>
+    <button class="tab" data-tab="strategy" title="运营策略（每日跟进）">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+      <span class="tab-text"><span class="tab-label">运营策略</span><span class="tab-sub">每日跟进</span></span>
+    </button>
+    <button class="tab" data-tab="debate" title="辩论（5 岗位）">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9.5" r="2.5"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5M15 14.6c2.6-.4 5 1 5.8 4.4"/></svg>
+      <span class="tab-text"><span class="tab-label">辩论</span><span class="tab-sub">5 岗位</span></span>
+    </button>
+    <button class="tab" data-tab="bench" title="对标账号分析">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m20.5 20.5-4.8-4.8M8.5 12.5l2-2 1.5 1.5 2.5-3"/></svg>
+      <span class="tab-text"><span class="tab-label">对标分析</span><span class="tab-sub">知识库 · 发帖队列</span></span>
+    </button>
+  </nav>
+  <div class="sb-spacer"></div>
+  <div class="sb-foot">
+    <details class="sb-info"><summary>仅草稿模式</summary><p>默认只出草稿。只有在「对标账号分析 → 发帖队列」里、并且你在 .env.local 配好自己的 X 发帖密钥后，才会按你选的「审核后发 / 全自动发」发帖；从不关注、评论或私信。</p></details>
+    <div class="language-switch" role="group" aria-label="Interface language / 界面语言" data-no-i18n>
+      <button type="button" data-ui-language="zh" aria-pressed="true" class="selected" lang="zh-CN">中文</button>
+      <button type="button" data-ui-language="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</aside>
+<div class="workspace">
+  <header class="toolbar">
+    <div class="tb-title"><span class="tb-crumb" id="tbCrumb" data-no-i18n>工作台 /</span><span id="viewTitle">问答</span><span class="tb-sub" id="viewSub">向单个岗位或全员团队提问</span></div>
+    <div class="reviewbar">
+      <label title="每条输出先由代码规则 + 另一个模型审查；不通过就让同一个角色重写，最多 2 次"><input type="checkbox" id="rvOn" checked> AI 审查（Make It Fail）</label>
+      <label title="故意让每个角色先写一版有问题的初稿，用来演示 AI 如何抓错并修复"><input type="checkbox" id="demoOn"> DEMO 出错模式</label>
+    </div>
+  </header>
+  <div id="demoBanner">⚠️ DEMO 出错模式已开启：每个角色的<b>第一版都是故意写坏的</b>（编造数字、假装已发布、超字数等），只为演示审查与修复。最终文本是修正后的版本，仍需你本人审核。</div>
+  <main class="content" id="content">
+    <section id="tab-ask">
+      <div class="wolf-welcome">
+        <div class="wolf-portrait"><img src="/assets/luca-wolf.png" alt="穿深蓝西装的灰白小狼"></div>
+        <div><div class="wolf-eyebrow">LUCA · 你的 AI 运营搭档</div><h2>今天，我们一起做点什么？</h2><p>从一个灵感，到一份好内容。<br>和小狼一起，让 5 位 AI 伙伴帮你推进。</p></div>
+      </div>
+      <div class="panel">
+        <div class="modes" id="modes"></div>
+        <textarea id="q" placeholder="例如：帮我写一条介绍 GPT-6.1 Terra 降价的中文帖"></textarea>
+        <div class="row">
+          <label class="hint">回复语言
+            <select id="lang"><option value="auto">跟随问题</option><option value="zh">中文</option><option value="en">English</option></select>
+          </label>
+              <button class="run" id="run">开始</button>
+          <span class="hint" id="elapsed"></span>
+        </div>
+        <div class="note" id="modeNote"></div>
+      </div>
+      <div id="out"></div>
+      <div class="wolf-empty"><img src="/assets/luca-wolf.png" alt="" aria-hidden="true"><span>灵感、选题、策略，随时来找我聊聊。</span></div>
+    </section>
+
+    <section id="tab-strategy" class="hidden">
+      <div class="grid">
+        <aside>
+          <div class="panel">
+            <button class="run" id="sNewBtn" style="width:100%">＋ 新建策略</button>
+            <h2 class="sec" style="margin-top:14px">我的策略</h2>
+            <div class="slist" id="sList"><div class="hint">加载中…</div></div>
+          </div>
+          <div class="panel" id="sVersionsPanel" style="display:none">
+            <h2 class="sec">版本历史</h2>
+            <div class="vlist" id="sVersions"></div>
+          </div>
+        </aside>
+        <div>
+          <div class="panel" id="sNew">
+            <h2 class="sec">新建 X 运营策略</h2>
+            <p class="hint">写下你的问题或目标。DeepSeek（选题）、Qwen（内容·视觉）、Gemini（社区）、MiniMax（数据·流程）同时给出建议，再由 Claude（主编）整合成一份完整策略：定位、内容支柱、每周日历、形式、互动计划、KPI、风险、未来 7 天行动。约 2–4 分钟。只出草稿，不会发帖。</p>
+            <textarea id="sQ" placeholder="例如：账号刚起步（粉丝 1、帖子 0），想在 30 天内把 AI 科普账号做起来，每天能花 1 小时，帮我出一份 X 运营策略。"></textarea>
+            <div class="row"><button class="run" id="sCreate">生成策略</button><span class="hint" id="sCreateElapsed"></span></div>
+            <div class="progress" id="sCreateProgress"></div>
+            <div id="sCreateMsg"></div>
+          </div>
+
+          <div id="sView" style="display:none">
+            <div class="panel">
+              <div class="row" style="margin-top:0;justify-content:space-between">
+                <div><b id="sTitle"></b> <span class="badge" id="sVerBadge"></span><div class="hint" id="sMeta"></div></div>
+                <div class="row" style="margin-top:0">
+                  <button class="ghost" id="sCopy">复制</button>
+                  <button class="ghost" id="sDownload">下载 .md</button>
+                  <button class="ghost" id="sEditBtn">手动编辑</button>
+                </div>
+              </div>
+              <div class="warn" id="sWarn"></div>
+              <div id="sChangelog"></div>
+            </div>
+
+            <div class="panel" id="sFollow">
+              <h2 class="sec">今日跟进</h2>
+              <p class="hint">写下今天的进展、真实数据（粉丝、阅读、互动等）、遇到的问题或想改的地方。Claude（主编）会据此修订出一个新版本，并记录变更和日志。真实数据请直接写数字，模型不会替你编数据。</p>
+              <textarea id="sNote" placeholder="例如：今天发了 2 条支线 B 的帖，第一条阅读 320、点赞 6，第二条阅读 90；感觉线程比单条好；明天想加一条支线 A 的对比表。"></textarea>
+              <div class="row">
+                <span class="hint">同时请这些岗位给建议（可选，会慢一点）：</span>
+                <label class="chk"><input type="checkbox" value="researcher"> DeepSeek·选题</label>
+                <label class="chk"><input type="checkbox" value="editor"> Qwen·内容</label>
+                <label class="chk"><input type="checkbox" value="community"> Gemini·社区</label>
+                <label class="chk"><input type="checkbox" value="data"> MiniMax·数据</label>
+              </div>
+              <div class="row"><button class="run" id="sFollowBtn">提交跟进并修订策略</button><span class="hint" id="sFollowElapsed"></span></div>
+              <div class="progress" id="sFollowProgress"></div>
+              <div id="sFollowMsg"></div>
+            </div>
+
+            <div class="panel" id="sEditPanel" style="display:none">
+              <h2 class="sec">手动编辑（保存为新版本）</h2>
+              <textarea class="big" id="sEditText"></textarea>
+              <div class="row">
+                <input id="sEditNote" placeholder="这次改了什么（可选）" style="flex:1;min-width:200px">
+                <button class="run" id="sEditSave">保存为新版本</button>
+                <button class="ghost" id="sEditCancel">取消</button>
+              </div>
+            </div>
+
+            <div class="panel"><div class="md" id="sMd"></div></div>
+
+            <div class="panel">
+              <h2 class="sec">每日跟进日志</h2>
+              <div id="sLog" class="hint"></div>
+              <details id="sContribBox"><summary>查看本版本各岗位的原始建议</summary><div id="sContrib"></div></details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-debate" class="hidden">
+      <div class="grid">
+        <aside>
+          <div class="panel">
+            <button class="run" id="dNewBtn" style="width:100%">＋ 新辩论</button>
+            <h2 class="sec" style="margin-top:14px">辩论记录</h2>
+            <div class="slist" id="dList"><div class="hint">加载中…</div></div>
+          </div>
+        </aside>
+        <div>
+          <div class="panel" id="dNew">
+            <h2 class="sec">发起一场辩论</h2>
+            <p class="hint">输入一个关于 X 账号运营的议题。流程：第 1 轮立论（每人约 150 字，点名回应上一位）→ 第 2 轮反驳（回应最大分歧，可改变立场）→ Claude 提出具体提案 → 5 位投票（支持 / 反对 / 有条件支持）→ Claude 裁决。发言实时显示，约 3–6 分钟。只出草稿，不会发帖。</p>
+            <textarea id="dTopic" placeholder="例如：账号起步期应该日更 3 条短帖，还是每周 2 条深度线程？"></textarea>
+            <div class="row">
+              <label class="hint">轮数 <select id="dRounds"><option value="1">1 轮（只立论）</option><option value="2" selected>2 轮（立论 + 反驳）</option><option value="3">3 轮（再反驳一次）</option></select></label>
+              <button class="run" id="dStart">开始辩论</button><span class="hint" id="dElapsed"></span>
+            </div>
+            <div class="speakers" id="dSpeakers"></div>
+            <div id="dMsg"></div>
+          </div>
+          <div class="panel" id="dHead" style="display:none">
+            <div class="row" style="margin-top:0;justify-content:space-between">
+              <div><b id="dTitle"></b> <span class="badge" id="dStatus"></span><div class="hint" id="dMeta"></div></div>
+              <div class="row" style="margin-top:0"><button class="ghost" id="dCopy">复制全文</button><button class="ghost" id="dDownload">下载 .md</button></div>
+            </div>
+          </div>
+          <div class="panel" id="dChatPanel" style="display:none"><div class="chat" id="dChat"></div></div>
+          <div class="panel" id="dApply" style="display:none">
+            <h2 class="sec">把裁决写进运营策略</h2>
+            <p class="hint">Claude（主编）会根据裁决书的"最终决定"和"修改建议"修订所选策略，保存为一个新版本（来源：辩论裁决）；也可以用裁决新建一份策略。约 1–2 分钟。</p>
+            <div class="row"><select id="dTarget" style="min-width:260px"></select><button class="run" id="dApplyBtn">保存为策略新版本</button><span class="hint" id="dApplyElapsed"></span></div>
+            <div id="dApplyMsg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tab-bench" class="hidden">
+      <div class="panel">
+        <div class="row" style="margin-top:0">
+          <input id="bUser" placeholder="输入同类博主的 X 用户名，例如 dotey" style="flex:1;min-width:220px">
+          <button class="run" id="bFetch">抓取并分析</button>
+          <label class="copy" style="padding:8px 12px">导入 JSON<input type="file" id="bFile" accept=".json,application/json" style="display:none"></label>
+          <select id="bSample"><option value="">载入示例数据…</option></select>
+        </div>
+        <div class="hint" id="bCfg" style="margin-top:8px"></div>
+        <div class="row"><span class="hint">已分析：</span><span id="bList" class="modes" style="margin:0"></span></div>
+        <div id="bProg" class="hint" style="margin-top:8px"></div>
+      </div>
+      <div id="bOut"></div>
+      <div class="panel" id="bQueueBox">
+        <div class="head" style="display:flex;justify-content:space-between;align-items:center"><b>🗓 发帖队列（按对标博主互动最高的时段排期 · 北京时间）</b><button class="copy" id="bQRefresh">刷新</button></div>
+        <div class="hint" id="bQCfg" style="margin:6px 0"></div>
+        <div class="row" style="margin-top:4px"><textarea id="bQText" placeholder="也可以直接手写一条帖子加入队列" style="min-height:60px"></textarea></div>
+        <div class="row"><select id="bQMode"><option value="review">审核后发</option><option value="auto">全自动发</option></select>
+          <input type="datetime-local" id="bQTime" title="留空 = 自动排到对标博主的最佳时段"><button class="copy" id="bQAdd">加入队列</button><span class="hint">时间留空 = 自动排到最近的最佳时段</span></div>
+        <div id="bQueue" style="margin-top:10px"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="statusbar" data-no-i18n>
+    <span class="sb-item"><span class="dot" id="sbDot"></span><span id="sbHealth">…</span></span>
+    <span class="sb-item sb-hide-sm" id="sbAcct"></span>
+    <span class="sb-item sb-hide-sm" id="sbView"></span>
+    <span class="sb-item grow"><span id="rvLive"></span></span>
+    <span class="sb-item sb-hide-sm" id="sbDraft"></span>
+    <span class="sb-item" id="sbClock"></span>
+  </footer>
+</div>
+</div>
+
+<button type="button" class="cw-launcher" id="cwLauncher" aria-label="和智能体聊天" title="和智能体聊天" aria-expanded="false" aria-controls="cwPanel">
+  <svg class="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01" stroke-width="2.6"/></svg>
+  <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+</button>
+<section class="cw-panel" id="cwPanel" role="dialog" aria-label="智能体聊天" aria-hidden="true">
+  <div class="cw-head">
+    <img class="cw-avatar" src="/assets/luca-wolf.png" alt="小狼助手">
+    <div class="cw-id"><b>智能体助手</b><span><span class="dot ok" id="cwDot"></span><span id="cwSub" data-no-i18n>在线</span></span></div>
+    <select id="cwAgent" title="选择对话岗位" data-no-i18n></select>
+    <button type="button" class="cw-icon" id="cwClear" title="清空对话" aria-label="清空对话"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+    <button type="button" class="cw-icon" id="cwClose" title="关闭" aria-label="关闭"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="cw-list" id="cwList" data-no-i18n aria-live="polite"></div>
+  <form class="cw-input" id="cwForm">
+    <textarea id="cwText" rows="1" placeholder="问点什么…（Enter 发送，Shift+Enter 换行）"></textarea>
+    <button type="submit" class="cw-send" id="cwSend" aria-label="发送" title="发送">
+      <svg class="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </button>
+  </form>
+  <div class="cw-foot">只出草稿，不会发帖 · 与「问答」使用同一接口</div>
+</section>
+<script>
+const $ = s => document.querySelector(s);
+let agents = [], pipeline = [], finalAgent = 'chief', mode = 'all';
+// API Token field removed from the UI: server auth (AGENTS_API_TOKEN) is off. A token saved earlier is still sent if present.
+const tokenEl = { value: localStorage.getItem('luca_token') || '' };
+function headers() {
+  const h = { 'Content-Type': 'application/json' };
+  if (tokenEl.value) h['Authorization'] = 'Bearer ' + tokenEl.value;
+  if (window.ACCOUNT) h['X-Account'] = window.ACCOUNT;   // v1.6: serve this request for the account shown on the page
+  if (window.LANG) h['X-Lang'] = window.LANG;            // v1.6: model output language follows the UI
+  return h;
+}
+function unbrand(s) { return String(s || '').replace(/@?Luca(?:AiAi)[_\s]*/g, ''); }
+function isDefaultAcct(h) { return String(h || '').replace(/^@/, '').toLowerCase() === 'lucaaiai'; }
+function acctLabel(h, sep = '', fb = '') { h = String(h || '').replace(/^@/, ''); return h && !isDefaultAcct(h) ? sep + '@' + h : (fb ? sep + fb : ''); }
+function esc(s) { return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function setNote() {
+  $('#modeNote').textContent = mode === 'all'
+    ? '全员模式：DeepSeek（选题）→ Qwen（内容·视觉）→ Gemini（社区）→ MiniMax（数据·流程）→ Claude（主编）整合最终交付（依次进行，每一棒都能看到前面的产出，约 1–3 分钟）。'
+    : '单岗位模式：只问这一个岗位。';
+}
+function renderModes() {
+  const box = $('#modes'); box.innerHTML = '';
+  const items = [{ id: 'all', name: '全员', model: '5 个模型接力' }].concat(
+    [...agents].sort((a, b) => (a.id === 'chief') - (b.id === 'chief') || a.order - b.order));
+  for (const a of items) {
+    const b = document.createElement('button');
+    b.className = 'mode' + (a.id === mode ? ' active' : '');
+    b.innerHTML = esc(a.name) + '<small>' + esc(a.model) + '</small>';
+    b.onclick = () => { mode = a.id; renderModes(); setNote(); };
+    box.appendChild(b);
+  }
+}
+// ---------------- review (v1.3) ----------------
+const rvOpts = () => ({ review: $('#rvOn').checked, demo: $('#rvOn').checked && $('#demoOn').checked });
+function syncReviewBar() {
+  if (!$('#rvOn').checked) $('#demoOn').checked = false;
+  $('#demoOn').disabled = !$('#rvOn').checked;
+  $('#demoBanner').classList.toggle('on', $('#demoOn').checked);
+}
+$('#rvOn').onchange = syncReviewBar; $('#demoOn').onchange = syncReviewBar;
+const KINDS = { turn: '发言', vote: '投票', contrib: '建议', strategy: '策略', ask: '回答' };
+function rvLive(ev) {
+  const el = $('#rvLive'); if (!el) return;
+  if (ev.event === 'review_start') el.innerHTML = '<span class="spin"></span>' + esc((ev.name || '') + ' 的' + (KINDS[ev.kind] || '') + ' 审查中（第 ' + ((ev.attempt || 0) + 1) + ' 次）…');
+  else if (ev.event === 'fix') el.innerHTML = '<span class="spin"></span>' + esc((ev.name || '') + ' 正在按审查意见重写' + (ev.failed && ev.failed.length ? '：' + ev.failed.join('、') : '') + '…');
+  else if (ev.event === 'review') el.textContent = (ev.name || '') + ' 审查' + (ev.passed ? '通过 ✓' : '未通过，准备修正');
+}
+function isReviewEv(ev) { return ev.event === 'review_start' || ev.event === 'review' || ev.event === 'fix'; }
+function rvBadge(r) {
+  if (!r || !r.enabled) return '';
+  const bad = (r.finalChecks || []).filter(c => !c.pass).length;
+  const [cls, label] = r.originalPassed ? ['pass', '审查 ✓通过'] : r.passed ? ['fixed', `已修正 ${r.fixedCount} 项`] : ['fail', `✗未通过 ${bad} 项`];
+  return `<span class="rv ${cls}${r.demo ? ' demo' : ''}" data-rv="1" title="点击查看原稿 / 检查项 / 修正稿">${label}</span>`;
+}
+function ckList(cs) {
+  return (cs || []).map(c => `<div class="ck ${c.skipped ? 'skip' : c.pass ? 'ok' : 'bad'}"><span class="m">${c.skipped ? '–' : c.pass ? '✓' : '✗'}</span><span class="by ${c.by === 'ai' ? 'ai' : ''}">${c.by === 'ai' ? 'AI' : '代码'}</span><span><b>${esc(c.name || c.id)}</b>${c.reason ? '：' + esc(c.reason) : ''}</span></div>`).join('');
+}
+function rvDetails(r) {
+  if (!r || !r.enabled) return '';
+  const changed = r.original !== r.final;
+  return `<div class="rvd">` + (r.demoNote ? `<div class="warn" style="color:var(--err)">${esc(r.demoNote)}</div>` : '') +
+    `<div class="hint">审查模型：${esc(r.reviewer || '-')} · 尝试 ${r.attempts} 次 · 审查用时 ${((r.ms - (r.generateMs || 0)) / 1000).toFixed(0)}s</div>` +
+    `<h5>① 原稿${r.originalPassed ? '（通过）' : '（未通过）'}</h5><div class="txt ${r.originalPassed ? '' : 'orig'}">${esc(r.original || '')}</div>` +
+    `<h5>② 检查项（原稿）</h5>${ckList(r.originalChecks)}` +
+    (changed ? `<h5>③ 修正稿${r.passed ? '（复查通过）' : '（复查仍未通过）'}</h5><div class="txt fin">${esc(r.final || '')}</div><h5>复查结果</h5>${ckList(r.finalChecks)}` : '') +
+    `</div>`;
+}
+function wireRv(root) {
+  root.querySelectorAll('[data-rv]').forEach(b => { if (b._w) return; b._w = 1;
+    b.onclick = e => { e.stopPropagation(); const box = b.closest('.bubble, .vote, .card'); const d = box && box.querySelector('.rvd'); if (d) d.classList.toggle('open'); }; });
+}
+function rvSumLine(r) {
+  if (!r || !r.enabled || r.reviewed == null) return '';
+  return `${r.demo ? '⚠️ DEMO 出错模式 · ' : ''}AI 审查 ${r.reviewed} 条：首次通过 ${r.passedFirstTime} · 修正后通过 ${r.fixed} · 仍未通过 ${r.stillFailing}` + (r.issuesFixed ? ` · 共修正 ${r.issuesFixed} 个问题` : '');
+}
+function card(id, name, model, isFinal) {
+  const el = document.createElement('div');
+  el.className = 'card' + (isFinal ? ' final' : '');
+  el.id = 'card-' + id;
+  el.innerHTML = `<div class="head"><div class="answer-identity"><img class="wolf-avatar" src="/assets/luca-wolf.png" alt="小狼助手"><span class="title">${isFinal ? '📦 最终交付 · ' : ''}${esc(name)}</span><span class="badge">${esc(model)}</span></div>
+    <div><span class="status"><span class="spin"></span>生成中…</span> <button class="copy" disabled>复制</button></div></div><div class="body hint">等待中…</div>`;
+  $('#out').appendChild(el);
+  return el;
+}
+function fill(r) {
+  const el = document.getElementById('card-' + r.agent) || card(r.agent, r.name, r.model, false);
+  const st = el.querySelector('.status'), body = el.querySelector('.body'), cp = el.querySelector('.copy');
+  if (r.ok) {
+    st.className = 'status ok';
+    st.textContent = '完成 · ' + (r.ms / 1000).toFixed(1) + 's' + (r.finishReason === 'length' ? ' · 可能被截断' : '');
+    body.className = 'body'; body.textContent = r.output;
+    el.querySelectorAll('.rv, .rvd').forEach(x => x.remove());
+    if (r.review) { el.querySelector('.title').insertAdjacentHTML('afterend', rvBadge(r.review)); el.insertAdjacentHTML('beforeend', rvDetails(r.review)); wireRv(el); }
+    cp.disabled = false;
+    cp.onclick = () => navigator.clipboard.writeText(r.output).then(() => { cp.textContent = '已复制'; setTimeout(() => cp.textContent = '复制', 1500); });
+  } else {
+    st.className = 'status err'; st.textContent = '失败';
+    body.className = 'body'; body.textContent = '出错：' + (r.error || '未知错误');
+  }
+}
+async function loadAgents() {
+  const r = await fetch('/api/agents', { headers: headers() });
+  if (r.status === 401) { $('#modeNote').textContent = '服务端开启了鉴权（AGENTS_API_TOKEN），当前界面不再提供 Token 输入，请在服务端关闭鉴权后刷新。'; return; }
+  const j = await r.json();
+  agents = j.agents; pipeline = j.pipeline; finalAgent = j.finalAgent;
+  renderModes(); setNote();
+}
+$('#run').onclick = async () => {
+  const question = $('#q').value.trim();
+  if (!question) { $('#q').focus(); return; }
+  $('#out').innerHTML = ''; $('#run').disabled = true;
+  const t0 = Date.now();
+  const timer = setInterval(() => $('#elapsed').textContent = '已用 ' + ((Date.now() - t0) / 1000).toFixed(0) + 's', 500);
+  const order = mode === 'all' ? pipeline : [mode];
+  for (const id of order) {
+    const a = agents.find(x => x.id === id);
+    card(id, a.name, a.model, mode === 'all' && id === finalAgent).querySelector('.status').innerHTML = '排队中';
+  }
+  try {
+    const lang = $('#lang').value;
+    const resp = await fetch('/api/ask', { method: 'POST', headers: headers(),
+      body: JSON.stringify({ agent: mode, question, lang: lang === 'auto' ? undefined : lang, stream: true, ...rvOpts() }) });
+    if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error || ('HTTP ' + resp.status)); }
+    const reader = resp.body.getReader(); const dec = new TextDecoder(); let buf = '';
+    while (true) {
+      const { value, done } = await reader.read(); if (done) break;
+      buf += dec.decode(value, { stream: true });
+      let i;
+      while ((i = buf.indexOf('\n')) >= 0) {
+        const line = buf.slice(0, i); buf = buf.slice(i + 1);
+        if (!line.trim()) continue;
+        const ev = JSON.parse(line);
+        if (isReviewEv(ev)) { rvLive(ev); const el = document.getElementById('card-' + ev.agent);
+          if (el && ev.event !== 'review') el.querySelector('.status').innerHTML = '<span class="spin"></span>' + (ev.event === 'fix' ? '按审查意见重写…' : '审查中…'); continue; }
+        if (ev.event === 'done') { const s = rvSumLine(ev.review); if (s) $('#out').insertAdjacentHTML('afterbegin', '<div class="rvsum">' + esc(s) + '</div>'); continue; }
+        if (ev.event === 'start') {
+          const el = document.getElementById('card-' + ev.agent);
+          if (el) { el.querySelector('.status').innerHTML = '<span class="spin"></span>生成中…'; el.querySelector('.body').textContent = '生成中…'; }
+        } else if (ev.event === 'agent') fill(ev);
+      }
+    }
+    if (mode === 'all') { const f = document.getElementById('card-' + finalAgent); if (f) $('#out').prepend(f); }
+  } catch (e) {
+    const d = document.createElement('div'); d.className = 'panel'; d.style.color = 'var(--err)'; d.textContent = '请求失败：' + e.message;
+    $('#out').prepend(d);
+  } finally { clearInterval(timer); $('#run').disabled = false; $('#rvLive').textContent = ''; }
+};
+loadAgents();
+
+// ---------------- tabs ----------------
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === t));
+  $('#tab-ask').classList.toggle('hidden', t.dataset.tab !== 'ask');
+  $('#tab-strategy').classList.toggle('hidden', t.dataset.tab !== 'strategy');
+  $('#tab-debate').classList.toggle('hidden', t.dataset.tab !== 'debate');
+  $('#tab-bench').classList.toggle('hidden', t.dataset.tab !== 'bench');
+  location.hash = t.dataset.tab;
+  if (t.dataset.tab === 'strategy') loadStrategies();
+  if (t.dataset.tab === 'debate') loadDebates();
+  if (t.dataset.tab === 'bench' && window.benchOpen) benchOpen();
+});
+
+// ---------------- tiny markdown renderer ----------------
+function inline(t) {
+  t = esc(t);
+  t = t.replace(/`([^`]+)`/g, '<code>$1</code>');
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+  t = t.replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<i>$2</i>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  t = t.replace(/【待核实】/g, '<span class="verify">【待核实】</span>');
+  return t;
+}
+function md(src) {
+  const L = src.replace(/\r/g, '').split('\n'); let h = '', i = 0;
+  const isRow = l => /^\s*\|.*\|\s*$/.test(l);
+  const cells = l => l.trim().replace(/^\||\|$/g, '').split(/(?<!\\)\|/).map(c => c.trim().replace(/\\\|/g, '|'));
+  while (i < L.length) {
+    let l = L[i];
+    if (/^```/.test(l)) { let b = []; i++; while (i < L.length && !/^```/.test(L[i])) b.push(L[i++]); i++; h += '<pre><code>' + esc(b.join('\n')) + '</code></pre>'; continue; }
+    if (/^#{1,6}\s/.test(l)) { const n = l.match(/^#+/)[0].length; h += `<h${n}>${inline(l.replace(/^#+\s*/, ''))}</h${n}>`; i++; continue; }
+    if (/^\s*(-{3,}|\*{3,})\s*$/.test(l)) { h += '<hr>'; i++; continue; }
+    if (isRow(l) && i + 1 < L.length && /^\s*\|?\s*:?-{2,}/.test(L[i + 1])) {
+      const head = cells(l); i += 2; let rows = '';
+      while (i < L.length && isRow(L[i])) { rows += '<tr>' + cells(L[i]).map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>'; i++; }
+      h += '<table><thead><tr>' + head.map(c => '<th>' + inline(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table>'; continue;
+    }
+    if (/^\s*>/.test(l)) { let b = []; while (i < L.length && /^\s*>/.test(L[i])) b.push(L[i++].replace(/^\s*>\s?/, '')); h += '<blockquote>' + b.map(inline).join('<br>') + '</blockquote>'; continue; }
+    if (/^\s*([-*+]|\d+[.)])\s+/.test(l)) {
+      const ol = /^\s*\d/.test(l); let b = [];
+      while (i < L.length && /^\s*([-*+]|\d+[.)])\s+/.test(L[i])) b.push(L[i++].replace(/^\s*([-*+]|\d+[.)])\s+/, ''));
+      h += (ol ? '<ol>' : '<ul>') + b.map(x => '<li>' + inline(x.replace(/^\[( |x)\]\s*/i, m => m.toLowerCase().includes('x') ? '☑ ' : '☐ ')) + '</li>').join('') + (ol ? '</ol>' : '</ul>'); continue;
+    }
+    if (!l.trim()) { i++; continue; }
+    let b = []; while (i < L.length && L[i].trim() && !/^(#{1,6}\s|```|\s*>|\s*([-*+]|\d+[.)])\s+)/.test(L[i]) && !isRow(L[i])) b.push(L[i++]);
+    if (!b.length) b.push(L[i++]);
+    h += '<p>' + b.map(inline).join('<br>') + '</p>';
+  }
+  return h;
+}
+
+// ---------------- strategy tab ----------------
+let cur = null, curV = null;
+const SRC = { create: '首次生成', followup: '每日跟进', manual: '手动编辑', debate: '辩论裁决' };
+const fmt = s => (s || '').replace('T', ' ').slice(0, 16);
+async function api(path, opt = {}) {
+  const r = await fetch(path, { ...opt, headers: headers() });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+  return j;
+}
+async function streamPost(path, body, onEv) {
+  const resp = await fetch(path, { method: 'POST', headers: headers(), body: JSON.stringify({ ...body, stream: true }) });
+  if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error || ('HTTP ' + resp.status)); }
+  const reader = resp.body.getReader(), dec = new TextDecoder(); let buf = '', done = null;
+  while (true) {
+    const { value, done: d } = await reader.read(); if (d) break;
+    buf += dec.decode(value, { stream: true }); let k;
+    while ((k = buf.indexOf('\n')) >= 0) { const line = buf.slice(0, k); buf = buf.slice(k + 1); if (!line.trim()) continue;
+      const ev = JSON.parse(line); if (ev.event === 'done') done = ev; else onEv(ev); }
+  }
+  if (!done) throw new Error('连接中断，请刷新列表看看是否已保存');
+  return done;
+}
+function pills(box, ids) {
+  box.innerHTML = '';
+  for (const id of ids) { const a = agents.find(x => x.id === id) || { name: id };
+    const p = document.createElement('span'); p.className = 'pill'; p.id = box.id + '-' + id; p.textContent = a.name + ' · 排队'; box.appendChild(p); }
+  return ev => { if (isReviewEv(ev)) rvLive(ev); const p = document.getElementById(box.id + '-' + ev.agent); if (!p) return;
+    if (ev.event === 'review_start') { p.className = 'pill run'; p.innerHTML = '<span class="spin"></span>' + esc(ev.name) + ' · 审查中'; }
+    else if (ev.event === 'fix') { p.className = 'pill run'; p.innerHTML = '<span class="spin"></span>' + esc(ev.name) + ' · 重写中'; }
+    else if (ev.event === 'review') { }
+    else if (ev.event === 'start') { p.className = 'pill run'; p.innerHTML = '<span class="spin"></span>' + esc(ev.name) + ' · 生成中'; }
+    else { p.className = 'pill ' + (ev.ok ? 'ok' : 'err'); p.textContent = ev.name + (ev.ok ? ' · 完成 ' + (ev.ms / 1000).toFixed(0) + 's' : ' · 失败'); p.title = ev.error || ''; } };
+}
+function timer(el) { const t0 = Date.now(); const h = setInterval(() => el.textContent = '已用 ' + ((Date.now() - t0) / 1000).toFixed(0) + 's', 500); return () => clearInterval(h); }
+
+async function loadStrategies(selectId) {
+  try {
+    const j = await api('/api/strategies');
+    const box = $('#sList'); box.innerHTML = j.strategies.length ? '' : '<div class="hint">还没有策略，先新建一份。</div>';
+    for (const s of j.strategies) {
+      const d = document.createElement('div'); d.className = 'item' + (cur && cur.id === s.id ? ' active' : '');
+      d.innerHTML = esc(s.title) + `<small>v${s.latestVersion} · 跟进 ${s.followups} 次 · ${fmt(s.updatedAt)}</small>`;
+      d.onclick = () => openStrategy(s.id); box.appendChild(d);
+    }
+    const want = selectId || (cur && cur.id) || (j.strategies[0] && j.strategies[0].id);
+    if (want && (!cur || cur.id !== want || selectId)) await openStrategy(want);
+  } catch (e) { $('#sList').innerHTML = '<div class="hint">加载失败：' + esc(e.message) + '</div>'; }
+}
+async function openStrategy(id, v) {
+  cur = await api('/api/strategies/' + encodeURIComponent(id));
+  curV = v || cur.versions.length;
+  $('#sNew').style.display = 'none'; $('#sView').style.display = ''; $('#sVersionsPanel').style.display = '';
+  $('#sEditPanel').style.display = 'none';
+  document.querySelectorAll('#sList .item').forEach(x => x.classList.remove('active'));
+  renderStrategy();
+  loadStrategiesListOnly();
+}
+async function loadStrategiesListOnly() {
+  const j = await api('/api/strategies'); const box = $('#sList'); box.innerHTML = '';
+  for (const s of j.strategies) { const d = document.createElement('div'); d.className = 'item' + (cur && cur.id === s.id ? ' active' : '');
+    d.innerHTML = esc(s.title) + `<small>v${s.latestVersion} · 跟进 ${s.followups} 次 · ${fmt(s.updatedAt)}</small>`; d.onclick = () => openStrategy(s.id); box.appendChild(d); }
+}
+function renderStrategy() {
+  const v = cur.versions[curV - 1], latest = curV === cur.versions.length;
+  $('#sTitle').textContent = cur.title;
+  $('#sVerBadge').textContent = 'v' + v.v + (latest ? ' · 最新' : ' · 历史版本');
+  $('#sMeta').textContent = `${SRC[v.source] || v.source} · ${fmt(v.createdAt)}（UTC+8）· 文件 ${unbrand(v.file)}`;
+  $('#sWarn').textContent = (v.truncated ? '⚠️ 这一版输出可能被截断（达到长度上限），可以手动补全或再跟进一次。 ' : '') + (latest ? '' : '你在看历史版本；跟进和编辑都会基于最新版。');
+  $('#sChangelog').innerHTML = (v.note ? '<div class="hint"><b>当天跟进记录：</b>' + esc(v.note) + '</div>' : '') +
+    (v.changelog ? '<div class="hint" style="margin-top:6px"><b>本次变更：</b></div><div class="md">' + md(v.changelog) + '</div>' : '');
+  $('#sMd').innerHTML = md(v.markdown);
+  const vl = $('#sVersions'); vl.innerHTML = '';
+  for (const x of [...cur.versions].reverse()) {
+    const d = document.createElement('div'); d.className = 'v' + (x.v === curV ? ' active' : '');
+    d.innerHTML = `<b>v${x.v}</b> · ${SRC[x.source] || x.source}<small>${fmt(x.createdAt)}</small>` + (x.changelog ? `<div class="cl">${esc(x.changelog.replace(/\*\*/g, '').slice(0, 160))}${x.changelog.length > 160 ? '…' : ''}</div>` : '');
+    d.onclick = () => { curV = x.v; renderStrategy(); }; vl.appendChild(d);
+  }
+  $('#sLog').innerHTML = (cur.dailyLog || []).length ? [...cur.dailyLog].reverse().map(d => `<div style="margin-bottom:8px"><b>${fmt(d.at)}</b> → v${d.version}<br>${esc(d.note)}</div>`).join('') : '还没有跟进记录。';
+  const cs = v.contributions || [];
+  $('#sContribBox').style.display = cs.length ? '' : 'none';
+  $('#sContrib').innerHTML = (v.review ? '<div class="rvsum">' + esc(rvSumLine({ enabled: true, demo: v.demo, ...v.review })) + '</div>' : '') +
+    cs.map(c => `<div class="card"><div class="head"><span class="title">${esc(c.name)}${c.role ? ' · ' + esc(c.role) : ''}</span>${rvBadge(c.review)}<span class="badge">${esc(c.model)}</span></div><div class="md body" style="white-space:normal">${c.ok ? md(c.output) : '失败：' + esc(c.error || '')}</div>${rvDetails(c.review)}</div>`).join('');
+  wireRv($('#sContrib'));
+  $('#sWarn').textContent += v.demo ? ' ⚠️ 这一版是在 DEMO 出错模式下生成的（初稿故意写坏，再由 AI 审查修正）。' : '';
+  if (v.review && v.review.stillFailing) $('#sWarn').textContent += ` ⚠️ 有 ${v.review.stillFailing} 条输出复查仍未通过，见“各岗位原始建议”。`;
+}
+$('#sNewBtn').onclick = () => { $('#sNew').style.display = ''; $('#sView').style.display = 'none'; $('#sVersionsPanel').style.display = 'none'; cur = null; $('#sQ').focus(); };
+$('#sCreate').onclick = async () => {
+  const q = $('#sQ').value.trim(); if (!q) return $('#sQ').focus();
+  $('#sCreate').disabled = true; $('#sCreateMsg').innerHTML = '';
+  const stop = timer($('#sCreateElapsed'));
+  const on = pills($('#sCreateProgress'), ['researcher', 'editor', 'community', 'data', 'chief']);
+  try {
+    const r = await streamPost('/api/strategy', { question: q, ...rvOpts() }, on);
+    if (!r.strategy) throw new Error(r.error || '生成失败');
+    $('#sQ').value = ''; $('#sCreateProgress').innerHTML = '';
+    if (!r.ok) alert('有岗位失败，但主编已整合出策略（可在“各岗位原始建议”里看哪一个失败）。');
+    await openStrategy(r.strategy.id);
+  } catch (e) { $('#sCreateMsg').innerHTML = '<div class="warn" style="color:var(--err)">失败：' + esc(e.message) + '</div>'; }
+  finally { stop(); $('#sCreate').disabled = false; $('#rvLive').textContent = ''; }
+};
+$('#sFollowBtn').onclick = async () => {
+  const note = $('#sNote').value.trim(); if (!note) return $('#sNote').focus();
+  const roles = [...document.querySelectorAll('#sFollow input[type=checkbox]:checked')].map(x => x.value);
+  $('#sFollowBtn').disabled = true; $('#sFollowMsg').innerHTML = '';
+  const stop = timer($('#sFollowElapsed'));
+  const on = pills($('#sFollowProgress'), roles.concat(['chief']));
+  try {
+    const r = await streamPost('/api/strategies/' + encodeURIComponent(cur.id) + '/followup', { note, roles, ...rvOpts() }, on);
+    if (!r.strategy) throw new Error(r.error || '修订失败');
+    $('#sNote').value = ''; $('#sFollowProgress').innerHTML = '';
+    await openStrategy(cur.id);
+  } catch (e) { $('#sFollowMsg').innerHTML = '<div class="warn" style="color:var(--err)">失败：' + esc(e.message) + '（你的记录还在输入框里）</div>'; }
+  finally { stop(); $('#sFollowBtn').disabled = false; $('#rvLive').textContent = ''; }
+};
+$('#sEditBtn').onclick = () => { $('#sEditText').value = cur.versions[curV - 1].markdown; $('#sEditNote').value = ''; $('#sEditPanel').style.display = ''; $('#sEditText').focus(); };
+$('#sEditCancel').onclick = () => $('#sEditPanel').style.display = 'none';
+$('#sEditSave').onclick = async () => {
+  const markdown = $('#sEditText').value; if (!markdown.trim()) return;
+  $('#sEditSave').disabled = true;
+  try { await api('/api/strategies/' + encodeURIComponent(cur.id) + '/edit', { method: 'POST', body: JSON.stringify({ markdown, changelog: $('#sEditNote').value }) });
+    await openStrategy(cur.id); } catch (e) { alert('保存失败：' + e.message); } finally { $('#sEditSave').disabled = false; }
+};
+$('#sCopy').onclick = () => navigator.clipboard.writeText(cur.versions[curV - 1].markdown).then(() => { $('#sCopy').textContent = '已复制'; setTimeout(() => $('#sCopy').textContent = '复制', 1500); });
+$('#sDownload').onclick = async () => {
+  const r = await fetch(`/api/strategies/${encodeURIComponent(cur.id)}/versions/${curV}.md`, { headers: headers() });
+  const blob = await r.blob(); const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = cur.versions[curV - 1].file; a.click(); URL.revokeObjectURL(a.href);
+};
+if (location.hash === '#strategy') document.querySelector('.tab[data-tab=strategy]').click();
+
+// ---------------- debate tab ----------------
+const COLORS = { researcher: '#4d6bfe', editor: '#8b5cf6', community: '#10a37f', data: '#f2711c', chief: '#d97757' };
+const SHORT = { researcher: 'DS', editor: 'QW', community: 'GE', data: 'MM', chief: 'CL' };
+const DNAMES = { researcher: 'DeepSeek', editor: 'Qwen', community: 'Gemini', data: 'MiniMax', chief: 'Claude' };
+const ROUND_LABEL = r => r === 1 ? '第 1 轮 · 立论' : `第 ${r} 轮 · 反驳`;
+let dCur = null, dBusy = false;
+function av(id) { return id === 'chief' ? '<div class="av wolf-chief"><img src="/assets/luca-wolf.png" alt="主编小狼"></div>' : `<div class="av" style="background:${COLORS[id] || '#555'}">${SHORT[id] || '?'}</div>`; }
+function phase(label) { const d = document.createElement('div'); d.className = 'phase'; d.textContent = label; $('#dChat').appendChild(d); }
+function bubble(t, extra) {
+  const d = document.createElement('div'); d.className = 'msg'; d.style.setProperty('--c', COLORS[t.agent] || 'var(--accent)');
+  const body = t.ok === false ? '<span style="color:var(--err)">发言失败：' + esc(t.error || '') + '</span>' : inline(t.text || '').replace(/\n/g, '<br>');
+  d.innerHTML = av(t.agent) + `<div class="bubble"><div class="who"><b>${esc(t.name)}</b> · ${esc(t.role || '')} <span class="badge">${esc(t.model)}</span>${extra || ''}${t.ms ? ' · ' + (t.ms / 1000).toFixed(0) + 's' : ''}${rvBadge(t.review)}</div>${body}${rvDetails(t.review)}</div>`;
+  $('#dChat').appendChild(d); wireRv(d); return d;
+}
+function typing(ev) {
+  const d = document.createElement('div'); d.className = 'msg typing'; d.id = 'typing-' + ev.agent; d.style.setProperty('--c', COLORS[ev.agent]);
+  d.innerHTML = av(ev.agent) + `<div class="bubble"><span class="spin"></span>${esc(ev.name)} 正在${ev.phase === 'vote' ? '投票' : ev.phase === 'verdict' ? '写裁决书' : ev.phase === 'proposal' ? '起草提案' : '发言'}…</div>`;
+  $('#dChat').appendChild(d);
+}
+function untype(id) { const t = document.getElementById('typing-' + id); if (t) t.remove(); }
+function voteBox() { let b = $('#dVotes'); if (!b) { b = document.createElement('div'); b.className = 'votes'; b.id = 'dVotes'; $('#dChat').appendChild(b); } return b; }
+function voteCard(v) {
+  const d = document.createElement('div'); d.className = 'vote'; d.style.setProperty('--c', COLORS[v.agent]);
+  d.innerHTML = `<div class="spk">${av(v.agent)}<b style="color:${COLORS[v.agent]}">${esc(v.name)}</b></div><div class="v v-${esc(v.vote)}">${esc(v.vote)}</div><div class="hint">${esc(v.reason || v.error || '')}</div>${rvBadge(v.review)}${rvDetails(v.review)}`;
+  voteBox().appendChild(d); wireRv(d);
+}
+function proposalBox(p) {
+  const d = document.createElement('div'); d.className = 'msg'; d.style.setProperty('--c', COLORS.chief);
+  d.innerHTML = av('chief') + `<div style="flex:1"><div class="hint" style="margin-bottom:4px"><b style="color:${COLORS.chief}">${esc(p.name)}</b> 的提案${p.ms ? ' · ' + (p.ms / 1000).toFixed(0) + 's' : ''}</div><div class="proposal">${p.ok ? inline(p.text).replace(/\n/g, '<br>') : '提案失败：' + esc(p.error || '')}</div></div>`;
+  $('#dChat').appendChild(d);
+}
+function verdictBox(v) {
+  const d = document.createElement('div'); d.className = 'card final'; d.style.marginTop = '6px';
+  d.innerHTML = `<div class="head"><span class="title">⚖️ 裁决书 · ${esc(v.name)}${v.decision ? ' · ' + esc(v.decision) : ''}</span><span class="badge">${esc(v.model)}</span></div><div class="md body" style="white-space:normal">${v.ok ? md(v.text) : '裁决失败：' + esc(v.error || '')}</div>`;
+  $('#dChat').appendChild(d);
+}
+function tallyLine(t) { return t ? `支持 ${t['支持']} · 有条件支持 ${t['有条件支持']} · 反对 ${t['反对']}` + (t['弃权'] ? ` · 弃权 ${t['弃权']}` : '') : ''; }
+function renderDebate(d) {
+  dCur = d;
+  $('#dNew').style.display = 'none'; $('#dHead').style.display = ''; $('#dChatPanel').style.display = '';
+  $('#dTitle').textContent = d.topic.length > 60 ? d.topic.slice(0, 60) + '…' : d.topic;
+  $('#dStatus').textContent = { running: '进行中', done: '已完成', failed: '未完成' }[d.status] || d.status;
+  $('#dMeta').textContent = `${fmt(d.createdAt)}（UTC+8）· ${d.rounds} 轮 · 文件 ${unbrand(d.file)}` + (d.ms ? ` · 用时 ${(d.ms / 1000).toFixed(0)}s` : '') + (d.applied && d.applied.length ? ' · 已应用到策略 ' + d.applied.map(a => a.strategyId + ' v' + a.version).join('、') : '');
+  $('#dChat').innerHTML = '';
+  if (d.review && d.review.demo) $('#dChat').insertAdjacentHTML('beforeend', '<div class="warn" style="color:var(--err)">⚠️ 这场辩论是 DEMO 出错模式：每条初稿都是故意写坏的，气泡里显示的是 AI 审查修正后的版本。</div>');
+  { const s = rvSumLine(d.review); if (s) $('#dChat').insertAdjacentHTML('beforeend', '<div class="rvsum">' + esc(s) + '</div>'); }
+  let r = 0;
+  for (const t of d.turns) { if (t.round !== r) { r = t.round; phase(ROUND_LABEL(r)); } bubble(t); }
+  if (d.proposal) { phase('主编提案'); proposalBox(d.proposal); }
+  if (d.votes && d.votes.length) { phase('投票 · ' + tallyLine(d.tally)); d.votes.forEach(voteCard); }
+  if (d.verdict) { phase('主编裁决'); verdictBox({ ...d.verdict, decision: d.decision }); }
+  showApply();
+}
+async function showApply() {
+  const ok = dCur && dCur.verdict && dCur.verdict.ok;
+  $('#dApply').style.display = ok ? '' : 'none'; if (!ok) return;
+  $('#dApplyMsg').innerHTML = '';
+  try { const j = await api('/api/strategies'); const sel = $('#dTarget');
+    sel.innerHTML = j.strategies.map(s => `<option value="${esc(s.id)}">修订：${esc(s.title)}（v${s.latestVersion}）</option>`).join('') + '<option value="">＋ 用裁决新建一份策略</option>';
+  } catch (e) { $('#dApplyMsg').innerHTML = '<div class="warn">策略列表加载失败：' + esc(e.message) + '</div>'; }
+}
+async function loadDebates(selectId) {
+  try {
+    speakersLegend();
+    const j = await api('/api/debates'); const box = $('#dList');
+    box.innerHTML = j.debates.length ? '' : '<div class="hint">还没有辩论记录。</div>';
+    for (const d of j.debates) {
+      const el = document.createElement('div'); el.className = 'item' + (dCur && dCur.id === d.id ? ' active' : '');
+      el.innerHTML = esc(d.title) + `<small>${fmt(d.createdAt)} · ${d.decision || ({ running: '进行中', failed: '未完成' }[d.status] || '')}${d.tally ? ' · ' + tallyLine(d.tally) : ''}${d.applied && d.applied.length ? ' · 已应用' : ''}${d.review && d.review.demo ? ' · DEMO' : ''}</small>`;
+      el.onclick = () => { if (!dBusy) openDebate(d.id); }; box.appendChild(el);
+    }
+    if (selectId) openDebate(selectId);
+    else if (!dCur && !dBusy && j.debates.length && $('#dNew').style.display === 'none') openDebate(j.debates[0].id);
+  } catch (e) { $('#dList').innerHTML = '<div class="hint">加载失败：' + esc(e.message) + '</div>'; }
+}
+async function openDebate(id) { renderDebate(await api('/api/debates/' + encodeURIComponent(id))); loadDebates(); }
+function speakersLegend() {
+  $('#dSpeakers').innerHTML = ['researcher', 'editor', 'community', 'data', 'chief'].map(id => { const a = agents.find(x => x.id === id) || { name: DNAMES[id], model: '' };
+    return `<span class="spk">${av(id)}${esc(a.name)} <span class="badge">${esc(a.model)}</span></span>`; }).join('');
+}
+$('#dNewBtn').onclick = () => { if (dBusy) return; dCur = null; $('#dNew').style.display = ''; $('#dHead').style.display = 'none'; $('#dChatPanel').style.display = 'none'; $('#dApply').style.display = 'none'; speakersLegend(); $('#dTopic').focus(); };
+$('#dStart').onclick = async () => {
+  const topic = $('#dTopic').value.trim(); if (!topic) return $('#dTopic').focus();
+  dBusy = true; $('#dStart').disabled = true; $('#dMsg').innerHTML = ''; $('#dApply').style.display = 'none';
+  const stop = timer($('#dElapsed'));
+  $('#dChat').innerHTML = ''; $('#dChatPanel').style.display = ''; $('#dHead').style.display = '';
+  $('#dTitle').textContent = topic.slice(0, 60); $('#dStatus').textContent = '进行中'; $('#dMeta').textContent = '';
+  try {
+    const r = await streamPost('/api/debate', { topic, rounds: +$('#dRounds').value, ...rvOpts() }, ev => {
+      if (isReviewEv(ev)) { rvLive(ev); const ty = document.getElementById('typing-' + ev.agent);
+        if (ty && ev.event !== 'review') ty.querySelector('.bubble').innerHTML = '<span class="spin"></span>' + esc(ev.name) + (ev.event === 'fix' ? ' 正在按审查意见重写…' : ' 的' + (KINDS[ev.kind] || '') + '正在审查…'); return; }
+      if (ev.event === 'debate') { $('#dMeta').textContent = '文件 ' + unbrand(ev.file); loadDebates(); }
+      else if (ev.event === 'phase') phase(ev.phase === 'round' ? ROUND_LABEL(ev.round) : ev.label);
+      else if (ev.event === 'start') typing(ev);
+      else if (ev.event === 'turn') { untype(ev.agent); bubble(ev); }
+      else if (ev.event === 'proposal') { untype(ev.agent); proposalBox(ev); }
+      else if (ev.event === 'vote') { untype(ev.agent); voteCard(ev); }
+      else if (ev.event === 'tally') { const p = document.createElement('div'); p.className = 'hint'; p.style.textAlign = 'center'; p.textContent = '计票：' + ev.text; $('#dChat').appendChild(p); }
+      else if (ev.event === 'verdict') { untype(ev.agent); verdictBox(ev); }
+      const c = $('#dChat').lastElementChild; if (c) c.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    });
+    $('#dTopic').value = '';
+    if (r.debate) renderDebate(r.debate);
+    if (r.error) $('#dMsg').innerHTML = '<div class="warn" style="color:var(--err)">' + esc(r.error) + '</div>';
+  } catch (e) { $('#dChat').insertAdjacentHTML('beforeend', '<div class="warn" style="color:var(--err)">失败：' + esc(e.message) + '</div>'); }
+  finally { stop(); dBusy = false; $('#dStart').disabled = false; $('#rvLive').textContent = ''; loadDebates(); }
+};
+$('#dApplyBtn').onclick = async () => {
+  if (!dCur) return; const sid = $('#dTarget').value;
+  $('#dApplyBtn').disabled = true; $('#dApplyMsg').innerHTML = '<div class="hint"><span class="spin"></span>Claude 正在把裁决写进策略…</div>';
+  const stop = timer($('#dApplyElapsed'));
+  try {
+    const r = await api('/api/debates/' + encodeURIComponent(dCur.id) + '/apply', { method: 'POST', body: JSON.stringify(sid ? { strategyId: sid } : {}) });
+    $('#dApplyMsg').innerHTML = `<div class="hint" style="color:var(--ok)">已保存：策略「${esc(r.strategy.title)}」v${r.version}。 <a href="#" id="dGoS">去运营策略查看 →</a></div>`;
+    $('#dGoS').onclick = e => { e.preventDefault(); document.querySelector('.tab[data-tab=strategy]').click(); setTimeout(() => openStrategy(r.strategy.id), 50); };
+    dCur = await api('/api/debates/' + encodeURIComponent(dCur.id)); loadDebates();
+  } catch (e) { $('#dApplyMsg').innerHTML = '<div class="warn" style="color:var(--err)">失败：' + esc(e.message) + '</div>'; }
+  finally { stop(); $('#dApplyBtn').disabled = false; }
+};
+$('#dCopy').onclick = async () => { if (!dCur) return; const t = await (await fetch(`/api/debates/${encodeURIComponent(dCur.id)}.md`, { headers: headers() })).text();
+  navigator.clipboard.writeText(t).then(() => { $('#dCopy').textContent = '已复制'; setTimeout(() => $('#dCopy').textContent = '复制全文', 1500); }); };
+$('#dDownload').onclick = async () => { if (!dCur) return;
+  const r = await fetch(`/api/debates/${encodeURIComponent(dCur.id)}.md`, { headers: headers() });
+  const blob = await r.blob(); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = dCur.file; a.click(); URL.revokeObjectURL(a.href); };
+if (location.hash.startsWith('#debate')) { const m = location.hash.match(/^#debate\/([0-9A-Za-z_-]+)$/); document.querySelector('.tab[data-tab=debate]').click(); if (m) openDebate(m[1]); }
+</script>
+<script src="/bench.js"></script>
+<script src="/i18n.js"></script>
+<script>
+// ---------------- desktop shell: toolbar title, status bar, hash routing ----------------
+(() => {
+  const isEn = () => document.documentElement.lang === 'en';
+  const VIEWS = {
+    ask: ['问答', '向单个岗位或全员团队提问'],
+    strategy: ['运营策略', '生成、跟进并迭代运营策略'],
+    debate: ['辩论', '5 位岗位智能体辩论、投票与裁决'],
+    bench: ['对标分析', '对标账号分析、爆款知识库与发帖队列'],
+  };
+  const VIEWS_EN = { ask: 'Ask', strategy: 'Strategy', debate: 'Debate', bench: 'Benchmark' };
+  let view = 'ask';
+  function setView(id) {
+    view = VIEWS[id] ? id : 'ask';
+    $('#viewTitle').textContent = VIEWS[view][0];
+    $('#viewSub').textContent = VIEWS[view][1];
+    $('#sbView').textContent = (isEn() ? 'View: ' + VIEWS_EN[view] : '当前：' + VIEWS[view][0]);
+    const c = $('#content'); if (c) c.scrollTop = 0;
+  }
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => setView(t.dataset.tab)));
+  if (location.hash === '#bench') { const b = document.querySelector('.tab[data-tab=bench]'); if (b) b.click(); }
+  const active = document.querySelector('.tab.active'); setView(active ? active.dataset.tab : 'ask');
+
+  let health = null;
+  function renderHealth() {
+    const dot = $('#sbDot'), el = $('#sbHealth');
+    if (!health) { dot.className = 'dot'; el.textContent = isEn() ? 'Connecting…' : '连接中…'; }
+    else if (health.err) { dot.className = 'dot err'; el.textContent = isEn() ? 'Server offline' : '服务未连接'; }
+    else {
+      const ok = health.keyConfigured !== false;
+      dot.className = 'dot ' + (ok ? 'ok' : 'warn');
+      el.textContent = (isEn() ? (ok ? 'Connected' : 'Connected · model key missing') : (ok ? '已连接' : '已连接 · 未配置模型密钥')) + (health.version ? ' · v' + health.version : '') + (health.authRequired ? (isEn() ? ' · token required' : ' · 需要 Token') : '');
+    }
+    $('#sbDraft').textContent = isEn() ? 'Drafts only · nothing is auto-posted' : '仅草稿 · 不会自动发帖';
+    $('#sbView').textContent = (isEn() ? 'View: ' + VIEWS_EN[view] : '当前：' + VIEWS[view][0]);
+  }
+  async function pollHealth() {
+    try { const r = await fetch('/api/health'); health = r.ok ? await r.json() : { err: true }; } catch (e) { health = { err: true }; }
+    renderHealth();
+  }
+  function tick() {
+    const t = new Date().toLocaleTimeString('zh-CN', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false });
+    $('#sbClock').textContent = (isEn() ? 'Beijing ' : '北京时间 ') + t;
+  }
+  document.querySelectorAll('[data-ui-language]').forEach(b => b.addEventListener('click', () => setTimeout(() => { renderHealth(); tick(); window.cwRelabel && window.cwRelabel(); }, 0)));
+  renderHealth(); pollHealth(); setInterval(pollHealth, 30000);
+  tick(); setInterval(tick, 15000);
+})();
+
+// ---------------- floating agent chat (uses POST /api/ask, same format as 问答) ----------------
+(() => {
+  const L = $('#cwLauncher'), P = $('#cwPanel'), list = $('#cwList'), ta = $('#cwText'), send = $('#cwSend'), sel = $('#cwAgent'), form = $('#cwForm');
+  const isEn = () => document.documentElement.lang === 'en';
+  const T = (zh, en) => isEn() ? en : zh;
+  const hist = []; let busy = false, ctrl = null, isOpen = false;
+  const SEND_SVG = send.innerHTML;
+  const STOP_SVG = '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="7" width="10" height="10" rx="2"/></svg>';
+
+  function fillAgents() {
+    if (!agents.length) { if (!sel.options.length) sel.innerHTML = `<option value="chief">Claude</option>`; return; }
+    const keep = sel.value || localStorage.getItem('luca_chat_agent') || 'chief';
+    const items = [...agents].sort((a, b) => (b.id === 'chief') - (a.id === 'chief') || a.order - b.order);
+    sel.innerHTML = items.map(a => `<option value="${esc(a.id)}" title="${esc(a.role || '')}">${esc(a.name)}${a.role && a.role.length <= 5 ? ' · ' + esc(a.role) : ''}</option>`).join('') +
+      `<option value="all">${T('全员接力（较慢）', 'All teammates (slower)')}</option>`;
+    sel.value = [...sel.options].some(o => o.value === keep) ? keep : (items[0] && items[0].id) || 'chief';
+    relabel();
+  }
+  function relabel() {
+    const a = agents.find(x => x.id === sel.value);
+    $('#cwSub').textContent = sel.value === 'all' ? T('全员 · 5 个模型接力', 'Team · 5-model relay') : a ? `${a.name} · ${a.model}` : T('在线', 'Online');
+    ta.placeholder = T('问点什么…（Enter 发送，Shift+Enter 换行）', 'Ask anything… (Enter to send, Shift+Enter for newline)');
+    const w = list.querySelector('.cw-welcome'); if (w) { w.remove(); greet(); }
+  }
+  window.cwRelabel = relabel;
+  sel.onchange = () => { localStorage.setItem('luca_chat_agent', sel.value); relabel(); };
+
+  function greet() {
+    const d = document.createElement('div'); d.className = 'cw-welcome';
+    const chips = isEn() ? ['Draft a post about today\'s AI news', 'Give me 3 topic ideas for this week', 'How do I grow from 0 followers?']
+                         : ['帮我写一条今天的 AI 资讯帖', '给我 3 个本周选题', '账号从 0 起步该怎么做？'];
+    d.innerHTML = `<img src="/assets/luca-wolf.png" alt=""><b>${T('嗨，我是你的运营搭档', 'Hi, I\'m your operations copilot')}</b>${T('选题、写帖、策略，随时问我。右上角可以切换岗位。', 'Ask about topics, drafts or strategy. Switch teammates at the top right.')}<div class="cw-chips">${chips.map(c => `<button type="button">${esc(c)}</button>`).join('')}</div>`;
+    d.querySelectorAll('.cw-chips button').forEach(b => b.onclick = () => { ta.value = b.textContent; submit(); });
+    list.prepend(d);
+  }
+  function open(v) {
+    isOpen = v;
+    P.classList.toggle('open', v); P.setAttribute('aria-hidden', String(!v));
+    L.classList.toggle('open', v); L.classList.add('seen'); L.setAttribute('aria-expanded', String(v));
+    if (v) { fillAgents(); if (!list.children.length) greet(); setTimeout(() => ta.focus(), 60); }
+  }
+  L.onclick = () => open(!isOpen);
+  $('#cwClose').onclick = () => { open(false); L.focus(); };
+  $('#cwClear').onclick = () => { if (busy && ctrl) ctrl.abort(); hist.length = 0; list.innerHTML = ''; greet(); ta.focus(); };
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && isOpen) { open(false); L.focus(); } });
+
+  function scroll() { list.scrollTop = list.scrollHeight; }
+  function addUser(text) {
+    const m = document.createElement('div'); m.className = 'cw-m user';
+    m.innerHTML = `<div class="cw-b"></div>`; m.firstChild.textContent = text; list.appendChild(m); scroll();
+  }
+  function addBot() {
+    const m = document.createElement('div'); m.className = 'cw-m bot';
+    m.innerHTML = `<div class="cw-b"><span class="cw-typing"><span class="cw-dots"><i></i><i></i><i></i></span><span class="cw-st">${T('思考中…', 'Thinking…')}</span></span></div><div class="cw-meta"></div>`;
+    list.appendChild(m); scroll(); return m;
+  }
+  function buildQuestion(q) {
+    const prev = hist.slice(-6);
+    if (!prev.length) return q;
+    const ctx = prev.map(m => (m.role === 'user' ? '用户' : '助手') + '：' + m.text.slice(0, 800)).join('\n');
+    return `以下是我们之前的对话（供参考）：\n${ctx}\n\n我现在的问题：${q}`;
+  }
+  function setBusy(v) {
+    busy = v; send.classList.toggle('stop', v); send.innerHTML = v ? STOP_SVG : SEND_SVG;
+    send.title = v ? T('停止', 'Stop') : T('发送', 'Send'); send.setAttribute('aria-label', send.title);
+    sel.disabled = v;
+  }
+  function fail(m, msg, q) {
+    m.classList.add('err');
+    m.querySelector('.cw-b').textContent = T('出错了：', 'Error: ') + msg;
+    const meta = m.querySelector('.cw-meta'); meta.innerHTML = '';
+    const b = document.createElement('button'); b.type = 'button'; b.textContent = T('重试', 'Retry');
+    b.onclick = () => { m.remove(); const last = list.querySelector('.cw-m.user:last-of-type'); if (last) last.remove(); ta.value = q; submit(); };
+    meta.appendChild(b); scroll();
+  }
+  async function submit() {
+    if (busy) { if (ctrl) ctrl.abort(); return; }
+    const q = ta.value.trim(); if (!q) { ta.focus(); return; }
+    if (!agents.length) { try { await loadAgents(); } catch (e) {} fillAgents(); }
+    const agent = sel.value || 'chief';
+    list.querySelector('.cw-welcome') && list.querySelector('.cw-welcome').remove();
+    ta.value = ''; autosize(); addUser(q);
+    const m = addBot(), st = m.querySelector('.cw-st');
+    const question = buildQuestion(q);
+    setBusy(true); ctrl = new AbortController();
+    const t0 = Date.now();
+    const tm = setInterval(() => { const s = m.querySelector('.cw-st'); if (s && s.dataset.base) s.textContent = s.dataset.base + ' ' + ((Date.now() - t0) / 1000).toFixed(0) + 's'; }, 500);
+    const status = txt => { const s = m.querySelector('.cw-st'); if (s) { s.dataset.base = txt; s.textContent = txt; } };
+    status(T('思考中…', 'Thinking…'));
+    let final = null, lastOk = null, lastErr = null;
+    try {
+      const lang = $('#lang') ? $('#lang').value : 'auto';
+      const resp = await fetch('/api/ask', { method: 'POST', headers: headers(), signal: ctrl.signal,
+        body: JSON.stringify({ agent, question, lang: lang === 'auto' ? undefined : lang, stream: true, ...rvOpts() }) });
+      if (resp.status === 401) throw new Error(T('服务端开启了鉴权（AGENTS_API_TOKEN），请在服务端关闭鉴权后再试。', 'Server authentication (AGENTS_API_TOKEN) is on; turn it off on the server and retry.'));
+      if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error || ('HTTP ' + resp.status)); }
+      const reader = resp.body.getReader(), dec = new TextDecoder(); let buf = '';
+      while (true) {
+        const { value, done } = await reader.read(); if (done) break;
+        buf += dec.decode(value, { stream: true }); let i;
+        while ((i = buf.indexOf('\n')) >= 0) {
+          const line = buf.slice(0, i); buf = buf.slice(i + 1); if (!line.trim()) continue;
+          let ev; try { ev = JSON.parse(line); } catch (e) { continue; }
+          if (ev.event === 'start') status(T(`${ev.name || ''} 正在回答…`, `${ev.name || ''} is answering…`));
+          else if (ev.event === 'review_start') status(T(`${ev.name || ''} 审查中…`, `Reviewing ${ev.name || ''}…`));
+          else if (ev.event === 'fix') status(T(`${ev.name || ''} 按审查意见重写…`, `${ev.name || ''} is revising…`));
+          else if (ev.event === 'agent') { if (ev.ok) lastOk = ev; else lastErr = ev; if (agent === 'all' && ev.agent !== finalAgent) status(T(`${ev.name} 完成，下一棒…`, `${ev.name} done, next…`)); if (agent !== 'all' || ev.agent === finalAgent) final = ev; }
+          else if (ev.event === 'done') { if (!final && ev.final) final = { ok: true, output: ev.final, name: 'Claude', ms: Date.now() - t0 }; if (!final && ev.outputs) final = ev.outputs.find(o => o.ok) || ev.outputs[0]; if (!final && ev.error) lastErr = { error: ev.error }; }
+        }
+      }
+      final = final || lastOk;
+      if (!final) throw new Error((lastErr && lastErr.error) || T('没有收到回答，请稍后再试', 'No answer received, please try again'));
+      if (!final.ok) throw new Error(final.error || T('未知错误', 'Unknown error'));
+      const b = m.querySelector('.cw-b'); b.className = 'cw-b md'; b.innerHTML = md(final.output || '');
+      const meta = m.querySelector('.cw-meta');
+      meta.innerHTML = `<span>${esc(final.name || '')}${final.ms ? ' · ' + (final.ms / 1000).toFixed(1) + 's' : ''}</span>${final.review ? rvBadge(final.review).replace(' data-rv="1"', '') : ''}`;
+      const cp = document.createElement('button'); cp.type = 'button'; cp.textContent = T('复制', 'Copy');
+      cp.onclick = () => navigator.clipboard.writeText(final.output || '').then(() => { cp.textContent = T('已复制', 'Copied'); setTimeout(() => cp.textContent = T('复制', 'Copy'), 1500); });
+      meta.appendChild(cp);
+      hist.push({ role: 'user', text: q }, { role: 'bot', text: final.output || '' });
+      scroll();
+    } catch (e) {
+      if (e.name === 'AbortError') { m.classList.add('err'); m.querySelector('.cw-b').textContent = T('已停止。', 'Stopped.'); }
+      else fail(m, e.message, q);
+    } finally { clearInterval(tm); setBusy(false); ctrl = null; if (isOpen) ta.focus(); }
+  }
+  function autosize() { ta.style.height = 'auto'; ta.style.height = Math.min(140, ta.scrollHeight + 2) + 'px'; }
+  ta.addEventListener('input', autosize);
+  ta.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); if (!busy) submit(); } });
+  form.addEventListener('submit', e => { e.preventDefault(); submit(); });
+  window.addEventListener('load', () => setTimeout(fillAgents, 300));
+  if (location.hash === '#chat') open(true);
+})();
+// ---------------- v1.6 multi-account: sidebar switcher + start page (GET/POST /api/accounts, POST /api/accounts/switch) ----------------
+(() => {
+  const isEn = () => document.documentElement.lang === 'en';
+  const T = (zh, en) => isEn() ? en : zh;
+  const card = $('#acctCard'), btn = $('#acctBtn'), menu = $('#acctMenu');
+  let A = null;
+  async function j(path, opt = {}) {
+    const h = { 'Content-Type': 'application/json' }; if (tokenEl.value) h['Authorization'] = 'Bearer ' + tokenEl.value;
+    if (window.LANG) h['X-Lang'] = window.LANG;
+    const r = await fetch(path, { cache: 'no-store', ...opt, headers: h }); const x = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(x.error || 'HTTP ' + r.status); return x;
+  }
+  const same = (a, b) => String(a || '').toLowerCase() === String(b || '').toLowerCase();
+  const title = h => isDefaultAcct(h) ? T('默认账号', 'Default account') : '@' + h;
+  const ini = h => (((isDefaultAcct(h) ? 'L' : h) || '?').slice(0, 1).toUpperCase());
+  const img = u => u ? `<img src="${esc(u)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
+  function avatar(x) { return `<span class="acct-av">${esc(ini(x.handle))}${img(x.avatar)}</span>`; }
+  function render() {
+    const p = (A && A.profile) || {}, h = A && A.active;
+    if (!h) { $('#acctName').textContent = T('未设置账号', 'No account'); $('#acctPos').textContent = T('点击添加', 'Click to add'); return; }
+    $('#acctAv').innerHTML = esc(ini(h)) + img(p.avatar);
+    $('#acctName').textContent = title(h);
+    $('#acctPos').textContent = (p.short || p.positioning || T('定位待确认', 'Positioning pending')) + (p.followers != null ? T(' · 粉丝 ', ' · ') + p.followers + (isEn() ? ' followers' : '') : '');
+    btn.title = (p.positioning || '') + (p.audience ? '\n' + T('受众：', 'Audience: ') + p.audience : '');
+    $('#tbCrumb').textContent = title(h) + ' /';
+    $('#sbAcct').textContent = T('账号：', 'Account: ') + title(h);
+    menu.innerHTML = (A.accounts || []).map(x => `<button type="button" class="mi${same(x.handle, h) ? ' cur' : ''}" role="menuitem" data-h="${esc(x.handle)}">${avatar(x)}<span class="mi-t" data-no-i18n><span>${esc(title(x.handle))}</span><small>${esc(x.short || x.positioning || '')}</small></span></button>`).join('') +
+      `<hr><button type="button" class="mi" role="menuitem" data-act="add">＋ ${T('添加账号…', 'Add account…')}</button><button type="button" class="mi" role="menuitem" data-act="re">↻ ${T('重新识别当前账号定位', 'Re-detect positioning')}</button>`;
+    menu.querySelectorAll('.mi').forEach(m => m.onclick = () => act(m));
+  }
+  function toggle(v) { card.classList.toggle('open', v); btn.setAttribute('aria-expanded', String(v)); }
+  btn.onclick = e => { e.stopPropagation(); if (A && !A.active) return startPage(false); toggle(!card.classList.contains('open')); };
+  document.addEventListener('click', e => { if (!card.contains(e.target)) toggle(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
+  async function act(m) {
+    toggle(false);
+    if (m.dataset.act === 'add') return startPage(true);
+    if (m.dataset.act === 're') {
+      card.insertAdjacentHTML('beforeend', '<span class="spin acct-busy" id="acctSpin"></span>');
+      $('#acctPos').textContent = T('正在重新识别定位（约 20–60 秒）…', 'Re-detecting positioning (20–60 s)…');
+      try { await j('/api/accounts', { method: 'POST', body: JSON.stringify({ username: A.active, reinfer: true }) }); location.reload(); }
+      catch (err) { alert(err.message); const s = $('#acctSpin'); if (s) s.remove(); render(); }
+      return;
+    }
+    if (same(m.dataset.h, A.active)) return;
+    try { await j('/api/accounts/switch', { method: 'POST', body: JSON.stringify({ handle: m.dataset.h }) }); location.hash = ''; location.reload(); }
+    catch (err) { alert(err.message); }
+  }
+  async function startPage(cancelable) {
+    if ($('#startPage')) return;
+    const d = document.createElement('div'); d.id = 'startPage';
+    d.innerHTML = `<div class="sp-box" role="dialog" aria-modal="true" aria-labelledby="spTitle">
+      <div class="sp-head"><img src="/assets/luca-wolf.png" alt=""><div><div class="sp-eyebrow">${cancelable ? T('添加账号', 'ADD ACCOUNT') : T('开始使用', 'GET STARTED')}</div><h2 id="spTitle">${T('你的 X 账号', 'Your X account')}</h2></div></div>
+      <p>${T('填你自己的 X 用户名。工具会免密读取它的公开资料和最近帖子，判断账号定位；之后 5 个角色、审查狼、策略、辩论、对标分析都按这个账号来做，数据按账号分开存。', 'Enter your own X username. The tool reads its public profile and recent posts without a password to determine the account\'s positioning. Afterwards, the 5 roles, the Review Wolf, strategy, debate, and benchmark analysis all work from this account, and data is stored separately for each account.')}</p>
+      <label class="sp-field"><span>@</span><input id="spUser" autocomplete="off" spellcheck="false" placeholder="${T('用户名，或 https://x.com/用户名', 'username, or https://x.com/username')}"></label>
+      <div class="sp-row"><button class="run" id="spGo">${T('开始', 'Start')}</button>${cancelable ? `<button class="ghost" id="spCancel">${T('取消', 'Cancel')}</button>` : ''}<span id="spMsg"></span></div>
+      <div class="sp-or" id="spSampleRow" style="display:none">${T('没有账号？先用示例数据体验：', 'No account? Try sample data:')}<select id="spSample"></select><button class="ghost" id="spSampleGo">${T('载入', 'Load')}</button></div>
+    </div>`;
+    document.body.appendChild(d);
+    const msg = (t, err) => { const m = $('#spMsg'); m.className = err ? 'err' : ''; m.innerHTML = t; };
+    const busy = v => { ['#spGo', '#spSampleGo', '#spCancel'].forEach(s => { const e = $(s); if (e) e.disabled = v; }); };
+    const submit = async body => {
+      busy(true); msg('<span class="spin"></span>' + esc(T('正在读取公开资料和帖子，并分析定位（约 20–60 秒）…', 'Reading the public profile and posts and detecting positioning (20–60 s)…')));
+      try {
+        const r = await j('/api/accounts', { method: 'POST', body: JSON.stringify(body) });
+        if (r.warning) alert(T('已创建账号，但没读到帖子：', 'Account created, but no posts could be read: ') + r.warning);
+        location.hash = ''; location.reload();
+      } catch (e) { msg(esc(T('失败：', 'Failed: ') + e.message), true); busy(false); }
+    };
+    const go = () => {
+      const u = $('#spUser').value.trim().replace(/^@/, '').replace(/^https?:\/\/(www\.)?(x|twitter)\.com\//, '').split(/[/?#]/)[0];
+      if (!/^[A-Za-z0-9_]{1,15}$/.test(u)) return msg(esc(T('用户名不合法（1–15 位字母、数字或下划线）', 'Invalid username (1–15 letters, digits or underscores)')), true);
+      submit({ username: u });
+    };
+    $('#spGo').onclick = go; $('#spUser').onkeydown = e => { if (e.key === 'Enter') go(); };
+    if (cancelable) { $('#spCancel').onclick = () => d.remove(); d.addEventListener('keydown', e => { if (e.key === 'Escape') d.remove(); }); d.onclick = e => { if (e.target === d) d.remove(); }; }
+    $('#spUser').focus();
+    try { const c = await api('/api/bench/config'); const ss = (c.samples || []).filter(s => !isDefaultAcct(s));
+      if (ss.length) { $('#spSample').innerHTML = ss.map(s => `<option value="${esc(s)}">@${esc(s)}</option>`).join(''); $('#spSampleRow').style.display = '';
+        $('#spSampleGo').onclick = () => submit({ sample: $('#spSample').value }); } } catch (e) {}
+  }
+  window.openStartPage = startPage;
+  async function init() {
+    try { A = await j('/api/accounts'); } catch (e) { $('#acctName').textContent = T('账号读取失败', 'Accounts unavailable'); $('#acctPos').textContent = e.message; return; }
+    window.ACCOUNT = A.active || null;
+    render();
+    if (!A.active) return startPage(false);
+    // another tab switched/added an account → reload so this window never shows stale data
+    const recheck = async () => { try { const x = await j('/api/accounts'); if (!same(x.active, window.ACCOUNT)) { location.hash = ''; location.reload(); } } catch (e) {} };
+    window.addEventListener('focus', recheck); document.addEventListener('visibilitychange', () => { if (!document.hidden) recheck(); });
+  }
+  document.querySelectorAll('[data-ui-language]').forEach(b => b.addEventListener('click', () => setTimeout(render, 0)));
+  init();
+})();
+</script>
+</body>
+</html>

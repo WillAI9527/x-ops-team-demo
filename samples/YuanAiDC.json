@@ -1,0 +1,45 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "fxtwitter-public (keyless)",
+ "fetched_at": "2026-11-02T18:35:43+08:00",
+ "user": {
+  "id": "2111762217565925376",
+  "username": "YuanAiDC",
+  "name": "YI Ai",
+  "description": "",
+  "created_at": "Sun Oct 18 10:15:38 +0000 2026",
+  "location": "Singapore",
+  "url": "",
+  "verified": true,
+  "profile_image_url": "https://pbs.twimg.com/profile_images/2111766382551670785/YqU4u7vn_normal.jpg",
+  "followers": 1,
+  "following": 32,
+  "tweets": 1,
+  "listed": 0
+ },
+ "posts": [
+  {
+   "id": "2111766422208848171",
+   "text": "#新头像",
+   "created_at": "2026-10-18T10:28:44.000Z",
+   "lang": null,
+   "url": "https://x.com/YuanAiDC/status/2111766422208848171",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 9
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU6AXfPbsAARYLt.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  }
+ ]
+}

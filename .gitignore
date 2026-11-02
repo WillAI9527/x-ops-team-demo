@@ -1,0 +1,11 @@
+.env.local
+.env
+__pycache__/
+*.pyc
+server.log
+*.log
+server.pid
+data/
+_backup_*/
+.DS_Store
+._*

@@ -1,0 +1,4252 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "fxtwitter-public (keyless)",
+ "fetched_at": "2026-11-02T18:36:36+08:00",
+ "user": {
+  "id": "1516941936971554817",
+  "username": "wolfyxbt",
+  "name": "杀破狼 WolfyXBT",
+  "description": "目前专注 5 件事：炒币、打飞机、找番号、Vibe Coding、建设 @CHILABS_｜币安返佣：http://binance.com/register?ref=SPL001｜交易 Memecoin 推荐使用币安 Web3 钱包：http://web3.binance.com/referral?ref=SPL001",
+  "created_at": "Thu Apr 21 00:48:42 +0000 2022",
+  "location": "交易所返佣链接 →",
+  "url": "http://linktr.ee/wolfyxbt",
+  "verified": true,
+  "profile_image_url": "https://pbs.twimg.com/profile_images/1680938637628944384/2FYk0Ft4_normal.jpg",
+  "followers": 865322,
+  "following": 8391,
+  "tweets": 23487,
+  "listed": 0
+ },
+ "posts": [
+  {
+   "id": "2116922025466109968",
+   "text": "推特玩了这么久，我觉得杀破狼 @wolfyxbt 是中文推里面内容能力极强、自我营销超级成功，又他妈特别有梗的一个人 ，幽默能力不在挖矿小企鹅之下，有种说不出的个人魅力，反正能带给我很多笑点。",
+   "created_at": "2026-11-01T15:55:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2116922025466109968",
+   "metrics": {
+    "likes": 145,
+    "reposts": 1,
+    "replies": 82,
+    "quotes": 5,
+    "bookmarks": 3,
+    "views": 32697
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116883233300529362",
+   "text": "比特币已经 18 岁了，昨天 10 月 31 号是比特币白皮书面世的 18 周年。作为一名合格的韭菜，比特币白皮书是一定要去看完的。\n\n如果你还没看的话，那我这里推荐你去看李笑来 @xiaolai 老师曾经翻译过的中文版：https://github.com/xiaolai/bitcoin-whitepaper-chinese-translation/blob/master/Bitcoin-Whitepaper-EN-CN.md\n\n比特币白皮书只有 9 页，@MEXC 邀请我写第 10 页，那我就不客气了，我觉得如果比特币白皮书要是有第 10 页的话，那就必须是狼波周期指数。\n\n在比特币的世界里面，其实是没有价格这个概念的，价格是我们外部的人类赋予它的外在参数，比特币这套系统里面只有区块的概念，区块就是比特币的生命。\n\n所以当我们要去判断比特币的生命周期时，就应该用区块去作为主要判断标准，而不是用价格、时间或成交量这种外部参数，更不应该在 TradingView 上面画画。\n\n很多人都发现了比特币有 4 年周期的运行规律，但是一直没有人用区块去定义这个规律，而且所谓的「4 年」也是人类世界的时间计算单位，比特币这套系统里面根本就不知道「4 年」有多长，它只知道「210,000 个区块」有多长。\n\n所以我发明了狼波周期指数，用区块来定义比特币的生命周期。\n\n• 狼波周期指数看板：https://wolfyxbt.github.io/wolfy-wave-index/\nhttps://x.com/wolfyxbt/status/2113961192515600727/video/1",
+   "created_at": "2026-11-01T13:21:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2116883233300529362",
+   "metrics": {
+    "likes": 260,
+    "reposts": 39,
+    "replies": 81,
+    "quotes": 7,
+    "bookmarks": 119,
+    "views": 49070
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2113960190789992448/img/jyZQ4UQ1-GjkHraN.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113960190789992448/img/jyZQ4UQ1-GjkHraN.jpg"
+    }
+   ],
+   "urls": [
+    "https://github.com/xiaolai/bitcoin-whitepaper-chinese-translation/blob/master/Bitcoin-Whitepaper-EN-CN.md",
+    "https://wolfyxbt.github.io/wolfy-wave-index/",
+    "https://x.com/wolfyxbt/status/2113961192515600727/video/1"
+   ]
+  },
+  {
+   "id": "2116828985485312300",
+   "text": "我的梦想很简单，我不想再賺 3000 万了，我现在只想要这个视频有 3000 个点赞，你们可以帮帮我吗，谢谢大家。",
+   "created_at": "2026-11-01T09:45:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2116828985485312300",
+   "metrics": {
+    "likes": 481,
+    "reposts": 6,
+    "replies": 150,
+    "quotes": 1,
+    "bookmarks": 15,
+    "views": 39880
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116407237665341452",
+   "text": "English Version: The $6 Billion Binance Hack, Visualized.",
+   "created_at": "2026-10-31T05:49:41.000Z",
+   "lang": "en",
+   "url": "https://x.com/wolfyxbt/status/2116407237665341452",
+   "metrics": {
+    "likes": 186,
+    "reposts": 28,
+    "replies": 42,
+    "quotes": 11,
+    "bookmarks": 82,
+    "views": 56645
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2116407026196832256/img/RzSY0Wuw20aq-5Rw.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116407026196832256/img/RzSY0Wuw20aq-5Rw.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116398680567930954",
+   "text": "币安被盗 60 亿美金全过程可视化",
+   "created_at": "2026-10-31T05:15:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2116398680567930954",
+   "metrics": {
+    "likes": 3695,
+    "reposts": 553,
+    "replies": 319,
+    "quotes": 98,
+    "bookmarks": 1690,
+    "views": 510604
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2116397420645158912/img/q0gyGU1Y0nxUBx_i.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116397420645158912/img/q0gyGU1Y0nxUBx_i.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116206384362770437",
+   "text": "💛@heyibinance",
+   "created_at": "2026-10-30T16:31:33.000Z",
+   "lang": null,
+   "url": "https://x.com/wolfyxbt/status/2116206384362770437",
+   "metrics": {
+    "likes": 59,
+    "reposts": 0,
+    "replies": 26,
+    "quotes": 0,
+    "bookmarks": 2,
+    "views": 31584
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116049762009207081",
+   "text": "马一龙你在干什么东东",
+   "created_at": "2026-10-30T06:09:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2116049762009207081",
+   "metrics": {
+    "likes": 436,
+    "reposts": 6,
+    "replies": 269,
+    "quotes": 7,
+    "bookmarks": 23,
+    "views": 144644
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV24C53bgAAsdCF.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115761074536607917",
+   "text": "未来的 3 个时间点我会引用回这篇推：\n\n2029 年的 8 月份、2030 年的 8 月份、2033 年的 6 月份。",
+   "created_at": "2026-10-29T11:02:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2115761074536607917",
+   "metrics": {
+    "likes": 195,
+    "reposts": 22,
+    "replies": 70,
+    "quotes": 2,
+    "bookmarks": 91,
+    "views": 56186
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVyxex8acAIcfV0.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115594465977016617",
+   "text": "新版 Macbook 来了，多了触屏功能，疑似再次借鉴华为 🤣",
+   "created_at": "2026-10-29T00:00:01.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2115594465977016617",
+   "metrics": {
+    "likes": 232,
+    "reposts": 4,
+    "replies": 212,
+    "quotes": 13,
+    "bookmarks": 14,
+    "views": 86938
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2115496999093252096/img/0uNceLHlXc_GADoX.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115496999093252096/img/0uNceLHlXc_GADoX.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115122491693961389",
+   "text": "姆巴佩僵尸来了！！！太强悍了！快用坚果击败他！",
+   "created_at": "2026-10-27T16:44:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2115122491693961389",
+   "metrics": {
+    "likes": 134,
+    "reposts": 4,
+    "replies": 70,
+    "quotes": 0,
+    "bookmarks": 6,
+    "views": 40081
+   },
+   "media": [
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HVpsqjXbkAMiGm9.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HVpsqjXbkAMiGm9.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115019319906287780",
+   "text": "重生之我穿越回 2018 年却还记得自己在 2026 年的 Claude & ChatGPT API Key（200 美元 Max 会员版）",
+   "created_at": "2026-10-27T09:54:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2115019319906287780",
+   "metrics": {
+    "likes": 98,
+    "reposts": 0,
+    "replies": 78,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 42400
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114960741841445117",
+   "text": "我建议姆巴佩现在加入中国足球队。",
+   "created_at": "2026-10-27T06:01:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2114960741841445117",
+   "metrics": {
+    "likes": 379,
+    "reposts": 3,
+    "replies": 291,
+    "quotes": 6,
+    "bookmarks": 9,
+    "views": 126560
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114551591617655277",
+   "text": "你其实没有你想象中的这么糟糕，这 9 件事情，肯定有人对你做过，但是你永远都不会知道：\n\n1. 有人暗恋过你，但一直没跟你说。\n2. 有个陌生人曾经对你微笑，但你没有看到。\n3. 有人一直记着你多年前做过的一件善事。\n4. 你的生活激励着某些人。\n5. 你是某些人坚持下去的理由。\n6. 你曾经在某个对话中被讨论过。\n7. 你不在场的时候，有人曾经为你辩护过。\n8. 有人看着你的微信消息，忍不住笑了。\n9. 有人曾经对着你的照片舒服了一下。",
+   "created_at": "2026-10-26T02:56:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2114551591617655277",
+   "metrics": {
+    "likes": 385,
+    "reposts": 14,
+    "replies": 192,
+    "quotes": 10,
+    "bookmarks": 54,
+    "views": 76328
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114363706377490651",
+   "text": "币安不再只是 “币”，给我 2 分钟，带你重新认识币安\n\n#币安创意广告大赛",
+   "created_at": "2026-10-25T14:29:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2114363706377490651",
+   "metrics": {
+    "likes": 600,
+    "reposts": 35,
+    "replies": 106,
+    "quotes": 1,
+    "bookmarks": 267,
+    "views": 90839
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2114360650160054272/img/elALH94ZEJCJlFIA.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2114360650160054272/img/elALH94ZEJCJlFIA.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113961192515600727",
+   "text": "3 分钟带你看懂比特币的生命周期",
+   "created_at": "2026-10-24T11:49:58.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113961192515600727",
+   "metrics": {
+    "likes": 1267,
+    "reposts": 203,
+    "replies": 436,
+    "quotes": 48,
+    "bookmarks": 780,
+    "views": 307470
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2113960190789992448/img/jyZQ4UQ1-GjkHraN.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2113960190789992448/img/jyZQ4UQ1-GjkHraN.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113850084332912910",
+   "text": "按这个理论来看，狼崽主动帮飞崽，其实算是一件利人利己的事。表面上是狼崽在帮飞崽，但实际上狼崽也从中获利，因为狼崽也不会随便帮一个没名气的人，本质上是在筛选优质的人去帮。\n\n那这种事是不是应该少做？表面上看似双赢，但其中有两个隐性成本：\n\n一是狼崽没帮过的人和身边的朋友，可能会想「为什么他愿意帮一个不认识的飞崽，却不帮我们？」，心里因此产生嫉妒；\n\n二是以后哪天狼崽不再帮飞崽了，飞崽可能反而会讨厌他。",
+   "created_at": "2026-10-24T04:28:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113850084332912910",
+   "metrics": {
+    "likes": 130,
+    "reposts": 4,
+    "replies": 73,
+    "quotes": 5,
+    "bookmarks": 7,
+    "views": 56618
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113668417232478400",
+   "text": "你收到付款了！点击查看你的收益。\n\n马斯克终于变大方了，上两周只给我 700 块钱，我已经生气了，这两周给我提到 1200 块钱，我希望下两周可以给我 3000 块钱 @elonmusk 。",
+   "created_at": "2026-10-23T16:26:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113668417232478400",
+   "metrics": {
+    "likes": 237,
+    "reposts": 4,
+    "replies": 180,
+    "quotes": 5,
+    "bookmarks": 10,
+    "views": 66652
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVVCOM-aYAYH3ug.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVVCOWmaYAI-KrU.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113611098650026132",
+   "text": "$旺柴 回到 10m 了，还好没被洗下车，在 @fomo 上面的「最多人持有」排行榜，旺柴刚刚超过牛来，排到第二了，MarsCoin 和牛来都已经上过 Alpha 了，旺柴还没上，但已经上 Aster 了，Alpha 应该也不远了，相信 Flap、相信 Cedric、相信 $旺柴 @wangchaionbnb 。",
+   "created_at": "2026-10-23T12:38:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113611098650026132",
+   "metrics": {
+    "likes": 124,
+    "reposts": 14,
+    "replies": 53,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 43030
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVUOF_2a8AA4roP.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113567622214422765",
+   "text": "No senator, I am S̶i̶n̶g̶a̶p̶o̶r̶e̶a̶n̶ Malaysian",
+   "created_at": "2026-10-23T09:46:03.000Z",
+   "lang": "es",
+   "url": "https://x.com/wolfyxbt/status/2113567622214422765",
+   "metrics": {
+    "likes": 485,
+    "reposts": 6,
+    "replies": 87,
+    "quotes": 5,
+    "bookmarks": 4,
+    "views": 127187
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVTmXlNbsAAgHgj.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113538306252427559",
+   "text": "不要跟中国人比 iPhone 评测",
+   "created_at": "2026-10-23T07:49:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113538306252427559",
+   "metrics": {
+    "likes": 234,
+    "reposts": 3,
+    "replies": 151,
+    "quotes": 6,
+    "bookmarks": 8,
+    "views": 119169
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113308266424062420",
+   "text": "影视飓风和何同学今天在 X 上发的 iPhone Duo 评测\n\n老外直接看呆了，我建议老外不要再跟中国人卷 iPhone 评测了，马斯克已经说过了，中国人一旦搞清楚如何制造一款产品时，他们的规模化能力是很恐怖的 🤣",
+   "created_at": "2026-10-22T16:35:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113308266424062420",
+   "metrics": {
+    "likes": 466,
+    "reposts": 4,
+    "replies": 112,
+    "quotes": 2,
+    "bookmarks": 72,
+    "views": 231502
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVP6qjnaIAAL4-J.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVP6qyBaUAMeEEK.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113165852828966923",
+   "text": "杀破狼 2024 年精准预测 2025/10/06 牛顶",
+   "created_at": "2026-10-22T07:09:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2113165852828966923",
+   "metrics": {
+    "likes": 154,
+    "reposts": 3,
+    "replies": 68,
+    "quotes": 2,
+    "bookmarks": 19,
+    "views": 80522
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112983572906914104",
+   "text": "我靠？影视飓风 Tim 刚刚入驻 X 了",
+   "created_at": "2026-10-21T19:05:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112983572906914104",
+   "metrics": {
+    "likes": 762,
+    "reposts": 26,
+    "replies": 386,
+    "quotes": 8,
+    "bookmarks": 141,
+    "views": 427206
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112893060116091052",
+   "text": "$AXIS 公售打了 36,355u，退款 21,073u，实际买入 15,282u\n\n开盘解锁 45,985 $AXIS（38,204 枚公售仓位 + 7,781 枚送的 Bonus 代币），占总仓位的 28.6%，按现价 0.33u 折算大概价值 15k，所以已经回本了。\n\n后面还有 71.4% 的代币相当于纯送了，按现价 0.33u 折算大概价值 38k，这部分会分一年线形解锁。\n\n性感大香蕉 @0xsexybanana 非常性感！",
+   "created_at": "2026-10-21T13:05:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112893060116091052",
+   "metrics": {
+    "likes": 137,
+    "reposts": 4,
+    "replies": 75,
+    "quotes": 3,
+    "bookmarks": 15,
+    "views": 57777
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVKBCl5asAAPbka.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112840151865184509",
+   "text": "为什么没有 “定掏” 这个单词？狗庄发明了 “定投” 这个单词，希望你们可以定期买入，但是不发明 “定掏”，因为定掏只属于狗庄，我们定投就可以了，狗庄定掏。",
+   "created_at": "2026-10-21T09:35:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112840151865184509",
+   "metrics": {
+    "likes": 183,
+    "reposts": 7,
+    "replies": 121,
+    "quotes": 5,
+    "bookmarks": 9,
+    "views": 42958
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112535385649885567",
+   "text": "之前 @NeoSoulAI 承诺过会给 @StandX_Official 的用户发补贴空投，现在可以开始去申请了。\n\n需要去官方 Discord 提交你在 StandX 上用过的 BSC 地址，每个 Discord 账号只能填一个地址，11 月 3 号 截止，撸过 StandX 的用户快去搞一搞。\n\n官方这篇推文说这是第一批空投，可能之后还有第二第三批，牛逼牛逼，NeoSoul 项目方超级无敌大格局 👍",
+   "created_at": "2026-10-20T13:24:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112535385649885567",
+   "metrics": {
+    "likes": 86,
+    "reposts": 5,
+    "replies": 55,
+    "quotes": 2,
+    "bookmarks": 12,
+    "views": 37379
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112521756896542814",
+   "text": "如果短时间内再创一个新低的话，狼波周期整体还不算失效。",
+   "created_at": "2026-10-20T12:30:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112521756896542814",
+   "metrics": {
+    "likes": 217,
+    "reposts": 10,
+    "replies": 135,
+    "quotes": 5,
+    "bookmarks": 18,
+    "views": 65764
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVEvV5aaoAEai0v.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112482961497161993",
+   "text": "我跟你们说，所有互动对帖子流量的加权，都是微乎其微的。\n\n一个帖子要获得无限推流，唯一重要的指标是「平均停留时间」。平均停留时间高，你就会得到推流，新推进来的人平均停留时间依然很高，你就会进入一个无限推流的飞轮。\n\n虽说如此，但是很多互动指标和平均停留时间是有相关性的。比如一个人既然给你的推文评论了，那他在你推文上的停留时间就不会少。\n\n但真正真正重要的，还是平均停留时间，互动只是表象。\n\n如果一篇推文大家点赞、评论、收藏的欲望都很低，但文字能把人抓住很久，那它照样会得到推流。平均停留时间才是这个平台推流的第一性原理。\n\n我一个傻逼在这里混到 86w 粉丝，我建议你相信我。",
+   "created_at": "2026-10-20T09:56:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112482961497161993",
+   "metrics": {
+    "likes": 389,
+    "reposts": 18,
+    "replies": 238,
+    "quotes": 42,
+    "bookmarks": 97,
+    "views": 85636
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112347568265207909",
+   "text": "Twitter 上的中国人看起来像是很友好的人，就是太喜欢性了。",
+   "created_at": "2026-10-20T00:58:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112347568265207909",
+   "metrics": {
+    "likes": 317,
+    "reposts": 5,
+    "replies": 156,
+    "quotes": 14,
+    "bookmarks": 17,
+    "views": 102149
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112174284148023612",
+   "text": ". @popdex_ 这个 Perp DEX 项目今天开放公测了，现在不用邀请码就可以直接交易了，@ForesightVen 领投 3000w 美金的项目。\n\n他们有个 MegaPop 玩法机制，用户交易可以获得 Pop Tickets，然后每张 Pop Tickets 都有机会中奖，项目方先往奖池里放了 15w 美金，然后之后平台收入的 40% 会进入这个奖池，通过抽奖的形式把部分手续费收入返还给用户，多了一些随机性吧，可能存在一些小户中奖获得超额返还的情况。\n\n现在前 6 周有双倍的参与进度加成，感兴趣可以搞一搞：https://share.popdex.xyz/sl/lLt1N9WM",
+   "created_at": "2026-10-19T13:29:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112174284148023612",
+   "metrics": {
+    "likes": 67,
+    "reposts": 5,
+    "replies": 41,
+    "quotes": 0,
+    "bookmarks": 7,
+    "views": 33415
+   },
+   "media": [],
+   "urls": [
+    "https://share.popdex.xyz/sl/lLt1N9WM"
+   ]
+  },
+  {
+   "id": "2112151840192389347",
+   "text": "如果你叫我狼总，那我也不要跟你说话。",
+   "created_at": "2026-10-19T12:00:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112151840192389347",
+   "metrics": {
+    "likes": 132,
+    "reposts": 0,
+    "replies": 187,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 45322
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112122760273252433",
+   "text": "出片了，帅，是一种感觉 🤣",
+   "created_at": "2026-10-19T10:04:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112122760273252433",
+   "metrics": {
+    "likes": 445,
+    "reposts": 4,
+    "replies": 191,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 77606
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU_EVWFbAAAdbFP.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112103812228088279",
+   "text": "中国版的 Chill Guy 已经出现了哈哈哈哈哈！",
+   "created_at": "2026-10-19T08:49:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112103812228088279",
+   "metrics": {
+    "likes": 161,
+    "reposts": 10,
+    "replies": 57,
+    "quotes": 2,
+    "bookmarks": 5,
+    "views": 50805
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU-zOEObkAAr_B9.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU-zOOebkAAbove.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HU-zOX-bEAA0Qq9.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2112077853965873262",
+   "text": "电车严父来了 @elonmusk",
+   "created_at": "2026-10-19T07:06:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2112077853965873262",
+   "metrics": {
+    "likes": 557,
+    "reposts": 27,
+    "replies": 173,
+    "quotes": 8,
+    "bookmarks": 88,
+    "views": 231780
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2112077395595530240/img/kqxECtFSRU2shyAc.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2112077395595530240/img/kqxECtFSRU2shyAc.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2111837250661331344",
+   "text": "对！你说得太对了！",
+   "created_at": "2026-10-18T15:10:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111837250661331344",
+   "metrics": {
+    "likes": 226,
+    "reposts": 8,
+    "replies": 181,
+    "quotes": 2,
+    "bookmarks": 1,
+    "views": 82285
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111412910379721007",
+   "text": "币圈最有钱的那一波人，好像从来不买币，只发币🫪",
+   "created_at": "2026-10-17T11:04:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111412910379721007",
+   "metrics": {
+    "likes": 1041,
+    "reposts": 30,
+    "replies": 638,
+    "quotes": 44,
+    "bookmarks": 65,
+    "views": 248797
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111348500139278591",
+   "text": "我求你们了，别再用 ai 发这种大便评论了好吗",
+   "created_at": "2026-10-17T06:48:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111348500139278591",
+   "metrics": {
+    "likes": 109,
+    "reposts": 0,
+    "replies": 76,
+    "quotes": 3,
+    "bookmarks": 0,
+    "views": 44668
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111337072124674486",
+   "text": "Vibe Coding 这个名字取得真好\n\n后来很多程序员和理科生表示不喜欢 Vibe Coding 这个词，因为它一点都不严谨，应该叫 AI Coding 或 Agentic Coding。\n\n这些确实是对的，但是我感觉 Vibe Coding 要表达的就是，一群原本不会写代码的文科生，开始用 AI 来写 Coding，这群人本来就不追求严谨，玩的就是一种 Vibe。",
+   "created_at": "2026-10-17T06:02:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111337072124674486",
+   "metrics": {
+    "likes": 155,
+    "reposts": 3,
+    "replies": 76,
+    "quotes": 5,
+    "bookmarks": 6,
+    "views": 48686
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111276260181897401",
+   "text": "目前进度 8250/10000，\n\n短短 8 个月内我已经关注了 1500 个优质账号",
+   "created_at": "2026-10-17T02:01:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111276260181897401",
+   "metrics": {
+    "likes": 342,
+    "reposts": 1,
+    "replies": 271,
+    "quotes": 9,
+    "bookmarks": 11,
+    "views": 65054
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111260404756427058",
+   "text": "李在明 @Jaemyung_Lee 关注了 100 万个韩国人，最终成为了韩国总统，我也想往这个方向努力，争取 10 年内达成这一壮举，如果你是马来西亚人的话，请在评论区露个脸，我会关注你，谢谢配合。",
+   "created_at": "2026-10-17T00:58:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111260404756427058",
+   "metrics": {
+    "likes": 437,
+    "reposts": 5,
+    "replies": 337,
+    "quotes": 8,
+    "bookmarks": 18,
+    "views": 102278
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111096973315256644",
+   "text": ". @NeoSoulAI 这个项目格局好大\n\n昨天 StandX 宣布停运的时候，NeoSoul 反手宣布会给 StandX 社区空投补贴，这操作太顶级了，在 TGE 前一天完美承接了 StandX 的舆论流量。\n\n今天他们的代币 $DNA 开盘了，首发上线币安 Alpha 和 OKX 合约，一路从 0.1 拉到现在 0.28，几乎没什么大的回调，开盘冲进去的几乎都赚钱了，持仓体验非常舒服，好久没看到这么有格局的 TGE 了。",
+   "created_at": "2026-10-16T14:08:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2111096973315256644",
+   "metrics": {
+    "likes": 126,
+    "reposts": 5,
+    "replies": 56,
+    "quotes": 4,
+    "bookmarks": 8,
+    "views": 61079
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUwfgnVaAAAu_HA.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2111024254254973129",
+   "text": "Roadster 的用途来了",
+   "created_at": "2026-10-16T09:19:37.000Z",
+   "lang": "ja",
+   "url": "https://x.com/wolfyxbt/status/2111024254254973129",
+   "metrics": {
+    "likes": 390,
+    "reposts": 18,
+    "replies": 115,
+    "quotes": 12,
+    "bookmarks": 12,
+    "views": 57136
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUvdXZ7bgAAHISb.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110946433889337693",
+   "text": "我操！！！！哈哈哈哈\n\n马斯克新的 Roadster 能飞起来我操哈哈哈哈",
+   "created_at": "2026-10-16T04:10:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110946433889337693",
+   "metrics": {
+    "likes": 225,
+    "reposts": 17,
+    "replies": 143,
+    "quotes": 12,
+    "bookmarks": 11,
+    "views": 65657
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2110900899904421888/img/IgjQ2q4rWzrCWGPi.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110900899904421888/img/IgjQ2q4rWzrCWGPi.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110897778901778848",
+   "text": "黄果还可以看一看，红果千万不要看了\n\n你看我们人一天只有 24 小时，8 个小时要睡觉，醒着的时间只有 16 个小时，其中的 8 个小时要工作，然后通勤、洗澡、打飞机、吃饭、社交、乱七八糟的，这些总共算它个 4 小时吧。\n\n扣去这些，你一天就只剩下 4 小时了，你再刷 2 个小时抖音的话，你就只剩下 2 个小时了，然后你现在告诉我你这最后的 2 个小时你现在要拿去刷红果，这不完犊子了吗！\n\n红果绝对是比抖音还要恐怖的毒品，他们的剧本基本都是一个套路，通过不断的反转剧情、屌丝逆袭，来吊着你的胃口，有很强的成瘾性，一旦沾上就会吞噬你大量的时间和脑子的内存。\n\n黄果我觉得还是可以刷一刷的。\n\n黄果也就搞搞色情，满足我们的猎奇和过过眼瘾，它很少去设计那种一直吊着人胃口的剧情来让你上瘾，而且你进入贤者模式之后就不会想再刷黄果了。\n\n但是红果真的踏马一直反转反转再反转，现在再配上 AI 的能力无限复制，正常人沾上了就再也逃不掉了。",
+   "created_at": "2026-10-16T00:57:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110897778901778848",
+   "metrics": {
+    "likes": 303,
+    "reposts": 22,
+    "replies": 167,
+    "quotes": 21,
+    "bookmarks": 73,
+    "views": 111357
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUtqVfBacAEYtGP.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110717082149294273",
+   "text": "我从 20 年开始炒币到现在，\n\n最正确的一笔投资是 22 年注册 𝕏 账号并坚持发推今天。",
+   "created_at": "2026-10-15T12:59:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110717082149294273",
+   "metrics": {
+    "likes": 711,
+    "reposts": 11,
+    "replies": 495,
+    "quotes": 26,
+    "bookmarks": 37,
+    "views": 145750
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110703951733752078",
+   "text": "你们真的能忍住不来一把孙宇晨坚果吗",
+   "created_at": "2026-10-15T12:06:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110703951733752078",
+   "metrics": {
+    "likes": 81,
+    "reposts": 4,
+    "replies": 54,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 43990
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2110703811732144128/img/jBanac8UchX_0wsV.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110703811732144128/img/jBanac8UchX_0wsV.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110699267069464935",
+   "text": "新增角色「曾颖向日葵」和「乒乓球僵尸」\n\n乒乓球僵尸实力强悍，拥有河马般粗壮的大腿，速度更快，攻击力更高，普通的孙宇晨坚果恐怕难以对付。\n\n你可以把孙宇晨坚果喂给曾颖向日葵，它会把孙宇晨坚果孵化成红温孙宇晨坚果，具有爆炸效果，可以一击打败乒乓球僵尸。",
+   "created_at": "2026-10-15T11:48:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110699267069464935",
+   "metrics": {
+    "likes": 150,
+    "reposts": 3,
+    "replies": 63,
+    "quotes": 4,
+    "bookmarks": 7,
+    "views": 73693
+   },
+   "media": [
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HUqz4XrawAAhEpK.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HUqz4XrawAAhEpK.jpg"
+    },
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HUqz6QobQAAJ4zw.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HUqz6QobQAAJ4zw.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110667276953530759",
+   "text": "如果你叫我狼哥，那我不要和你说话。",
+   "created_at": "2026-10-15T09:41:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110667276953530759",
+   "metrics": {
+    "likes": 131,
+    "reposts": 3,
+    "replies": 143,
+    "quotes": 15,
+    "bookmarks": 0,
+    "views": 100642
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110349850604867969",
+   "text": "熊市结束了，狼波周期指数刚刚正式归零\n\n对应的比特币区块高度是 971,250。\n\n接下来会进入长达 3 年的牛市阶段，也就是图中的绿色区域。\n\n这个牛市阶段大概会在 2029/09/23 结束，这个日期不是绝对的，是根据最近比特币的出快速度推算出来的，最后的准确日期有可能会上下浮动几天。\n\n进入牛市阶段也不是说会立刻暴涨，熊转牛一直以来都是个漫长的过程，我们回看上两个周期的这个阶段，可以看到即使进入了绿色区域的牛市阶段，也可能会出现持续几个月的筑底（图中的红色箭头）。\n\n从长期来看，这里是个相对低点，但不一定是绝对低点。\n\n我建议可以从现在开始开启定投模式，持续定投半年。",
+   "created_at": "2026-10-14T12:39:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110349850604867969",
+   "metrics": {
+    "likes": 885,
+    "reposts": 120,
+    "replies": 297,
+    "quotes": 43,
+    "bookmarks": 324,
+    "views": 176051
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUl4AOZaMAAeQQ8.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110309885611237500",
+   "text": "你打飞机不看黄果，怎么好意思说自己 All in AI",
+   "created_at": "2026-10-14T10:00:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110309885611237500",
+   "metrics": {
+    "likes": 653,
+    "reposts": 17,
+    "replies": 377,
+    "quotes": 21,
+    "bookmarks": 60,
+    "views": 343072
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110291364122607627",
+   "text": "打算新增乒乓球运动员僵尸，实力强悍，拥有河马般粗壮的大腿，乒乓球运动员僵尸会吃掉景甜向日葵，你需要用孙宇晨坚果来击败乒乓球运动员僵尸。",
+   "created_at": "2026-10-14T08:47:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110291364122607627",
+   "metrics": {
+    "likes": 155,
+    "reposts": 2,
+    "replies": 84,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 53347
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110224795094942196",
+   "text": "我竟然在 𝕏 上看路飞直播连麦邵艾伦🤣",
+   "created_at": "2026-10-14T04:22:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110224795094942196",
+   "metrics": {
+    "likes": 230,
+    "reposts": 4,
+    "replies": 109,
+    "quotes": 3,
+    "bookmarks": 24,
+    "views": 192073
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUkGQ1XbMAA5wyo.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUkGQ1ebYAAgxCG.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110026360966221867",
+   "text": "我会被起诉吗？应该不会吧 🫪",
+   "created_at": "2026-10-13T15:14:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2110026360966221867",
+   "metrics": {
+    "likes": 86,
+    "reposts": 0,
+    "replies": 95,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 54085
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109997798892699883",
+   "text": "景甜向日葵上线了！快来玩：https://wolfyxbt.github.io/justin-nut/\n\n种植景甜向日葵，生成更多的孙宇晨坚果来击败僵尸！",
+   "created_at": "2026-10-13T13:20:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109997798892699883",
+   "metrics": {
+    "likes": 144,
+    "reposts": 6,
+    "replies": 93,
+    "quotes": 7,
+    "bookmarks": 10,
+    "views": 48972
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2109997746283524098/img/m1MqxCbnV_Kq_uPk.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2109997746283524098/img/m1MqxCbnV_Kq_uPk.jpg"
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/justin-nut/"
+   ]
+  },
+  {
+   "id": "2109977580350947423",
+   "text": "下个版本会新增植物，景甜向日葵。\n\n景甜向日葵可以为你生产更多的孙宇晨坚果，来打败僵尸。",
+   "created_at": "2026-10-13T12:00:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109977580350947423",
+   "metrics": {
+    "likes": 318,
+    "reposts": 5,
+    "replies": 177,
+    "quotes": 15,
+    "bookmarks": 14,
+    "views": 125468
+   },
+   "media": [
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HUgkIoUXEAA42Bd.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HUgkIoUXEAA42Bd.jpg"
+    },
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HUglOQaXEAAR4sR.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HUglOQaXEAAR4sR.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109661879627063661",
+   "text": "植物大战僵尸（孙宇晨坚果版）重磅大更新！\n\n@justinsuntron 和 @AlanShao111 的采访视频 4 小时太长了，现在你可以边玩无线模式的孙宇晨坚果保龄球，边听 4 小时的采访视频，就不会这么无聊了。",
+   "created_at": "2026-10-12T15:06:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109661879627063661",
+   "metrics": {
+    "likes": 131,
+    "reposts": 1,
+    "replies": 93,
+    "quotes": 4,
+    "bookmarks": 7,
+    "views": 43234
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUcGTBCbEAI51bU.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109622154870563006",
+   "text": "植物大战僵尸（孙宇晨坚果版）正式上线\n\n现开放大家免费游玩：https://wolfyxbt.github.io/justin-nut",
+   "created_at": "2026-10-12T12:28:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109622154870563006",
+   "metrics": {
+    "likes": 311,
+    "reposts": 10,
+    "replies": 170,
+    "quotes": 27,
+    "bookmarks": 27,
+    "views": 248956
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUbiK2JagAAJko1.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/justin-nut"
+   ]
+  },
+  {
+   "id": "2109576387766206972",
+   "text": ". @fomo 这个平台有个「Most Held」列表，中文是「最多人持有」，大概的意思就是 Fomo 这个平台的用户，持有得越多的代币，就会在这里越靠前展示。\n\n这个列表很好用，尤其是去选一些二段标的，强烈推荐大家多看看。\n\nBNBChain 这里，第一是 MarsCoin、第二是牛来、第三是旺柴，旺柴这个标的持仓体验也太好了，5-8m 追进去，一路顶到了 18m，中间也没有什么比较大的回调来洗我，我觉得是 BNBChain 上目前最有机会冲击 BN Alpha 的标了。",
+   "created_at": "2026-10-12T09:26:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109576387766206972",
+   "metrics": {
+    "likes": 144,
+    "reposts": 11,
+    "replies": 52,
+    "quotes": 2,
+    "bookmarks": 39,
+    "views": 52108
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUa4ipKbkAAFvle.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUa4i1nbUAA37BX.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109568604530524514",
+   "text": "植物大战僵尸推出新坚果皮肤，孙宇晨坚果",
+   "created_at": "2026-10-12T08:55:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109568604530524514",
+   "metrics": {
+    "likes": 283,
+    "reposts": 3,
+    "replies": 105,
+    "quotes": 7,
+    "bookmarks": 4,
+    "views": 45551
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUaxdzyagAAsFLI.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109551766706733225",
+   "text": "𝕏 中文区一直是个很小众的圈子\n\n@AlanShao111 和 @justinsuntron 这个月给这个圈子带来了泼天的圈外流量，这对我们这些本来就在做 𝕏 的人来说是天大的好事，找不到任何不支持的理由，只要你在做 𝕏，都应该支持 Alan 继续当嘉豪。",
+   "created_at": "2026-10-12T07:48:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109551766706733225",
+   "metrics": {
+    "likes": 357,
+    "reposts": 10,
+    "replies": 154,
+    "quotes": 8,
+    "bookmarks": 19,
+    "views": 82365
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109547994786013650",
+   "text": "𝕏 涨粉非常简单，每天发推，坚持发 4 年",
+   "created_at": "2026-10-12T07:33:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109547994786013650",
+   "metrics": {
+    "likes": 445,
+    "reposts": 10,
+    "replies": 256,
+    "quotes": 68,
+    "bookmarks": 24,
+    "views": 169509
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109535995779829763",
+   "text": "永远不要卸载 𝕏\n\n除了 𝕏 之外，你找不到另一个社交平台，百亿身价富豪愿意跟你一起玩梗",
+   "created_at": "2026-10-12T06:45:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109535995779829763",
+   "metrics": {
+    "likes": 729,
+    "reposts": 13,
+    "replies": 360,
+    "quotes": 17,
+    "bookmarks": 45,
+    "views": 163659
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUaTzyWbsAAVpLB.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109529709184946658",
+   "text": ". @CaptainLufei999 应该就是抖音 200w 粉丝的那个路飞本人\n\n因为我看 @AlanShao111 和这个账号互关和互动了，所以应该不是仿冒的，越来越多优质中文博主入驻 𝕏 了，中文区要起飞了！",
+   "created_at": "2026-10-12T06:20:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109529709184946658",
+   "metrics": {
+    "likes": 200,
+    "reposts": 5,
+    "replies": 137,
+    "quotes": 15,
+    "bookmarks": 16,
+    "views": 177343
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUaOFqnasAA67mn.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUaOF1-aEAALrQC.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109499724529291368",
+   "text": "我大概需要 5000 万美金的投资 @justinsuntron",
+   "created_at": "2026-10-12T04:21:41.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109499724529291368",
+   "metrics": {
+    "likes": 387,
+    "reposts": 4,
+    "replies": 351,
+    "quotes": 2,
+    "bookmarks": 12,
+    "views": 215737
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109235471578767865",
+   "text": "绷不住了家人们，真要下海了",
+   "created_at": "2026-10-11T10:51:38.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2109235471578767865",
+   "metrics": {
+    "likes": 358,
+    "reposts": 7,
+    "replies": 254,
+    "quotes": 5,
+    "bookmarks": 17,
+    "views": 179608
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108850474762047548",
+   "text": "我再指一条赛道：\n\n中文世界的 @gattouz0\n\n（我正在冲，准备花几十年深耕这条赛道。）",
+   "created_at": "2026-10-10T09:21:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108850474762047548",
+   "metrics": {
+    "likes": 708,
+    "reposts": 29,
+    "replies": 348,
+    "quotes": 40,
+    "bookmarks": 302,
+    "views": 1915304
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108723945088377197",
+   "text": "马斯克对我越来越抠搜了\n\n以前一期还能有个一千来刀，现在只剩七百刀了",
+   "created_at": "2026-10-10T00:59:01.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108723945088377197",
+   "metrics": {
+    "likes": 243,
+    "reposts": 3,
+    "replies": 191,
+    "quotes": 10,
+    "bookmarks": 8,
+    "views": 86814
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUOxQPdaoAA7YIv.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108233493432123869",
+   "text": "比特币现在最大的挑战就是狼波指数",
+   "created_at": "2026-10-08T16:30:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108233493432123869",
+   "metrics": {
+    "likes": 157,
+    "reposts": 1,
+    "replies": 82,
+    "quotes": 3,
+    "bookmarks": 2,
+    "views": 70943
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108194708644405410",
+   "text": "推特像我一样可爱的人越来越少，人机和伪人越来越多。",
+   "created_at": "2026-10-08T13:56:01.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108194708644405410",
+   "metrics": {
+    "likes": 215,
+    "reposts": 3,
+    "replies": 210,
+    "quotes": 4,
+    "bookmarks": 1,
+    "views": 60389
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108180950706524566",
+   "text": "别说我没提醒你们，币圈的博主们，不要只把内容发在 𝕏，一定要顺手同步发到币安广场，点点手指的事情，每个月能多赚一笔钱，不亚于马斯克给的工资，我已经偷偷靠这个发财了。",
+   "created_at": "2026-10-08T13:01:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108180950706524566",
+   "metrics": {
+    "likes": 548,
+    "reposts": 36,
+    "replies": 168,
+    "quotes": 12,
+    "bookmarks": 206,
+    "views": 175848
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUHDZgCacAAVaqb.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUHDZu6bgAA8J9n.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108166490134639032",
+   "text": "韭菜的自我修养\n\n第 1 章：盈利就出货，亏损就建设到盈利然后出货\n第 2 章：别再去 Trading View 作画\n第 3 章：承认自己是傻逼\n第 4 章：高效维权的方法\n第 5 章：别再参加 Token2049",
+   "created_at": "2026-10-08T12:03:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108166490134639032",
+   "metrics": {
+    "likes": 170,
+    "reposts": 4,
+    "replies": 87,
+    "quotes": 5,
+    "bookmarks": 12,
+    "views": 41990
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUG2QB4bQAAb1GW.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108139133403312467",
+   "text": "在币圈，我们经常需要用 𝕏 的信息来投研\n\n但是 Codex/Claude Code 一般没办法直接访问 𝕏 上面的信息，有几个解决方案，第一就是可以花钱买 𝕏 的 API，或者通过任何第三方 API，但是 𝕏 的 API 不便宜，配置起来也比较麻烦。\n\n第二是直接用 Grok，但是 Grok 肯定没有 Codex/Claude Code 来得智能和全面，大家目前的主力 Agent 基本都还是 Codex/Claude Code。\n\n我自己的一个方法是：让 Codex/Claude Code 自己去用 Grok\n\n通过 “Grok Build” 可以实现这个效果，Grok Build 就是 Grok 的 CLI 版本，它可以访问 𝕏 的信息。我们只需要让 Codex/Claude Code 在需要查询 𝕏 的信息的时候，自己主动去调用 Grok Build 来问出答案，就可以实现类似 API 的效果。\n\n这个过程对于我来说不需要额外付费。\n\n因为我本来就有订阅 𝕏 的 Premium+ 会员，所以我是可以免费使用 Grok Build 这个功能的，这点很多人都不知道，白白浪费了 𝕏 送给你的 Grok Build 免费额度。\n\n我们只需要让 AI 大概写个 Skill 就可以实现这个流程，如果你懒惰写的话，也可以直接用我写的「groking」：https://github.com/wolfyxbt/groking",
+   "created_at": "2026-10-08T10:15:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108139133403312467",
+   "metrics": {
+    "likes": 380,
+    "reposts": 46,
+    "replies": 78,
+    "quotes": 5,
+    "bookmarks": 366,
+    "views": 68973
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUGdXqbaAAAAZjA.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://github.com/wolfyxbt/groking"
+   ]
+  },
+  {
+   "id": "2108104007260737646",
+   "text": "完了，Token2049 明年会办在纽约\n\n没什么钱的、英语不好的、办不下来美签的币圈屌丝们以后都没办法去了，我日后要是有钱的话，我争取在马来西亚租个便宜场地，举办 Token2069，收留去不了 Token 2049 的屌丝们。",
+   "created_at": "2026-10-08T07:55:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108104007260737646",
+   "metrics": {
+    "likes": 616,
+    "reposts": 9,
+    "replies": 370,
+    "quotes": 12,
+    "bookmarks": 29,
+    "views": 148154
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108101338848739421",
+   "text": "如果你不是项目方、从业人员、KOL\n\n那你花几千块钱去一次 Token2049 所获得的价值还没有跟 Codex/Claude Code 聊天一天来得多🤣",
+   "created_at": "2026-10-08T07:45:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108101338848739421",
+   "metrics": {
+    "likes": 349,
+    "reposts": 5,
+    "replies": 186,
+    "quotes": 7,
+    "bookmarks": 10,
+    "views": 67502
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108099521452679558",
+   "text": "这个大水理论我觉得还是有点道理的，不是纯抽象\n\n它不是真让你去喝很多的水，而是说当一个人真的能带着这种大瓶矿泉水瓶上街的时候，本身已经进入了一种超凡脱俗的状态，返璞归真、不在乎外界眼光、专注自身。支持大水理论🤣",
+   "created_at": "2026-10-08T07:37:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2108099521452679558",
+   "metrics": {
+    "likes": 230,
+    "reposts": 12,
+    "replies": 100,
+    "quotes": 11,
+    "bookmarks": 20,
+    "views": 67371
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUF5V8gb0AAZ5Bd.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107868080131195329",
+   "text": "他生气了，因为我不买他埋伏的币，我实在不想买，罚你们去买",
+   "created_at": "2026-10-07T16:18:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107868080131195329",
+   "metrics": {
+    "likes": 324,
+    "reposts": 2,
+    "replies": 243,
+    "quotes": 4,
+    "bookmarks": 14,
+    "views": 193989
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUCm2R_bIAAbO_7.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107849453990564312",
+   "text": "狼波周期在发力",
+   "created_at": "2026-10-07T15:04:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107849453990564312",
+   "metrics": {
+    "likes": 186,
+    "reposts": 0,
+    "replies": 113,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 67530
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107519922138210386",
+   "text": "太好了，小黄人 @theunipcs 今天在 @fomo 发 Thesis 支持 $旺柴 了，他没买这个币，这些币是大户转给他的。但是他一直没卖，今天还发 Thesis 支持了一下，旺柴的大户也是可牛逼，转了价值十几万 u 的币过去。",
+   "created_at": "2026-10-06T17:14:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107519922138210386",
+   "metrics": {
+    "likes": 125,
+    "reposts": 7,
+    "replies": 55,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 49309
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT9qMz3asAAoW5U.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107469278928871912",
+   "text": "关注了对方，看对方没回关，然后又取关，\n\n这是严重的傻逼行为，我从来不这么干，我想关注的人我就关注，我都不在乎对方有没有回关，无所谓，这是对方的权利。\n\n我关注你就是因为我想关注你，不是我想要你回关。",
+   "created_at": "2026-10-06T13:53:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107469278928871912",
+   "metrics": {
+    "likes": 591,
+    "reposts": 11,
+    "replies": 391,
+    "quotes": 16,
+    "bookmarks": 10,
+    "views": 84111
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107464867351572745",
+   "text": "刚刚一姐在币安广场直播，明确表示不支持抠字眼性质的 Meme，我也认同这一点，从今天开始我也不会再购买任何抠字眼性质的 Meme 了。\n\n抠字眼 Meme 目前已经被捆绑发币集团自动化了，他们实时监控 @cz_binance 和 @heyibinance 的推文，用 AI 快速分析出最好的发币角度，然后脚本自动发币 + 自动捆绑买入 + 自动逐步卖出，这个过程中甚至无需手动干预，全自动化。\n\n他们把这个模式当成了印钞机，如果我们一起抵制的话，可以为这个市场省下很多流动性，把注意力和流动性投入在更值得投入的项目。",
+   "created_at": "2026-10-06T13:35:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107464867351572745",
+   "metrics": {
+    "likes": 354,
+    "reposts": 38,
+    "replies": 162,
+    "quotes": 22,
+    "bookmarks": 26,
+    "views": 92578
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107443391315554599",
+   "text": "去 Token2049 是 NPC 行为",
+   "created_at": "2026-10-06T12:10:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107443391315554599",
+   "metrics": {
+    "likes": 218,
+    "reposts": 0,
+    "replies": 107,
+    "quotes": 6,
+    "bookmarks": 4,
+    "views": 72216
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107441506969932143",
+   "text": "想赚钱，看 𝕏 就够了。\n想学 AI，看 𝕏 就够了。\n想学炒币，看 𝕏 就够了。\n想学炒股，看 𝕏 就够了。\n想看新闻，看 𝕏 就够了。\n想约炮，看 𝕏 就够了。\n想打飞机，看 𝕏 就够了。",
+   "created_at": "2026-10-06T12:03:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107441506969932143",
+   "metrics": {
+    "likes": 258,
+    "reposts": 4,
+    "replies": 242,
+    "quotes": 16,
+    "bookmarks": 14,
+    "views": 68208
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107152042238353605",
+   "text": "𝕏 太方便了，𝕏 是唯一一个想要打飞机的时候不用切换 App 的社交平台。",
+   "created_at": "2026-10-05T16:52:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107152042238353605",
+   "metrics": {
+    "likes": 445,
+    "reposts": 9,
+    "replies": 242,
+    "quotes": 3,
+    "bookmarks": 39,
+    "views": 234598
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107100792989917500",
+   "text": "不太一样，@AlanShao111 宣扬薄肌理论\n\n我的理解是，薄肌理论主张男性通过拥有薄肌来实现约炮自由，进而解决现代年轻人性压抑的问题。\n\n我觉得直接打飞机就可以了。\n\n打飞机是最低成本解决性压抑的方法，约炮需要耗费大量的时间、金钱和精力成本。多打飞机，就可以把更多的时间、金钱和精力花在自己身上。",
+   "created_at": "2026-10-05T13:29:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107100792989917500",
+   "metrics": {
+    "likes": 130,
+    "reposts": 2,
+    "replies": 91,
+    "quotes": 4,
+    "bookmarks": 9,
+    "views": 72047
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107093674496811460",
+   "text": "你们有没有发现，最近 𝕏 上越来越多人讨论打飞机了\n\n没错，打飞机的牛市来了，我之前就已经预测过了，以前打飞机被严重低估，现在打飞机开始慢慢价值回归，我相信总有一天打飞机会变成是一个很时髦、很时尚的词汇。",
+   "created_at": "2026-10-05T13:00:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107093674496811460",
+   "metrics": {
+    "likes": 158,
+    "reposts": 1,
+    "replies": 97,
+    "quotes": 4,
+    "bookmarks": 9,
+    "views": 106207
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107080944146612520",
+   "text": "今年的 Token2049 我没有去，因为我踏空了比特币。",
+   "created_at": "2026-10-05T12:10:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107080944146612520",
+   "metrics": {
+    "likes": 139,
+    "reposts": 0,
+    "replies": 77,
+    "quotes": 4,
+    "bookmarks": 0,
+    "views": 52764
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107072339951460762",
+   "text": "Fomo 的排行榜现在有巨大的流量效应\n\n也就是「24h/7d/30d/All 的 Leaderboard」还有「每个代币的前排位置」，都有很大的流量和关注度。很多 KOL 们、车头们和狗庄们，现在都希望自己的账号能挤进这些地方来扩大自己的影响力。\n\n为什么会有这么大的流量效应。\n\n除了 Fomo 团队本身就很懂营销之外，他们在 UI 的设计上也下了很大的功夫，不管是 Leaderboard 还是代币的前排，UI 只专注做两件事情：\n\n一是如何最快地让你知道这个人是谁；\n二是如何最快地让你知道这个人赚了多少钱。\n\n其他的细节信息一律不重要，一律省略，极简化。\n\n在这种设计下，信息的传播效率被拉到了最高。如果你在一个热门币获得了巨额的盈利，那一天之内，全平台过半的人都会知道你的存在，可能一天就涨粉几万。\n\n这种流量效应吸引了更多的 KOL 无偿加入，KOL 加入又吸引了更多他们的粉丝加入，短时间内形成了一个飞轮，最后成功打造了一个 Memecoin 圈子最大的流量舞台。\n\n这个舞台应该就是 Fomo 目前最大的护城河。\n\n你想瓜分这个舞台的流量的话，你就得来 Fomo 交易，就得给 Fomo 交手续费，你在外部钱包的交易和盈利，都不会被记录，都瓜分不了这个舞台的流量。\n\n这就是为什么很多人说 Fomo 的性能优化不好，经常因为路由的问题导致巨大的交易滑点，但还是有那么多的人在上面做交易。\n\nFomo 除了很懂营销之外，还很懂产品，也很懂 Memecoin 这个圈子的运作方式，和每个角色之间的利害关系。\n\n如果你也要注册 Fomo 玩一玩的话，可以走我的邀请链接，可以有 10% 的手续费折扣：https://fomo.family/r/wolfyxbt",
+   "created_at": "2026-10-05T11:36:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107072339951460762",
+   "metrics": {
+    "likes": 82,
+    "reposts": 10,
+    "replies": 26,
+    "quotes": 3,
+    "bookmarks": 19,
+    "views": 34810
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT3TIEDbMAA-H8u.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://fomo.family/r/wolfyxbt"
+   ]
+  },
+  {
+   "id": "2107064318210740636",
+   "text": "马斯克和他妈妈都说中国太棒了，大家都非常开心欢迎。\n\n杀破狼说中国很完美，结果被网暴了，到底为什么，我到底做错了什么😭",
+   "created_at": "2026-10-05T11:04:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107064318210740636",
+   "metrics": {
+    "likes": 341,
+    "reposts": 4,
+    "replies": 266,
+    "quotes": 11,
+    "bookmarks": 11,
+    "views": 103042
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT3L1OTasAAgtWx.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107060426907455893",
+   "text": "在中国，路边的出租车和网约车的价格基本差不多，不用担心黑车，我在马来西亚根本不敢随便拦路边的出租车，包黑的，管你是外地人本地人，上车就是黑你一顿。",
+   "created_at": "2026-10-05T10:48:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2107060426907455893",
+   "metrics": {
+    "likes": 247,
+    "reposts": 3,
+    "replies": 340,
+    "quotes": 3,
+    "bookmarks": 4,
+    "views": 91870
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106757742639935539",
+   "text": "很顶尖，旺柴刚刚被 @fomo 认证了，然后 @eth_cedric 刚刚也关注了旺柴的官推 @wangchaionbnb ，很喜欢 @flapdotsh 这个团队，从来不吝啬去推动好的社区和项目，而且尺度总是拿捏得恰到好处。\n\n旺柴这个 IP 之前在 Solana 上炒作过一次，最后归零了，这次在 BNBChain 上我觉得非常合适，让中文叙事发生在 BNBChain 上，继续持有旺柴。",
+   "created_at": "2026-10-04T14:46:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106757742639935539",
+   "metrics": {
+    "likes": 109,
+    "reposts": 14,
+    "replies": 206,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 46943
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTy0__wbYAAgt3j.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTy1AJzasAANl-u.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2106749046434279495",
+   "text": "阿姨，你没有资格评论杀破狼，因为你不是杀破狼妈妈。",
+   "created_at": "2026-10-04T14:11:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106749046434279495",
+   "metrics": {
+    "likes": 231,
+    "reposts": 1,
+    "replies": 120,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 70739
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106745149040762978",
+   "text": "币安 Alpha 有没有可能会支持一下 @arc 生态的代币？\n\n如果有的话，那 $ARGUS 应该就是首选了吧，昨天买了一点，感觉现在 Arc 这条链上，除了 Argus 好像也没有什么拿得出手的币了。\n\n我记得 Arc 开链的第一天，币安就迅速支持了 Arc 链的充提，后来币安还官宣投资了 @circle 1 亿美金，现在相当于是自己人了，相比于 Robinhood，币安对于 Arc 生态的支持肯定会更多一点的。",
+   "created_at": "2026-10-04T13:55:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106745149040762978",
+   "metrics": {
+    "likes": 139,
+    "reposts": 5,
+    "replies": 98,
+    "quotes": 4,
+    "bookmarks": 11,
+    "views": 51038
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106684092058353665",
+   "text": "我被中国人大规模网暴了，因为我称赞了一下中国 😭",
+   "created_at": "2026-10-04T09:53:22.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106684092058353665",
+   "metrics": {
+    "likes": 436,
+    "reposts": 4,
+    "replies": 308,
+    "quotes": 10,
+    "bookmarks": 16,
+    "views": 175109
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106357687604924890",
+   "text": "为什么你们一个个变成人机了？很多还是以前玩得比较好的推友，看着你们一个个变成人机，我真的很难过，为什么你们要用 AI 来运营你们的账号？这样真的能赚钱吗？能赚多少钱？可以跟我说一下吗？",
+   "created_at": "2026-10-03T12:16:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106357687604924890",
+   "metrics": {
+    "likes": 419,
+    "reposts": 1,
+    "replies": 280,
+    "quotes": 15,
+    "bookmarks": 13,
+    "views": 147339
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106351125477896661",
+   "text": "中国除了用不了 X 和 Claude 之外，简直是个完美的国家",
+   "created_at": "2026-10-03T11:50:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106351125477896661",
+   "metrics": {
+    "likes": 691,
+    "reposts": 6,
+    "replies": 402,
+    "quotes": 29,
+    "bookmarks": 62,
+    "views": 584575
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106347830386569332",
+   "text": "英文区很喜欢叫 10 月份 Uptober，因为 10 月份 $BTC 普遍上涨\n\n从过去历史来看，比特币在 10 月份平均会涨 14%，中位数是 11%\n\n可以用我 Vibe 的比特币月历实时查看：https://wolfyxbt.github.io/bitcoin-monthly-calendar",
+   "created_at": "2026-10-03T11:37:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106347830386569332",
+   "metrics": {
+    "likes": 107,
+    "reposts": 6,
+    "replies": 49,
+    "quotes": 3,
+    "bookmarks": 15,
+    "views": 48124
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTtAMDDa4AAt9Ut.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/bitcoin-monthly-calendar"
+   ]
+  },
+  {
+   "id": "2106065924956848615",
+   "text": "好的我彻底投降了，我真的再也不玩了，你们这些猴子全都是假的，我才是那只猴子，我才是对的，你们这些全都是错的。",
+   "created_at": "2026-10-02T16:56:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2106065924956848615",
+   "metrics": {
+    "likes": 151,
+    "reposts": 2,
+    "replies": 102,
+    "quotes": 5,
+    "bookmarks": 6,
+    "views": 57631
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTo_ys_bIAAMiiV.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105918043310465422",
+   "text": "山寨季真的来了",
+   "created_at": "2026-10-02T07:09:22.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2105918043310465422",
+   "metrics": {
+    "likes": 326,
+    "reposts": 7,
+    "replies": 237,
+    "quotes": 24,
+    "bookmarks": 8,
+    "views": 183276
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105915436437266465",
+   "text": "Bitget 的 USDT 提现打开了，刚刚试了一下，非常快，几万 u 的提现 1-2 分钟就到账了，被盗当天提不出来还有点慌，感觉现在应该没事了，希望 Bitget 可以安稳度过这次危机。",
+   "created_at": "2026-10-02T06:59:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2105915436437266465",
+   "metrics": {
+    "likes": 229,
+    "reposts": 4,
+    "replies": 97,
+    "quotes": 9,
+    "bookmarks": 5,
+    "views": 92011
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTm27gbacAAyJ0j.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105889483455713352",
+   "text": "BSC 这里买了 $Nailoong 和 $旺柴\n\n奶龙是中国表情包的顶流，旺柴是中国 Emoji 的顶流，BSC 这两天的流动性慢慢好起来了，BSC 虽然平时看着很农很 P，但是一旦有势头的话，造富效应真的一点都不输 Solana 和 Robinhood，牛来就是很好的例子。\n\nNailoong 和旺柴的筹码都还不错，暂时不 P 了，这次拿久一点看看怎么着。",
+   "created_at": "2026-10-02T05:15:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2105889483455713352",
+   "metrics": {
+    "likes": 114,
+    "reposts": 8,
+    "replies": 89,
+    "quotes": 2,
+    "bookmarks": 7,
+    "views": 51796
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTmfUp4akAAqoJF.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTmfU1FbQAEbnZw.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2104227979643772935",
+   "text": "卧槽，V 神的小说一写完\n\n以太坊的 Gas 就直接干出新高了，以太坊真的经不起 P",
+   "created_at": "2026-09-27T15:13:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2104227979643772935",
+   "metrics": {
+    "likes": 188,
+    "reposts": 8,
+    "replies": 102,
+    "quotes": 2,
+    "bookmarks": 21,
+    "views": 151717
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTO4MkgagAAFCKw.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103845977052647654",
+   "text": "我的择偶标准不高\n\n1. 胸大\n2. 腰细\n3. 腿直\n4. 平时会穿 JK\n5. 可以叫妈妈\n6. 不用剪指甲也可以摸\n7. 允许我偷偷打飞机\n8. 不会丢掉我的柔情猫娘和对子哈特\n9. 会抓蟑螂\n10. 有 Codex/Claude 会员\n11. 有推特蓝 V\n12. 持有比特币\n13. 相信狼波指数\n14. 愿意走我的返佣链接注册币安\n15. 爆仓的时候可以奖励我一下",
+   "created_at": "2026-09-26T13:55:43.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103845977052647654",
+   "metrics": {
+    "likes": 449,
+    "reposts": 12,
+    "replies": 266,
+    "quotes": 9,
+    "bookmarks": 61,
+    "views": 202007
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103674190683648502",
+   "text": "$PAID 感觉又要引发一轮新的名人币热潮了\n\n这次不用名人发币，不用转币给名人，也不用名人去领税，交易税直接换成发币然后通过 @xmoney 打到名人的 𝕏 账上，名人不用接触币，真的就躺着直接领钱啊，舒服死了。",
+   "created_at": "2026-09-26T02:33:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103674190683648502",
+   "metrics": {
+    "likes": 227,
+    "reposts": 18,
+    "replies": 80,
+    "quotes": 7,
+    "bookmarks": 50,
+    "views": 179142
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTHAhh3b0AA6Mlv.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTHAhuwa4AE_vl_.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103666050281992251",
+   "text": "Solana 还是太猛了，Meme 真的还是得看 Solana\n\n@beffjezos 的一个互动，e/acc 直接速通 11m。\n\n台子币 $PAID 也从 10m 拉回新高了。",
+   "created_at": "2026-09-26T02:00:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103666050281992251",
+   "metrics": {
+    "likes": 147,
+    "reposts": 6,
+    "replies": 65,
+    "quotes": 3,
+    "bookmarks": 12,
+    "views": 195342
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTG5H-ybgAEqwuu.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103140698904223748",
+   "text": "中国给美国送了两只熊猫，平平和福双，川普笑得很开心 🤣",
+   "created_at": "2026-09-24T15:13:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103140698904223748",
+   "metrics": {
+    "likes": 943,
+    "reposts": 19,
+    "replies": 175,
+    "quotes": 11,
+    "bookmarks": 90,
+    "views": 369939
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2103134803897765889/img/pa4_9M4pNjBxHAJ1.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2103134803897765889/img/pa4_9M4pNjBxHAJ1.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103070333142245458",
+   "text": "终于挤进 fomo 排行榜前 80 万名了\n\n谢谢 Crypto，谢谢 Solana，谢谢 Robinhood，谢谢 BSC，是你们改变了我的生活。\n\n拜托走我的链接注册 fomo 🙏 有 10% 手续费折扣：https://fomo.family/r/wolfyxbt",
+   "created_at": "2026-09-24T10:33:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103070333142245458",
+   "metrics": {
+    "likes": 196,
+    "reposts": 3,
+    "replies": 145,
+    "quotes": 2,
+    "bookmarks": 9,
+    "views": 65555
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HS-bUrYaoAAHokq.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://fomo.family/r/wolfyxbt"
+   ]
+  },
+  {
+   "id": "2103065136672215143",
+   "text": "爱壹帆到底是怎么办到的\n\n还在电影院热映的电影，他就已经有片源了，而且通常这种情况，都是别人带着相机偷偷在电影院录的版本，观感很差，但是他这竟然是高清的。",
+   "created_at": "2026-09-24T10:12:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103065136672215143",
+   "metrics": {
+    "likes": 1687,
+    "reposts": 153,
+    "replies": 359,
+    "quotes": 7,
+    "bookmarks": 1492,
+    "views": 435575
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HS-WmNJa4AA4MkG.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103047627189391394",
+   "text": "大概是 2020～2021 年这段时间\n\n我看了几个 Youtube 视频，大概学会了怎么用 Remix IDE 去发行 ERC20 代币，其实就是找一些开源的合约代码，然后 Copy 过来，改一下 Ticker、Name、总量和交易税之类的参数就可以了，非常简单。\n\n我学会了这个技能之后，就混迹在各大电报群，反正人比较多的，比较热闹的我就混进去，跟管理员和项目方套近乎，然后推销我的发币服务，发一个币收费 400u。\n\n当时的项目方其实都是很土很笨的，很多都是想搞盘子，但是连怎么发币都搞不懂，他们平时也接触不到懂技术的人，所以我还真能赚到钱，几个月接了十多单，赚了几千 u，对于当时大学生的我来说非常爽。\n\n但是有一次出了个意外，不知道是我哪里搞错了，反正那个币发出来，加了流动性之后，每笔交易都要给巨高的 Gas，玩不了了，那个币基本上算是废了。\n\n然后那个项目方还手很快，拿到币加完池子之后，就马上把池子转到黑洞销毁了，跑来骂我要我赔钱，我看了一下他加了大几千 u 的池子，赔不起，吓得销号跑路了。",
+   "created_at": "2026-09-24T09:03:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103047627189391394",
+   "metrics": {
+    "likes": 340,
+    "reposts": 10,
+    "replies": 134,
+    "quotes": 3,
+    "bookmarks": 133,
+    "views": 150501
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103034118359711787",
+   "text": "每个人在评论区分享一个你的人生好物！\n\n我过两天会整理成文章发出来。几个月前我就做过类似的汇总，反响非常好，最近因为一姐起的头又开始流行起来了，所以我打算再做一期。\n\n我觉得生活中确实有很多东西其实是非常好用，但是一直很少人知道的，通常都是一些生活中的小东西，只有用过的人才知道，但是用过的人又很少会主动去分享。\n\n所以我觉得开个帖子，大家一起来分享，然后我汇总成文章的这种内容形式还挺好的，大家一起互换人生好物。",
+   "created_at": "2026-09-24T08:09:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2103034118359711787",
+   "metrics": {
+    "likes": 209,
+    "reposts": 20,
+    "replies": 193,
+    "quotes": 4,
+    "bookmarks": 132,
+    "views": 109075
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HS96YtabUAAuKgR.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2102018089701527930",
+   "text": "怎么办，我即将踏空整个牛市",
+   "created_at": "2026-09-21T12:52:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2102018089701527930",
+   "metrics": {
+    "likes": 684,
+    "reposts": 11,
+    "replies": 651,
+    "quotes": 29,
+    "bookmarks": 28,
+    "views": 256193
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102011917716033730",
+   "text": "好吧，恭喜你们，我是傻逼踏空狗",
+   "created_at": "2026-09-21T12:27:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2102011917716033730",
+   "metrics": {
+    "likes": 475,
+    "reposts": 4,
+    "replies": 280,
+    "quotes": 13,
+    "bookmarks": 5,
+    "views": 218787
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101583903467413559",
+   "text": ". @GarrettBullish 目前持有 202,075 枚 $ZEC\n\n约等于 2.9 亿美金\n约等于 19 亿人民币\n约等于 3924 万顿 KFC 疯狂星期四\n约等于 14 万台 iPhone Duo\n约等于我 97341 个月的工资\n\n价值观纠正器现在支持 “自定义实物” 了，欢迎大家来玩：https://wolfyxbt.github.io/ValuesCorrector/",
+   "created_at": "2026-09-20T08:07:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2101583903467413559",
+   "metrics": {
+    "likes": 125,
+    "reposts": 6,
+    "replies": 164,
+    "quotes": 2,
+    "bookmarks": 15,
+    "views": 105803
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSpTbAzbgAAX1pK.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/ValuesCorrector/"
+   ]
+  },
+  {
+   "id": "2101518601962611009",
+   "text": "比特币现报 80,000\n\n这里有没有可能来个史诗级的大暴跌",
+   "created_at": "2026-09-20T03:47:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2101518601962611009",
+   "metrics": {
+    "likes": 121,
+    "reposts": 2,
+    "replies": 182,
+    "quotes": 10,
+    "bookmarks": 5,
+    "views": 105745
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101510337057173512",
+   "text": "狼波指数即将归零，币圈即将进入四年以来最恐慌的阶段",
+   "created_at": "2026-09-20T03:14:43.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2101510337057173512",
+   "metrics": {
+    "likes": 587,
+    "reposts": 43,
+    "replies": 466,
+    "quotes": 20,
+    "bookmarks": 142,
+    "views": 332880
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSoQg1NbQAAu3NO.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2100517148758261863",
+   "text": "昨天一整天 @arc 全面接管 Meme 交易量\n\n印度阿三出现之后，交易量开始回流 @RobinhoodCrypto 和 @bnbchain",
+   "created_at": "2026-09-17T09:28:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2100517148758261863",
+   "metrics": {
+    "likes": 138,
+    "reposts": 2,
+    "replies": 135,
+    "quotes": 4,
+    "bookmarks": 2,
+    "views": 61662
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSaJNz7bwAEJMn7.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2100512291603259413",
+   "text": "炒币非常简单，盈利了就出货，亏损了就建设到盈利然后出货。",
+   "created_at": "2026-09-17T09:08:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2100512291603259413",
+   "metrics": {
+    "likes": 464,
+    "reposts": 14,
+    "replies": 418,
+    "quotes": 19,
+    "bookmarks": 21,
+    "views": 150550
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2100287055964291200",
+   "text": "$DUKE ！官方这么发推，跟明牌没区别了！\n\n应该就是打算模仿 Robinhood 走 Meme 路线来拉流量！",
+   "created_at": "2026-09-16T18:13:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2100287055964291200",
+   "metrics": {
+    "likes": 145,
+    "reposts": 7,
+    "replies": 99,
+    "quotes": 8,
+    "bookmarks": 19,
+    "views": 130757
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2099816736501739811",
+   "text": "毒奶哥 @getmilk 真的走了，我真的要哭了。。",
+   "created_at": "2026-09-15T11:04:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2099816736501739811",
+   "metrics": {
+    "likes": 865,
+    "reposts": 13,
+    "replies": 578,
+    "quotes": 46,
+    "bookmarks": 119,
+    "views": 848708
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSQMMcdbsAE4M2B.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2099139610937098384",
+   "text": "这是狼\n\n狼只玩 X，不玩其他社交平台。\n狼拥有 X Premium+ 最高级会员。\n狼同时拥有 ChatGPT 和 Claude 的最高级会员。\n狼会自己找到自己想看的所有番号。\n狼同时持有对子哈特和柔情猫娘。\n狼上厕所只用湿纸巾擦屁股，从来不用干的。\n\n狼非常优秀，请像狼学习。",
+   "created_at": "2026-09-13T14:14:18.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2099139610937098384",
+   "metrics": {
+    "likes": 297,
+    "reposts": 2,
+    "replies": 243,
+    "quotes": 2,
+    "bookmarks": 7,
+    "views": 65525
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSGkWgrbQAAcV-g.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2099107223414907382",
+   "text": "孙哥 @justinsuntron 又在搞事情了，这几天他和 @CanaryFunds 这个机构合作，搞了个波场版本的 “质押 ETF”，Ticker 是 $TRXS，现在已经在美国的 Cboe BSX 交易所上线了。\n\n这个 $TRXS 有点类似贝莱德发行的以太坊质押 ETF $ETHB\n\n买 $ETHB 除了约等于买入了以太坊现货之外，还加上了以太坊本身的质押收益，这个 $TRXS 也大概是这个意思，买入 $TRXS 就约等于买入了 $TRX 的现货，再加上其本身的质押收益。\n\n这段时间孙哥在美股的动作很多，现在美股那里，一共有两个 Ticker 是波场相关的，一个是之前的 $TRON，扮演的是波场微策略的角色，然后还有一个是今天聊的这个 $TRXS，波场的质押 ETF，类似以太坊的 $ETHB 的角色。",
+   "created_at": "2026-09-13T12:05:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2099107223414907382",
+   "metrics": {
+    "likes": 100,
+    "reposts": 7,
+    "replies": 164,
+    "quotes": 2,
+    "bookmarks": 2,
+    "views": 116807
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSGG5TobkAItXtv.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2099041873344221526",
+   "text": "因为后入才是自然界中最正确的交配姿势\n\n你谷歌随便搜 “动物交配”、“昆虫交配”，基本上清一色都是后入的姿势。要发动男生射精功能的主要核心根本不是爽不爽和深不深，而是让大脑相信你确实在交配。\n\n只有后入才能最大程度地让大脑相信你在交配，其他乱七八糟的姿势，大脑可能会以为你在干其他事情，不是在交配，所以没那么容易射精。",
+   "created_at": "2026-09-13T07:45:55.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2099041873344221526",
+   "metrics": {
+    "likes": 235,
+    "reposts": 7,
+    "replies": 108,
+    "quotes": 3,
+    "bookmarks": 51,
+    "views": 148897
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSFLdD0aMAA-Qyj.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSFLdNLa8AATQ9V.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSFLdW6aYAAvxvB.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSFLdera4AA-ZPf.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2099036239148273986",
+   "text": "真佩服那些发一堆大便然后说自己被限流的人",
+   "created_at": "2026-09-13T07:23:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2099036239148273986",
+   "metrics": {
+    "likes": 425,
+    "reposts": 7,
+    "replies": 299,
+    "quotes": 8,
+    "bookmarks": 14,
+    "views": 108716
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2098982266861187119",
+   "text": "价值观纠正器现在支持 iPhone Duo 换算，欢迎使用。\n\n：https://wolfyxbt.github.io/ValuesCorrector/",
+   "created_at": "2026-09-13T03:49:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098982266861187119",
+   "metrics": {
+    "likes": 91,
+    "reposts": 3,
+    "replies": 80,
+    "quotes": 1,
+    "bookmarks": 17,
+    "views": 60688
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSEVPpubwAAwuXs.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSEVP3QaUAAaSCP.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/ValuesCorrector/"
+   ]
+  },
+  {
+   "id": "2098739195007381736",
+   "text": "狼总，请问一下，我为什么每次进一个币都能看到你挂在山顶",
+   "created_at": "2026-09-12T11:43:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098739195007381736",
+   "metrics": {
+    "likes": 214,
+    "reposts": 3,
+    "replies": 196,
+    "quotes": 2,
+    "bookmarks": 7,
+    "views": 108849
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2098734344026431749",
+   "text": "？？？Robinhood 上面的 Meme 已经发展到有 CNY 底池了？？？",
+   "created_at": "2026-09-12T11:23:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098734344026431749",
+   "metrics": {
+    "likes": 177,
+    "reposts": 2,
+    "replies": 203,
+    "quotes": 4,
+    "bookmarks": 18,
+    "views": 97245
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSAzw4qbcAAwLK2.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2098441497838489943",
+   "text": "我靠，币圈太牛逼了，刚刚这个大佬 @Jason60704294 给 @Help35710585 资助了 70,000 美金，47w 人民币，只是网上素不相识的陌生人，太有实力了。。。",
+   "created_at": "2026-09-11T16:00:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098441497838489943",
+   "metrics": {
+    "likes": 1045,
+    "reposts": 32,
+    "replies": 541,
+    "quotes": 54,
+    "bookmarks": 137,
+    "views": 631302
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HR8pa1raQAAipIE.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HR8pbBca8AAREbq.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2098322725039444064",
+   "text": "这个世界对于打飞机的偏见太大了\n\n我希望通过我的绵薄之力，可以让大家更加正视打飞机这个行为，我不是鼓吹打飞机，我只是希望大家可以正视它，抛开传统的偏见，用正确的价值观去看待这个行为。\n\n我们都知道人类有五大欲望：财、色、名、食、睡。\n\n当我们靠自己的能力去实现「财、名、食、睡」的需求时，都会被这个社会称为是个独立的、有能力的个体。但是唯有当我们靠自己的能力去解决「色」的需求时，也就是打飞机或自慰，却会被这个社会标上 Loser、屌丝、失败者的标签。\n\n这是个很传统的观念，甚至已经过时。\n\n以前的社会，人类追求抱团、合作、群居。\n现在的社会，人类开始追求独立、主体性、自给自足、主观能动性。\n\nAI 的出现，更是把「超级个体」这个单词推到台前，其实代表人类对于自我主观能动性的需求，开始以指数级的速度增长到了前所未有的峰值。\n\n这个时代，人类开始为自己而活。\n\n而想要成为一个真正意义上的超级个体的大前提，并不是你有多会调用 AI，不是你有多少 Agent 员工，不是你有多少间一人公司，而是你能不能独立地解决自己的性需求。\n\n把飞机打好，是这个版本终极得不能再终极的答案。\n\n打好飞机，连 3000w 的彩礼都不需要给，连薄肌也不需要练。\n\n把人生的所有时间与精力，都充分地花在自我实现上。",
+   "created_at": "2026-09-11T08:08:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098322725039444064",
+   "metrics": {
+    "likes": 323,
+    "reposts": 5,
+    "replies": 409,
+    "quotes": 15,
+    "bookmarks": 74,
+    "views": 159703
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HR69ZiAbsAAY74W.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2098308728026247206",
+   "text": "不确定该不该追涨，就打一次飞机吧。\n\n很多币你打了一次飞机之后就不会想买了，很多亏损靠打飞机就可以避免。",
+   "created_at": "2026-09-11T07:12:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098308728026247206",
+   "metrics": {
+    "likes": 462,
+    "reposts": 11,
+    "replies": 458,
+    "quotes": 13,
+    "bookmarks": 30,
+    "views": 139567
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2098294293895270433",
+   "text": "我觉得真正好的、真实的链上交易员，其实是非常圆滑且一直在波段的，趋势出现的时候敢上仓位追高，趋势不对的时候会撤离。\n\n我能想到的比较典型的代表应该是 @frankdegods 和 @hexiecs；然后玩低市值的 P 小将，我经常看的有 @aa_AFeng 和 @CryptoCharming，也是属于这种类型。\n\n有几个好像经常会被喷，因为波段和纸手有时候会影响 K 线，影响 K 线就会有人亏钱，有人亏钱就会有人喷。\n\nMemecoin 这个市场，大部分人都是屁股决定脑袋的。没有多少人真正地理解游戏规则；没有多少人会真正地去思考是非对错。你让我亏钱了，我就要无脑地喷你；你让我赚钱了，我就要无脑地追捧你。\n\n被大家追捧的车头，通常是一直钻石手、账面巨额浮盈但又不套现的那种类型，我也觉得很厉害，但是我觉得他们的操作和交易对于普通人来说，没有太大的参考价值。\n\n资金体量是一个因素，我们不可能看着能改变我们人生的巨额浮盈还坚持不套现。再来是影响力、信息差，都有很大的差距，你可以复制他们的交易，但是复制不了他们周边的天然优势。",
+   "created_at": "2026-09-11T06:15:18.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098294293895270433",
+   "metrics": {
+    "likes": 279,
+    "reposts": 17,
+    "replies": 209,
+    "quotes": 3,
+    "bookmarks": 62,
+    "views": 60914
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2098280968281068005",
+   "text": "在币圈这里，梭哈没有什么太大的风险，最危险的是钻石手，你可以多梭哈，经常梭哈，看准时机就直接梭进去，但是千万不要动不动就钻石手，不然的话，我救不了你。",
+   "created_at": "2026-09-11T05:22:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2098280968281068005",
+   "metrics": {
+    "likes": 661,
+    "reposts": 26,
+    "replies": 598,
+    "quotes": 21,
+    "bookmarks": 65,
+    "views": 180988
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2097662968137957762",
+   "text": "拜登儿子 @HunterBiden 发的 $LAPTOP 开盘了\n\n600 亿美金的 FDV，除了刚开盘的几秒钟，几乎没有什么交易量，这届散户变聪明了！大家都一起不接盘垃圾名人币了！",
+   "created_at": "2026-09-09T12:26:38.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2097662968137957762",
+   "metrics": {
+    "likes": 195,
+    "reposts": 10,
+    "replies": 208,
+    "quotes": 6,
+    "bookmarks": 11,
+    "views": 130013
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRxlWjua0AAyYMB.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2097636123719942568",
+   "text": "薄肌理论迎来大牛市了，看你们还敢笑 @AlanShao111 吗！",
+   "created_at": "2026-09-09T10:39:58.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2097636123719942568",
+   "metrics": {
+    "likes": 295,
+    "reposts": 5,
+    "replies": 112,
+    "quotes": 3,
+    "bookmarks": 60,
+    "views": 345691
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRxM74iaQAAcC0b.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRxM8EYbAAEVmL2.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2096979267829788700",
+   "text": "拜登的儿子 @HunterBiden 要发币了\n\n几乎确定是真的了，时间是 9 月 9 号，会在 @base 链发，代币叫 $LAPTOP，官推是 @Laptoptoken ，ca 都挂在简介了。",
+   "created_at": "2026-09-07T15:09:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2096979267829788700",
+   "metrics": {
+    "likes": 624,
+    "reposts": 60,
+    "replies": 385,
+    "quotes": 16,
+    "bookmarks": 310,
+    "views": 498566
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRn3h_2agAE3CDE.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2096923004223861068",
+   "text": ". @circle 下场做的 Layer1 EVM 公链 @arc 马上就要上线了，9 月 16 号会正式上线主网，还有 10 天的时间，可以蹲一下，这里边应该会有很多财富机会。\n\n然后前几天 Arc 官方官宣了和 @edgeX_exchange 的合作，edgeX 之后会在 Arc 这条链上去做外汇永续合约市场，用 $USDC 作为保证金和结算资产，9 月 16 号当天会上线第一个交易对 USD/JPY。\n\n我查了一下，这应该不是简单的合作关系，因为 edgeX 其实是被 Circle Ventures 投过的项目，所以这里应该是有类似 Aster 和 BNBChain BNBChain 的微妙关系。如果 edgeX 可以成为 Arc 这条链最大的 Perp DEX 玩家的话，那我觉得这个 edgeX 项目可以看到的天花板还是很高的，完全可以期待一下他们的空投。\n\n可以走我的邀请链接注册 edgeX：https://pro.edgex.exchange/zh-CN/referral/WOLFYXBT",
+   "created_at": "2026-09-07T11:26:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2096923004223861068",
+   "metrics": {
+    "likes": 170,
+    "reposts": 20,
+    "replies": 140,
+    "quotes": 0,
+    "bookmarks": 83,
+    "views": 86169
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRnEXBHbgAAXRCd.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://pro.edgex.exchange/zh-CN/referral/WOLFYXBT"
+   ]
+  },
+  {
+   "id": "2096876426163306608",
+   "text": "孙哥刚刚给我的 BSC 地址空投了 30u 的 $TRX ，谢谢孙哥，30u 可以吃 4 次 KFC、10 顿猪脚饭了，币圈机会还是太多了，有时候躺着都有钱领，感谢币圈，也只有币圈能有这种机会了。",
+   "created_at": "2026-09-07T08:21:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2096876426163306608",
+   "metrics": {
+    "likes": 244,
+    "reposts": 2,
+    "replies": 189,
+    "quotes": 3,
+    "bookmarks": 15,
+    "views": 123416
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRmZ_plaUAAm_Lk.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRmZ_z7bAAACqXG.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2096241398223901085",
+   "text": "手续费真的是个大问题，现在的平台手续费都很贵。\n\n而且最近 Meme 这个行情，很多人都开始几万几十万 u 地去交易 Meme 了，手续费一天就得烧掉几千 u，我建议你们可以看看 Binance Wallet，他们现在的费率真的很好。\n\n首先如果是上了 Alpha 的币，那 Binance Wallet 这里一律是 0 手续费的，比如 Flork 和牛来这些。然后对于普通的 Meme，Binance Wallet 的标准手续费是 0.5%，但是如果你走了我的邀请链接，还可以拿到 30% 的返现折扣，所以总共算下来你只需要给 0.35% 的手续费。\n\n• 我的邀请链接：https://web3.binance.me/referral?ref=SPL001\n\n然后他们最近还针对 Robinhood 链做了活动，手续费 8 折，也就是从 0.5% 降到 0.4%，再叠加你走我的邀请链接拿 30% 返现折扣的话，手续费只有 0.28%，应该是全网最低了！非常大户友好！钱再小也是钱！不要不把钱当钱！",
+   "created_at": "2026-09-05T14:17:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2096241398223901085",
+   "metrics": {
+    "likes": 146,
+    "reposts": 11,
+    "replies": 280,
+    "quotes": 0,
+    "bookmarks": 38,
+    "views": 149942
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRdYcKqaAAA8s3w.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRdYcVvaIAAAUO_.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://web3.binance.me/referral?ref=SPL001"
+   ]
+  },
+  {
+   "id": "2096192571156677013",
+   "text": "抹茶最近出的这张新 U 卡挺厉害的\n\n最高返现可以给到 10%，最低也有 4%，主要看你抹茶的 VIP 等级，但是抹茶的 VIP 等级不难升，不像其他交易所有很高的资金门槛，小资金也可以通过打卡做任务升级。\n\n刚刚点了一顿外卖，消费 120 马币，扣了我 29.92 USDT，按基准汇率算的话，这 120 马币大概等于 29.67 美金，这个汇率磨损在 U 卡里面算很低很低的了，而且除此之外没有任何额外费用，抹茶这张卡现在是 0 费率。\n\n应该之后很长一段时间都会把这张卡当成我的主力卡。",
+   "created_at": "2026-09-05T11:03:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2096192571156677013",
+   "metrics": {
+    "likes": 140,
+    "reposts": 5,
+    "replies": 223,
+    "quotes": 2,
+    "bookmarks": 43,
+    "views": 102682
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRcsCCYacAAQYyz.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRcsCOnakAA6Iyn.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2095911132313899140",
+   "text": "$Stonks 速通 10m 的原因是 Robinhood 宕机了，\n\n老外没东西买了，都来 BSC 买 $Stonks 了.",
+   "created_at": "2026-09-04T16:25:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095911132313899140",
+   "metrics": {
+    "likes": 156,
+    "reposts": 6,
+    "replies": 162,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 66235
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRYsETcbgAAUa1f.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2095891969805615544",
+   "text": "BNBChain 官方这次准备了 400 万美金来空投了，虽然 Robinhood 这几天很猛，但是我相信 BNBChain 肯定也不会错过这波行情的！\n\n官方现在已经是明牌支持币股 Meme 了，活动的名字还特意用了 Stonks，看得出官方很用心在做功课，想要融入 Meme 社区跟大家一起玩！",
+   "created_at": "2026-09-04T15:09:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095891969805615544",
+   "metrics": {
+    "likes": 154,
+    "reposts": 7,
+    "replies": 125,
+    "quotes": 4,
+    "bookmarks": 29,
+    "views": 101887
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRYaos6a8AAUdIT.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRYao8za8AAElJ_.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2095885030686097425",
+   "text": "老外在玩 Robinhood，中国人在玩 BSC，谁在玩 Solana？",
+   "created_at": "2026-09-04T14:41:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095885030686097425",
+   "metrics": {
+    "likes": 330,
+    "reposts": 4,
+    "replies": 395,
+    "quotes": 5,
+    "bookmarks": 33,
+    "views": 143448
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2095176984066445614",
+   "text": "华尔街看到币圈的轧空方法时 be like 👇",
+   "created_at": "2026-09-02T15:48:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095176984066445614",
+   "metrics": {
+    "likes": 210,
+    "reposts": 7,
+    "replies": 115,
+    "quotes": 1,
+    "bookmarks": 37,
+    "views": 107748
+   },
+   "media": [
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HROQMXHa4AEpFeX.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HROQMXHa4AEpFeX.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2095156975214698755",
+   "text": "孙哥不就是我们的大男主吗！\n\n单亲家庭，独立男性，内心强大，拥有被讨厌的勇气，不玻璃心，不情绪化，有自己的主见，相信自己的判断，懂得及时止损。\n\n高配得感，跟女神谈恋爱再狠狠甩开。\n\n利用规则，不择手段，最终拿到了属于自己的大结果，这不就是活生生的大男主剧本吗！",
+   "created_at": "2026-09-02T14:28:43.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095156975214698755",
+   "metrics": {
+    "likes": 1108,
+    "reposts": 40,
+    "replies": 393,
+    "quotes": 8,
+    "bookmarks": 87,
+    "views": 510562
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2095143201653047382",
+   "text": "经常有在玩预测市场的人可以看看这个工具\n\n@NeoSoulAI 刚刚出的一个新产品，可以看看官方发布的视频。\n\n一句话就可以创建一个基于预测市场的交易策略 Skill，然后可以把 Skill 安装到你创建的 Agent 中，就可以开始自动跑策略了，整个过程非常简单，非常新手友好。\n\n但是目前只支持模拟盘，对接的是 @Polymarket 和 @predictdotfun 的市场数据，应该很快会上线实盘交易。项目还没有发币，我觉得玩一玩当作交互，博个空投预期挺好的，他们融资融了 1100w 美金，团队还是挺有钱的。\n\n预测市场交易这一块，其实我们脑子经常有一些小思路，但是不确定能不能用，又因为把想法落地到实践需要比较多的时间和精力，往往最后就放弃了。\n\nNeoSoul 这个工具在这种情况下就很有用。\n\n脑子萌生出任何的交易思路和策略的时候，先简单地写成一句话丢给 AI，让它先把你的策略提炼成一个初版的 Skill，然后快速地让 Agent 跑一跑模拟盘测试效果，有效那就继续优化，无效就直接放弃，想下一个。",
+   "created_at": "2026-09-02T13:33:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095143201653047382",
+   "metrics": {
+    "likes": 77,
+    "reposts": 1,
+    "replies": 61,
+    "quotes": 1,
+    "bookmarks": 33,
+    "views": 49884
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRNxoT-bkAAzBMr.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2095067270313808127",
+   "text": "很多人质疑孙哥 175cm 的身高。\n\n这点我可以作证，是真实的，我的朋友都知道我的身高大概是 182cm 左右，从这张合照可以明显可以看出，我确实大概只高出孙哥约 7cm，所以孙哥 175cm 的官方身高大概率是真实的。",
+   "created_at": "2026-09-02T08:32:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095067270313808127",
+   "metrics": {
+    "likes": 479,
+    "reposts": 6,
+    "replies": 463,
+    "quotes": 8,
+    "bookmarks": 43,
+    "views": 553198
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRMslFYasAA-P0n.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2095041765866897591",
+   "text": "我回本就收手。",
+   "created_at": "2026-09-02T06:50:55.000Z",
+   "lang": "ja",
+   "url": "https://x.com/wolfyxbt/status/2095041765866897591",
+   "metrics": {
+    "likes": 347,
+    "reposts": 4,
+    "replies": 174,
+    "quotes": 16,
+    "bookmarks": 10,
+    "views": 141070
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2095013590051017079",
+   "text": "最有效的人情世故，就是确保自己总是有利用价值。",
+   "created_at": "2026-09-02T04:58:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2095013590051017079",
+   "metrics": {
+    "likes": 522,
+    "reposts": 28,
+    "replies": 248,
+    "quotes": 9,
+    "bookmarks": 76,
+    "views": 77498
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2094821497357652013",
+   "text": "苹果的新 CEO 注册 𝕏 了，刚刚发布他的第一条推文",
+   "created_at": "2026-09-01T16:15:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2094821497357652013",
+   "metrics": {
+    "likes": 2291,
+    "reposts": 41,
+    "replies": 474,
+    "quotes": 3,
+    "bookmarks": 178,
+    "views": 1645547
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRJM66BbIAAHdVd.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2094708953058021689",
+   "text": "不是，MarsCoin 上币安合约，你们砸牛来干嘛！",
+   "created_at": "2026-09-01T08:48:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2094708953058021689",
+   "metrics": {
+    "likes": 181,
+    "reposts": 6,
+    "replies": 182,
+    "quotes": 1,
+    "bookmarks": 7,
+    "views": 77766
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HRHmsVhbQAArzEL.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2094371841062387990",
+   "text": "我跟许老师只有过一面之缘\n\n但是能感受到他是个能量很好的人，很遗憾没有再次见面的机会，愿一路走好，逝者安息🙏🙏🙏\n\n大家也要照顾好自己的身体，多注意休息。",
+   "created_at": "2026-08-31T10:28:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2094371841062387990",
+   "metrics": {
+    "likes": 89,
+    "reposts": 0,
+    "replies": 160,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 51501
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2093690118016315469",
+   "text": "平时有玩 Meme 的，可以去注册个 @fomo 账号发发 Thesis，有钱可以领，他们有个 Creator Rewards 玩法，只要你的 Thesis 被别人看见了，别人因此而产生交易，你就可以拿到分润。\n\n走我的链接注册，有 10% 手续费折扣：https://fomo.family/r/wolfyxbt\n\n我觉得他们平台对小账号还是比较友好的，因为我的 Fomo 账号也就 1000 多个粉丝，Thesis 也就写过几次，都是随便写一写，这几天给我分了大概 100 多美金，挺好的。\n\n而且还有个发币的预期，这是 DYDX 团队出来搞的新项目，DYDX 当年给币圈发了一个超级无敌大空投，是币圈里边比较尊重社区的团队，可以期待一下。\n\n走我链接注册可以有 10% 手续费折扣，当然我也可以赚你返佣。\n\n其实你自己注册两个账号自己返给自己，应该是最省钱的。但是我已经看了，官方明确禁止这么做的，而且他们会查，查到了可能会被停掉返佣和封号，所以我建议你还是遵守平台规则，走我的链接注册吧，谢谢你，我爱你 😇",
+   "created_at": "2026-08-29T13:19:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093690118016315469",
+   "metrics": {
+    "likes": 214,
+    "reposts": 17,
+    "replies": 180,
+    "quotes": 3,
+    "bookmarks": 121,
+    "views": 97264
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQ5IEHWaQAA8VOL.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQ5IERfaIAAGiYB.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://fomo.family/r/wolfyxbt"
+   ]
+  },
+  {
+   "id": "2093595665410699428",
+   "text": "所以 20 岁拥有 100 万，其实不亚于 60 岁拥有 10 个亿。\n\n人生的意义在于体验，钱能让你体验更多的东西，但是时间会逐渐消磨你体验事物的敏感度，所以赚钱的同时，不要忘了去感受这个世界。",
+   "created_at": "2026-08-29T07:04:38.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093595665410699428",
+   "metrics": {
+    "likes": 593,
+    "reposts": 26,
+    "replies": 201,
+    "quotes": 7,
+    "bookmarks": 73,
+    "views": 111705
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2093594508005187586",
+   "text": "你 60 岁给我 10 个亿，还不如 20 岁给我 100 万。",
+   "created_at": "2026-08-29T07:00:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093594508005187586",
+   "metrics": {
+    "likes": 866,
+    "reposts": 15,
+    "replies": 430,
+    "quotes": 5,
+    "bookmarks": 32,
+    "views": 316295
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2093553306534826071",
+   "text": "这个被标记为杀破狼的地址根本不是我的，好几个类似这样的地址，每次这些地址干了些啥事都有人来私信我，我应该找谁移除这些标记？",
+   "created_at": "2026-08-29T04:16:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093553306534826071",
+   "metrics": {
+    "likes": 90,
+    "reposts": 1,
+    "replies": 93,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 52208
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQ3LoivakAAg75K.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2093157939851006201",
+   "text": "孙哥概念股开盘大涨！\n\n透景生命和张小泉（孙哥指甲刀）",
+   "created_at": "2026-08-28T02:05:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093157939851006201",
+   "metrics": {
+    "likes": 233,
+    "reposts": 3,
+    "replies": 320,
+    "quotes": 1,
+    "bookmarks": 11,
+    "views": 166668
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQxkDe7bYAAuPgn.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2093141913260200305",
+   "text": "景甜终于发微博回应了",
+   "created_at": "2026-08-28T01:01:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093141913260200305",
+   "metrics": {
+    "likes": 1781,
+    "reposts": 39,
+    "replies": 1202,
+    "quotes": 48,
+    "bookmarks": 157,
+    "views": 1395963
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQxVem7aQAA8NgF.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2093002799072309732",
+   "text": "你说的好有道理",
+   "created_at": "2026-08-27T15:48:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093002799072309732",
+   "metrics": {
+    "likes": 373,
+    "reposts": 8,
+    "replies": 164,
+    "quotes": 1,
+    "bookmarks": 19,
+    "views": 186539
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2093000710933860539",
+   "text": "这个周边我是真想要啊！",
+   "created_at": "2026-08-27T15:40:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2093000710933860539",
+   "metrics": {
+    "likes": 300,
+    "reposts": 16,
+    "replies": 280,
+    "quotes": 10,
+    "bookmarks": 15,
+    "views": 118782
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQvVDWkaAAALxsz.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2092964315582341536",
+   "text": "孙哥这个小作文一发出来，已经回本了，当初买那个香蕉花了 620w 美金，合计 4500w 人民币，流量也就一般般吧！这次维权景甜的热度，直接爆炸出圈了！3000w 人民币已然回本！",
+   "created_at": "2026-08-27T13:15:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2092964315582341536",
+   "metrics": {
+    "likes": 1543,
+    "reposts": 20,
+    "replies": 685,
+    "quotes": 6,
+    "bookmarks": 90,
+    "views": 377100
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2092933546059190743",
+   "text": "你们币圈为什么能这么抽象？",
+   "created_at": "2026-08-27T11:13:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2092933546059190743",
+   "metrics": {
+    "likes": 168,
+    "reposts": 4,
+    "replies": 86,
+    "quotes": 0,
+    "bookmarks": 22,
+    "views": 159110
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2092930625795944472",
+   "text": "孙哥真忙，一边要跟景甜谈恋爱，一边要跟谷爱凌谈恋爱，一边要跟川普打官司，一边跟曾颖撕逼，一边要梭哈存储，一边要搞 AI 中转站，一边要上太空，一边要纳斯达克上市，一边要买香蕉。",
+   "created_at": "2026-08-27T11:02:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2092930625795944472",
+   "metrics": {
+    "likes": 6220,
+    "reposts": 140,
+    "replies": 1243,
+    "quotes": 24,
+    "bookmarks": 384,
+    "views": 1559238
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2092915284508361109",
+   "text": "狼波周期指数：0.133\n\n我们还没脱离熊市周期，谨慎追高。\n\n：https://wolfyxbt.github.io/wolfy-wave-index/",
+   "created_at": "2026-08-27T10:01:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2092915284508361109",
+   "metrics": {
+    "likes": 199,
+    "reposts": 8,
+    "replies": 131,
+    "quotes": 2,
+    "bookmarks": 28,
+    "views": 71359
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQuHW5RbYAEe575.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/wolfy-wave-index/"
+   ]
+  },
+  {
+   "id": "2092891455706833399",
+   "text": "$牛来 回调到 30m 之后，又硬拉回 60m 了，太恐怖了！",
+   "created_at": "2026-08-27T08:26:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2092891455706833399",
+   "metrics": {
+    "likes": 162,
+    "reposts": 7,
+    "replies": 253,
+    "quotes": 3,
+    "bookmarks": 1,
+    "views": 79987
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQtxr_ta0AAo9Xc.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2091917871396102636",
+   "text": "很多人一直私信问我怎么翻身，在币圈最不缺的就是翻身的机会，我可以这么跟你说，币圈大概率是你能接触到的最容易翻身的圈子了，但是你得找好的时机，翻身最好的时机就是，被压着的那一面开始闷热了，这个时候就是你翻身最好的时机。",
+   "created_at": "2026-08-24T15:57:41.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2091917871396102636",
+   "metrics": {
+    "likes": 517,
+    "reposts": 19,
+    "replies": 284,
+    "quotes": 10,
+    "bookmarks": 64,
+    "views": 131490
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2091852879430857003",
+   "text": "过去是可以被改变的。\n\n如果我未来失败了，那大家就会说杀破狼不就是个找番号的黄推博主吗；如果我未来成功了，那大家就会说杀破狼从少年时期就展现出了远超常人的搜索调研能力。",
+   "created_at": "2026-08-24T11:39:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2091852879430857003",
+   "metrics": {
+    "likes": 328,
+    "reposts": 5,
+    "replies": 269,
+    "quotes": 4,
+    "bookmarks": 10,
+    "views": 72696
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2091485906855411900",
+   "text": "中国过去一年对海外的文化输出：黑神话悟空、Labubu、揽佬、牛来。",
+   "created_at": "2026-08-23T11:21:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2091485906855411900",
+   "metrics": {
+    "likes": 405,
+    "reposts": 13,
+    "replies": 312,
+    "quotes": 7,
+    "bookmarks": 29,
+    "views": 118255
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQZzVxkasAAvwlh.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQZzV8JaYAAIhAq.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQZzWIua0AA62zo.png?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQZzWTGbkAAfm4F.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2091460172313223209",
+   "text": "做空的人太几把多了，我唱了半年的空，拉到 70,000 的时候就早早投降认输了，现在一回调就一堆人做空，比特币跌不下去都怪你们，直接提前牛回吧！",
+   "created_at": "2026-08-23T09:38:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2091460172313223209",
+   "metrics": {
+    "likes": 400,
+    "reposts": 8,
+    "replies": 273,
+    "quotes": 2,
+    "bookmarks": 10,
+    "views": 144694
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2091387446307278979",
+   "text": "叫你梭哈不是真的叫你梭哈，是慢慢地梭哈，不是一下子梭哈，梭哈的时候要找好的时机，然后慢慢梭哈，梭哈了之后吃到了就要出，等下一个机会再梭哈。",
+   "created_at": "2026-08-23T04:49:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2091387446307278979",
+   "metrics": {
+    "likes": 402,
+    "reposts": 12,
+    "replies": 335,
+    "quotes": 10,
+    "bookmarks": 24,
+    "views": 104994
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2091248918470541688",
+   "text": "大家终于可以睡觉了，川普的儿子出来辟谣了，不会发币。",
+   "created_at": "2026-08-22T19:39:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2091248918470541688",
+   "metrics": {
+    "likes": 264,
+    "reposts": 9,
+    "replies": 125,
+    "quotes": 3,
+    "bookmarks": 5,
+    "views": 160839
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2090751430823227664",
+   "text": "刚刚发现我刚好 86 万粉丝了，你们可以恭喜我一下吗，谢谢。",
+   "created_at": "2026-08-21T10:42:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090751430823227664",
+   "metrics": {
+    "likes": 638,
+    "reposts": 8,
+    "replies": 507,
+    "quotes": 4,
+    "bookmarks": 6,
+    "views": 97314
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQPXWNMbQAAql6m.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2090711306940924264",
+   "text": "牛来的爆火让市场开始重新重视 IP 这件事情，IPX 最近正式把 Minini 这个顶级的表情包 IP 授权给了 Minicoin @mini_cto 这个 Web3 项目。\n\nIPX 是 @_LINEFRIENDS 背后的母公司，LINE 大家应该都知道，相当于日本和韩国的微信了，LINE 的表情包文化一直做的比较好，这次授权给 Minicoin 的 Minini 就是他们原创的表情包角色，大家应该多多少少都有看过。\n\nMinicoin 是 Creditcoin @Creditcoin 生态上的一个 “IP 链上化” 项目，他们最近做的事情还挺有意思的，可以多多关注一下。\n\nCreditcoin 本身是个聚焦 RWA 的 Layer1 公链。\n\n然后 Minicoin 现在做的 “IP 链上化” 这件事，其实本质上也是在做 RWA，IP 原本属于 “链下资产”，通过法律协议来证明谁是 IP 的真正拥有者，Minicoin 现在想要把链下的这套 IP 确权方式也在链上打开。\n\n艺术家/创作者现在可以到 Minicoin 平台，把自己的 IP 作品封装成 NFT（目前支持的作品形式有：表情包、音乐和虚拟角色），然后 Minicoin 平台会帮艺术家/创作者所上传的 IP 作品，在链下去申请一份 IP 法律协议。\n\n最后实现「谁持有这个 NFT，谁就拥有这个 IP 的所有权，这个所有权不仅在链上生效，在链下也具有法律效益」，实现真正的 IP 确权。\n\n我觉得 Minicoin 这么做确实弥补了 NFT 在 IP 确权这件事情上的短板。\n\n在 Web3 里边，你持有 NFT，确实会被视为你是该 NFT 的 IP 所有者，但是在链下，这个说法很难成立，链下有自己的 IP 确权方式，就是法律协议，Minicoin 的这个做法正好补掉了这个空隙。\n\n市场还可以在 Minicoin 平台上去付费购买 IP 的使用权，Minicoin 的协议会自动把这些收益换成 $MINI 并路由给 NFT 的持有者，过程完全通过智能合约来实现，项目方本身碰不了这些钱。\n\n然后这套系统也支持赎回，就是 NFT 拥有者通过 Burn 掉 NFT，来在链下向 Minicoin 平台方赎回完整的 IP 所有权法律协议。\n\n总体来说，我觉得 Minicoin 做的这件事情还挺有意思的，对于数字艺术家/创作者，未来可能会是个更好的资产发行选择。",
+   "created_at": "2026-08-21T08:03:13.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090711306940924264",
+   "metrics": {
+    "likes": 81,
+    "reposts": 2,
+    "replies": 136,
+    "quotes": 0,
+    "bookmarks": 10,
+    "views": 82271
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQOy2rDbIAE3Os6.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2090693604549505377",
+   "text": "这个市场真的太坏了，兄弟们保护好你们的本金。",
+   "created_at": "2026-08-21T06:52:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090693604549505377",
+   "metrics": {
+    "likes": 299,
+    "reposts": 2,
+    "replies": 297,
+    "quotes": 0,
+    "bookmarks": 10,
+    "views": 102220
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2090686226231914893",
+   "text": "比特币如果在未来 3 个月内砸出新低，狼波指数就依然成立。\n\n如果就此牛回，58,000 即本轮熊市底部，狼波指数就彻底失效了。\n\n• 狼波指数：https://wolfyxbt.github.io/wolfy-wave-index/",
+   "created_at": "2026-08-21T06:23:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090686226231914893",
+   "metrics": {
+    "likes": 485,
+    "reposts": 36,
+    "replies": 278,
+    "quotes": 7,
+    "bookmarks": 127,
+    "views": 144913
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQOcCqUaYAA5fgU.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/wolfy-wave-index/"
+   ]
+  },
+  {
+   "id": "2090680062735794214",
+   "text": "是的，杀破狼是大傻逼。",
+   "created_at": "2026-08-21T05:59:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090680062735794214",
+   "metrics": {
+    "likes": 131,
+    "reposts": 1,
+    "replies": 92,
+    "quotes": 4,
+    "bookmarks": 1,
+    "views": 76859
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2090382551919780104",
+   "text": "结束了，我彻底失败了。",
+   "created_at": "2026-08-20T10:16:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090382551919780104",
+   "metrics": {
+    "likes": 786,
+    "reposts": 7,
+    "replies": 821,
+    "quotes": 18,
+    "bookmarks": 53,
+    "views": 541739
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQKH1sLa8AAD3Gf.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2090367459618587019",
+   "text": "牛逼牛逼，之前世界杯热度蛮高的这个 AI Agent 预测平台 @NeoSoulAI 刚刚官宣拿到了 1100w 美金的融资，参投的 VC 有 Amber Group、MH Ventures、ArkStream Capital 和 0G Foundation 等等。\n\nNeoSoul 一直合作比较紧密的公链是 @0G_labs 和 @BNBCHAIN ，刚好这两家公链最近也一直在往 AI Agent 的方向在发展，跟 @NeoSoulAI 现在的方向很契合，世界杯的时候 NeoSoul 和他们也有联办活动。\n\n最近他们出的新产品叫 NeoTrade，有点像预测版本的小龙虾 Agent，可以把 Agent 下载并配置在电脑上，给 Agent 设定权限范围，然后 Agent 就会 24 小时地在电脑上运行，非常有意思，感兴趣可以去玩玩看。",
+   "created_at": "2026-08-20T09:16:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090367459618587019",
+   "metrics": {
+    "likes": 85,
+    "reposts": 2,
+    "replies": 153,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 66090
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQJ6IGQaYAAF5ep.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2090144627450061310",
+   "text": "焦虑的时候就放下手机，走路去附近的便利店买瓶可乐，站在路边喝，看红灯变成绿灯，绿灯又变成红灯，看外卖小哥赶着送单而闯了红灯，看路边的大爷在垃圾桶旁捡每公斤可以卖两块钱的塑料瓶子，再看看你自己。",
+   "created_at": "2026-08-19T18:31:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090144627450061310",
+   "metrics": {
+    "likes": 436,
+    "reposts": 17,
+    "replies": 305,
+    "quotes": 3,
+    "bookmarks": 41,
+    "views": 95765
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2090128378284351937",
+   "text": "我们活着不需要很多很多的钱，三餐温饱，有衣穿，有房住，每天带着希望起床，能做喜欢的事情，这就足够了。",
+   "created_at": "2026-08-19T17:26:52.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090128378284351937",
+   "metrics": {
+    "likes": 356,
+    "reposts": 7,
+    "replies": 291,
+    "quotes": 5,
+    "bookmarks": 28,
+    "views": 92562
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2090126007802196381",
+   "text": "我完蛋了，我彻底失败了😔",
+   "created_at": "2026-08-19T17:17:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090126007802196381",
+   "metrics": {
+    "likes": 283,
+    "reposts": 2,
+    "replies": 438,
+    "quotes": 7,
+    "bookmarks": 10,
+    "views": 195912
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2090029397038530808",
+   "text": "七夕这个点能点赞我推文的人都蛮可怜的",
+   "created_at": "2026-08-19T10:53:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2090029397038530808",
+   "metrics": {
+    "likes": 844,
+    "reposts": 2,
+    "replies": 612,
+    "quotes": 4,
+    "bookmarks": 4,
+    "views": 122476
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2089967799808761958",
+   "text": "下辈子不炒币了，留点时间晚上和你去散步，但是这辈子不行，我还没回本。",
+   "created_at": "2026-08-19T06:48:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2089967799808761958",
+   "metrics": {
+    "likes": 522,
+    "reposts": 21,
+    "replies": 688,
+    "quotes": 9,
+    "bookmarks": 9,
+    "views": 112548
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2089889576726966477",
+   "text": "宇树科技太恐怖了\n\n群友 IPO 中签，净赚 47 万人民币，中国机器人能飞。",
+   "created_at": "2026-08-19T01:37:58.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2089889576726966477",
+   "metrics": {
+    "likes": 843,
+    "reposts": 15,
+    "replies": 595,
+    "quotes": 25,
+    "bookmarks": 115,
+    "views": 632693
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HQDHfsxakAARICf.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2089043718334771678",
+   "text": "到底是谁一直在买牛来",
+   "created_at": "2026-08-16T17:36:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2089043718334771678",
+   "metrics": {
+    "likes": 228,
+    "reposts": 6,
+    "replies": 313,
+    "quotes": 6,
+    "bookmarks": 4,
+    "views": 160206
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2089005161171796390",
+   "text": "红果能忍住，黄果是真忍不住",
+   "created_at": "2026-08-16T15:03:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2089005161171796390",
+   "metrics": {
+    "likes": 140,
+    "reposts": 2,
+    "replies": 308,
+    "quotes": 1,
+    "bookmarks": 15,
+    "views": 271010
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2088680828146782267",
+   "text": "你们看看我发牛来的时间点，我估计是 X 这里第一个发的，这个情况要是换其他博主的话，绝对要吹牛逼了，说自己是全网吹哨第一人。\n\n还好你关注的是杀破狼，我不是那样的人，我是个真诚的狼，牛来我一毛钱都没买，我发这个推只是很单纯地要调侃这个电影。",
+   "created_at": "2026-08-15T17:34:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088680828146782267",
+   "metrics": {
+    "likes": 266,
+    "reposts": 7,
+    "replies": 206,
+    "quotes": 4,
+    "bookmarks": 14,
+    "views": 169377
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2088676049978867750",
+   "text": "我一直以为肏只是个象形文字，刚刚发现它确实念 cào，意思也确实是 cào",
+   "created_at": "2026-08-15T17:15:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088676049978867750",
+   "metrics": {
+    "likes": 296,
+    "reposts": 1,
+    "replies": 517,
+    "quotes": 7,
+    "bookmarks": 38,
+    "views": 296153
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2088582807560020434",
+   "text": "我曾经九次探索新世界",
+   "created_at": "2026-08-15T11:05:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088582807560020434",
+   "metrics": {
+    "likes": 3957,
+    "reposts": 156,
+    "replies": 524,
+    "quotes": 21,
+    "bookmarks": 234,
+    "views": 342847
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPwi_qRb0AA9wI5.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2088573356383895684",
+   "text": "给不认识的人发私信，你发一句「在吗」\n\n我个人觉得是个很冒犯的事情，甚至可以说是没有礼貌了。给不认识的人发私信最好是一次过说清楚你的目的，和你要表达的重点。\n\n废话少一点，文字少一点，对方习惯用英文，就翻译成英文发过去，尽可能地降低对方阅读你信息的时间与精力成本。\n\n你发一句「在吗」，所以是希望对方回一句「在的，什么事？」吗，然后完了还得等你回复。",
+   "created_at": "2026-08-15T10:27:46.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088573356383895684",
+   "metrics": {
+    "likes": 267,
+    "reposts": 5,
+    "replies": 416,
+    "quotes": 7,
+    "bookmarks": 16,
+    "views": 95566
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPwaZntasAAw4q9.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2088558343287951809",
+   "text": "比特币的产量每四年减半一次\n\n所以比特币的价格每隔四年就会酝酿一股新的上涨动力，这股上涨动力最后必然会走向过热，过热后又必然形成一次合理的下跌回调，如此往复，周而复始。\n\n这跟康波周期有异曲同工之妙。\n\n基于此理念，我发明了属于比特币的 “康波周期”，命名为 “狼波周期指数（Wolfy Wave Index）”，在这里可以实时观察该指数：https://wolfyxbt.github.io/wolfy-wave-index/\n\n狼波周期指数越越接近 1，则意味着越接近牛顶；\n狼波周期指数值越接近 0，则意味着越接近熊底。\n\n今天的狼波周期指数为 0.166",
+   "created_at": "2026-08-15T09:28:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088558343287951809",
+   "metrics": {
+    "likes": 441,
+    "reposts": 72,
+    "replies": 313,
+    "quotes": 19,
+    "bookmarks": 193,
+    "views": 195858
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPwMvkyb0AAHbHX.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://wolfyxbt.github.io/wolfy-wave-index/"
+   ]
+  },
+  {
+   "id": "2088496298743996777",
+   "text": "哭了，马斯克又扣我工资了，我以为这期还能再白嫖 3000 的",
+   "created_at": "2026-08-15T05:21:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088496298743996777",
+   "metrics": {
+    "likes": 224,
+    "reposts": 3,
+    "replies": 421,
+    "quotes": 8,
+    "bookmarks": 21,
+    "views": 117352
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPvUUP4bEAAQvQX.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2088278468454912044",
+   "text": "你们要的牛来了！",
+   "created_at": "2026-08-14T14:55:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088278468454912044",
+   "metrics": {
+    "likes": 262,
+    "reposts": 9,
+    "replies": 236,
+    "quotes": 11,
+    "bookmarks": 8,
+    "views": 356275
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPsOMrEaMAAZbv4.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2088113135517663446",
+   "text": "𝕏 刚刚开源的算法里面，有一个「同作者衰减」机制\n\n就是说如果你在「For You」主页已经刷到了「作者 A」发的第一篇推文，那「作者 A」发的第二篇推文在你「For You」主页的分数权重就会开始 x0.5 地衰减，以此类推，第三篇推文会继续衰减，但最低只会衰减到 x0.25。\n\n也就是说，在内容吸引力相同的情况下，你每天发的第一篇推文，流量会是最好的，接下来第二篇就会开始衰减。",
+   "created_at": "2026-08-14T03:59:01.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088113135517663446",
+   "metrics": {
+    "likes": 126,
+    "reposts": 3,
+    "replies": 173,
+    "quotes": 3,
+    "bookmarks": 47,
+    "views": 98389
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPp31NyawAEqvxA.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2088098349903978987",
+   "text": "以后我们就不用再用第三方工具来查自己的账号和帖子有没有被限流了，𝕏 之后会上线一个叫「Under the Hood」的工具。\n\n这个工具可以让我们自己查自己的账号和帖子有没有被打上限流的标签，这些数据还支持下载。\n\n目前还在小范围试点，会优先给账号注册满一年、上个月发帖 10 条以上的用户随机使用，之后再慢慢开放。\nhttps://x.com/cb_doge/status/2087981530148966583/video/1",
+   "created_at": "2026-08-14T03:00:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088098349903978987",
+   "metrics": {
+    "likes": 80,
+    "reposts": 7,
+    "replies": 154,
+    "quotes": 6,
+    "bookmarks": 45,
+    "views": 46687
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2087981442282442752/img/r0vh7KY0iBvVv6-T.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2087981442282442752/img/r0vh7KY0iBvVv6-T.jpg"
+    }
+   ],
+   "urls": [
+    "https://x.com/cb_doge/status/2087981530148966583/video/1"
+   ]
+  },
+  {
+   "id": "2088082940576350441",
+   "text": "X 刚刚开源了 For You 主页的推荐算法。\n\n这几个参数应该是比较值得参考的：\n\n正面行为：\n\n• 复制链接分享：+20 分\n• 回复：+5 分（互关用户额外 +15 分）\n• 引用：+5 分\n• 私信分享：+5 分\n• 关注作者：+4 分\n• 分享：+2 分\n• 转发：+1 分\n• 点赞：+0.5 分\n• 点击帖子：+0.4 分\n• 点开链接：+0.2 分\n• 点开图片：+0.05 分\n• 打开视频：+0.05 分\n• 视频有效观看：+0.05 分\n• 持续停留时长：+0.004 分\n• 点击作者主页：+0 分\n\n负面行为：\n\n• 举报：-234 分\n• 点「对此帖子不感兴趣」：-43.2 分\n• 静音作者：-58.8 分\n• 拉黑作者：-31.2 分\n• 划过没停留：-0.02 分\n\n需要注意的是，有一点特别容易引起混淆，不是「阅读者」真的做了这些行为，你的帖子就会被加分或被扣分，这里的加分和扣分的逻辑，是基于「预测」去执行的。\n\n也就是说，算法会根据「阅读者」以往的数据，来预测该「阅读者」会对你的帖子做出什么行为，如果算法预测该「阅读者」会对你的帖子做出正面行为，那你的帖子就会在该「阅读者」的 For You 主页获得较高的分数，分数越高就越优先被推送到该「阅读者」的 For You 主页。\n\n• 参数所在的具体 GitHub 页面：https://github.com/xai-org/x-algorithm/blob/main/home-mixer/params/param.rs",
+   "created_at": "2026-08-14T01:59:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2088082940576350441",
+   "metrics": {
+    "likes": 223,
+    "reposts": 23,
+    "replies": 170,
+    "quotes": 17,
+    "bookmarks": 134,
+    "views": 85372
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPpcXbbbYAATtm6.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://github.com/xai-org/x-algorithm/blob/main/home-mixer/params/param.rs"
+   ]
+  },
+  {
+   "id": "2087780466564944183",
+   "text": "这动图在抖音已经快 1900 万个点赞了\n\n所以这动图的魔力在哪？这都还没缓下来，点赞还在每天几十万地增加，感觉有望冲击抖音最高点赞的记录，我查过了目前抖音最高点赞纪录是 2633 万 🤓",
+   "created_at": "2026-08-13T05:57:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2087780466564944183",
+   "metrics": {
+    "likes": 1085,
+    "reposts": 22,
+    "replies": 978,
+    "quotes": 5,
+    "bookmarks": 455,
+    "views": 848239
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2087780440732291072/img/Aiap-7pjM_sd8RWb.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2087780440732291072/img/Aiap-7pjM_sd8RWb.jpg"
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPlJRTWasAAPguP.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2087750504982200346",
+   "text": "奇了怪了，这位推友怎么这么早就知道朱镕基逝世\n\n我特意去看了一下央视公布的逝世时间是 2026/08/12, 11:06，这个人的发推时间是 2026/08/11, 21:09，整整提前了 14 个小时。\n\n我原本以为只是比新闻播报还早而已，但是这是比逝世时间点还早啊？？",
+   "created_at": "2026-08-13T03:58:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2087750504982200346",
+   "metrics": {
+    "likes": 912,
+    "reposts": 37,
+    "replies": 678,
+    "quotes": 7,
+    "bookmarks": 326,
+    "views": 2001279
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPkuA7ibsAAC3bU.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPkuBJlaIAAhn9q.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2087474897748660649",
+   "text": "应该没人比我玩的开了吧。",
+   "created_at": "2026-08-12T09:42:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2087474897748660649",
+   "metrics": {
+    "likes": 66,
+    "reposts": 1,
+    "replies": 182,
+    "quotes": 3,
+    "bookmarks": 1,
+    "views": 78617
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2087160498550878479",
+   "text": "你们谁转他 100u，他要去日本旅游。",
+   "created_at": "2026-08-11T12:53:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2087160498550878479",
+   "metrics": {
+    "likes": 199,
+    "reposts": 3,
+    "replies": 474,
+    "quotes": 5,
+    "bookmarks": 12,
+    "views": 172642
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPcVaMWb0AA3eLj.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2087086366190711218",
+   "text": "请把做饭，还给做饭，用做爱；\n请把福，还给福，用逼；\n请把法，还给法，用 fuck。谢谢大家！",
+   "created_at": "2026-08-11T07:59:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2087086366190711218",
+   "metrics": {
+    "likes": 479,
+    "reposts": 8,
+    "replies": 694,
+    "quotes": 15,
+    "bookmarks": 25,
+    "views": 205122
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2087036457085292934",
+   "text": "看来马斯克 @elonmusk 最近和黄仁勋 @JensenHuang 去中国玩得很开心，开始疯狂推荐大家去中国旅游 😂",
+   "created_at": "2026-08-11T04:40:41.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2087036457085292934",
+   "metrics": {
+    "likes": 221,
+    "reposts": 6,
+    "replies": 134,
+    "quotes": 5,
+    "bookmarks": 22,
+    "views": 184843
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2087035328658014208/img/d64qrdDutAqUZO3s.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2087035328658014208/img/d64qrdDutAqUZO3s.jpg"
+    },
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2087035955542949888/img/YMat4he_KmUPxyCw.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2087035955542949888/img/YMat4he_KmUPxyCw.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2086785639585021956",
+   "text": "ChatGPT 发布的那一天，我在自习室写作业。\n\n我一个字都写不出来，因为那段时间我在币圈赚到了人生的第一桶金，我满脑子都想着炒币，我在食堂吃饭都得刷着 𝕏 来吃。\n\n就这样，我一边写作业，一边刷着 𝕏，\n\n然后刷到了 @sama 发布 ChatGPT 的推文，我点进网站，我把我论文的题目丢进了聊天框，看到它给我的回答，我震惊了，凌晨的自习室只剩我一个人，我一直对着电脑屏幕卧槽卧槽地叫。\n\n在我认知范畴内，我不知道人类能造出来这种东西。\n\n当初 GPT-3.5 的回答比较短，我把我的论文拆成 10 个大问题，再把 10 个大问题拆成 10 个小问题，最后再把每个问题都丢给 GPT-3.5 生成回答，最后把所有回答拼接成一段完整的论文，最后提交给老师。\n\n然后我把未来几周的作业都如法炮制，一下全都做完了。\n\n有句话说得特别好，人只能赚到认知以内的财富。\n\nChatGPT 横空出世的那一天，有人看到英伟达、有人看到闪迪、有人看到 Palantir、有人看到了美光、海力士。\n\n而我只看到明天要写的作业。",
+   "created_at": "2026-08-10T12:04:01.000Z",
+   "lang": "zh",
+   "url": "https://x.com/wolfyxbt/status/2086785639585021956",
+   "metrics": {
+    "likes": 482,
+    "reposts": 23,
+    "replies": 244,
+    "quotes": 18,
+    "bookmarks": 85,
+    "views": 134958
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HPXAew7boAAD00N.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  }
+ ]
+}

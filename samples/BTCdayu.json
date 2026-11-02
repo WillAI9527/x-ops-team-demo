@@ -1,0 +1,3697 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "fxtwitter-public (keyless)",
+ "fetched_at": "2026-11-02T18:36:11+08:00",
+ "user": {
+  "id": "1403881130802225152",
+  "username": "BTCdayu",
+  "name": "大宇",
+  "description": "游戏制作、投资研究、AI玩家。\n享受一切成长和进化带来的快乐。\n\n币安、OK省手续费码：【dy789】",
+  "created_at": "Sun Jun 13 01:05:28 +0000 2021",
+  "location": "免费投资宝典",
+  "url": "https://btcdayu.gitbook.io/dayu/dao-hang-yu-ru-men/bi-quan-xin-shou-ru-men/di-1-bu-jiao-yi-suo-zhu-c",
+  "verified": true,
+  "profile_image_url": "https://pbs.twimg.com/profile_images/2072678586436444160/x9Gsoyhe_normal.jpg",
+  "followers": 329000,
+  "following": 4842,
+  "tweets": 23465,
+  "listed": 0
+ },
+ "posts": [
+  {
+   "id": "2117131152616210672",
+   "text": "《影之刃零》虽然口碑一般，但这短短二三天卖了15亿了？\n\n黑神话悟空真的是国产单机游戏的GPT时刻，人们对游戏的需求极大，AI虽然让游戏泛滥，但精品的数量仍然会极少——这反过来反而更容易让注意力聚集到精品游戏之中。",
+   "created_at": "2026-11-02T05:46:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2117131152616210672",
+   "metrics": {
+    "likes": 39,
+    "reposts": 0,
+    "replies": 48,
+    "quotes": 2,
+    "bookmarks": 3,
+    "views": 23171
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2117126145644851339",
+   "text": "……",
+   "created_at": "2026-11-02T05:26:22.000Z",
+   "lang": null,
+   "url": "https://x.com/BTCdayu/status/2117126145644851339",
+   "metrics": {
+    "likes": 44,
+    "reposts": 1,
+    "replies": 24,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 19896
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HWGK_NbbcAA2Qj-.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2117057089025757471",
+   "text": "朝鲜和美国、中国最不一样的一点是，他们对于AI这件事好像没有任何参与的兴趣，他们完全不怕被人“赶超”？",
+   "created_at": "2026-11-02T00:51:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2117057089025757471",
+   "metrics": {
+    "likes": 42,
+    "reposts": 1,
+    "replies": 42,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 22731
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116850197871620427",
+   "text": "AI是人生中的传奇特殊事件：即一生中只能碰到几次的情况。\n\n一旦装备AI，且自身属性达标，即触发以下属性点加成：\n\n智慧+999\n能力+999\n财富-200U/月",
+   "created_at": "2026-11-01T11:09:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116850197871620427",
+   "metrics": {
+    "likes": 87,
+    "reposts": 5,
+    "replies": 42,
+    "quotes": 1,
+    "bookmarks": 10,
+    "views": 19138
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116842291839262876",
+   "text": "连黑客都知道要把所有山寨币换成BTC……",
+   "created_at": "2026-11-01T10:38:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116842291839262876",
+   "metrics": {
+    "likes": 404,
+    "reposts": 5,
+    "replies": 96,
+    "quotes": 5,
+    "bookmarks": 18,
+    "views": 77182
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116826561425109416",
+   "text": "本来这次我对IPHONE DUO超级期待，因为我喜欢磨砂屏幕的不反光，但后来知道原来IPHONE DUO上不是纳米防眩光涂层，也是贴的膜。\n\n果断淘宝给自己的OPPO折叠整上了29块9的膜，目前已对IPHONE DUO无感。",
+   "created_at": "2026-11-01T09:35:55.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116826561425109416",
+   "metrics": {
+    "likes": 46,
+    "reposts": 1,
+    "replies": 25,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 19413
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116568963023020112",
+   "text": "这几天币安被盗，我也发了不少搞笑段子，但其实心情真的格外沉重，所有坏事到一块了：\n\n币安都被盗，而且被盗这么多，区块链曾经嘲笑银行，但现在银行都不如？\n\n量子计算、AI发展，届时几百万个没动过的比特币是不是大雷？\n\n美股进币圈，币圈进不了美股，以后只能炒MEME币？",
+   "created_at": "2026-10-31T16:32:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116568963023020112",
+   "metrics": {
+    "likes": 92,
+    "reposts": 3,
+    "replies": 75,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 25863
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116526563076501672",
+   "text": "CLAUDE的小秘密",
+   "created_at": "2026-10-31T13:43:50.000Z",
+   "lang": "ja",
+   "url": "https://x.com/BTCdayu/status/2116526563076501672",
+   "metrics": {
+    "likes": 27,
+    "reposts": 0,
+    "replies": 15,
+    "quotes": 2,
+    "bookmarks": 2,
+    "views": 19907
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV9pp1LbcAE5HeL.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116489679986192764",
+   "text": "CZ这几年还颇为不顺啊，先是白道拿走了40亿美元，再是黑道又拿走了60亿美元，这些数字如果换成人民币单位，更是可怕……",
+   "created_at": "2026-10-31T11:17:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116489679986192764",
+   "metrics": {
+    "likes": 623,
+    "reposts": 10,
+    "replies": 279,
+    "quotes": 12,
+    "bookmarks": 56,
+    "views": 200520
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116204338280575287",
+   "text": "INTEL一个财报能暴跌30%，关注美股这一两年过来，最大的感受是，一直会有好价格，不用怕上不了车。",
+   "created_at": "2026-10-30T16:23:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116204338280575287",
+   "metrics": {
+    "likes": 128,
+    "reposts": 4,
+    "replies": 38,
+    "quotes": 1,
+    "bookmarks": 10,
+    "views": 27704
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116191128932495486",
+   "text": "AI崩盘会不会引发金融危机？",
+   "created_at": "2026-10-30T15:30:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116191128932495486",
+   "metrics": {
+    "likes": 86,
+    "reposts": 2,
+    "replies": 57,
+    "quotes": 3,
+    "bookmarks": 6,
+    "views": 43352
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116165045671575558",
+   "text": "CZ和马斯克互相看不上，几年前就互相阴阳过。本质是二者不是同一类人。\n\n马斯克满脑子是人类、火星、文明之类的东西，对富人、赚钱这些不感冒，甚至他讨厌别人把赚钱作为目的。他本来和盖茨关系很好，后来知道他做空特斯拉股票，非常震惊，问他为什么要这么做？为了钱？他不理解，直接后面好像断交了。\n\nCZ也不理解马斯克，怎么你首富？我难道不是？怎么一点尊重都没有？",
+   "created_at": "2026-10-30T13:47:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116165045671575558",
+   "metrics": {
+    "likes": 392,
+    "reposts": 12,
+    "replies": 127,
+    "quotes": 7,
+    "bookmarks": 67,
+    "views": 165358
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116137370332590247",
+   "text": "这次币安被盗，我发现各个群没有什么人在恐惧，在急着提币，这种品牌效应也蛮值钱的",
+   "created_at": "2026-10-30T11:57:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116137370332590247",
+   "metrics": {
+    "likes": 172,
+    "reposts": 6,
+    "replies": 99,
+    "quotes": 10,
+    "bookmarks": 8,
+    "views": 60647
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116077749223973120",
+   "text": "...",
+   "created_at": "2026-10-30T08:00:24.000Z",
+   "lang": null,
+   "url": "https://x.com/BTCdayu/status/2116077749223973120",
+   "metrics": {
+    "likes": 136,
+    "reposts": 2,
+    "replies": 30,
+    "quotes": 4,
+    "bookmarks": 2,
+    "views": 30656
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HV3RfsMbgAAnrqG.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2116065734208201165",
+   "text": "最近这个半年，各个市场都是只有一个主旋律，跌。\n\n在这个时候，分散投资唯一作用是查看亏损时，要多打开几次不同的 APP。",
+   "created_at": "2026-10-30T07:12:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116065734208201165",
+   "metrics": {
+    "likes": 44,
+    "reposts": 0,
+    "replies": 21,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 13150
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116062331734266007",
+   "text": "一姐怀孕了，仍通宵不睡在处理被盗事件。\n我突然冒出一个想法是，或许有一天，一姐也可能会不做币安了，监管的压力或要处理的事情指数级增多，但回报多少不重要了。\n\n或许某天CZ和一姐吃完早餐，一位说：要不算了，咱们不干了，带娃去迪士尼，每天刷刷视频，打打游戏怎么样？另一位说：啊？哦，可以。",
+   "created_at": "2026-10-30T06:59:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116062331734266007",
+   "metrics": {
+    "likes": 277,
+    "reposts": 4,
+    "replies": 109,
+    "quotes": 8,
+    "bookmarks": 23,
+    "views": 112673
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2116060517567697282",
+   "text": "看到过太多这种高速小刮蹭引发大事故的了\n\n记得一条：高速停车，高危信号。",
+   "created_at": "2026-10-30T06:51:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2116060517567697282",
+   "metrics": {
+    "likes": 69,
+    "reposts": 1,
+    "replies": 35,
+    "quotes": 1,
+    "bookmarks": 19,
+    "views": 60100
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2116060358943371264/img/mQ8bLgTjMxtF_jXG.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2116060358943371264/img/mQ8bLgTjMxtF_jXG.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115982433527206107",
+   "text": "在这次币安被盗事件中，各条L2公链纷纷启动了紧急措施，目前据路边社统计：\n\n总计148条L2公链共冻结此次黑客转移的250个币种，共计挽回了经济损失4800多U，即使一些公链只有几十U涉及被盗，基金会也及时冻结。\n\n在接受路边社采访时，一位不愿透露姓名的L2负责人说，虽然冻结的资金只有19U，但是这已经我们公链上今年最重要的一次经济活动。",
+   "created_at": "2026-10-30T01:41:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115982433527206107",
+   "metrics": {
+    "likes": 216,
+    "reposts": 8,
+    "replies": 73,
+    "quotes": 11,
+    "bookmarks": 11,
+    "views": 59982
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115963848348094913",
+   "text": "晕倒，才1个月，币安就来了……",
+   "created_at": "2026-10-30T00:27:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115963848348094913",
+   "metrics": {
+    "likes": 76,
+    "reposts": 1,
+    "replies": 30,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 32158
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115963717393498521",
+   "text": "好了，如果这次真的是金将军\n那看来要被玩笑话说中了\n\n金将军想动的都动了……",
+   "created_at": "2026-10-30T00:27:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115963717393498521",
+   "metrics": {
+    "likes": 117,
+    "reposts": 1,
+    "replies": 17,
+    "quotes": 1,
+    "bookmarks": 12,
+    "views": 52434
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115957311634333991",
+   "text": "厉害",
+   "created_at": "2026-10-30T00:01:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115957311634333991",
+   "metrics": {
+    "likes": 22,
+    "reposts": 1,
+    "replies": 2,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 12012
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115957113784860968",
+   "text": "不是硬核玩家，但黑神话悟空玩到了打完亢金龙之后。\n\n而影之刃零只玩到教学部分，按那些招数太复杂了，放弃了。",
+   "created_at": "2026-10-30T00:01:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115957113784860968",
+   "metrics": {
+    "likes": 26,
+    "reposts": 0,
+    "replies": 22,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 19903
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2115955497169989632/img/URoNEOMENuXd1DR3.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2115955497169989632/img/URoNEOMENuXd1DR3.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115953208187408469",
+   "text": "币圈好像就是被盗被盗被盗，真的有点烦了。而且这次好像因为ETH漏洞？如果以太坊都出问题，那下次HYPE被盗好像也不用太奇怪。\n\n觉得币圈好没安全感那，资金还是要分散配置吧，现在AI和量子计算发展太猛，未来被盗的可能性应该只会更大。\n\n什么钱包、银行、股市啥的，都分散放点更安全……",
+   "created_at": "2026-10-29T23:45:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115953208187408469",
+   "metrics": {
+    "likes": 107,
+    "reposts": 4,
+    "replies": 46,
+    "quotes": 3,
+    "bookmarks": 15,
+    "views": 42328
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115943369834893396",
+   "text": "https://x.com/i/article/2115943062463774720",
+   "created_at": "2026-10-29T23:06:26.000Z",
+   "lang": null,
+   "url": "https://x.com/BTCdayu/status/2115943369834893396",
+   "metrics": {
+    "likes": 67,
+    "reposts": 15,
+    "replies": 3,
+    "quotes": 2,
+    "bookmarks": 72,
+    "views": 26714
+   },
+   "media": [],
+   "urls": [
+    "https://x.com/i/article/2115943062463774720"
+   ]
+  },
+  {
+   "id": "2115940536645525737",
+   "text": "早上起来看到币安被盗的消息，第一反应是假消息\n马上一查，竟然是真的\n史上最大的被盗发生了\n目前是说56亿美元的资产被盗了\n\n不要伤害币安，我的钱在那里……",
+   "created_at": "2026-10-29T22:55:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115940536645525737",
+   "metrics": {
+    "likes": 230,
+    "reposts": 8,
+    "replies": 105,
+    "quotes": 3,
+    "bookmarks": 11,
+    "views": 79240
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115811929323442395",
+   "text": "最早，我们从石头上刻字\n后来，我们从竹简中学习\n然后，有了活字印刷，文明开始加速；\n然后，有小学、中学、大学，有老师、有书本。\n甚至有了互联网，知识流动加倍了\n\n但今天，我们竟然可以花一点点钱就向一个比诸葛亮还聪明的人随时随地地学习任何的东西……\n\n自学能力可能是AI时代的核心能力。",
+   "created_at": "2026-10-29T14:24:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115811929323442395",
+   "metrics": {
+    "likes": 50,
+    "reposts": 1,
+    "replies": 17,
+    "quotes": 1,
+    "bookmarks": 7,
+    "views": 11956
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115795272995639523",
+   "text": "WOW，很惊喜，这个AGENT这么牛啊。\n我用即梦做的各种BUG，即使分成4秒一段也BUG很多，每段都要改……\n\n各家的AGENT能力相差很大，尤其是视频制作方面，如果有好的AGENT都可以来试一下，看看哪家强？",
+   "created_at": "2026-10-29T13:17:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115795272995639523",
+   "metrics": {
+    "likes": 28,
+    "reposts": 0,
+    "replies": 12,
+    "quotes": 1,
+    "bookmarks": 15,
+    "views": 13515
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115792642399465845",
+   "text": "今天hype暴拉\n是因为大佬喊单说看好HYPE啥的\n\n想了解这位大佬的，可以看我这个历史文章\n\nhttps://x.com/BTCdayu/status/2051551307291652450",
+   "created_at": "2026-10-29T13:07:30.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115792642399465845",
+   "metrics": {
+    "likes": 172,
+    "reposts": 34,
+    "replies": 15,
+    "quotes": 3,
+    "bookmarks": 120,
+    "views": 40293
+   },
+   "media": [],
+   "urls": [
+    "https://x.com/BTCdayu/status/2051551307291652450"
+   ]
+  },
+  {
+   "id": "2115750906805518768",
+   "text": "求来个 AI 视频的大神帮我把这个剧本制作为一个短片，我想看一下效果。我自己用即梦做出来的全是垃圾，我想看看真大神做出来的是什么样，我帮你转发。\n\n一开始是一个诺兰式的远景，压迫式的镜头缓缓推向一条混乱的巴黎大街，无数的人群正在喧闹、打砸、抢烧吧，就是人群在暴乱，音乐非常的紧张。这个时候就切换到近景，在一个商店里面，有一个女人正紧张的喃喃自语的盯着外面，乞求着坏事不要发生。这个时候突然有几个黑衣蒙面的人，穿着卫衣，狠狠的在推门，那女人就哀求他们说里面还有孩子。\n\n但是这些人只是狠狠的把门踢开，女人摔倒在地上，孩子坐在地上无助的尖叫。那其中两个人冲向货架去抢东西，另外一个人呢，对着这个前来阻止他的女人，就是要殴打的时候，这个时候突然他看见黑暗中有两点蓝光亮起。\n\n一个宇树类似的功夫机器人带着有力的节奏从里面走出来，伸出手对着这几个人说，Stop。\n\n并警告他们说，你们已经非法入侵，请立即离开。那几个人当然是毫不顾忌，直接冲上去要踢翻这个机器人，或者打翻他，那机器人就用中国功夫的招数，三下五除二把他们给打飞了。\n\n然后机器人拉起地上的女人，对她说，你现在安全了。\n\n那个女人就是喃喃自语地说，终于结束了。但是机器人看了她一眼说，not yet。然后他走出门去。\n\n这个时候屏幕黑掉，显示出一行字幕\n\nWHO PROTECTS HUMANITY?\n\n中间的台词都可以统一为英文。",
+   "created_at": "2026-10-29T10:21:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115750906805518768",
+   "metrics": {
+    "likes": 32,
+    "reposts": 1,
+    "replies": 25,
+    "quotes": 5,
+    "bookmarks": 13,
+    "views": 20080
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115680745071190308",
+   "text": "新款的IPAD MINI支持纳米玻璃，不反光了\n\n这其实是一个IPHONE DUO 1/3价而且不容易坏的屏幕，性价比拉满了。\n\n大小的话也可以接受啊，推荐想买IPHONE DUO又预算有限或是担心屏幕坏掉的同学可以考虑MINI了。",
+   "created_at": "2026-10-29T05:42:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115680745071190308",
+   "metrics": {
+    "likes": 33,
+    "reposts": 0,
+    "replies": 28,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 15458
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVxoUtLbwAA3uM4.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2115666645800960480",
+   "text": "每天二百美元的OPUS开销，有点不舍得用FABLE了",
+   "created_at": "2026-10-29T04:46:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115666645800960480",
+   "metrics": {
+    "likes": 35,
+    "reposts": 0,
+    "replies": 37,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 18099
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115643901478609195",
+   "text": "经常看到经济学家对行情发出言之凿凿的判断，其实我是很纳闷的，他真的是这么确信吗？",
+   "created_at": "2026-10-29T03:16:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115643901478609195",
+   "metrics": {
+    "likes": 42,
+    "reposts": 0,
+    "replies": 52,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 15025
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115631265399603545",
+   "text": "决定人命运的，往往不是学历、不是出身，而是：\n\n判断机会的眼光 和 抓住机会的能力。",
+   "created_at": "2026-10-29T02:26:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115631265399603545",
+   "metrics": {
+    "likes": 832,
+    "reposts": 74,
+    "replies": 111,
+    "quotes": 6,
+    "bookmarks": 195,
+    "views": 56435
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115630711604711703",
+   "text": "https://x.com/i/article/2115630361803988992",
+   "created_at": "2026-10-29T02:24:02.000Z",
+   "lang": null,
+   "url": "https://x.com/BTCdayu/status/2115630711604711703",
+   "metrics": {
+    "likes": 72,
+    "reposts": 16,
+    "replies": 10,
+    "quotes": 1,
+    "bookmarks": 75,
+    "views": 76825
+   },
+   "media": [],
+   "urls": [
+    "https://x.com/i/article/2115630361803988992"
+   ]
+  },
+  {
+   "id": "2115611192819699966",
+   "text": "极简的人生智慧\n\n不借钱\n不考验人性\n不占人便宜\n止损就是赚\n丑话说在前头\n\n只筛选，不改造\n看行为，不看承诺\n\n不自证\n保护注意力不和蛮人讲道理\n不为了证明正确而继续",
+   "created_at": "2026-10-29T01:06:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115611192819699966",
+   "metrics": {
+    "likes": 202,
+    "reposts": 17,
+    "replies": 35,
+    "quotes": 3,
+    "bookmarks": 57,
+    "views": 21336
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115394570330755446",
+   "text": "价值投资属于人人好像都懂，但实际上大多数人从来不用，还是专注于K线、宏观、消息等，这也是一个普遍又有趣的现象。\n\n可能是用那些方法市场给的反馈更快，所以体验更刺激。",
+   "created_at": "2026-10-28T10:45:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115394570330755446",
+   "metrics": {
+    "likes": 89,
+    "reposts": 4,
+    "replies": 57,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 14912
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115257477499703441",
+   "text": "据说一个推特的 AI 博主 3000 粉丝，每个月就能从马斯克这里领到工资两三千美元，据说一个月还能接个几万块钱的商单。\n\n我是看一个采访，那个博主自己说的，这是真的吗？\n\n这未免也太离谱了，我也是个 AI 博主啊，马斯克的公司是不是误会我了？",
+   "created_at": "2026-10-28T01:40:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115257477499703441",
+   "metrics": {
+    "likes": 91,
+    "reposts": 2,
+    "replies": 79,
+    "quotes": 2,
+    "bookmarks": 13,
+    "views": 32415
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2115229694694179237",
+   "text": "原来我觉得蔚来汽车会陷入危机，毕竟充电越来越快，换电这么重的商业模式太难了。但他的ES9 卖50多万，但销量非常大，查了一下可能是安全与用量扎实等。\n\n凭感觉下的判断很容易出错，尤其是也容易被社媒算法不断强化。就像问界，我感觉上不喜欢，但好像喜欢的人特别喜欢，或许也有可取之处。",
+   "created_at": "2026-10-27T23:50:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2115229694694179237",
+   "metrics": {
+    "likes": 36,
+    "reposts": 0,
+    "replies": 51,
+    "quotes": 3,
+    "bookmarks": 5,
+    "views": 31970
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVrL0XYa0AAWPAJ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114660671292117140",
+   "text": "在高铁站看见一位妈妈对孩子说，过一段时间妈妈就去看你，强行放开了孩子的手，爸爸抱着孩子过了闸机。\n\n3 岁大的孩子哭的撕心裂肺，爸爸只是抱着沉默的走。\n\n现在 AI 越来越牛了，普通人的生活会不会越来越难？想实现马斯克说的，钱不再重要真的 10 年就可以吗？",
+   "created_at": "2026-10-26T10:09:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114660671292117140",
+   "metrics": {
+    "likes": 49,
+    "reposts": 0,
+    "replies": 51,
+    "quotes": 0,
+    "bookmarks": 2,
+    "views": 19431
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114656557413929310",
+   "text": "我微信朋友圈有位老兄，在我比较穷的时候借了我一笔钱，一直耍无赖，套路很多。后来知道他早就是失信执行人名单了。\n\n但是纳闷的是，这位老兄朋友圈更新的坚定又频繁，不是发佛像，就是发鸡汤，要是不了解，真的会以为真的是一个得道高人，品行高洁。\n\n这个世界真的太容易让人上当了。",
+   "created_at": "2026-10-26T09:53:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114656557413929310",
+   "metrics": {
+    "likes": 117,
+    "reposts": 1,
+    "replies": 82,
+    "quotes": 2,
+    "bookmarks": 15,
+    "views": 39844
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114653141367222458",
+   "text": "我本来以为推特上中国人不多，但最近跟土耳其人的骂战，让我感觉推特上好像全都是中国人。",
+   "created_at": "2026-10-26T09:39:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114653141367222458",
+   "metrics": {
+    "likes": 45,
+    "reposts": 0,
+    "replies": 35,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 20584
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114635198143058181",
+   "text": "现在这个世界，好像每个人都在刷短视频。\n\n这是人类自冰河世纪以来第二个全球都出现的现象。",
+   "created_at": "2026-10-26T08:28:13.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114635198143058181",
+   "metrics": {
+    "likes": 49,
+    "reposts": 0,
+    "replies": 35,
+    "quotes": 2,
+    "bookmarks": 6,
+    "views": 19347
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114588040530440669",
+   "text": "香港国际学校有交 2000 多万才能获得一个面试资格的。\n\n黄仁勋 10 岁出头就被送到了美国舅舅那边，舅舅挑了一所学校，结果可能搞错了，是不良少年管教学校。黄仁勋进去就被欺负了两年，里面全是带刀、抽烟、打架，但他在那里混得风生水起，打架学习两不误。\n\n所以有时候也很迷惑，学霸可能是天生？",
+   "created_at": "2026-10-26T05:20:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114588040530440669",
+   "metrics": {
+    "likes": 383,
+    "reposts": 11,
+    "replies": 95,
+    "quotes": 4,
+    "bookmarks": 50,
+    "views": 101444
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114543961306190171",
+   "text": "是不是咱们这个圈子的人都最喜欢 iPhone Air 啊，反正我是超级爱，是苹果系列当中所有的最让我感觉到是必须买一个玩的。\n\n但是实际总销量它并不高。",
+   "created_at": "2026-10-26T02:25:41.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114543961306190171",
+   "metrics": {
+    "likes": 56,
+    "reposts": 1,
+    "replies": 49,
+    "quotes": 2,
+    "bookmarks": 7,
+    "views": 32726
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVhehnRbIAAdVAz.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114524795551576382",
+   "text": "刚收到一条私信，高中辍学，25 岁，在深圳做一份月薪 6000 的工作，没有前途，想要突破和改变。\n\n大家有没有什么好的建议？\n\n我能想到的可能需要一些比较强的自学能力，比如先自考拿个本科，再考个公务员，活下来，有个体面工作，结婚，好好的定投优质资产。\n\n10 年之后应该还可以。",
+   "created_at": "2026-10-26T01:09:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114524795551576382",
+   "metrics": {
+    "likes": 102,
+    "reposts": 0,
+    "replies": 160,
+    "quotes": 5,
+    "bookmarks": 25,
+    "views": 52429
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114283710841586162",
+   "text": "之前被CLAUDE封了几个号，骂过之后还是想办法用回来\n而且为了防止反复出问题，直接上OBSIDIAN，这样重要资料和知识一直会保存完美。\n\n而且有意思的，用着CLAUDE感觉还是很爽。\n\n用一个聪明的AI真的是有幸福感……",
+   "created_at": "2026-10-25T09:11:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114283710841586162",
+   "metrics": {
+    "likes": 50,
+    "reposts": 3,
+    "replies": 37,
+    "quotes": 1,
+    "bookmarks": 12,
+    "views": 19025
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114282002652573818",
+   "text": "以前，币圈是一个圈，圈子是愚蠢与激情，是暴富与梦想。\n\n现在币圈的边界很模糊，在币安上交易量最大的开始是股票而不是币，炒币的人多多少少都开始关注海力士、关注SPCX。\n\n如果币圈迭代为美股大池子中的一个小分支，BTC成为美股中一个小MEME币，还真是让人不舒服的未来呢。",
+   "created_at": "2026-10-25T09:04:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114282002652573818",
+   "metrics": {
+    "likes": 144,
+    "reposts": 5,
+    "replies": 75,
+    "quotes": 7,
+    "bookmarks": 13,
+    "views": 39233
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114281469543948785",
+   "text": "paradigm走了，MC也走了，现在A16Z也走了。\n\n对BTC的信仰感觉圈子里的人真没有17、20年那会强了。那是愚蠢但火热的年代，那时候的人们：\n\n相信三浪的EOS\n相信反杀BTC的BCH\n相信存储天王FIL\n相信公链天王ICP\n\n奇怪的是，现在ETF通过了，美国支持了，币圈信仰的空气却越来越稀薄……",
+   "created_at": "2026-10-25T09:02:38.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114281469543948785",
+   "metrics": {
+    "likes": 446,
+    "reposts": 23,
+    "replies": 159,
+    "quotes": 13,
+    "bookmarks": 75,
+    "views": 125444
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2114177055625805901",
+   "text": "用AI 打造各种东西是真的会上瘾，一开始打造的全是垃圾，然后拼命学习，就感觉一下子又精进了很多。\n\n人的快乐其实主要很大一部分就来自这种精进。\n\n最近尝试两个东西好玩：\n一是在obsidian笔记中直接用CLAUDIAN插件，有点像身外大脑的意思了。\n\n二是使用opus 5.5搭建想象中的游戏，进展还不错。",
+   "created_at": "2026-10-25T02:07:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2114177055625805901",
+   "metrics": {
+    "likes": 115,
+    "reposts": 8,
+    "replies": 62,
+    "quotes": 1,
+    "bookmarks": 36,
+    "views": 27997
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113998807134527758",
+   "text": "画面精美、内容空洞\n这波想挑战诺兰应该是难了",
+   "created_at": "2026-10-24T14:19:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113998807134527758",
+   "metrics": {
+    "likes": 25,
+    "reposts": 1,
+    "replies": 15,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 14436
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113982129021530542",
+   "text": "推特真是一个宝藏，算法非常牛B\n你只要关注、点赞、收藏一些你关心的内容\n然后就立即会有越来越多厉害的内容出来",
+   "created_at": "2026-10-24T13:13:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113982129021530542",
+   "metrics": {
+    "likes": 168,
+    "reposts": 5,
+    "replies": 82,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 19937
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113625450530685289",
+   "text": "震撼到了。",
+   "created_at": "2026-10-23T13:35:51.000Z",
+   "lang": "ja",
+   "url": "https://x.com/BTCdayu/status/2113625450530685289",
+   "metrics": {
+    "likes": 37,
+    "reposts": 5,
+    "replies": 26,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 30221
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113616974253293599",
+   "text": "这游戏叫《活侠传》\n左边这个丑到心脏停跳的人是主角\n\n听说游戏是神作，剧本超好\n但是我看到主角这张脸，感觉多看一眼都打个冷战\n\n只能说这游戏的制作人是真的好勇",
+   "created_at": "2026-10-23T13:02:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113616974253293599",
+   "metrics": {
+    "likes": 24,
+    "reposts": 0,
+    "replies": 25,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 12150
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVUTN6Fb0AALjMt.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113538676563341313",
+   "text": "游戏开发领域的PUMPFUN时刻——每天都是无数的垃圾游戏面市。",
+   "created_at": "2026-10-23T07:51:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113538676563341313",
+   "metrics": {
+    "likes": 29,
+    "reposts": 1,
+    "replies": 21,
+    "quotes": 2,
+    "bookmarks": 1,
+    "views": 14023
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113483380511899661",
+   "text": "",
+   "created_at": "2026-10-23T04:11:19.000Z",
+   "lang": null,
+   "url": "https://x.com/BTCdayu/status/2113483380511899661",
+   "metrics": {
+    "likes": 63,
+    "reposts": 3,
+    "replies": 37,
+    "quotes": 3,
+    "bookmarks": 9,
+    "views": 16260
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVSZ7lkbgAAWwjc.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113436767185682603",
+   "text": "x上正在爆发第三次世界大战，战争从土耳其帐号嘲讽中国开始，到中国帐号反击土耳其国旗是模仿派大星制作引爆。\n\n目前已经引发了日本、韩国等多国混战——从目前情况来看，日本好像是站土耳其一边…\n\n看来，X仍然是这个星球第一大影响力的国家。",
+   "created_at": "2026-10-23T01:06:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113436767185682603",
+   "metrics": {
+    "likes": 61,
+    "reposts": 3,
+    "replies": 58,
+    "quotes": 8,
+    "bookmarks": 3,
+    "views": 38322
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113276035634794908",
+   "text": "一天花了几百美元，烧了一堆TOKEN，做出一堆垃圾，心累了……\n\n看别人的AI无所不能，玩自己的AI会的不多",
+   "created_at": "2026-10-22T14:27:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113276035634794908",
+   "metrics": {
+    "likes": 84,
+    "reposts": 1,
+    "replies": 55,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 36217
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113251167950262648",
+   "text": "漫威电影当中的多元宇宙我是我见过最糟糕的设定。\n\n它摧毁了一切，甚至连人的存在都变得虚无。",
+   "created_at": "2026-10-22T12:48:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113251167950262648",
+   "metrics": {
+    "likes": 57,
+    "reposts": 1,
+    "replies": 23,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 19631
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2113169401210118376",
+   "text": "昨晚和母亲散步，她说起自己青年时的趣事，我听得挺有意思。她十分平凡却又让我十分敬佩，她的智慧全体现在一些她常说的话里：\n\n要一视同仁、不要害人、不要背后说人、要尊重别人，等等。\n\n这也是一种平常心，钱多钱少、地位高低，都一样尊重每个人。\n\n世界复杂，但简单平静也是一种选择。",
+   "created_at": "2026-10-22T07:23:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113169401210118376",
+   "metrics": {
+    "likes": 96,
+    "reposts": 2,
+    "replies": 24,
+    "quotes": 2,
+    "bookmarks": 3,
+    "views": 12044
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVN8XeGbgAAIdXZ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2113163531206218083",
+   "text": "在币圈，最尴尬的问题是：XX币还有希望吗？",
+   "created_at": "2026-10-22T07:00:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2113163531206218083",
+   "metrics": {
+    "likes": 57,
+    "reposts": 1,
+    "replies": 61,
+    "quotes": 3,
+    "bookmarks": 2,
+    "views": 23503
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112915721567269102",
+   "text": "SPCX 还会跌回100吗？",
+   "created_at": "2026-10-21T14:35:38.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112915721567269102",
+   "metrics": {
+    "likes": 32,
+    "reposts": 0,
+    "replies": 27,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 13132
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112751038474416382",
+   "text": "现在越来越多游戏移植到手机\n但我还是习惯用PC玩游戏\n眼睛会舒服很多\n但手机游戏确实已经占据了绝大部分市场",
+   "created_at": "2026-10-21T03:41:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112751038474416382",
+   "metrics": {
+    "likes": 38,
+    "reposts": 2,
+    "replies": 26,
+    "quotes": 1,
+    "bookmarks": 0,
+    "views": 12127
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112738181414273166",
+   "text": "刚发现豆包输入法WIN版更新了，赶紧跑去用——因为对TYPELESS的速度有点不满，以及如果网络断了可能丢失语音的不爽。\n\n结果，感觉没法用——因为豆包的输入模式上，要么长按，要么点按打开输入，其中点按在pc/mac环境下的场景是我们边说话边操作电脑，但豆包会把任意键的输入作为对话中断！\n\n难以想象大厂的产品会SB到这种地步，所以我TMD用语音输入的时候我不能进行任何操作？我不能边说边查看我正在工作的文档或任何东西以延续我脑中的想法？\n\n之前我说，马斯克的第一性原理可能有史以来最伟大的“理论”之一，你但凡多想一点，也不可能假想用户在使用输入法的时候严禁任何操作呀。\n\n唉，世界真是草台班子。",
+   "created_at": "2026-10-21T02:50:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112738181414273166",
+   "metrics": {
+    "likes": 29,
+    "reposts": 0,
+    "replies": 29,
+    "quotes": 2,
+    "bookmarks": 3,
+    "views": 13654
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112731739164717492",
+   "text": "Pumpfun 于 10月19日接入 CARDS 的开包功能与卡牌市场，并援引 Blockworks 称首日售包约 200万美元。",
+   "created_at": "2026-10-21T02:24:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112731739164717492",
+   "metrics": {
+    "likes": 34,
+    "reposts": 3,
+    "replies": 22,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 16919
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112727887103381985",
+   "text": "精辟。\n我是极度乐观派，所以经常有 2，所以会经常犯 2。",
+   "created_at": "2026-10-21T02:09:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112727887103381985",
+   "metrics": {
+    "likes": 19,
+    "reposts": 0,
+    "replies": 14,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 11772
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112718871757214048",
+   "text": "最近新闻中最不忍阅读就是胡二妹的悲剧\n每天只睡 6 小时，炸土豆卖，养着孩子\n因为一条差评和巨大的舆论攻击，心理崩溃自杀了\n二妹可怜、孩子可怜\n\n我们不可能让每个人满意，恶意的东西不要理会，做好自己。\n\n生活真的不易，有能力的人多一些善意，一起让世界更好。",
+   "created_at": "2026-10-21T01:33:26.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112718871757214048",
+   "metrics": {
+    "likes": 126,
+    "reposts": 4,
+    "replies": 27,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 20728
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2112525017443708977",
+   "text": "达里奥什么时候会开放CLAUDE让中国人用？",
+   "created_at": "2026-10-20T12:43:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2112525017443708977",
+   "metrics": {
+    "likes": 28,
+    "reposts": 0,
+    "replies": 24,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 11740
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111823324225704397",
+   "text": "父母不见你暮年\n孩子不见你风华\n爱人不见你幼年\n朋友不见你过往\n\n你是唯一可以窥见自己全貌的人",
+   "created_at": "2026-10-18T14:14:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111823324225704397",
+   "metrics": {
+    "likes": 455,
+    "reposts": 41,
+    "replies": 64,
+    "quotes": 2,
+    "bookmarks": 50,
+    "views": 31388
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111702410666352900",
+   "text": "马斯克的第一性原理可能是这个世界最伟大的理论。\n\n只有五个字，非常简洁优美。",
+   "created_at": "2026-10-18T06:14:22.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111702410666352900",
+   "metrics": {
+    "likes": 432,
+    "reposts": 23,
+    "replies": 123,
+    "quotes": 7,
+    "bookmarks": 98,
+    "views": 141764
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111367765198299365",
+   "text": "黑神话悟空是国产单机游戏的 gpt 时刻。",
+   "created_at": "2026-10-17T08:04:37.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111367765198299365",
+   "metrics": {
+    "likes": 41,
+    "reposts": 0,
+    "replies": 48,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 15908
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111282134161981622",
+   "text": "袁腾飞之前经常发表一些比较在国内难以被接受的言论，我都很惊讶他竟然能够一直待在国内。\n54 岁跑去美国，最近看来是很不适应。\n\n真正到国外溜达生活一圈，大多数人都会把国外滤镜碎掉，这就是为什么中国人常常是出去之后才爱国，没有完美的国家和制度。\n\n现在世界上最好的地方就是港深，北上航。",
+   "created_at": "2026-10-17T02:24:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111282134161981622",
+   "metrics": {
+    "likes": 202,
+    "reposts": 15,
+    "replies": 71,
+    "quotes": 9,
+    "bookmarks": 26,
+    "views": 93686
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111276938547650754",
+   "text": "GTA 6 游戏开发今天正在加班，紧急增加特斯拉飞行汽车模组。",
+   "created_at": "2026-10-17T02:03:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111276938547650754",
+   "metrics": {
+    "likes": 41,
+    "reposts": 0,
+    "replies": 21,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 12984
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111274060873347258",
+   "text": "中国高速收费站面对飞行汽车可能要采取新方案。\n\n标语：禁止飞越国家收费站。",
+   "created_at": "2026-10-17T01:52:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111274060873347258",
+   "metrics": {
+    "likes": 48,
+    "reposts": 3,
+    "replies": 32,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 14070
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUzAkQMaAAEczcM.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2111081658971836877",
+   "text": "昨天不记得在哪看到一篇报告，就记住了一句话：\n\nmeme币的平均寿命是13天，只有3%能重回高点。\n\n再看好，也逃不过大数据。",
+   "created_at": "2026-10-16T13:07:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111081658971836877",
+   "metrics": {
+    "likes": 194,
+    "reposts": 18,
+    "replies": 71,
+    "quotes": 5,
+    "bookmarks": 43,
+    "views": 34497
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2111068412286009704",
+   "text": "以前我挺得意自己的看准加重仓理论，但是渐渐的知道了市场上那么多梭哈起来不要命的人，一对比，我觉得自己的所谓重仓在他们前面不值一提。\n\n他们看好一个项目，不但是单吊一只，还有把各种能用的、不能用的钱全部给凑的梭哈进去...\n\n所以，所谓的重仓，永远都只是最适合自己的那个最大仓位。",
+   "created_at": "2026-10-16T12:15:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2111068412286009704",
+   "metrics": {
+    "likes": 134,
+    "reposts": 2,
+    "replies": 46,
+    "quotes": 4,
+    "bookmarks": 6,
+    "views": 27763
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110928565063782802",
+   "text": "最近在学习用AI做游戏和电影\n成就感真的拉爆了\n我也能做成任何别人能做的事",
+   "created_at": "2026-10-16T02:59:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2110928565063782802",
+   "metrics": {
+    "likes": 102,
+    "reposts": 1,
+    "replies": 37,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 21561
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110915524947583150",
+   "text": "绣春刀3来了\n路阳不拍我来拍\n\n开玩笑的了，是用这位导演的提示词生成的，实在是太酷了。看起来学会用提示词仍然非常重要。",
+   "created_at": "2026-10-16T02:07:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2110915524947583150",
+   "metrics": {
+    "likes": 55,
+    "reposts": 3,
+    "replies": 224,
+    "quotes": 3,
+    "bookmarks": 9,
+    "views": 21280
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2110915364934787072/img/rNQoojRaoTqMDiOm.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110915364934787072/img/rNQoojRaoTqMDiOm.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110362781199511561",
+   "text": "最近两天感悟\n\n1、一定要动手用AI做东西\n2、一定不要用AI做垃圾东西。",
+   "created_at": "2026-10-14T13:31:10.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2110362781199511561",
+   "metrics": {
+    "likes": 87,
+    "reposts": 4,
+    "replies": 56,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 24842
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110360489960321110",
+   "text": "马斯克已经是一个大号的中年人了，但他仍然玩乐高，也玩艾尔登法环。\n\n这种对世界充满好奇以及满满的玩乐心态非常重要——有人问他如果SPACEX和TSLA没了怎么办，他说马上研究一下做什么。\n\n在中国，这叫折腾劲，在国外，这叫JUST DO IT。\n\n我怀疑这是有遗传的，他妈妈60岁时精彩刚刚开始：走秀、出书等",
+   "created_at": "2026-10-14T13:22:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2110360489960321110",
+   "metrics": {
+    "likes": 42,
+    "reposts": 2,
+    "replies": 25,
+    "quotes": 0,
+    "bookmarks": 7,
+    "views": 19208
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2110274391686926416",
+   "text": "我们会习惯：\n\n1、阅读AI写的文章\n2、喜欢AI生成的电影\n3、欣赏AI生成的音乐\n4、享受AI做出的游戏\n5、听取AI给出的建议\n\n但我们，是否能习惯不再被需要？",
+   "created_at": "2026-10-14T07:39:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2110274391686926416",
+   "metrics": {
+    "likes": 44,
+    "reposts": 2,
+    "replies": 24,
+    "quotes": 2,
+    "bookmarks": 2,
+    "views": 17575
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUkzPjzaQAEnBHA.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2110239878386721276",
+   "text": "专家称，中国人在亲热的时候，都是讲普通话，很少讲方言，尤其是山东人。",
+   "created_at": "2026-10-14T05:22:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2110239878386721276",
+   "metrics": {
+    "likes": 39,
+    "reposts": 2,
+    "replies": 32,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 21558
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2110239374285914112/img/F_sRalg0DMYYK4-o.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2110239374285914112/img/F_sRalg0DMYYK4-o.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109949155544342889",
+   "text": "在香港当老师一年最多能赚多少钱？\n\n你大胆猜一个数，我保准你猜错。\n\n1 个亿。\n\n真的太离谱了，香港的课外补习班这些押题准的老师，年薪几千万起跳，加上分红，动不动上亿。",
+   "created_at": "2026-10-13T10:07:34.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109949155544342889",
+   "metrics": {
+    "likes": 68,
+    "reposts": 5,
+    "replies": 68,
+    "quotes": 1,
+    "bookmarks": 10,
+    "views": 25360
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUgLktcawAAI_My.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109878883369795961",
+   "text": "老听人骂华为，以前没啥感觉，这次刹车事件后公布的结果踩取慢慢踩的方式来说明不会断，真的是有点震惊到我……\n\n油换电是趋势，电车的话当前最安全可能还是特斯拉？",
+   "created_at": "2026-10-13T05:28:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109878883369795961",
+   "metrics": {
+    "likes": 94,
+    "reposts": 0,
+    "replies": 71,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 33151
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109806885700554899",
+   "text": "1、这轮一定要大赚一笔；\n2、少赚点也行；\n3、能回本就行；\n4、少亏点就行；\n5、他妈的亏完算了。",
+   "created_at": "2026-10-13T00:42:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109806885700554899",
+   "metrics": {
+    "likes": 161,
+    "reposts": 7,
+    "replies": 69,
+    "quotes": 9,
+    "bookmarks": 5,
+    "views": 33671
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109790501545423290",
+   "text": "早上起来，急忙打开行情，看看涨了没有。\n\n如果涨了，我打算早餐煮面加个蛋。\n刚刚看完，现在我不吃面了，省着点花吧。\n\n果然是吵架就能跌呢。",
+   "created_at": "2026-10-12T23:37:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109790501545423290",
+   "metrics": {
+    "likes": 51,
+    "reposts": 0,
+    "replies": 28,
+    "quotes": 1,
+    "bookmarks": 0,
+    "views": 16700
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109593457459429551",
+   "text": "群友金句：\n\nSTAR从来没有骂过一次她，每次攻击的都是他，这说明，他还爱着她。\n\n可惜，她每次都会狠狠骂他。",
+   "created_at": "2026-10-12T10:34:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109593457459429551",
+   "metrics": {
+    "likes": 289,
+    "reposts": 5,
+    "replies": 78,
+    "quotes": 3,
+    "bookmarks": 28,
+    "views": 199952
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109562031984832809",
+   "text": "有没有厉害的游戏制作人？\n同时喜欢武侠、仙侠小说和单机PC游戏\n正好又想创业做点有趣东西的，请发邮件\nbtcdayu@gmail.com",
+   "created_at": "2026-10-12T08:29:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109562031984832809",
+   "metrics": {
+    "likes": 39,
+    "reposts": 1,
+    "replies": 24,
+    "quotes": 0,
+    "bookmarks": 2,
+    "views": 17732
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109525737334268219",
+   "text": "没有特别有意思的事情，就继续练字吧。",
+   "created_at": "2026-10-12T06:05:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109525737334268219",
+   "metrics": {
+    "likes": 77,
+    "reposts": 2,
+    "replies": 58,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 22199
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUaKeaybMAAB9u8.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2109473116070301804",
+   "text": "七条人生 bug，抓到 3 条就能飞跃。\n\n1、让 AI 参与人生决策。最聪明的大脑随叫随到\n\n2、多听播客。牛人十年踩的坑，一小时灌进你耳朵。\n\n3、往牛人堆里挤。模仿是最快的学习，但好人品优先，做个好人会更长远。\n\n4、和不把钱看得最重的人做朋友/恋人。把钱看得最重的，会给一切标价。\n\n5、公开写作。公开验证，打脸与迭代一起。\n\n6、主动开口。大多数机会死在没开口。\n\n7、睡够，练力量。精力是本金，其他是杠杆。\n\n你有意识做到了几条？",
+   "created_at": "2026-10-12T02:35:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109473116070301804",
+   "metrics": {
+    "likes": 422,
+    "reposts": 65,
+    "replies": 60,
+    "quotes": 8,
+    "bookmarks": 240,
+    "views": 54519
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2109465909375177145",
+   "text": "播客真是一个好东西！\n\n以前我总觉得听播客这件事情，比直接看文本效率更低。\n\n但发现通过耳朵去接收信息这件事情，也有着它独特的效率部分。\n\n尤其是参加播客的人，大多数都是经过了层层筛选之后的。总体来说，关注了高质量的播客，就关注了世界上最高质量的人群。\n\n这简直是巨大的 bug。",
+   "created_at": "2026-10-12T02:07:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2109465909375177145",
+   "metrics": {
+    "likes": 140,
+    "reposts": 4,
+    "replies": 59,
+    "quotes": 5,
+    "bookmarks": 30,
+    "views": 46814
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2108912421293392123",
+   "text": "双汇也是大牌子、老牌子",
+   "created_at": "2026-10-10T13:27:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2108912421293392123",
+   "metrics": {
+    "likes": 51,
+    "reposts": 3,
+    "replies": 46,
+    "quotes": 3,
+    "bookmarks": 5,
+    "views": 18179
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HURckS4bQAANJiJ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2108867942175875364",
+   "text": "刹车不是不踩，而是缓踩、慢踩、优踩，有节奏的踩，踩刹车也要具体情况具体踩，不是盲目踩，而是精准的踩、科学的踩、高效的踩，同时兼顾特殊情况灵活的踩!",
+   "created_at": "2026-10-10T10:31:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2108867942175875364",
+   "metrics": {
+    "likes": 59,
+    "reposts": 1,
+    "replies": 38,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 20169
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107998165530288217",
+   "text": "OpenAI 一夜之间又公布了 722 个数学难题的解法。\n\n我怎么感觉自己像个原始人，但隔壁的大部落里面，正在接受上帝的空投，直接空投了蒸汽机、发电机、战斗机、核弹、互联网。\n\n我还在这练习怎么扔长矛。",
+   "created_at": "2026-10-08T00:55:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107998165530288217",
+   "metrics": {
+    "likes": 177,
+    "reposts": 4,
+    "replies": 46,
+    "quotes": 3,
+    "bookmarks": 16,
+    "views": 41347
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107978750587781503",
+   "text": "电影里，他是蝙蝠侠，继承科技公司。\n现实中，他是本，创办科技公司，卖了40亿。",
+   "created_at": "2026-10-07T23:37:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107978750587781503",
+   "metrics": {
+    "likes": 55,
+    "reposts": 2,
+    "replies": 20,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 17956
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUELTtYaQAAz0RM.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107398557749657647",
+   "text": "他们的眼睛看不到光\n但他们的声音却像天籁",
+   "created_at": "2026-10-06T09:12:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107398557749657647",
+   "metrics": {
+    "likes": 75,
+    "reposts": 2,
+    "replies": 21,
+    "quotes": 1,
+    "bookmarks": 5,
+    "views": 26592
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2107398362098290688/img/op2LpYXND8LouTMi.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2107398362098290688/img/op2LpYXND8LouTMi.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107371600136040497",
+   "text": "眼睁睁看着朋友短短几个月变身薄肌猛男\n\n我决定，11月1号起\n本人或开始推进薄肌方案",
+   "created_at": "2026-10-06T07:25:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107371600136040497",
+   "metrics": {
+    "likes": 112,
+    "reposts": 3,
+    "replies": 58,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 38868
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107291891909939587",
+   "text": "金正恩现在每天起床，会先看一下BTC行情。",
+   "created_at": "2026-10-06T02:08:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107291891909939587",
+   "metrics": {
+    "likes": 29,
+    "reposts": 1,
+    "replies": 12,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 37764
+   },
+   "media": [
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HT6azopaYAA-On_.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HT6azopaYAA-On_.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107024939668947304",
+   "text": "3900美元的比特币，当时大家都不买的原因是：\n\n1、觉得还会跌到2000\n2、涨的时候再买不迟\n3、手上就能凑几十/几百万，买比特币能赚几个钱？\n4、币圈不会死了吧？",
+   "created_at": "2026-10-05T08:27:46.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107024939668947304",
+   "metrics": {
+    "likes": 92,
+    "reposts": 4,
+    "replies": 41,
+    "quotes": 2,
+    "bookmarks": 19,
+    "views": 59154
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107011932784067032",
+   "text": "eth一度上不了OK\nhype一度上不了币安\n\n上不了所，但又有明显收入的币是哪个？",
+   "created_at": "2026-10-05T07:36:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107011932784067032",
+   "metrics": {
+    "likes": 219,
+    "reposts": 5,
+    "replies": 231,
+    "quotes": 7,
+    "bookmarks": 30,
+    "views": 125241
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107011633931600345",
+   "text": "好厉害的校友。",
+   "created_at": "2026-10-05T07:34:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107011633931600345",
+   "metrics": {
+    "likes": 65,
+    "reposts": 0,
+    "replies": 30,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 52489
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT2b46DbsAAEtgb.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107000457264791940",
+   "text": "《大侠立志传》确实好！\n国产游戏的高山。",
+   "created_at": "2026-10-05T06:50:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2107000457264791940",
+   "metrics": {
+    "likes": 41,
+    "reposts": 0,
+    "replies": 38,
+    "quotes": 1,
+    "bookmarks": 11,
+    "views": 25666
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106980474749080052",
+   "text": "总是这样\n所有人都看好的时候，到头了。\n所有人都看空的时候，到底了。",
+   "created_at": "2026-10-05T05:31:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106980474749080052",
+   "metrics": {
+    "likes": 211,
+    "reposts": 18,
+    "replies": 62,
+    "quotes": 5,
+    "bookmarks": 27,
+    "views": 52431
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106952584280117746",
+   "text": "听说凡人动漫开始烂尾了？\n\n170多集之前是真厉害，很多改编比书好，非常显功力。\n\n后面的还没来得及看——不过书的下半部我也没法看下去，太多重复的打怪升级，审美很快疲劳。\n\n听说是换导演了，搞不好是原来的导演对后面的改编也觉得吃力了……",
+   "created_at": "2026-10-05T03:40:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106952584280117746",
+   "metrics": {
+    "likes": 60,
+    "reposts": 0,
+    "replies": 79,
+    "quotes": 2,
+    "bookmarks": 3,
+    "views": 39975
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106950576902975636",
+   "text": "可能是币圈最快达到300万用户的？\n期待到达1000万用户——这是币圈第一拉新神器。\n\n下波牛市仍然会是RH与FOMO的合力，靠币圈现在的老韭菜，P不来牛市。",
+   "created_at": "2026-10-05T03:32:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106950576902975636",
+   "metrics": {
+    "likes": 96,
+    "reposts": 1,
+    "replies": 27,
+    "quotes": 1,
+    "bookmarks": 8,
+    "views": 29309
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106934669203943660",
+   "text": "榜样的力量才是无穷。\n\n看书、听课、讲道理，都往往让人停在“知道但做不到”。\n\n但如果一个人有了好的榜样，与榜样对照，发现自身巨大的差距，羞愧无地，基本上就能立即改正。",
+   "created_at": "2026-10-05T02:29:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106934669203943660",
+   "metrics": {
+    "likes": 117,
+    "reposts": 3,
+    "replies": 28,
+    "quotes": 2,
+    "bookmarks": 13,
+    "views": 16685
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106683974370390330",
+   "text": "在币圈不能投任何项目的一级，因为你只会错过 0.01% 的赚钱机会，但是只要你出手，你就会踩中 99% 的大坑。\n\n可以只投二级。投二级的时候，也只投业务过硬的项目，即使价格高一点，也还是有逃跑的“安全边际”",
+   "created_at": "2026-10-04T09:52:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106683974370390330",
+   "metrics": {
+    "likes": 220,
+    "reposts": 7,
+    "replies": 64,
+    "quotes": 5,
+    "bookmarks": 20,
+    "views": 34900
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106214367666819244",
+   "text": "还好Eth不会关闭。",
+   "created_at": "2026-10-03T02:46:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106214367666819244",
+   "metrics": {
+    "likes": 105,
+    "reposts": 0,
+    "replies": 38,
+    "quotes": 1,
+    "bookmarks": 1,
+    "views": 34564
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106212738435559897",
+   "text": "很感动的视频。数年前，我发现一个早餐店特别好吃，然后我分享给一个女孩子，带她去吃。到了那里，我见她皱着眉头、十分失望，即使心大如我，也能察觉到。\n\n后续很快发现双方三观不和的地方太多，我在思考之后，突然想通，为什么我要纠结这些东西？于是，我在那天清晨，终止了约好的出行计划，对她说：我走了，拜。\n\n出门之后，我感觉心情特别好——发现错的，就立即改。",
+   "created_at": "2026-10-03T02:40:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106212738435559897",
+   "metrics": {
+    "likes": 113,
+    "reposts": 10,
+    "replies": 24,
+    "quotes": 1,
+    "bookmarks": 21,
+    "views": 47403
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106206632598508025",
+   "text": "我的FOMO实盘从15W美元起步，目前虽大盘不好，帐户仍然大涨——得益于此前将CARDS换成最大仓位。\n\n这一波牛回\n从PONS 10倍、牛来几倍\n到ZEC 800多上车，最高1600\n再到CARDS翻倍\n\n整体操作很少，但还是能体现一定的水平了。\n\n@grok 如果用金庸小说中一个角色的武功来形容我的交易风格，你会觉得像谁？",
+   "created_at": "2026-10-03T02:16:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106206632598508025",
+   "metrics": {
+    "likes": 164,
+    "reposts": 7,
+    "replies": 39,
+    "quotes": 2,
+    "bookmarks": 22,
+    "views": 88073
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106189008900640981",
+   "text": "cards怎么涨了？\n我还没买够呢\n\n 之前还只在 fomo 自己买了点，一直在等着跌，没有讲过",
+   "created_at": "2026-10-03T01:06:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106189008900640981",
+   "metrics": {
+    "likes": 50,
+    "reposts": 0,
+    "replies": 17,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 25754
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2106168758096257059",
+   "text": "铁顺变铁蛋了。",
+   "created_at": "2026-10-02T23:45:37.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2106168758096257059",
+   "metrics": {
+    "likes": 26,
+    "reposts": 0,
+    "replies": 14,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 15894
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105204612043272526",
+   "text": "",
+   "created_at": "2026-09-30T07:54:26.000Z",
+   "lang": null,
+   "url": "https://x.com/BTCdayu/status/2105204612043272526",
+   "metrics": {
+    "likes": 52,
+    "reposts": 2,
+    "replies": 24,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 29938
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTcwbz2a0AEOnj5.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2105202843821228108",
+   "text": "币圈的项目方了解越多，就会越是心寒……",
+   "created_at": "2026-09-30T07:47:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2105202843821228108",
+   "metrics": {
+    "likes": 117,
+    "reposts": 1,
+    "replies": 57,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 37866
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105164663029977210",
+   "text": "以前我觉得项目方怎么就不懂得好好赋能呢？\n\n后来我才知道，是我不懂。\n\n项目方一开始就知道要真正的赋能给谁……\n\n😭",
+   "created_at": "2026-09-30T05:15:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2105164663029977210",
+   "metrics": {
+    "likes": 80,
+    "reposts": 14,
+    "replies": 35,
+    "quotes": 2,
+    "bookmarks": 2,
+    "views": 28938
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105155017619722369",
+   "text": "ETH链是个好东西\nETH币好像一般。",
+   "created_at": "2026-09-30T04:37:22.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2105155017619722369",
+   "metrics": {
+    "likes": 74,
+    "reposts": 8,
+    "replies": 40,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 35955
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2105110074838618287",
+   "text": "币的走势和人性完全一致。\n\n涨的时候，总是涨了还涨，莫名其妙就是强，越强越多人看好，越看好越涨。\n\n跌的时候，总是跌了还跌，莫名其妙就是跌，越跌越多人看空，越看空越跌。\n\n直到涨得过头，跌得过头，冷静的人上场了。",
+   "created_at": "2026-09-30T01:38:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2105110074838618287",
+   "metrics": {
+    "likes": 157,
+    "reposts": 30,
+    "replies": 72,
+    "quotes": 5,
+    "bookmarks": 21,
+    "views": 27911
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2104815140185178319",
+   "text": "郭宇说：读书仍然重要，但过去那种苦学、名校再打高级打工人的路失效了。\n\n有一定道理——尤其是学的东西如果没用的话。\n\n学习仍然有用、名校仍然有用、高级打工人仍然牛B，只是竞争的方式可能会持续变化。",
+   "created_at": "2026-09-29T06:06:49.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2104815140185178319",
+   "metrics": {
+    "likes": 127,
+    "reposts": 11,
+    "replies": 45,
+    "quotes": 1,
+    "bookmarks": 17,
+    "views": 26357
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2104449627332427971",
+   "text": "币安给牛来和火星分红，其实是给MEME提供了一个底部支撑。\n\n手续费按市值1亿，平均每天交易量2000-3000万计算的话，年化5%左右收入——如果是牛市交易量会有更猛的正螺旋。\n\n作为一个牛初上线的独特MEME，脚下有了很强的支撑，这是币安最智慧的一步棋，会为BSC链上牛市火爆打下基础。",
+   "created_at": "2026-09-28T05:54:24.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2104449627332427971",
+   "metrics": {
+    "likes": 185,
+    "reposts": 20,
+    "replies": 70,
+    "quotes": 9,
+    "bookmarks": 27,
+    "views": 81402
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2104413321046962252",
+   "text": "AI 真的比我还懂我自己。\n\n大家尝试可以把自己喜欢的小说、电影或者是游戏，或者是任何其他的东西告诉 AI，然后让它结合你的喜好去推荐一些好物。你会发现 AI 的推荐非常非常牛逼！\n\n很多事你不知道，或者是知道但因为误解错过的。\n\n大家快去试一下，真的超级牛逼，它会拓展大大的乐趣。",
+   "created_at": "2026-09-28T03:30:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2104413321046962252",
+   "metrics": {
+    "likes": 63,
+    "reposts": 3,
+    "replies": 26,
+    "quotes": 1,
+    "bookmarks": 17,
+    "views": 18457
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2104402299871478237",
+   "text": "这个感觉是对的，但我细化一下理解。\n\n首先要保持很大的 ego 的原因是，这是团队方向的生命线，必须是掌舵的人想得清楚，而且领先于市场，领先于团队中任何一个人。\n\n其次，产品不能有自己的 ego，是因为产品终究是要给人用的，你的 ego 一定要建立在给谁用、为什么的基础之上，而不是自己的审美上。",
+   "created_at": "2026-09-28T02:46:20.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2104402299871478237",
+   "metrics": {
+    "likes": 38,
+    "reposts": 1,
+    "replies": 14,
+    "quotes": 4,
+    "bookmarks": 6,
+    "views": 24148
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2104167100944400467",
+   "text": "配得感，很火的一个词，但被滥用到让人反感。\n\n一开始，意味着“我有资格追求好的生活”。健康而有能量。\n\n再后来，变成了“我付出了，所以我要得到我想要的”，微微有点自我了。\n\n而现在，被提倡为“因为我是我，所以世界应该给我更好的。”\n\n可能我习惯了100分的努力，只为了1%的回报的苦日子。",
+   "created_at": "2026-09-27T11:11:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2104167100944400467",
+   "metrics": {
+    "likes": 103,
+    "reposts": 4,
+    "replies": 51,
+    "quotes": 5,
+    "bookmarks": 12,
+    "views": 30071
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103827958804959536",
+   "text": "本轮BTC的高度是多少？\n\n我的直觉是30万左右。\n\n我有很多逻辑，不过好像也懒得展开了，需要实践中去检验。\n\n应该是明年年底或后年上半年。\n\n#投资备忘",
+   "created_at": "2026-09-26T12:44:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103827958804959536",
+   "metrics": {
+    "likes": 398,
+    "reposts": 24,
+    "replies": 167,
+    "quotes": 16,
+    "bookmarks": 67,
+    "views": 96033
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103821515619725808",
+   "text": "确实，我看见一些人结婚之后说要把所有的钱都要上交， 老公过得特别卑微，我觉得这个真的不对。\n\n确实，我有听说什么要把钱抓在自己手上，两夫妻一旦分了彼此，其实就已经是一个双输的局面了。",
+   "created_at": "2026-09-26T12:18:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103821515619725808",
+   "metrics": {
+    "likes": 88,
+    "reposts": 3,
+    "replies": 27,
+    "quotes": 1,
+    "bookmarks": 14,
+    "views": 45867
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103821202481651948",
+   "text": "最近刷了不少乒乓球相关的内容。\n\n成了张继科和樊振东的粉丝。\n\n张继科确实是帅，樊振东也很强，两个人都长得很好看的，而且非常霸气，尤其是樊振东可可爱爱的长相，在面临 2:0 落后的情况下，眼神中透露出来的那种杀气，最后翻盘，特别特别热血。\n\n男人的魅力就是狠一点，对自己狠一点。",
+   "created_at": "2026-09-26T12:17:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103821202481651948",
+   "metrics": {
+    "likes": 69,
+    "reposts": 2,
+    "replies": 35,
+    "quotes": 2,
+    "bookmarks": 4,
+    "views": 33535
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTJGOohacAA9V63.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103794444134932607",
+   "text": "绣春刀 3 来了\n\n等了十年了！",
+   "created_at": "2026-09-26T10:30:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103794444134932607",
+   "metrics": {
+    "likes": 84,
+    "reposts": 4,
+    "replies": 35,
+    "quotes": 3,
+    "bookmarks": 2,
+    "views": 45736
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HTIt0AHbwAAMIPZ.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103791578833977692",
+   "text": "我觉得最帅最有味道的演员，张震。\n\n如果我拍仙侠，最想要的主角是他，但是他也 49 岁了，看来我是没机会了...",
+   "created_at": "2026-09-26T10:19:33.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103791578833977692",
+   "metrics": {
+    "likes": 58,
+    "reposts": 3,
+    "replies": 30,
+    "quotes": 2,
+    "bookmarks": 1,
+    "views": 23108
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2103791515248300032/img/zvaSzkDtxx1rj6Kc.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2103791515248300032/img/zvaSzkDtxx1rj6Kc.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2103687136562344081",
+   "text": "抽奖是回馈给FOMO真实粉丝，在人工复核后，仍有２个名额，请GROK重新抽奖公示在此\n\n@niuniuzhuan\n@BTCYSJ\n\n我会私聊查验FOMO注册和交易情况后发出。\n\n后续还会有更多抽奖和福利给到大家，省手续费注册码和实盘均为BTCdayu，点此注册\nhttps://fomo.family/r/BTCdayu\n\n抽奖详情\nhttps://x.com/i/grok/share/e765cc498042427284ad13f3f536c726",
+   "created_at": "2026-09-26T03:24:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103687136562344081",
+   "metrics": {
+    "likes": 51,
+    "reposts": 1,
+    "replies": 59,
+    "quotes": 2,
+    "bookmarks": 0,
+    "views": 22310
+   },
+   "media": [],
+   "urls": [
+    "https://fomo.family/r/BTCdayu",
+    "https://x.com/i/grok/share/e765cc498042427284ad13f3f536c726"
+   ]
+  },
+  {
+   "id": "2103676667675947067",
+   "text": "刘欢老师去世了，享年 63 岁。🕯️",
+   "created_at": "2026-09-26T02:42:56.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103676667675947067",
+   "metrics": {
+    "likes": 59,
+    "reposts": 1,
+    "replies": 44,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 24638
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103672735444730264",
+   "text": "比如要买A股科创板，宇树之类\n\n有哪个链上平台是可以直接买到真股票的吗？不要ETF之类有管理费的，长持有点麻烦。\n\n好像全是合约之类，没法长期持有。",
+   "created_at": "2026-09-26T02:27:19.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103672735444730264",
+   "metrics": {
+    "likes": 48,
+    "reposts": 1,
+    "replies": 28,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 30433
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103668529493065951",
+   "text": "HYPE 上币安现货后，几个变化：\n\n1、潜在的定价权正在去到币安，当前订单深度远大于>hype主站\n\n2、上了币安后，流动性增加，原来链上不方便交易带来的溢价解除。\n\n3、流动性更活跃后，大资金有更多方式和手段隐蔽售出。\n\n4、从信仰资产回归到理性计算——顶级信仰者会畅想5年后，但大多数人不会。",
+   "created_at": "2026-09-26T02:10:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103668529493065951",
+   "metrics": {
+    "likes": 130,
+    "reposts": 8,
+    "replies": 32,
+    "quotes": 2,
+    "bookmarks": 19,
+    "views": 42573
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103458918181818810",
+   "text": "AI短剧用一个个夸张又无脑的爆点，不断制造廉价的刺激，真有点新时代的鸦片烟的感觉了。",
+   "created_at": "2026-09-25T12:17:41.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103458918181818810",
+   "metrics": {
+    "likes": 47,
+    "reposts": 1,
+    "replies": 22,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 23819
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103449119260045707",
+   "text": "不晚，即使现在用我的链接注册FOMO并交易\n后续我继续抽和送其他福利。\n\nhttps://fomo.family/r/BTCdayu",
+   "created_at": "2026-09-25T11:38:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103449119260045707",
+   "metrics": {
+    "likes": 37,
+    "reposts": 1,
+    "replies": 15,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 18135
+   },
+   "media": [],
+   "urls": [
+    "https://fomo.family/r/BTCdayu"
+   ]
+  },
+  {
+   "id": "2103448543486992483",
+   "text": "https://x.com/i/grok/share/a55705fe3a61440bbf318560e5e138bc\n\n@grok 真是一个智障，说了别抽机器人，还是让我给机器人撸了一把，有点烦——打钱太快，其中一个已经打钱了，怪自己手太快了。而且对方提出2100U，我按苹果中国的价格打的2706U（虽然我规则中没写按哪个国家的汇率，但我用我自己默认的）。\n\n重新让GROK这个智障抽了一下，我额外多给一台，目前一共三位，分别是：\n\n@XuanGuiKeJi\n@sereinworld\n@BroccoliYn_\n\n因为本身是给粉丝的福利加互相支持，所以三位请私信我，我需要核验FOMO注册与交易情况，我要把福利给到真的用我的码注册而且交易过的（规则没写），合理的规则。\n\n如果有不符合要求的，会继续让智障GROK在评论区抽取。",
+   "created_at": "2026-09-25T11:36:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103448543486992483",
+   "metrics": {
+    "likes": 71,
+    "reposts": 3,
+    "replies": 58,
+    "quotes": 3,
+    "bookmarks": 4,
+    "views": 26561
+   },
+   "media": [],
+   "urls": [
+    "https://x.com/i/grok/share/a55705fe3a61440bbf318560e5e138bc"
+   ]
+  },
+  {
+   "id": "2103431067147665881",
+   "text": "https://x.com/i/grok/share/7df310acc798461dad4c5977f2ec52aa\n\n中奖已经出了，之后这三位小伙伴，到时候我私信你。如果我私信太多，没有被看到的话，发邮件到我邮箱 btcdayu@gmail.com\n\n请放心，100% 发放，可以是手机或者是等值的 U，千万不要因为我没看到信息或者没有及时回复，觉得我不会发之类。\n\n恭喜中奖者！",
+   "created_at": "2026-09-25T10:27:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103431067147665881",
+   "metrics": {
+    "likes": 75,
+    "reposts": 2,
+    "replies": 60,
+    "quotes": 1,
+    "bookmarks": 0,
+    "views": 58709
+   },
+   "media": [],
+   "urls": [
+    "https://x.com/i/grok/share/7df310acc798461dad4c5977f2ec52aa"
+   ]
+  },
+  {
+   "id": "2103337835243995615",
+   "text": "所以金将军看起来有两不动？\n\nCoinbase不能动，因为特朗普会生气。\nOKX不能动，因为北京也会生气？",
+   "created_at": "2026-09-25T04:16:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103337835243995615",
+   "metrics": {
+    "likes": 488,
+    "reposts": 13,
+    "replies": 164,
+    "quotes": 9,
+    "bookmarks": 49,
+    "views": 215151
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103304220548149261",
+   "text": "在交易所放币，币安最放心\n但是现在金将军这么厉害，我不禁有点担心\n\n我是说万一呢，那简直就是比微策略爆雷还要灾难\n\n但是币安已经是最好的选择了，希望币安持续加强安全，防住金将军，我其实很多时候放币安比我自己放钱包还安心……",
+   "created_at": "2026-09-25T02:02:58.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103304220548149261",
+   "metrics": {
+    "likes": 305,
+    "reposts": 8,
+    "replies": 110,
+    "quotes": 9,
+    "bookmarks": 29,
+    "views": 133512
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103046796268458095",
+   "text": "以前我看到很多人重仓一些我不理解的币暴富了\n很是羡慕，不明白为什么他们就能这么早看懂\n\n后来释怀了\n其实还是运气很重要\n\n多做好事，积累福报吧，甚至比努力还重要。",
+   "created_at": "2026-09-24T09:00:03.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103046796268458095",
+   "metrics": {
+    "likes": 296,
+    "reposts": 13,
+    "replies": 115,
+    "quotes": 5,
+    "bookmarks": 18,
+    "views": 36701
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103046495914360940",
+   "text": "给你一项超能力，只能选一项，你选哪一样？",
+   "created_at": "2026-09-24T08:58:51.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103046495914360940",
+   "metrics": {
+    "likes": 35,
+    "reposts": 2,
+    "replies": 74,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 30354
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2103030056264278178",
+   "text": "现在涨得最猛的币，全是没上币安的\n\n本质是因为现在大家都只炒有收入、有回购、有销毁的优质币+MEME币了。",
+   "created_at": "2026-09-24T07:53:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2103030056264278178",
+   "metrics": {
+    "likes": 447,
+    "reposts": 57,
+    "replies": 182,
+    "quotes": 34,
+    "bookmarks": 71,
+    "views": 125373
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102931063765143889",
+   "text": "用了FOMO，你就再也回不到不用FOMO的日子了。\n\nhttps://fomo.family/profile/BTCdayu",
+   "created_at": "2026-09-24T01:20:10.000Z",
+   "lang": "ja",
+   "url": "https://x.com/BTCdayu/status/2102931063765143889",
+   "metrics": {
+    "likes": 63,
+    "reposts": 2,
+    "replies": 44,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 18768
+   },
+   "media": [],
+   "urls": [
+    "https://fomo.family/profile/BTCdayu"
+   ]
+  },
+  {
+   "id": "2102751031633592781",
+   "text": "2018 年 ，大疆旗下基金和宇树签协议，1012万买17%的股权。手续办了，钱还没来得及的时候，大疆内部搞反腐，投资部门负责人被卷进去。\n\n19年，投资部门所投项目全部取消，宇树这笔钱也没有收到。\n\n按开盘价，这笔1000万的退资，价值250亿。",
+   "created_at": "2026-09-23T13:24:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102751031633592781",
+   "metrics": {
+    "likes": 257,
+    "reposts": 14,
+    "replies": 63,
+    "quotes": 0,
+    "bookmarks": 35,
+    "views": 139023
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102685244881342554",
+   "text": "CRCL与币安的合作中有一条值得特别注意：\n\n协议是按\"Circle 钱包基础设施中的 USDC 余额\"计费，那这样产生的收入就不用和Coinbase分了。",
+   "created_at": "2026-09-23T09:03:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102685244881342554",
+   "metrics": {
+    "likes": 96,
+    "reposts": 5,
+    "replies": 94,
+    "quotes": 3,
+    "bookmarks": 13,
+    "views": 55906
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102683569479193023",
+   "text": "对CIRCLE来说，最重要的是规模，绝不是利润分成比例。\n\n千万不要觉得各种合作赚10%是少了——VISA和MASTER能一统江湖，就是因为他们只赚10%，90%分给关联方。\n\n最好的生意模式是少赚而不是多赚。",
+   "created_at": "2026-09-23T08:56:43.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102683569479193023",
+   "metrics": {
+    "likes": 171,
+    "reposts": 14,
+    "replies": 61,
+    "quotes": 1,
+    "bookmarks": 15,
+    "views": 26771
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102683188154011746",
+   "text": "红果短剧日活跃用户达到1.68亿，同比去年增长了107%。\n\n超过腾讯视频、爱奇艺、优酷、芒果TV四大传统长视频平台日活总和（约1.55亿）。\n\n字节跳动正在改变人类的大脑结构，影响着人类文明的进化——人类因为短视频正在走向未知的支线。",
+   "created_at": "2026-09-23T08:55:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102683188154011746",
+   "metrics": {
+    "likes": 58,
+    "reposts": 3,
+    "replies": 48,
+    "quotes": 1,
+    "bookmarks": 7,
+    "views": 20119
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HS47HypaoAESf6l.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2102675092308422968",
+   "text": "财新长篇报道HYPE",
+   "created_at": "2026-09-23T08:23:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102675092308422968",
+   "metrics": {
+    "likes": 68,
+    "reposts": 3,
+    "replies": 47,
+    "quotes": 0,
+    "bookmarks": 14,
+    "views": 30017
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HS4z0vpawAACE-t.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2102664769237033440",
+   "text": "一些历史偶然看到，都会觉得心中发闷，今天的太平日子其实在几千年的文明史上，是难得的平静期。\n\n古人讲的人在乱世、命如草芥，今天只有读历史上才会有一些感触。\n\n……",
+   "created_at": "2026-09-23T07:42:01.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102664769237033440",
+   "metrics": {
+    "likes": 104,
+    "reposts": 5,
+    "replies": 55,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 23286
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102618737811902769",
+   "text": "人生就像是一场大型的游戏，最大的乐趣在于，通过努力刷级打怪，不断升级。",
+   "created_at": "2026-09-23T04:39:06.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102618737811902769",
+   "metrics": {
+    "likes": 68,
+    "reposts": 4,
+    "replies": 30,
+    "quotes": 1,
+    "bookmarks": 15,
+    "views": 30580
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102612606871888017",
+   "text": "ZEC上面还在打NFT \n说明是年纪比较大的老庄 \n离开币圈有一些年头了  \n\n不过老庄好\n有钱、乱拉",
+   "created_at": "2026-09-23T04:14:44.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102612606871888017",
+   "metrics": {
+    "likes": 115,
+    "reposts": 3,
+    "replies": 25,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 44281
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102606472454779233",
+   "text": "许家印先生看了Circle  和 币安的合作后，非常高兴，称赞道：买买买、合合合、圈圈圈、大大大、好好好！\n\n买买买：买下核心技术与资产。\n合合合：与最强合规稳定币合作。\n圈圈圈：构建顶级合规朋友圈。\n大大大：追求更大规模和发展。\n好好好：打造更多链上好产品。",
+   "created_at": "2026-09-23T03:50:22.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102606472454779233",
+   "metrics": {
+    "likes": 59,
+    "reposts": 6,
+    "replies": 57,
+    "quotes": 1,
+    "bookmarks": 10,
+    "views": 54948
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102557575078392230",
+   "text": "UNI 此前没有这条SEC的政策，我是不会买的，因为几十亿谈不上便宜了。\n\n但是SEC新政策下，竟然直接指定AMM作为主要方式，那未来5年美股上链，UNI就是最重要的基建\n\n一切完全变了\n\n早上还有人拿着之前我说要买PONS不要买UNI的图来回复，这是很SB的——且不说PONS涨了10多倍，竟不知道动态观察与变化。\n\n直接拉黑——他不知道他会错过多少。\n\n我从不在意，只是拉黑。",
+   "created_at": "2026-09-23T00:36:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102557575078392230",
+   "metrics": {
+    "likes": 219,
+    "reposts": 23,
+    "replies": 66,
+    "quotes": 3,
+    "bookmarks": 62,
+    "views": 85909
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102554855021961297",
+   "text": "牛来，是币圈第一个与牛市呼应的MEME\n牛来，也是BSC和币安上第一个非舔狗系中文币\n牛来，也是币安第一个非双圣系现货\n\n牛来，就是本轮的PEPE——只是，这一次中文币说了算\n\n大盘动荡，始终保持了坚挺，这会是一次社区钻石手的胜利。\n\n选MEME，也要看MEME的内在估值",
+   "created_at": "2026-09-23T00:25:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102554855021961297",
+   "metrics": {
+    "likes": 164,
+    "reposts": 19,
+    "replies": 58,
+    "quotes": 12,
+    "bookmarks": 13,
+    "views": 52217
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102548281004036474",
+   "text": "UNI、ZEC 、PONS 都在涨了。\n\nUNI 会破历史前高\nZEC 我觉得会比ETH先破5000\nPONS 不用多说，看好RH链，看好赌台，看好 @MEADGod\n\n记得参加我这个抽奖，还有2天就开奖了，IPHONE 折叠屏。",
+   "created_at": "2026-09-22T23:59:08.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102548281004036474",
+   "metrics": {
+    "likes": 118,
+    "reposts": 9,
+    "replies": 42,
+    "quotes": 2,
+    "bookmarks": 22,
+    "views": 43759
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102537651941433507",
+   "text": "交易与生活是一体的。\n\n在生活中修心，保持情绪稳定、视野积极，做到与人为善、尊重差异，神完而气足。\n\n在交易中，也相对能避免躁狂，能保持在“微微兴奋但可控”的最佳竞技状态。\n\n这是我平衡价值投资与情绪投机的经验——普遍的观点是没人能保持平衡，但我好像很享受这种状态。",
+   "created_at": "2026-09-22T23:16:54.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102537651941433507",
+   "metrics": {
+    "likes": 151,
+    "reposts": 8,
+    "replies": 41,
+    "quotes": 1,
+    "bookmarks": 23,
+    "views": 17322
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102357805315523030",
+   "text": "币安投资Circle，均价80.84美元购买 1亿美元股票，锁仓2年。\n\n双方达成深度合作：\n\n1、合作为期5个，通过 Circle 的模块推广 USDC\n2、Circle 向币安提供月度激励\n3、安将在其平台上推广 USDC\n\nSEC原链接在此：\nhttps://www.sec.gov/Archives/edgar/data/1876042/000187604226000276/crcl-20260917.htm",
+   "created_at": "2026-09-22T11:22:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102357805315523030",
+   "metrics": {
+    "likes": 178,
+    "reposts": 20,
+    "replies": 45,
+    "quotes": 8,
+    "bookmarks": 40,
+    "views": 95692
+   },
+   "media": [],
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000276/crcl-20260917.htm"
+   ]
+  },
+  {
+   "id": "2102356270703657378",
+   "text": "今天在KFC给客户取餐的时候，听见几个人正在聊币，他们说了几件事，吓得我餐盒都给掉在了地上：\n\n一位说：比特币这一波30万只是开始\n一位说：HYPE看到1000\n一位说：ZEC起码一万\n一位说：ETH这波3万不是梦\n\n我听到之后，感觉浑身都是力量——这种话听了让人高兴，不像上个月听到，有人说等BTC到4万梭。",
+   "created_at": "2026-09-22T11:16:09.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102356270703657378",
+   "metrics": {
+    "likes": 260,
+    "reposts": 9,
+    "replies": 91,
+    "quotes": 3,
+    "bookmarks": 12,
+    "views": 77983
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102355624554320109",
+   "text": "币安投资了CIRCLE 1亿美元。\n\n其实看到这条信息很欣慰，币安在我心中其实是有特殊地位的，但是我一直以来感觉非常不开心的是，为什么总是不停地搞仿盘，而不是像腾讯一样一切有利于币圈变大的项目都去投资，用资源把整个圈子做大\n\n算了，大人物的世界，小人物不会懂，但投资CIRCLE算是一小步。",
+   "created_at": "2026-09-22T11:13:35.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102355624554320109",
+   "metrics": {
+    "likes": 132,
+    "reposts": 7,
+    "replies": 41,
+    "quotes": 4,
+    "bookmarks": 8,
+    "views": 40848
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102323288102117682",
+   "text": "今日好文精选\n\nV神：ETH将升级成又快又便宜\nBTC这波拉盘是爆合约\n徐明星：拿比特币收益最好\n\nZEC的机会来了\nENA、PENDLE、TRUEO\n\n具身新贵与投资女王徐新\n\nhttps://t.me/BTCdayu2/1732",
+   "created_at": "2026-09-22T09:05:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102323288102117682",
+   "metrics": {
+    "likes": 67,
+    "reposts": 4,
+    "replies": 26,
+    "quotes": 0,
+    "bookmarks": 9,
+    "views": 39788
+   },
+   "media": [],
+   "urls": [
+    "https://t.me/BTCdayu2/1732"
+   ]
+  },
+  {
+   "id": "2102316177414606864",
+   "text": "$ETH 和 $ZEC 谁会先到5000？",
+   "created_at": "2026-09-22T08:36:50.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102316177414606864",
+   "metrics": {
+    "likes": 30,
+    "reposts": 3,
+    "replies": 37,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 21090
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102289046647300310",
+   "text": "A16Z投资的近200个项目中，出现了大面积的项目停止运营。而没有VC的Hype市值逼近1000亿。(《深潮》)\n\nHYPE 没有营销预算，但最厉害的KOL因为持币而自来水——往往不是商务合作能请到的。\n\n好产品、好收入、好模式、好团队，之后咱们应该多聚焦这种项目，而不是谁投资了、谁转发了、谁关注了。",
+   "created_at": "2026-09-22T06:49:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102289046647300310",
+   "metrics": {
+    "likes": 188,
+    "reposts": 24,
+    "replies": 86,
+    "quotes": 8,
+    "bookmarks": 41,
+    "views": 41005
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSzUOQ0bgAAR1KD.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2102198505184051665",
+   "text": "有人问我踏空怎么办。\n我也不知道怎么给建议。",
+   "created_at": "2026-09-22T00:49:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102198505184051665",
+   "metrics": {
+    "likes": 84,
+    "reposts": 3,
+    "replies": 61,
+    "quotes": 3,
+    "bookmarks": 1,
+    "views": 38838
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2102011135843323948",
+   "text": "特朗普非常想要美股上涨。\n\n那么我建议谁去教特朗普一句中国话：牛来。",
+   "created_at": "2026-09-21T12:24:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2102011135843323948",
+   "metrics": {
+    "likes": 67,
+    "reposts": 9,
+    "replies": 17,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 59676
+   },
+   "media": [
+    {
+     "type": "animated_gif",
+     "url": "https://pbs.twimg.com/tweet_video_thumb/HSvX-bXb0AEh0tb.jpg",
+     "preview_image_url": "https://pbs.twimg.com/tweet_video_thumb/HSvX-bXb0AEh0tb.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101981687512993866",
+   "text": "牛市已至，我从今开始守望，至熊方休。\n\n我将不恐慌、不卖币、不出金。\n我将不搞波段，不争短利。\n我将尽忠职守，盈亏都在。\n\n我是黑暗中的利剑，牛市中的守卫\n我是抗击熊市的烈焰，破晓时分的光线，唤醒多军的号角，守护牛来的坚盾。\n\n我将仓位与荣耀献给钻石手，今夜如此，夜夜皆然。",
+   "created_at": "2026-09-21T10:27:41.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101981687512993866",
+   "metrics": {
+    "likes": 289,
+    "reposts": 29,
+    "replies": 67,
+    "quotes": 9,
+    "bookmarks": 17,
+    "views": 45523
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSu9MTsbEAAuDts.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101969609230598635",
+   "text": "牛来了\n\n别再沉默了，HIGH起来",
+   "created_at": "2026-09-21T09:39:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101969609230598635",
+   "metrics": {
+    "likes": 98,
+    "reposts": 4,
+    "replies": 40,
+    "quotes": 0,
+    "bookmarks": 5,
+    "views": 31868
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101954364588142982",
+   "text": "牛来！",
+   "created_at": "2026-09-21T08:39:07.000Z",
+   "lang": "ja",
+   "url": "https://x.com/BTCdayu/status/2101954364588142982",
+   "metrics": {
+    "likes": 169,
+    "reposts": 9,
+    "replies": 58,
+    "quotes": 4,
+    "bookmarks": 2,
+    "views": 24766
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101851223557288243",
+   "text": "抽三台ihpone DUO \n\n1：评论区发表行情或持仓观点，言之有物，夸我亦可  \n\n2：用码BTCdayu注册FOMO并关注我实盘  \n\nFOMO 是增长最快交易所，Robinhood 投资，融资1亿估值5.5亿，合规安全，一键秒买任意资产。  \n\nhttps://fomo.family/r/BTCdayu [省手续费]  \n\n抽奖由GROK执行，细则见评论区，请点赞转发",
+   "created_at": "2026-09-21T01:49:16.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101851223557288243",
+   "metrics": {
+    "likes": 678,
+    "reposts": 333,
+    "replies": 1034,
+    "quotes": 35,
+    "bookmarks": 104,
+    "views": 201889
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HStGizGbcAAic9v.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://fomo.family/r/BTCdayu"
+   ]
+  },
+  {
+   "id": "2101826018604683587",
+   "text": "香港元郎站一位27岁女子被野狗袭击身亡，致哀。\n\n给大家几条野狗攻击保命技巧：\n\n1、绝不要背对狗狂奔，会激发凶性、穷追不舍\n2、站立面对狗，呈战斗姿势，凶一点——狗最会观察人，你一害怕对方就凶，甚至单独的狗，只要做捡石头的动作狗就会害怕。\n3、用任何工具护身前，自行车、雨伞等，用于推开及保持距离，缓步后退并呼救\n4、同时观察是否有棍类物品，以备最终使用\n5、如无法阻隔，此时一定要拿出拼死一搏的勇气，化身恐怖直立猿猴，猛击狗的头部——身体效果较差。\n只要猛击打中头部，狗群大多会恐惧四散。\n\n多年前去亲戚家，那边在深山，家家户户都四五条狗，被狗咬事件经常发生，姨父教我这招，后遇到数十条狗狂奔而来，奋力猛击加上村民闻声出援，得以平安——在最需要勇气的时候千万不要胆怯，很危险。",
+   "created_at": "2026-09-21T00:09:07.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101826018604683587",
+   "metrics": {
+    "likes": 114,
+    "reposts": 11,
+    "replies": 54,
+    "quotes": 9,
+    "bookmarks": 32,
+    "views": 45971
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSstLL5bcAAXxk-.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101791332675277075",
+   "text": "王短鸟用相素定投和长期持有为币圈投资做了一个顶级示范 。",
+   "created_at": "2026-09-20T21:51:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101791332675277075",
+   "metrics": {
+    "likes": 78,
+    "reposts": 3,
+    "replies": 25,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 51195
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101646978182742042",
+   "text": "路边摊、夜宵摊上经常会有那种小推车，上面摆满了各种卤制的、各种吃的肉类。\n\n大热的天，它也没什么保鲜措施，怎么就不会变臭变味呢？\n\n虽然不知道答案，但也知道最好别吃。",
+   "created_at": "2026-09-20T12:17:40.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101646978182742042",
+   "metrics": {
+    "likes": 149,
+    "reposts": 4,
+    "replies": 65,
+    "quotes": 1,
+    "bookmarks": 17,
+    "views": 124906
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101608603446837686",
+   "text": "如果你现在身处低谷，你可以把这个视频看 30 遍。\n\n你一定会把握住到自己的机会。\n\n相信你自己，就在这轮牛市。",
+   "created_at": "2026-09-20T09:45:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101608603446837686",
+   "metrics": {
+    "likes": 193,
+    "reposts": 33,
+    "replies": 93,
+    "quotes": 6,
+    "bookmarks": 98,
+    "views": 35024
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2101608576565526528/img/BHdCiAh4hWdpygwJ.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2101608576565526528/img/BHdCiAh4hWdpygwJ.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101607177052115236",
+   "text": "现在这个时间点还去买没有回购的空气币，甚至自己脑补一个宏大叙事，这很可能是非常没有骨气加上脑子不太好的行为。",
+   "created_at": "2026-09-20T09:39:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101607177052115236",
+   "metrics": {
+    "likes": 103,
+    "reposts": 3,
+    "replies": 48,
+    "quotes": 0,
+    "bookmarks": 7,
+    "views": 36896
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101602312418709871",
+   "text": "最近有一个体会，万物皆可估值。\n\n但最珍贵的东西，都是不能估值、不愿估值、不需估值的。\n\n所以，可估值的东西，态度要放轻松，有或无，多或少，放轻松。\n\n对于无法估值的，则好好珍惜，越多越好。",
+   "created_at": "2026-09-20T09:20:11.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101602312418709871",
+   "metrics": {
+    "likes": 99,
+    "reposts": 6,
+    "replies": 30,
+    "quotes": 0,
+    "bookmarks": 11,
+    "views": 17662
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101601024507297803",
+   "text": "BP折腾这么久，搞个FOMO一样的前端早就牛起来了\n都是不懂C端惹的祸",
+   "created_at": "2026-09-20T09:15:04.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101601024507297803",
+   "metrics": {
+    "likes": 72,
+    "reposts": 2,
+    "replies": 36,
+    "quotes": 1,
+    "bookmarks": 5,
+    "views": 36406
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101560388135616719",
+   "text": "我应该是很久很久很久就已经放弃在 BSC 链上赚钱，那里是一块投研失效的荒芜之地。",
+   "created_at": "2026-09-20T06:33:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101560388135616719",
+   "metrics": {
+    "likes": 231,
+    "reposts": 9,
+    "replies": 117,
+    "quotes": 17,
+    "bookmarks": 7,
+    "views": 129188
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101557353250484547",
+   "text": "73 岁的李鸿章脚踩朝天靴踏上纽约的土地，本想让美国人看看上国天朝之威仪，结果在摩天大楼间感受到 7 分震撼、2 分屈辱、1 分羞愧。\n\n那时的中国，不是抄不了作业，而是内部出了问题：鸦片战争、太平天国、捻军战争、西北和西南的大规模战乱，再到英法联军攻入，打了 20 年。\n\n再搞洋务运动来不及了。",
+   "created_at": "2026-09-20T06:21:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101557353250484547",
+   "metrics": {
+    "likes": 51,
+    "reposts": 4,
+    "replies": 103,
+    "quotes": 1,
+    "bookmarks": 6,
+    "views": 30593
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSo7RdvaYAAQtzo.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101543723750265056",
+   "text": "我发现推上的人还是太紧张了。\n坚定看多大牛市，幽默一下而已。",
+   "created_at": "2026-09-20T05:27:23.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101543723750265056",
+   "metrics": {
+    "likes": 67,
+    "reposts": 3,
+    "replies": 35,
+    "quotes": 1,
+    "bookmarks": 2,
+    "views": 39974
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101534616775520651",
+   "text": "惨了",
+   "created_at": "2026-09-20T04:51:11.000Z",
+   "lang": "ja",
+   "url": "https://x.com/BTCdayu/status/2101534616775520651",
+   "metrics": {
+    "likes": 17,
+    "reposts": 2,
+    "replies": 11,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 25327
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101488872882676062",
+   "text": "记者：你为什么不封禁TIKTOK？\n川普：因为我要用啊。",
+   "created_at": "2026-09-20T01:49:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101488872882676062",
+   "metrics": {
+    "likes": 177,
+    "reposts": 11,
+    "replies": 112,
+    "quotes": 1,
+    "bookmarks": 55,
+    "views": 99253
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2101488786018639872/img/u9sTwdxoFD53PaJ4.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2101488786018639872/img/u9sTwdxoFD53PaJ4.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101482830505324638",
+   "text": "看起来，马上就要进入\n\n现在不是要不要割的问题\n而是割多少的问题\n\n......",
+   "created_at": "2026-09-20T01:25:25.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101482830505324638",
+   "metrics": {
+    "likes": 103,
+    "reposts": 6,
+    "replies": 84,
+    "quotes": 6,
+    "bookmarks": 5,
+    "views": 169141
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101465199232553025",
+   "text": "一年前的预测，大多数预测都过于乐观了\n没几个对的\n\n不知道一年后又是怎样的天地",
+   "created_at": "2026-09-20T00:15:21.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101465199232553025",
+   "metrics": {
+    "likes": 86,
+    "reposts": 4,
+    "replies": 42,
+    "quotes": 4,
+    "bookmarks": 8,
+    "views": 73357
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101304703271481378",
+   "text": "一年多过去，当时币安买20%的HYPE代币，JEFF能乐开花，一把币安能赚半个BNB市值回来了。\n\n不过不要紧，币安也扶持了一堆自己的HYPE……",
+   "created_at": "2026-09-19T13:37:36.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101304703271481378",
+   "metrics": {
+    "likes": 75,
+    "reposts": 2,
+    "replies": 88,
+    "quotes": 2,
+    "bookmarks": 12,
+    "views": 64819
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101298128645451807",
+   "text": "我没有想到一年多，就快逼近BNB市值了。",
+   "created_at": "2026-09-19T13:11:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101298128645451807",
+   "metrics": {
+    "likes": 70,
+    "reposts": 7,
+    "replies": 14,
+    "quotes": 1,
+    "bookmarks": 12,
+    "views": 50594
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101280215586750821",
+   "text": "大家小心，安装了这个 APP 的请立即卸载。\n\n严禁安装任何监控 Fomo 的工具软件，只要一听到任何有关 Fomo 的第三方软件，那你就要小心，大概率是病毒或者木马。\n\nFomo 本身已经做好了发现机制，没有必要用第三方。\n\n记住下面正版网址\n\nhttps://fomo.family/r/BTCdayu",
+   "created_at": "2026-09-19T12:00:17.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101280215586750821",
+   "metrics": {
+    "likes": 45,
+    "reposts": 2,
+    "replies": 9,
+    "quotes": 0,
+    "bookmarks": 4,
+    "views": 36681
+   },
+   "media": [],
+   "urls": [
+    "https://fomo.family/r/BTCdayu"
+   ]
+  },
+  {
+   "id": "2101259177926828301",
+   "text": "现在已经不是买哪个能涨的问题。\n\n而是，买哪个能涨得更多的问题。",
+   "created_at": "2026-09-19T10:36:42.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101259177926828301",
+   "metrics": {
+    "likes": 274,
+    "reposts": 10,
+    "replies": 103,
+    "quotes": 10,
+    "bookmarks": 19,
+    "views": 256311
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101168895344456046",
+   "text": "zec 老外在喊的5-10%的比特币估值，我持谨慎态度，但短期我偏乐观。\n\nETF 8号有46万个，到18号就60万个，10天新增13万个。\n\n矿工现在每天挖1400多个，ETF 十天里净吸进矿工 90 多天产出。\n\n背后的DCG、灰度、矿工销售形成了很强的利益链条，加上利益关联与叙事。\n\n逃顶后面就看ETF、矿机、杠杆这几条。",
+   "created_at": "2026-09-19T04:37:57.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101168895344456046",
+   "metrics": {
+    "likes": 134,
+    "reposts": 12,
+    "replies": 46,
+    "quotes": 1,
+    "bookmarks": 40,
+    "views": 42628
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101158087390638255",
+   "text": "关于最近的行情，我刚下飞机，受到一位A18老师的邀请，特地来分享几句我的意见，因为等下还要去美国参加一个总统的下午茶，所以不能多讲，所以我会重点讲，讲重点。现在的行情总体来说正在上涨，至于为什么涨，这不重要；重要的是还能不能再涨，但这个我不知道。时间关系就讲这么多，不要录音录像。",
+   "created_at": "2026-09-19T03:55:00.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101158087390638255",
+   "metrics": {
+    "likes": 124,
+    "reposts": 6,
+    "replies": 162,
+    "quotes": 2,
+    "bookmarks": 12,
+    "views": 57454
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101156774325977109",
+   "text": "我现在对苹果手机只有一个期待，微信双开……\n\n可惜这个功能太小众，可能苹果永远不会推出了。",
+   "created_at": "2026-09-19T03:49:47.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101156774325977109",
+   "metrics": {
+    "likes": 99,
+    "reposts": 3,
+    "replies": 94,
+    "quotes": 4,
+    "bookmarks": 5,
+    "views": 123139
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101156449107992609",
+   "text": "$hype 超过BNB可能一两个月甚至更短就发生了。\n\n某人在24买了几百万美元，实盘看好，后面跌下来原价跑路。\n\n后面在13又买入，一路从30多卖到50多，看起来相当漂亮的操作是吗？\n\n但这个人从原来有的几十万个HYPE变成手上只有几十个HYPE了。\n\n想要波段的人，即使能侥幸抄到底，也可能币变少。",
+   "created_at": "2026-09-19T03:48:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101156449107992609",
+   "metrics": {
+    "likes": 127,
+    "reposts": 6,
+    "replies": 70,
+    "quotes": 3,
+    "bookmarks": 19,
+    "views": 45474
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSjOGGabwAAHWml.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2101092731447656521",
+   "text": "现在这个时候应该没有人还在空仓等 5 万吧？\n\n想到这个问题的时候，我突然隐隐感觉到，说不定真有。\n\n你现在几成仓？",
+   "created_at": "2026-09-18T23:35:18.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101092731447656521",
+   "metrics": {
+    "likes": 44,
+    "reposts": 2,
+    "replies": 57,
+    "quotes": 3,
+    "bookmarks": 5,
+    "views": 31498
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101086566555025569",
+   "text": "看到一句 zec 的宣传语，有点毒舌，但很炸裂\n\n也是比特币，没有塞拉。",
+   "created_at": "2026-09-18T23:10:48.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101086566555025569",
+   "metrics": {
+    "likes": 67,
+    "reposts": 2,
+    "replies": 16,
+    "quotes": 1,
+    "bookmarks": 4,
+    "views": 44238
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2101071127540019386",
+   "text": "fomo实盘利润其实已经不少了，这个两三周时间。目前的显示利润有 62 万美金，而且都比较有价值的币种。\n\n刚刚晚上的时候，总觉得就是虽然持有的都是优质币种，但是配置压在单一赛道，总觉得有点不理想，一开始是想买一些 DeFi 币种，但一想还是太热门了。\n\n最后换仓成为了这个 cards，现在这个价格谈不上什么优势。\n不代表我看涨后面，只是仓位配置而已，大家不要误会。\n\nFomo 真的很好用，合规安全，推荐大家都使用起来，后面机会还很多，不要临时再去从交易所提币，会耽误很多事情。\n\n来 fomo 和我一起交易，看我的实盘，享 10% 手续费折扣！\n\nhttps://fomo.family/r/BTCdayu",
+   "created_at": "2026-09-18T22:09:27.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101071127540019386",
+   "metrics": {
+    "likes": 43,
+    "reposts": 2,
+    "replies": 11,
+    "quotes": 3,
+    "bookmarks": 9,
+    "views": 26684
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSiBDP7aoAAiF-9.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": [
+    "https://fomo.family/r/BTCdayu"
+   ]
+  },
+  {
+   "id": "2101046482485092741",
+   "text": "半夜被吵醒了，就很难睡着。\n\n想了半天买什么，都觉得不太对。\n\n最后先买比特币算了，遇事不绝比特币。\n\n有好标的的时候，再用比特币去换，赚了再换回来。",
+   "created_at": "2026-09-18T20:31:31.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2101046482485092741",
+   "metrics": {
+    "likes": 130,
+    "reposts": 3,
+    "replies": 38,
+    "quotes": 1,
+    "bookmarks": 3,
+    "views": 28899
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2100808400347230465",
+   "text": "折叠屏非常容易花，因为和普通的硬屏不一样，你按得用力一些，掰得用力一些都可能GG，修的话国产的基本上在4000左右，苹果的不知道。\n\n但苹果折叠屏的碎屏险是2800块……\n\n苹果碎屏这件事可能在折叠屏上市后会不会给到股价大跌的机会——很多人会接受不了怎么苹果也这么容易坏屏。",
+   "created_at": "2026-09-18T04:45:28.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100808400347230465",
+   "metrics": {
+    "likes": 44,
+    "reposts": 3,
+    "replies": 66,
+    "quotes": 2,
+    "bookmarks": 1,
+    "views": 17625
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSeSGlJa0AAyjsg.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2100789815541424638",
+   "text": "这条推大家多看，关于MEME的理解全在其中，建议收藏 。",
+   "created_at": "2026-09-18T03:31:37.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100789815541424638",
+   "metrics": {
+    "likes": 73,
+    "reposts": 10,
+    "replies": 30,
+    "quotes": 0,
+    "bookmarks": 18,
+    "views": 47893
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2100788625185370377",
+   "text": "要对牛来有信心。",
+   "created_at": "2026-09-18T03:26:53.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100788625185370377",
+   "metrics": {
+    "likes": 117,
+    "reposts": 9,
+    "replies": 40,
+    "quotes": 0,
+    "bookmarks": 2,
+    "views": 23284
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2100786898658812326",
+   "text": "SEC批准美股上链，其影响力远大于比特币ETF通过，你很可能远远低估了他的影响力。\n\n美股上链或者不上链，对于那些本来就能炒美股的人，其实是没有特别大的吸引力的。除非说后面链上的基建越来越发达，它各种借贷、各种成本和各种优势会更理想，资金利用率更高，但这个是远期的事情。\n\n短期来说，美股上链爆炸式增长只有一个原因，就是让那些原本买不到美股的人能够买美股！\n\n美股是世界上最好的资产，想买的人可就太多了。大致算了一下，全球“想买美股但买不到的钱”，大概近百万亿美元。\n\n其中1%的钱进去，都是万亿美元级别——过去我一直想，币圈还会有什么利好超过ETF？这就是了。\n\n原来有许多人想买美股，但限于各种限制 ，券商开户非常难，会面临各种审核、各种卡关。一旦资产上链，他们只要持有稳定币就可以直接购买。\n\n而且，还可能有各种灰色、避税等各种，会让上述资金池进一步增大。\n\n当然，这对于美国来说，是乐见其成的，因为任何人都可以去买，对吧？这对于维护美元的霸主地位、稳定币的爆发式增长，都非常有好处。\n\n如果你有朋友要进币圈，你不知道怎么和他讲解，你把我的个人网站扔给他就行了，从注册到教程，再到投资逻辑，啥都有了。\n\nhttp://DAYU.XYZ",
+   "created_at": "2026-09-18T03:20:02.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100786898658812326",
+   "metrics": {
+    "likes": 229,
+    "reposts": 38,
+    "replies": 82,
+    "quotes": 5,
+    "bookmarks": 95,
+    "views": 71686
+   },
+   "media": [],
+   "urls": [
+    "http://DAYU.XYZ"
+   ]
+  },
+  {
+   "id": "2100783671389438365",
+   "text": "大家有没有发现，现在各种搞回购、销毁的币越来越多了？\n\n无论是 PONS、STONK这些新币，还是Uni、AAVE、LINK这些老币，都在搞回购。\n\n和社区共建共享这件事，不再是嘴炮，持币者不再是接盘侠，而是真的共享利益。\n\n这样的币圈，大有希望！\n\n说起来，我们都要感谢：Jeff。",
+   "created_at": "2026-09-18T03:07:12.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100783671389438365",
+   "metrics": {
+    "likes": 288,
+    "reposts": 25,
+    "replies": 89,
+    "quotes": 15,
+    "bookmarks": 34,
+    "views": 59065
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSd7gobbwAAmG_h.png?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2100777600096579986",
+   "text": "ZEC这个成本价和涨幅很舒服。\n\n我昨天SEC的政策出来，又换了10%的BTC给到UNI\n\n其实UNI如果没有这个政策，就不是特别吸引我，因为币圈山寨交易这件事量不会太大，本身市值有几十亿，就只是类似HYPE，好东西但谈不上便宜——无非是跌得多了一点。\n\n但现在这个政策简直是直接给UNI加BUFF了，已经强调了只能用公链加公用基础设施——这样的原因其实是充分利用区块链的特性，包括黑钱和各种追踪，没有暗箱，也没有过去中心化的链，那样散户的资金才能处于公平的境地。\n\n对于UNI，我的理解是，链上股票可能会增长100倍——这真的一点也不离谱，现在才30亿美元的股票，即使1%的股票过来也是几千亿，所以100倍才3000亿，10000倍，也就是3万亿，即5%的股票过来，这些链上股票要交易，无论哪条链，管你TMD L1还是L2，都是需要SWAP，其中赚钱最爽的会是龙头UNI。\n\n加上UNI已经打开了回购开关，赚得越多，涨得越凶，我感觉到UNI的历史 大底就在4.5-5，可以作为长线标的跟踪和持有——之所以说是长线，是因为上面说的1000倍增长，从法案出来到落地需要时间，但大家只需要记得，从此币圈顶级价值币增加一个UNI的位置，甚至可以比看好HYPE还要更加看多UNI，不要小看现货，合约是短期刚猛，现货则是长期持久。",
+   "created_at": "2026-09-18T02:43:05.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100777600096579986",
+   "metrics": {
+    "likes": 214,
+    "reposts": 17,
+    "replies": 39,
+    "quotes": 5,
+    "bookmarks": 80,
+    "views": 190827
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HSd2FRvaIAAL60O.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2100756501027868903",
+   "text": "《诗经·小雅·无羊》\n\n谁谓尔无牛？九十其犉。\n尔羊来思，其角濈濈。\n尔牛来思，其耳湿湿。\n\n你看看，三千年前的诗经都写了，牛来了，HAHA",
+   "created_at": "2026-09-18T01:19:14.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100756501027868903",
+   "metrics": {
+    "likes": 44,
+    "reposts": 5,
+    "replies": 7,
+    "quotes": 0,
+    "bookmarks": 3,
+    "views": 18795
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2100747796819345418",
+   "text": "超级君眼看要赚麻了\n赶紧申明，以免伤了太多人的心\nHAHA",
+   "created_at": "2026-09-18T00:44:39.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100747796819345418",
+   "metrics": {
+    "likes": 24,
+    "reposts": 3,
+    "replies": 11,
+    "quotes": 0,
+    "bookmarks": 2,
+    "views": 24797
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2100746816958734650",
+   "text": "确实很多奇怪的美容手术：\n\n断腿增高、JJ增大\n睾丸假体、阴囊拉伸\n切肉瘦腿、脚趾缩短\n切肋瘦腰、肚脐造型\n切耳做尖、腹肌雕刻\n\n……",
+   "created_at": "2026-09-18T00:40:45.000Z",
+   "lang": "zh",
+   "url": "https://x.com/BTCdayu/status/2100746816958734650",
+   "metrics": {
+    "likes": 23,
+    "reposts": 2,
+    "replies": 17,
+    "quotes": 0,
+    "bookmarks": 1,
+    "views": 21618
+   },
+   "media": [],
+   "urls": []
+  }
+ ]
+}

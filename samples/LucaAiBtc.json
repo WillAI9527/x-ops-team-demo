@@ -1,0 +1,248 @@
+{
+ "schema": "luca-xops-bench/v1",
+ "source": "fxtwitter-public (keyless)",
+ "fetched_at": "2026-11-02T18:35:41+08:00",
+ "user": {
+  "id": "1714925749835321344",
+  "username": "LucaAiBtc",
+  "name": "LucaShaw （薄肌版）",
+  "description": "npc还在原地 玩家早已环游世界",
+  "created_at": "Thu Oct 19 08:46:07 +0000 2023",
+  "location": "Central Region, Singapore",
+  "url": "",
+  "verified": false,
+  "profile_image_url": "https://pbs.twimg.com/profile_images/2111759357990109184/d1dq0fct_normal.jpg",
+  "followers": 9,
+  "following": 100,
+  "tweets": 37,
+  "listed": 0
+ },
+ "posts": [
+  {
+   "id": "2115769233938465023",
+   "text": "新加坡动真格了。\n10/28 颜金勇、尚穆根、傅海燕约见 10 家在新注册企业代表，丰益国际、金光农业资源在列。\n尚穆根：烟霾来自火，火来自不负责任的商业行为，不是天灾。\n修法将在下一次国会会期提交，拒绝配合评估即属违法。\n该追注册地公司，还是实际作业方？\n#新加坡 #烟霾",
+   "created_at": "2026-10-29T11:34:29.000Z",
+   "lang": "zh",
+   "url": "https://x.com/LucaAiBtc/status/2115769233938465023",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 88
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HVy42hFawAAusic.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2114752802056810506",
+   "text": "快来看看你的个人 AI 智能体 Muse 。在加入后的 48 小时内通过“设置”兑现我的邀请码，我们就能分别获得 10 亿个 Muse 词元。\n\n邀请码：OSTYLT\nhttps://muse.ai/join",
+   "created_at": "2026-10-26T16:15:32.000Z",
+   "lang": "zh",
+   "url": "https://x.com/LucaAiBtc/status/2114752802056810506",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 1,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 91
+   },
+   "media": [],
+   "urls": [
+    "https://muse.ai/join"
+   ]
+  },
+  {
+   "id": "2114345042727055555",
+   "text": "如果你每周用不完chatgpt pro额度\n\n那我不要和你说话\n\n@AlanShao111 @Mr_AIwill",
+   "created_at": "2026-10-25T13:15:15.000Z",
+   "lang": "zh",
+   "url": "https://x.com/LucaAiBtc/status/2114345042727055555",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 63
+   },
+   "media": [],
+   "urls": []
+  },
+  {
+   "id": "2107697348382249215",
+   "text": "#token2049 OKX",
+   "created_at": "2026-10-07T04:59:41.000Z",
+   "lang": null,
+   "url": "https://x.com/LucaAiBtc/status/2107697348382249215",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 45
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HUALkJHaAAAskiS.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107678008970826056",
+   "text": "#HTXVentures_TOKEN2049",
+   "created_at": "2026-10-07T03:42:50.000Z",
+   "lang": null,
+   "url": "https://x.com/LucaAiBtc/status/2107678008970826056",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 23
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT_5-b3bEAED_W3.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2107388852168163409",
+   "text": "okx now\n#okx #okxnow",
+   "created_at": "2026-10-06T08:33:50.000Z",
+   "lang": "en",
+   "url": "https://x.com/LucaAiBtc/status/2107388852168163409",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 24
+   },
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT7y_PbawAEkO1o.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT7y_PebQAEBQ2y.jpg?name=orig",
+     "preview_image_url": ""
+    },
+    {
+     "type": "photo",
+     "url": "https://pbs.twimg.com/media/HT7y_PdaIAAe54X.jpg?name=orig",
+     "preview_image_url": ""
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2075587180584677815",
+   "text": "",
+   "created_at": "2026-07-10T14:25:21.000Z",
+   "lang": null,
+   "url": "https://x.com/LucaAiBtc/status/2075587180584677815",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 32
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2075297228084703232/img/XMJLiKMUIelSDaL_.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2075297228084703232/img/XMJLiKMUIelSDaL_.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2070372507652427963",
+   "text": "",
+   "created_at": "2026-06-26T05:04:06.000Z",
+   "lang": null,
+   "url": "https://x.com/LucaAiBtc/status/2070372507652427963",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 35
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2070009873828577280/img/UoMaBHoE2hviApTv.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2070009873828577280/img/UoMaBHoE2hviApTv.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2067509647364472998",
+   "text": "",
+   "created_at": "2026-06-18T07:28:07.000Z",
+   "lang": null,
+   "url": "https://x.com/LucaAiBtc/status/2067509647364472998",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 17
+   },
+   "media": [
+    {
+     "type": "video",
+     "url": "https://pbs.twimg.com/amplify_video_thumb/2067231397845299200/img/slmRtzMfXw6GjyvL.jpg",
+     "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2067231397845299200/img/slmRtzMfXw6GjyvL.jpg"
+    }
+   ],
+   "urls": []
+  },
+  {
+   "id": "2059183000118808966",
+   "text": "币安钱包推出事件战壕 —— 像交易代币一样交易真实世界事件\n https://app.binance.com/uni-qr/cart/326939502374034?r=ZWG4VOBD&l=zh-CN&uco=Zr0Y5Lv8edLvIw7YVmmx5Q&uc=app_square_share_link&us=twitter",
+   "created_at": "2026-05-26T08:00:59.000Z",
+   "lang": "zh",
+   "url": "https://x.com/LucaAiBtc/status/2059183000118808966",
+   "metrics": {
+    "likes": 0,
+    "reposts": 0,
+    "replies": 0,
+    "quotes": 0,
+    "bookmarks": 0,
+    "views": 24
+   },
+   "media": [],
+   "urls": [
+    "https://app.binance.com/uni-qr/cart/326939502374034?r=ZWG4VOBD&l=zh-CN&uco=Zr0Y5Lv8edLvIw7YVmmx5Q&uc=app_square_share_link&us=twitter"
+   ]
+  }
+ ]
+}
