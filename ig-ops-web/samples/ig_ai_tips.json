@@ -1,12 +1,12 @@
 {
  "schema": "luca-xops-bench/v1",
- "source": "示例数据（虚构，仅供演示；实时数据需 Instagram Graph API）",
+ "source": "Sample data (fictional, demo only; live data needs the Instagram Graph API or Apify)",
  "fetched_at": "2026-11-02T09:00:00+08:00",
  "user": {
   "id": "demo-ig_ai_tips",
   "username": "ig_ai_tips",
-  "name": "AI 小技巧（示例）",
-  "description": "每天 1 个 AI 小技巧｜轮播图解｜虚构示例账号",
+  "name": "AI Tips (sample)",
+  "description": "One AI tip a day | illustrated carousels | fictional sample account",
   "created_at": "2024-03-01T00:00:00.000Z",
   "location": "",
   "url": "",
@@ -22,9 +22,9 @@
  "posts": [
   {
    "id": "ig_1000",
-   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#学习方法 #提示词 #AI工具 #人工智能 #职场效率 #科技生活 #AIGC",
+   "text": "[Carousel] 5 prompt formulas that make ChatGPT answer more accurately\n\nSlide 1 gives the takeaway: role + context + task + constraints. Swipe for an example of each formula; the last slide is a template you can save.\n\n#LearningTips #Prompts #AITools #ArtificialIntelligence #WorkProductivity #TechLife #AIGC",
    "created_at": "2026-11-01T04:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0000/",
    "metrics": {
     "likes": 1008,
@@ -40,9 +40,9 @@
   },
   {
    "id": "ig_1001",
-   "text": "【轮播】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#AIGC #工作流 #职场效率 #AI工具 #提示词 #学习方法 #ChatGPT",
+   "text": "[Carousel] Plan a week of content with AI in 30 minutes\n\nI split it into 4 steps: idea pool → structure → first draft → visuals. The prompt for each step is on the slides.\n\n#AIGC #Workflow #WorkProductivity #AITools #Prompts #LearningTips #ChatGPT",
    "created_at": "2026-10-31T13:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0001/",
    "metrics": {
     "likes": 1738,
@@ -58,9 +58,9 @@
   },
   {
    "id": "ig_1002",
-   "text": "【单图】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#AIGC #工作流 #提示词 #AI科普 #人工智能 #ChatGPT #学习方法",
+   "text": "[Single image] The right way to write a weekly report with AI\n\nDon't let AI make up numbers! Give it your real progress first, then let it structure, summarize and flag risks.\n\n#AIGC #Workflow #Prompts #AIExplained #ArtificialIntelligence #ChatGPT #LearningTips",
    "created_at": "2026-10-29T12:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0002/",
    "metrics": {
     "likes": 430,
@@ -76,9 +76,9 @@
   },
   {
    "id": "ig_1003",
-   "text": "【轮播】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#数字游民 #AI科普 #ChatGPT #提示词 #效率提升 #科技生活 #人工智能",
+   "text": "[Carousel] 3 free AI image tools compared\n\nCompared on ease of use, image style and commercial license. Check each official site for current pricing.\n\n#DigitalNomad #AIExplained #ChatGPT #Prompts #Productivity #TechLife #ArtificialIntelligence",
    "created_at": "2026-10-28T00:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0003/",
    "metrics": {
     "likes": 1047,
@@ -94,9 +94,9 @@
   },
   {
    "id": "ig_1004",
-   "text": "【轮播】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#学习方法 #职场效率 #效率提升 #AI科普 #AIGC #提示词 #科技生活",
+   "text": "[Carousel] 4 prompt mistakes beginners make most\n\nMistake 1: one-line prompts; 2: no examples; 3: no output format; 4: no follow-up questions.\n\n#LearningTips #WorkProductivity #Productivity #AIExplained #AIGC #Prompts #TechLife",
    "created_at": "2026-10-26T12:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0004/",
    "metrics": {
     "likes": 1611,
@@ -112,9 +112,9 @@
   },
   {
    "id": "ig_1005",
-   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#AIGC #数字游民 #人工智能 #工作流 #ChatGPT #提示词 #AI科普",
+   "text": "[Carousel] Meeting notes with AI in just 2 steps\n\nTranscribe the recording → have AI output \"decisions / to-dos / owners\". Remove private details first.\n\n#AIGC #DigitalNomad #ArtificialIntelligence #Workflow #ChatGPT #Prompts #AIExplained",
    "created_at": "2026-10-24T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0005/",
    "metrics": {
     "likes": 1852,
@@ -130,9 +130,9 @@
   },
   {
    "id": "ig_1006",
-   "text": "【Reels】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#职场效率 #科技生活 #AI科普 #AI工具 #数字游民 #效率提升 #人工智能",
+   "text": "[Reels] 5 prompt formulas that make ChatGPT answer more accurately\n\nSlide 1 gives the takeaway: role + context + task + constraints. Swipe for an example of each formula; the last slide is a template you can save.\n\n#WorkProductivity #TechLife #AIExplained #AITools #DigitalNomad #Productivity #ArtificialIntelligence",
    "created_at": "2026-10-23T00:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0006/",
    "metrics": {
     "likes": 2626,
@@ -148,9 +148,9 @@
   },
   {
    "id": "ig_1007",
-   "text": "【Reels】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#数字游民 #人工智能 #效率提升 #工作流 #职场效率 #ChatGPT #AIGC",
+   "text": "[Reels] Plan a week of content with AI in 30 minutes\n\nI split it into 4 steps: idea pool → structure → first draft → visuals. The prompt for each step is on the slides.\n\n#DigitalNomad #ArtificialIntelligence #Productivity #Workflow #WorkProductivity #ChatGPT #AIGC",
    "created_at": "2026-10-21T14:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0007/",
    "metrics": {
     "likes": 1134,
@@ -166,9 +166,9 @@
   },
   {
    "id": "ig_1008",
-   "text": "【单图】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#效率提升 #人工智能 #工作流 #AIGC #提示词 #AI科普 #科技生活",
+   "text": "[Single image] The right way to write a weekly report with AI\n\nDon't let AI make up numbers! Give it your real progress first, then let it structure, summarize and flag risks.\n\n#Productivity #ArtificialIntelligence #Workflow #AIGC #Prompts #AIExplained #TechLife",
    "created_at": "2026-10-20T13:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0008/",
    "metrics": {
     "likes": 707,
@@ -184,9 +184,9 @@
   },
   {
    "id": "ig_1009",
-   "text": "【轮播】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#效率提升 #学习方法 #AIGC #AI工具 #数字游民 #职场效率 #AI科普",
+   "text": "[Carousel] 3 free AI image tools compared\n\nCompared on ease of use, image style and commercial license. Check each official site for current pricing.\n\n#Productivity #LearningTips #AIGC #AITools #DigitalNomad #WorkProductivity #AIExplained",
    "created_at": "2026-10-18T04:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0009/",
    "metrics": {
     "likes": 731,
@@ -202,9 +202,9 @@
   },
   {
    "id": "ig_1010",
-   "text": "【单图】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#提示词 #数字游民 #效率提升 #人工智能 #AI科普 #ChatGPT #AI工具",
+   "text": "[Single image] 4 prompt mistakes beginners make most\n\nMistake 1: one-line prompts; 2: no examples; 3: no output format; 4: no follow-up questions.\n\n#Prompts #DigitalNomad #Productivity #ArtificialIntelligence #AIExplained #ChatGPT #AITools",
    "created_at": "2026-10-16T13:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0010/",
    "metrics": {
     "likes": 603,
@@ -220,9 +220,9 @@
   },
   {
    "id": "ig_1011",
-   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#效率提升 #科技生活 #ChatGPT #AI科普 #学习方法 #提示词 #AI工具",
+   "text": "[Carousel] Meeting notes with AI in just 2 steps\n\nTranscribe the recording → have AI output \"decisions / to-dos / owners\". Remove private details first.\n\n#Productivity #TechLife #ChatGPT #AIExplained #LearningTips #Prompts #AITools",
    "created_at": "2026-10-15T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0011/",
    "metrics": {
     "likes": 686,
@@ -238,9 +238,9 @@
   },
   {
    "id": "ig_1012",
-   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#数字游民 #效率提升 #学习方法 #AI工具 #提示词 #ChatGPT #科技生活",
+   "text": "[Carousel] 5 prompt formulas that make ChatGPT answer more accurately\n\nSlide 1 gives the takeaway: role + context + task + constraints. Swipe for an example of each formula; the last slide is a template you can save.\n\n#DigitalNomad #Productivity #LearningTips #AITools #Prompts #ChatGPT #TechLife",
    "created_at": "2026-10-13T14:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0012/",
    "metrics": {
     "likes": 1100,
@@ -256,9 +256,9 @@
   },
   {
    "id": "ig_1013",
-   "text": "【轮播】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#效率提升 #AI科普 #提示词 #学习方法 #科技生活 #数字游民 #人工智能",
+   "text": "[Carousel] Plan a week of content with AI in 30 minutes\n\nI split it into 4 steps: idea pool → structure → first draft → visuals. The prompt for each step is on the slides.\n\n#Productivity #AIExplained #Prompts #LearningTips #TechLife #DigitalNomad #ArtificialIntelligence",
    "created_at": "2026-10-12T00:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0013/",
    "metrics": {
     "likes": 1162,
@@ -274,9 +274,9 @@
   },
   {
    "id": "ig_1014",
-   "text": "【Reels】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#AI工具 #工作流 #ChatGPT #数字游民 #AIGC #人工智能 #AI科普",
+   "text": "[Reels] The right way to write a weekly report with AI\n\nDon't let AI make up numbers! Give it your real progress first, then let it structure, summarize and flag risks.\n\n#AITools #Workflow #ChatGPT #DigitalNomad #AIGC #ArtificialIntelligence #AIExplained",
    "created_at": "2026-10-10T11:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0014/",
    "metrics": {
     "likes": 3084,
@@ -292,9 +292,9 @@
   },
   {
    "id": "ig_1015",
-   "text": "【Reels】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#人工智能 #提示词 #数字游民 #科技生活 #AI科普 #工作流 #学习方法",
+   "text": "[Reels] 3 free AI image tools compared\n\nCompared on ease of use, image style and commercial license. Check each official site for current pricing.\n\n#ArtificialIntelligence #Prompts #DigitalNomad #TechLife #AIExplained #Workflow #LearningTips",
    "created_at": "2026-10-08T12:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0015/",
    "metrics": {
     "likes": 4236,
@@ -310,9 +310,9 @@
   },
   {
    "id": "ig_1016",
-   "text": "【Reels】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#职场效率 #提示词 #数字游民 #效率提升 #工作流 #AIGC #AI科普",
+   "text": "[Reels] 4 prompt mistakes beginners make most\n\nMistake 1: one-line prompts; 2: no examples; 3: no output format; 4: no follow-up questions.\n\n#WorkProductivity #Prompts #DigitalNomad #Productivity #Workflow #AIGC #AIExplained",
    "created_at": "2026-10-07T00:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0016/",
    "metrics": {
     "likes": 2426,
@@ -328,9 +328,9 @@
   },
   {
    "id": "ig_1017",
-   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#效率提升 #AIGC #数字游民 #工作流 #科技生活 #AI科普 #学习方法",
+   "text": "[Carousel] Meeting notes with AI in just 2 steps\n\nTranscribe the recording → have AI output \"decisions / to-dos / owners\". Remove private details first.\n\n#Productivity #AIGC #DigitalNomad #Workflow #TechLife #AIExplained #LearningTips",
    "created_at": "2026-10-05T13:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0017/",
    "metrics": {
     "likes": 2254,
@@ -346,9 +346,9 @@
   },
   {
    "id": "ig_1018",
-   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#职场效率 #提示词 #科技生活 #AI工具 #ChatGPT #人工智能 #效率提升",
+   "text": "[Carousel] 5 prompt formulas that make ChatGPT answer more accurately\n\nSlide 1 gives the takeaway: role + context + task + constraints. Swipe for an example of each formula; the last slide is a template you can save.\n\n#WorkProductivity #Prompts #TechLife #AITools #ChatGPT #ArtificialIntelligence #Productivity",
    "created_at": "2026-10-04T04:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0018/",
    "metrics": {
     "likes": 894,
@@ -364,9 +364,9 @@
   },
   {
    "id": "ig_1019",
-   "text": "【Reels】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#科技生活 #AIGC #学习方法 #职场效率 #效率提升 #ChatGPT #人工智能",
+   "text": "[Reels] Plan a week of content with AI in 30 minutes\n\nI split it into 4 steps: idea pool → structure → first draft → visuals. The prompt for each step is on the slides.\n\n#TechLife #AIGC #LearningTips #WorkProductivity #Productivity #ChatGPT #ArtificialIntelligence",
    "created_at": "2026-10-02T12:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0019/",
    "metrics": {
     "likes": 3602,
@@ -382,9 +382,9 @@
   },
   {
    "id": "ig_1020",
-   "text": "【Reels】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#AIGC #人工智能 #学习方法 #AI工具 #AI科普 #数字游民 #ChatGPT",
+   "text": "[Reels] The right way to write a weekly report with AI\n\nDon't let AI make up numbers! Give it your real progress first, then let it structure, summarize and flag risks.\n\n#AIGC #ArtificialIntelligence #LearningTips #AITools #AIExplained #DigitalNomad #ChatGPT",
    "created_at": "2026-09-30T00:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0020/",
    "metrics": {
     "likes": 2719,
@@ -400,9 +400,9 @@
   },
   {
    "id": "ig_1021",
-   "text": "【Reels】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#数字游民 #学习方法 #AI工具 #人工智能 #工作流 #效率提升 #ChatGPT",
+   "text": "[Reels] 3 free AI image tools compared\n\nCompared on ease of use, image style and commercial license. Check each official site for current pricing.\n\n#DigitalNomad #LearningTips #AITools #ArtificialIntelligence #Workflow #Productivity #ChatGPT",
    "created_at": "2026-09-29T14:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0021/",
    "metrics": {
     "likes": 1755,
@@ -418,9 +418,9 @@
   },
   {
    "id": "ig_1022",
-   "text": "【单图】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#学习方法 #ChatGPT #工作流 #提示词 #数字游民 #人工智能 #AIGC",
+   "text": "[Single image] 4 prompt mistakes beginners make most\n\nMistake 1: one-line prompts; 2: no examples; 3: no output format; 4: no follow-up questions.\n\n#LearningTips #ChatGPT #Workflow #Prompts #DigitalNomad #ArtificialIntelligence #AIGC",
    "created_at": "2026-09-27T11:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0022/",
    "metrics": {
     "likes": 544,
@@ -436,9 +436,9 @@
   },
   {
    "id": "ig_1023",
-   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#效率提升 #科技生活 #AI科普 #工作流 #ChatGPT #人工智能 #提示词",
+   "text": "[Carousel] Meeting notes with AI in just 2 steps\n\nTranscribe the recording → have AI output \"decisions / to-dos / owners\". Remove private details first.\n\n#Productivity #TechLife #AIExplained #Workflow #ChatGPT #ArtificialIntelligence #Prompts",
    "created_at": "2026-09-26T14:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0023/",
    "metrics": {
     "likes": 578,
@@ -454,9 +454,9 @@
   },
   {
    "id": "ig_1024",
-   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#学习方法 #职场效率 #AI科普 #科技生活 #提示词 #效率提升 #工作流",
+   "text": "[Carousel] 5 prompt formulas that make ChatGPT answer more accurately\n\nSlide 1 gives the takeaway: role + context + task + constraints. Swipe for an example of each formula; the last slide is a template you can save.\n\n#LearningTips #WorkProductivity #AIExplained #TechLife #Prompts #Productivity #Workflow",
    "created_at": "2026-09-24T04:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0024/",
    "metrics": {
     "likes": 1355,
@@ -472,9 +472,9 @@
   },
   {
    "id": "ig_1025",
-   "text": "【轮播】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#ChatGPT #学习方法 #人工智能 #AIGC #提示词 #AI工具 #职场效率",
+   "text": "[Carousel] Plan a week of content with AI in 30 minutes\n\nI split it into 4 steps: idea pool → structure → first draft → visuals. The prompt for each step is on the slides.\n\n#ChatGPT #LearningTips #ArtificialIntelligence #AIGC #Prompts #AITools #WorkProductivity",
    "created_at": "2026-09-22T12:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0025/",
    "metrics": {
     "likes": 1486,
@@ -490,9 +490,9 @@
   },
   {
    "id": "ig_1026",
-   "text": "【轮播】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#ChatGPT #职场效率 #效率提升 #学习方法 #数字游民 #AI科普 #AIGC",
+   "text": "[Carousel] The right way to write a weekly report with AI\n\nDon't let AI make up numbers! Give it your real progress first, then let it structure, summarize and flag risks.\n\n#ChatGPT #WorkProductivity #Productivity #LearningTips #DigitalNomad #AIExplained #AIGC",
    "created_at": "2026-09-21T00:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0026/",
    "metrics": {
     "likes": 707,
@@ -508,9 +508,9 @@
   },
   {
    "id": "ig_1027",
-   "text": "【轮播】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#ChatGPT #人工智能 #AIGC #提示词 #科技生活 #效率提升 #AI工具",
+   "text": "[Carousel] 3 free AI image tools compared\n\nCompared on ease of use, image style and commercial license. Check each official site for current pricing.\n\n#ChatGPT #ArtificialIntelligence #AIGC #Prompts #TechLife #Productivity #AITools",
    "created_at": "2026-09-19T00:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0027/",
    "metrics": {
     "likes": 1163,
@@ -526,9 +526,9 @@
   },
   {
    "id": "ig_1028",
-   "text": "【轮播】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#人工智能 #效率提升 #ChatGPT #AI工具 #科技生活 #工作流 #数字游民",
+   "text": "[Carousel] 4 prompt mistakes beginners make most\n\nMistake 1: one-line prompts; 2: no examples; 3: no output format; 4: no follow-up questions.\n\n#ArtificialIntelligence #Productivity #ChatGPT #AITools #TechLife #Workflow #DigitalNomad",
    "created_at": "2026-09-18T12:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0028/",
    "metrics": {
     "likes": 2255,
@@ -544,9 +544,9 @@
   },
   {
    "id": "ig_1029",
-   "text": "【Reels】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#AI工具 #工作流 #科技生活 #学习方法 #提示词 #ChatGPT #数字游民",
+   "text": "[Reels] Meeting notes with AI in just 2 steps\n\nTranscribe the recording → have AI output \"decisions / to-dos / owners\". Remove private details first.\n\n#AITools #Workflow #TechLife #LearningTips #Prompts #ChatGPT #DigitalNomad",
    "created_at": "2026-09-16T11:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0029/",
    "metrics": {
     "likes": 2081,
@@ -562,9 +562,9 @@
   },
   {
    "id": "ig_1030",
-   "text": "【轮播】5 个让 ChatGPT 回答更准的提问公式\n\n第 1 张先说结论：角色 + 背景 + 任务 + 约束。往后滑看每个公式的例子，最后一张是可以直接收藏的模板。\n\n#学习方法 #ChatGPT #提示词 #AIGC #AI科普 #人工智能 #数字游民",
+   "text": "[Carousel] 5 prompt formulas that make ChatGPT answer more accurately\n\nSlide 1 gives the takeaway: role + context + task + constraints. Swipe for an example of each formula; the last slide is a template you can save.\n\n#LearningTips #ChatGPT #Prompts #AIGC #AIExplained #ArtificialIntelligence #DigitalNomad",
    "created_at": "2026-09-14T14:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0030/",
    "metrics": {
     "likes": 1727,
@@ -580,9 +580,9 @@
   },
   {
    "id": "ig_1031",
-   "text": "【单图】用 AI 30 分钟做完一周的内容计划\n\n我把流程拆成 4 步：选题池 → 结构 → 初稿 → 配图。每一步用什么提示词都写在图里。\n\n#ChatGPT #职场效率 #效率提升 #AI工具 #人工智能 #AI科普 #提示词",
+   "text": "[Single image] Plan a week of content with AI in 30 minutes\n\nI split it into 4 steps: idea pool → structure → first draft → visuals. The prompt for each step is on the slides.\n\n#ChatGPT #WorkProductivity #Productivity #AITools #ArtificialIntelligence #AIExplained #Prompts",
    "created_at": "2026-09-13T04:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0031/",
    "metrics": {
     "likes": 1478,
@@ -598,9 +598,9 @@
   },
   {
    "id": "ig_1032",
-   "text": "【单图】AI 写周报的正确姿势\n\n别让 AI 编数据！先给它你的真实进展，再让它帮你分条、提炼、补风险。\n\n#ChatGPT #AI科普 #科技生活 #学习方法 #AIGC #人工智能 #AI工具",
+   "text": "[Single image] The right way to write a weekly report with AI\n\nDon't let AI make up numbers! Give it your real progress first, then let it structure, summarize and flag risks.\n\n#ChatGPT #AIExplained #TechLife #LearningTips #AIGC #ArtificialIntelligence #AITools",
    "created_at": "2026-09-11T12:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0032/",
    "metrics": {
     "likes": 601,
@@ -616,9 +616,9 @@
   },
   {
    "id": "ig_1033",
-   "text": "【单图】3 个免费又好用的 AI 画图工具对比\n\n从上手难度、出图风格、商用授权三个维度对比，具体价格以官网为准。\n\n#提示词 #工作流 #学习方法 #AI工具 #人工智能 #效率提升 #AIGC",
+   "text": "[Single image] 3 free AI image tools compared\n\nCompared on ease of use, image style and commercial license. Check each official site for current pricing.\n\n#Prompts #Workflow #LearningTips #AITools #ArtificialIntelligence #Productivity #AIGC",
    "created_at": "2026-09-10T12:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0033/",
    "metrics": {
     "likes": 504,
@@ -634,9 +634,9 @@
   },
   {
    "id": "ig_1034",
-   "text": "【轮播】新手最容易踩的 4 个 AI 提示词坑\n\n坑 1：一句话丢给 AI；坑 2：不给例子；坑 3：不限定格式；坑 4：不追问。\n\n#效率提升 #科技生活 #AIGC #职场效率 #AI科普 #数字游民 #提示词",
+   "text": "[Carousel] 4 prompt mistakes beginners make most\n\nMistake 1: one-line prompts; 2: no examples; 3: no output format; 4: no follow-up questions.\n\n#Productivity #TechLife #AIGC #WorkProductivity #AIExplained #DigitalNomad #Prompts",
    "created_at": "2026-09-08T00:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0034/",
    "metrics": {
     "likes": 557,
@@ -652,9 +652,9 @@
   },
   {
    "id": "ig_1035",
-   "text": "【轮播】用 AI 整理会议纪要只要 2 步\n\n录音转文字 → 让 AI 按「决定 / 待办 / 负责人」输出。隐私内容记得先脱敏。\n\n#学习方法 #效率提升 #工作流 #AIGC #AI工具 #职场效率 #AI科普",
+   "text": "[Carousel] Meeting notes with AI in just 2 steps\n\nTranscribe the recording → have AI output \"decisions / to-dos / owners\". Remove private details first.\n\n#LearningTips #Productivity #Workflow #AIGC #AITools #WorkProductivity #AIExplained",
    "created_at": "2026-09-06T04:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0035/",
    "metrics": {
     "likes": 2078,

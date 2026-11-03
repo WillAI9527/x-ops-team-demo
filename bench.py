@@ -981,6 +981,7 @@ def handle_get(h, path):
 POS_SYS = ("你是 X 账号定位分析师。根据账号资料和最近帖子，判断这个账号的定位。只输出一个 JSON 对象，不要其他文字：\n"
            '{"positioning":"一句话定位（≤30字）","short":"2–6 字的领域标签，如 AI 科普 / 加密投资","audience":"目标受众（≤40字）",'
            '"pillars":["内容主线1","内容主线2","内容主线3"],"tone":"语气风格（≤20字）","language":"主要语言"}\n只依据给你的数据，没有帖子就根据简介推断并在 positioning 末尾加（推测）。')
+POS_SYS += ("\nIMPORTANT: write every JSON value in English (e.g. short = \"AI explainers\" or \"Crypto investing\"; append \" (inferred)\" instead of （推测）). Keep handles and names exactly as they are.")
 
 
 def infer_positioning(doc):
@@ -995,7 +996,7 @@ def infer_positioning(doc):
             return j
     except Exception as e:
         print("[positioning] %s" % e)
-    return {"positioning": (u["description"] or "（根据简介待确认）")[:60], "short": "本账号主题", "audience": "【待确认】",
+    return {"positioning": (u["description"] or "(to be confirmed from bio)")[:60], "short": "Account topic", "audience": "[to be confirmed]",
             "pillars": [], "tone": "", "language": ""}
 
 
@@ -1091,8 +1092,8 @@ def handle_post(h, path, body):
             u = save_account(doc)
             # serverless: the browser may hand back an analysis / knowledge base it cached for this account
             if isinstance(body.get("analysis"), dict):
-                lg = body.get("lang") if body.get("lang") in ("zh", "en") else None
-                jsave(an_file(u, lg), body["analysis"])
+                if body.get("lang") == "en":   # English-only: never restore a cached Chinese analysis
+                    jsave(an_file(u, "en"), body["analysis"])
             if isinstance(body.get("kb"), dict) and body["kb"].get("items") is not None:
                 jsave(os.path.join(adir(u), "kb", "kb.json"), body["kb"])
             return h.send_json(200, {"ok": True, "username": u, "posts": len(doc["posts"]), "doc": doc})

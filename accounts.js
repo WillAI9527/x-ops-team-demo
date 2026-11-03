@@ -1,10 +1,10 @@
 // v1.5/v1.6 多账号：开始页（你的 X 账号）+ 右上角账号切换。所有 @LucaAiAi 文案替换成当前账号。
 (function () {
-  const css = `#acctBar{position:fixed;top:10px;right:14px;z-index:50;display:flex;gap:6px;align-items:center;background:var(--panel,#151a23);border:1px solid var(--line,#2a3140);border-radius:10px;padding:6px 8px;font-size:13px}
+  const css = `#acctBar{position:fixed;top:10px;right:14px;z-index:50;display:flex;gap:6px;align-items:center;background:var(--panel,#151a23);border:1px solid var(--line,#2a3140);border-radius:10px;padding:6px 8px;font-size:15.5px}
   #acctBar img{width:22px;height:22px;border-radius:50%} #acctBar select{max-width:180px}
   #startPage{position:fixed;inset:0;z-index:100;background:rgba(8,10,15,.92);display:flex;align-items:center;justify-content:center}
   #startPage .box{background:var(--panel,#151a23);border:1px solid var(--line,#2a3140);border-radius:14px;padding:24px;width:min(520px,92vw)}
-  #startPage input{width:100%;font-size:16px;padding:10px;margin:10px 0} #startPage .hint{font-size:13px}`;
+  #startPage input{width:100%;font-size:18.5px;padding:10px;margin:10px 0} #startPage .hint{font-size:15.5px}`;
   document.head.insertAdjacentHTML('beforeend', `<style>${css}</style>`);
   const H = () => { const h = { 'Content-Type': 'application/json' }; const t = localStorage.getItem('luca_token'); if (t) h['Authorization'] = 'Bearer ' + t; return h; };
   const E = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -53,7 +53,7 @@
     if (!a.active) return startPage(false);
     const p = a.profile || {};
     const bar = document.createElement('div'); bar.id = 'acctBar';
-    bar.innerHTML = `${p.avatar ? `<img src="${E(p.avatar)}">` : ''}<select id="acctSel" class="noRelabel" title="${E(p.positioning || '')}">${a.accounts.map(x => `<option value="${E(x.handle)}" ${(x.handle || '').toLowerCase() === (a.active || '').toLowerCase() ? 'selected' : ''}>@${E(x.handle)}${x.short ? ' · ' + E(x.short) : ''}</option>`).join('')}<option value="__add">＋ 添加账号…</option><option value="__re">↻ 重新识别当前账号定位</option></select>`;
+    bar.innerHTML = `${p.avatar ? `<img src="${E(p.avatar)}">` : ''}<select id="acctSel" class="noRelabel" title="${E(p.positioning || '')}">${a.accounts.map(x => `<option value="${E(x.handle)}" ${(x.handle || '').toLowerCase() === (a.active || '').toLowerCase() ? 'selected' : ''}>@${E(x.handle)}${x.short ? ' · ' + E(x.short) : ''}</option>`).join('')}<option value="__add">+ 添加账号…</option><option value="__re">↻ 重新识别当前账号定位</option></select>`;
     document.body.appendChild(bar);
     $('#acctSel').onchange = async e => {
       const v = e.target.value;

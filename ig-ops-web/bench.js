@@ -38,7 +38,7 @@ async function benchOpen() {
   $('#bCfg').innerHTML = (bCfg.apifyConfigured
     ? L('✅ <b>实时数据来自 Apify</b>（apify/instagram-profile-scraper，只读公开账号）：每次抓取该账号资料 + 最近 ' + (bCfg.apifyMaxPosts || 12) + ' 条帖子（文案、点赞、评论、类型、时间、链接），约消耗 1 条结果额度；结果缓存 ' + (bCfg.apifyCacheHours || 24) + ' 小时，重复抓取直接用缓存，不会自动定时调用。自动发布仍需要官方 Instagram Graph API，发布请在 Instagram App 里手动完成。',
         '✅ <b>Live data comes from Apify</b> (apify/instagram-profile-scraper, public accounts only): each fetch reads the profile + the latest ' + (bCfg.apifyMaxPosts || 12) + ' posts (caption, likes, comments, type, time, link) for about 1 result of credit; results are cached for ' + (bCfg.apifyCacheHours || 24) + ' h, repeat fetches use the cache, and nothing runs on a timer. Auto-publishing still needs the official Instagram Graph API, so publish manually in the Instagram app.')
-    : L('ℹ️ <b>没有配置 Apify</b>（.env.local 里的 APIFY_TOKEN），暂时只能「导入 JSON」或「载入示例数据」。', 'ℹ️ <b>Apify is not configured</b> (APIFY_TOKEN in .env.local); for now use "Import JSON" or "Load sample data".')) + L(' ｜ 时区：', ' ｜ Time zone: ') + esc(bCfg.tz || '');
+    : L('ℹ️ <b>没有配置 Apify</b>（.env.local 里的 APIFY_TOKEN），暂时只能「导入 JSON」或「载入示例数据」。', 'ℹ️ <b>Apify is not configured</b> (APIFY_TOKEN in .env.local); for now use "Import JSON" or "Load sample data".')) + L(' ｜ 时区：', ' | Time zone: ') + esc(bCfg.tz || '');
   $('#bSample').innerHTML = `<option value="">${L('载入示例数据…', 'Load sample data…')}</option>` + (bCfg.samples || []).map(s => `<option value="${esc(s)}">@${esc(s)}${L('（虚构示例数据）', ' (fictional sample)')}</option>`).join('');
   loadBList(); loadQueue();
 }
@@ -98,7 +98,7 @@ function kpi(label, val, sub) { return `<div class="kpi"><span>${esc(label)}</sp
 function renderBench() {
   const d = bData, u = d.user, an = d.analysis;
   let h = `<div class="panel"><div style="display:flex;gap:12px;align-items:center">${u.profile_image_url ? `<img src="${esc(u.profile_image_url)}" style="width:48px;height:48px;border-radius:50%">` : ''}
-    <div><b style="font-size:16px" data-no-i18n>${esc(u.name)}</b> <a href="https://www.instagram.com/${esc(u.username)}/" target="_blank" class="hint">@${esc(u.username)}</a>
+    <div><b style="font-size:18.5px" data-no-i18n>${esc(u.name)}</b> <a href="https://www.instagram.com/${esc(u.username)}/" target="_blank" class="hint">@${esc(u.username)}</a>
     <div class="hint" data-no-i18n>${esc(u.description || '')}</div><div class="hint" data-no-i18n>${L('数据来源：', 'Source: ')}${esc(bSRC(d.source))} · ${d.postCount} ${L('条帖子', 'posts')} · ${L('数据时间', 'data as of')} ${esc(d.fetched_at || '')}</div></div>
     <div style="margin-left:auto"><button class="copy" id="bReAn">${an ? L('重新分析', 'Re-analyze') : L('开始分析', 'Analyze')}</button></div></div></div>`;
   if (!an) { $('#bOut').innerHTML = h; $('#bReAn').onclick = () => runAnalyze(u.username); return; }
@@ -111,7 +111,7 @@ function renderBench() {
   // topics
   const maxS = Math.max(1, ...an.topics.map(t => t.avgScore));
   h += `<div class="panel"><b>🔥 ${L('主要方向（按平均热度排序）', 'Main themes (by average heat)')}</b>${an.topics.length ? '' : '<div class="hint">' + L('主题聚类失败：', 'Topic clustering failed: ') + esc((an.errors || []).join('；')) + '</div>'}
-    <table style="width:100%;font-size:13px;margin-top:8px;border-collapse:collapse">${an.topics.map((t, i) => `<tr style="border-top:1px solid var(--line)"><td style="padding:6px 4px;width:28px">${i + 1}</td>
+    <table style="width:100%;font-size:15.5px;margin-top:8px;border-collapse:collapse">${an.topics.map((t, i) => `<tr style="border-top:1px solid var(--line)"><td style="padding:6px 4px;width:28px">${i + 1}</td>
     <td style="padding:6px 4px"><b data-no-i18n>${esc(t.name)}</b><div class="hint" data-no-i18n>${esc(t.desc)}</div><div class="hint">${L('钩子：', 'Hook: ')}<span data-no-i18n>${esc(t.hook || '')}</span></div></td>
     <td style="width:220px"><div class="tbar" style="width:${(100 * t.avgScore / maxS).toFixed(0)}%"></div><span class="hint">${L(`平均热度 ${t.avgScore} · ${t.count} 帖（${t.share}%）· 均播放 ${fmtN(t.avgViews)}`, `Avg heat ${t.avgScore} · ${t.count} posts (${t.share}%) · avg plays ${fmtN(t.avgViews)}`)}</span></td></tr>`).join('')}</table></div>`;
   // frequency + heatmap
@@ -141,9 +141,9 @@ function renderBench() {
     const q = $('#bKbQ').value.trim().toLowerCase(), tp = $('#bKbT').value;
     const items = kb.items.filter(x => (!tp || x.topic === tp) && (!q || x.text.toLowerCase().includes(q)));
     $('#bKbList').innerHTML = items.map(x => `<div class="kbitem"><div class="hint">#${x.rank} · <span data-no-i18n>${esc(x.topic || L('未分类', 'Uncategorized'))}</span> · ${esc(x.local_time)} · ${L('热度', 'Heat')} ${x.score} · ❤ ${x.metrics.likes} · 💬 ${x.metrics.replies} · ✈️ ${x.metrics.reposts} · 🔖 ${x.metrics.bookmarks || 0} · ▶ ${fmtN(x.metrics.views)} · <a href="${esc(x.url)}" target="_blank">${L('原帖', 'Original')}</a></div>
-      <div class="raw-post" data-no-i18n lang="" style="white-space:pre-wrap;margin-top:6px;font-size:14px">${esc(x.text)}</div>
+      <div class="raw-post" data-no-i18n lang="" style="white-space:pre-wrap;margin-top:6px;font-size:16.5px">${esc(x.text)}</div>
       <div>${x.media.filter(m => m.saved).map(m => `<a href="/api/bench/${esc(u.username)}/media/${esc(m.file)}" target="_blank"><img src="/api/bench/${esc(u.username)}/media/${esc(m.file)}" loading="lazy" title="${m.type === 'video' ? L('视频封面', 'Video cover') : L('图片', 'Image')}"></a>`).join('')}</div>
-      <div class="row"><button class="run" data-imit="${esc(x.id)}" style="padding:6px 12px;font-size:13px">${L('让 5 个角色仿写这条', 'Have the 5 roles write a version of this')}${window.ACCOUNT && !isDefaultAcct(window.ACCOUNT) ? ' → @' + esc(window.ACCOUNT) : ''}</button></div></div>`).join('') || `<div class="hint">${L('没有匹配的帖子', 'No matching posts')}</div>`;
+      <div class="row"><button class="run" data-imit="${esc(x.id)}" style="padding:6px 12px;font-size:15.5px">${L('让 5 个角色仿写这条', 'Have the 5 roles write a version of this')}${window.ACCOUNT && !isDefaultAcct(window.ACCOUNT) ? ' → @' + esc(window.ACCOUNT) : ''}</button></div></div>`).join('') || `<div class="hint">${L('没有匹配的帖子', 'No matching posts')}</div>`;
     $('#bKbList').querySelectorAll('[data-imit]').forEach(b => b.onclick = () => runImitate(u.username, b.dataset.imit, b));
   };
   $('#bKbQ').oninput = renderKb; $('#bKbT').onchange = renderKb; renderKb();
@@ -165,7 +165,7 @@ async function runImitate(u, pid, btn) {
         st.className = 'status ok'; st.textContent = '完成 · ' + (ev.ms / 1000).toFixed(0) + 's';
         body.className = 'body'; body.innerHTML = `<textarea class="bPost" style="min-height:110px">${esc(ev.post)}</textarea><div class="hint wl">文案 ${ev.weighted}/2200 字符 · 话题标签 ${ev.hashtags || 0}/30${ev.visual ? ' · 视觉概念：' + esc(ev.visual) : ''}</div>
           <details><summary class="hint">完整输出</summary><div style="white-space:pre-wrap">${esc(ev.output)}</div></details>
-          <div class="row"><select class="bMode" style="display:none"><option value="review">审核后发</option></select><button class="copy bQ">加入发布排期（自动排最佳时段）</button><button class="copy bGrid">＋ 加入九宫格</button><button class="copy bCopy">复制文案</button></div>`;
+          <div class="row"><select class="bMode" style="display:none"><option value="review">审核后发</option></select><button class="copy bQ">加入发布排期（自动排最佳时段）</button><button class="copy bGrid">+ 加入九宫格</button><button class="copy bCopy">复制文案</button></div>`;
         if (ev.review) { el.querySelector('.title').insertAdjacentHTML('afterend', rvBadge(ev.review)); el.insertAdjacentHTML('beforeend', rvDetails(ev.review)); wireRv(el); }
         const ta = body.querySelector('.bPost');
         const wl = body.querySelector('.wl');
@@ -195,7 +195,7 @@ function renderQueue(q) {
   $('#bQueue').innerHTML = q.items.map(x => `<div class="qitem" data-id="${x.id}"><div class="hint"><span class="pill ${x.status}">${QS[x.status] || x.status}</span>
     ${fmtT(x.scheduled_at)}${L('（北京时间）· 文案 ', ' (Beijing time) · caption ')}${x.weighted}/2200 · # ${x.hashtags != null ? x.hashtags : (x.text.match(/#[^\s#]+/g) || []).length}/30 ${x.source && x.source.username ? L('· 仿写自 @', '· modeled on @') + esc(x.source.username) + (x.source.agent ? ' · ' + esc(agName(x.source.agent)) : '') : ''}
 ${x.error ? ` · <span style="color:var(--err)">${esc(x.error)}</span>` : ''}</div>
-    <div class="raw-post" data-no-i18n lang="" style="white-space:pre-wrap;margin:6px 0;font-size:14px">${esc(x.text)}</div>
+    <div class="raw-post" data-no-i18n lang="" style="white-space:pre-wrap;margin:6px 0;font-size:16.5px">${esc(x.text)}</div>
     ${x.status === 'posted' || x.status === 'canceled' ? `<div class="row" style="margin-top:0"><button class="copy" data-a="delete">${L('删除', 'Delete')}</button></div>` : `<div class="row" style="margin-top:0">
       ${x.mode === 'review' && x.status !== 'approved' ? `<button class="copy" data-a="approve">${L('审核通过', 'Approve')}</button>` : ''}
       <button class="copy" data-a="copytext">${L('复制文案', 'Copy caption')}</button><a class="copy" target="_blank" rel="noopener" href="https://www.instagram.com/">${L('打开 Instagram', 'Open Instagram')}</a><button class="copy" data-a="mark_posted">${L('我已手动发好', 'I posted it')}</button>

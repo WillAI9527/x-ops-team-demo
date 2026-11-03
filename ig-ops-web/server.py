@@ -50,6 +50,17 @@ def load_env_file(path):
 load_env_file(os.path.join(BASE, ".env.local"))
 
 CONFIG = json.load(open(os.path.join(BASE, "agents.json"), encoding="utf-8"))
+# English-only UI: role prompts ask for English post drafts (instead of CN + EN pairs)
+def _en_only_prompts(o):
+    if isinstance(o, dict):
+        return {k: _en_only_prompts(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [_en_only_prompts(v) for v in o]
+    if isinstance(o, str):
+        for a, b in (("中英草稿", "英文草稿"), ("定稿的中英文帖子", "定稿的英文帖子"), ("中英各一版", "英文版"), ("中英两版", "英文版"), ("中英文帖子", "英文帖子")):
+            o = o.replace(a, b)
+    return o
+CONFIG = _en_only_prompts(CONFIG)
 AGENTS = {a["id"]: a for a in CONFIG["agents"]}
 PIPELINE = CONFIG["pipeline"]
 FINAL = CONFIG["finalAgent"]
@@ -59,8 +70,8 @@ HOST = os.environ.get("HOST", "127.0.0.1")
 TIMEOUT = int(os.environ.get("ZENMUX_TIMEOUT", "180"))
 
 LANG_HINT = {
-    "zh": "请用简体中文回答（帖子草稿仍按要求给出中英两版）。",
-    "en": "Please answer in English (still provide CN + EN post drafts where the role requires).",
+    "zh": "请用简体中文回答（帖子草稿仍按要求给出英文版）。",
+    "en": "Please answer in English. Write every post draft in English only (no Chinese version).",
 }
 
 
@@ -96,7 +107,7 @@ def clean(text):
 LANG_FORCE = {
     "en": "\n\n[OUTPUT LANGUAGE] The user interface is set to English. Write your ENTIRE reply in English "
           "(headings, analysis, JSON string values, review reasons, post drafts). Do not answer in Chinese even if the "
-          "instructions or source posts are Chinese; keep Chinese only inside direct quotes of source posts. Quote source posts VERBATIM in their original language — never translate fetched posts, captions or comments.\n",
+          "instructions or source posts are Chinese; keep Chinese only inside direct quotes of source posts. Quote source posts VERBATIM in their original language — never translate fetched posts, captions or comments. Write post drafts in English only (no Chinese versions). Use \"[to verify]\" instead of 【待核实】 and \"baseline TBD\" instead of 基线待采集. Every heading, field label and JSON value (topic names, descriptions, hooks, positioning, tags) must be in English: translate any Chinese labels the instructions give you (e.g. 帖子 → Post, 单图 → Single image, 轮播 → Carousel, 形式 → Format, 视觉概念 → Visual concept, 待解决问题 → Open questions). Never copy Chinese template labels into the answer.\n",
     "zh": "\n\n【输出语言】界面语言是中文：全部内容（标题、分析、JSON 字段值、审查理由、帖子草稿）都用简体中文输出；"
           "引用原帖必须一字不改、保留原文语言（英文帖就引用英文原文），不要翻译抓取到的帖子、文案或评论。\n",
 }
@@ -110,6 +121,9 @@ def call_model(agent, messages, max_tokens=None, timeout=None):
             messages[0] = dict(messages[0], content=messages[0]["content"] + lf)
         else:
             messages = [{"role": "system", "content": lf.strip()}] + messages
+    if req_lang() == "en" and messages and messages[-1].get("role") == "user" and isinstance(messages[-1].get("content"), str):
+        messages[-1] = dict(messages[-1], content=messages[-1]["content"] + "\n\n[Reminder] Answer entirely in English, including all headings, labels and JSON values. "
+                            "Only verbatim quotes of source posts may stay in their original language.")
     hdr = account_header()
     if hdr:
         if messages and messages[0].get("role") == "system":
@@ -272,9 +286,9 @@ def migrate_legacy():
         if not os.path.exists(t):
             os.rename(os.path.join(DATA_ROOT, n), t)
     if not os.path.exists(os.path.join(dst, "profile.json")):
-        json.dump({"handle": "LucaAiAi", "name": "LucaAiAi", "builtin": True, "positioning": "中文 AI 科普",
-                   "short": "AI 科普", "audience": "AI 从业者、出海与科技圈、想用 AI 提效的人；中英双语",
-                   "pillars": ["各家 AI 产品与产品线", "怎么把 AI 用得更好"], "createdAt": iso()},
+        json.dump({"handle": "LucaAiAi", "name": "LucaAiAi", "builtin": True, "positioning": "AI explainers",
+                   "short": "AI explainers", "audience": "AI practitioners, tech and go-global builders, people who want to work faster with AI",
+                   "pillars": ["AI products and product lines", "How to use AI better"], "createdAt": iso()},
                   open(os.path.join(dst, "profile.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if not os.path.exists(_active_file()):
         json.dump({"handle": "LucaAiAi"}, open(_active_file(), "w"))
@@ -777,7 +791,7 @@ def fix_rules(kind, lang):
           "不说已发布 / 已关注 / 已发送 / 已私信 / 已执行；不承诺自动发布、自动点赞、自动回复、自动关注，一切都是给账号主人审核的草稿。",
           "只谈本账号，不混入其他账号的资料。",
           "保持你的岗位定位；不说自己被训练。",
-          "Reply in English." if en else "用中文回答（帖子草稿可按岗位要求附英文版）。"]
+          "Reply in English; post drafts in English only; write [to verify] instead of 【待核实】." if en else "用中文回答（帖子草稿可按岗位要求附英文版）。"]
     return r
 
 
@@ -1576,8 +1590,7 @@ class Handler(BaseHTTPRequestHandler):
         """v1.6: the page sends X-Account = the account it is showing; every request is served for that
         account, so another tab switching the global active account can't mix data / names."""
         _TL.handle = None
-        lg = (self.headers.get("X-Lang") or "").lower()
-        _TL.lang = lg if lg in ("zh", "en") else None
+        _TL.lang = "en"   # English-only UI: model output and server messages are always English
         h = (self.headers.get("X-Account") or "").lstrip("@")
         if h and path not in ("/api/accounts", "/api/accounts/switch") and HANDLE_RE.match(h) and profile(h):
             _TL.handle = canon_handle(h)
@@ -1674,8 +1687,7 @@ class Handler(BaseHTTPRequestHandler):
                 raise ValueError
         except Exception:
             return self.send_json(400, {"error": "invalid JSON body"})
-        if body.get("lang") in ("zh", "en"):   # v1.6: any POST may carry lang (overrides X-Lang)
-            _TL.lang = body["lang"]
+        _TL.lang = "en"   # English-only
         if path == "/api/accounts/switch":
             h = canon_handle(body.get("handle"))
             if not profile(h):
@@ -1801,7 +1813,7 @@ class Handler(BaseHTTPRequestHandler):
     def handle_ask(self, body):
         agent = body.get("agent", "all")
         question = (body.get("question") or "").strip()
-        lang = body.get("lang")
+        lang = "en"   # English-only
         if not question:
             return self.send_json(400, {"error": "question is required"})
         if len(question) > 8000:
@@ -1842,10 +1854,10 @@ def seed_default_account():
         return
     d = os.path.join(ACCOUNTS_DIR, IG_DEFAULT)
     os.makedirs(d, exist_ok=True)
-    json.dump({"handle": IG_DEFAULT, "name": "示例 IG 账号", "positioning": "中文 AI 科普 · Instagram 图文轮播与 Reels",
-               "short": "AI 科普", "audience": "AI 从业者、出海与科技圈、想用 AI 提效的人；中英双语",
-               "pillars": ["各家 AI 产品与产品线（轮播对比图）", "怎么把 AI 用得更好（Reels 教程）"],
-               "tone": "真诚、视觉化、像朋友分享", "platform": "instagram", "source": "manual", "createdAt": iso()},
+    json.dump({"handle": IG_DEFAULT, "name": "Sample IG account", "positioning": "AI explainers · Instagram carousels and Reels",
+               "short": "AI explainers", "audience": "AI practitioners, tech and go-global builders, people who want to work faster with AI",
+               "pillars": ["AI products and product lines (carousel comparisons)", "How to use AI better (Reels tutorials)"],
+               "tone": "Sincere, visual, like a friend sharing tips", "platform": "instagram", "source": "manual", "createdAt": iso()},
               open(os.path.join(d, "profile.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if not os.path.exists(_active_file()):
         json.dump({"handle": IG_DEFAULT}, open(_active_file(), "w"))

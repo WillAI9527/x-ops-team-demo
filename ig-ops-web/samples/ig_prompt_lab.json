@@ -1,12 +1,12 @@
 {
  "schema": "luca-xops-bench/v1",
- "source": "示例数据（虚构，仅供演示；实时数据需 Instagram Graph API）",
+ "source": "Sample data (fictional, demo only; live data needs the Instagram Graph API or Apify)",
  "fetched_at": "2026-11-02T09:00:00+08:00",
  "user": {
   "id": "demo-ig_prompt_lab",
   "username": "ig_prompt_lab",
-  "name": "提示词实验室（示例）",
-  "description": "Reels 教你用好 AI｜虚构示例账号",
+  "name": "Prompt Lab (sample)",
+  "description": "Reels that teach you to use AI well | fictional sample account",
   "created_at": "2024-03-01T00:00:00.000Z",
   "location": "",
   "url": "",
@@ -22,9 +22,9 @@
  "posts": [
   {
    "id": "ig_1000",
-   "text": "【Reels】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#学习方法 #AI工具 #科技生活 #工作流 #提示词 #数字游民 #效率提升",
+   "text": "[Reels] An LLM's \"context window\" explained in one image\n\nThe context window is like AI's short-term memory: how much text it can read at once. Anything beyond that, it forgets.\n\n#LearningTips #AITools #TechLife #Workflow #Prompts #DigitalNomad #Productivity",
    "created_at": "2026-11-01T11:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0000/",
    "metrics": {
     "likes": 1831,
@@ -40,9 +40,9 @@
   },
   {
    "id": "ig_1001",
-   "text": "【轮播】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#数字游民 #ChatGPT #人工智能 #科技生活 #提示词 #AI科普 #AIGC",
+   "text": "[Carousel] Reels: learn to write a good prompt in 60 seconds\n\nFirst 3 seconds: does AI keep missing the point? The next 3 shots show you how to fix it.\n\n#DigitalNomad #ChatGPT #ArtificialIntelligence #TechLife #Prompts #AIExplained #AIGC",
    "created_at": "2026-10-31T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0001/",
    "metrics": {
     "likes": 6652,
@@ -58,9 +58,9 @@
   },
   {
    "id": "ig_1002",
-   "text": "【轮播】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#科技生活 #工作流 #提示词 #人工智能 #效率提升 #数字游民 #职场效率",
+   "text": "[Carousel] AI product tiers: how to choose without overpaying\n\nFree tiers are for trying it out, personal plans for heavy use, team plans depend on collaboration needs. Check the official pages for current tiers.\n\n#TechLife #Workflow #Prompts #ArtificialIntelligence #Productivity #DigitalNomad #WorkProductivity",
    "created_at": "2026-10-29T14:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0002/",
    "metrics": {
     "likes": 3128,
@@ -76,9 +76,9 @@
   },
   {
    "id": "ig_1003",
-   "text": "【Reels】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#工作流 #提示词 #数字游民 #ChatGPT #学习方法 #科技生活 #职场效率",
+   "text": "[Reels] A day of learning English with AI\n\nSpeaking practice in the morning, vocabulary review at noon, an AI quiz at night. Which would you try first? Tell me in the comments.\n\n#Workflow #Prompts #DigitalNomad #ChatGPT #LearningTips #TechLife #WorkProductivity",
    "created_at": "2026-10-28T12:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0003/",
    "metrics": {
     "likes": 4658,
@@ -94,9 +94,9 @@
   },
   {
    "id": "ig_1004",
-   "text": "【Reels】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#学习方法 #数字游民 #ChatGPT #职场效率 #提示词 #人工智能 #AI工具",
+   "text": "[Reels] Can you use AI-generated images commercially?\n\nCheck three things: platform terms, source material, and whether faces or trademarks are involved. If unsure, don't use it commercially.\n\n#LearningTips #DigitalNomad #ChatGPT #WorkProductivity #Prompts #ArtificialIntelligence #AITools",
    "created_at": "2026-10-26T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0004/",
    "metrics": {
     "likes": 4823,
@@ -112,9 +112,9 @@
   },
   {
    "id": "ig_1005",
-   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#人工智能 #AI科普 #提示词 #数字游民 #学习方法 #AIGC #AI工具",
+   "text": "[Reels] Save this! A collection of AI workflow templates\n\n4 templates for writing, spreadsheets, slides and posters. Swipe to the last slide; how to get them is on my profile.\n\n#ArtificialIntelligence #AIExplained #Prompts #DigitalNomad #LearningTips #AIGC #AITools",
    "created_at": "2026-10-24T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0005/",
    "metrics": {
     "likes": 7113,
@@ -130,9 +130,9 @@
   },
   {
    "id": "ig_1006",
-   "text": "【轮播】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#AI科普 #AI工具 #工作流 #AIGC #职场效率 #科技生活 #人工智能",
+   "text": "[Carousel] An LLM's \"context window\" explained in one image\n\nThe context window is like AI's short-term memory: how much text it can read at once. Anything beyond that, it forgets.\n\n#AIExplained #AITools #Workflow #AIGC #WorkProductivity #TechLife #ArtificialIntelligence",
    "created_at": "2026-10-23T14:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0006/",
    "metrics": {
     "likes": 2771,
@@ -148,9 +148,9 @@
   },
   {
    "id": "ig_1007",
-   "text": "【Reels】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#职场效率 #ChatGPT #AI工具 #科技生活 #人工智能 #AIGC #AI科普",
+   "text": "[Reels] Reels: learn to write a good prompt in 60 seconds\n\nFirst 3 seconds: does AI keep missing the point? The next 3 shots show you how to fix it.\n\n#WorkProductivity #ChatGPT #AITools #TechLife #ArtificialIntelligence #AIGC #AIExplained",
    "created_at": "2026-10-21T12:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0007/",
    "metrics": {
     "likes": 5647,
@@ -166,9 +166,9 @@
   },
   {
    "id": "ig_1008",
-   "text": "【轮播】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#职场效率 #AI工具 #工作流 #学习方法 #提示词 #AI科普 #科技生活",
+   "text": "[Carousel] AI product tiers: how to choose without overpaying\n\nFree tiers are for trying it out, personal plans for heavy use, team plans depend on collaboration needs. Check the official pages for current tiers.\n\n#WorkProductivity #AITools #Workflow #LearningTips #Prompts #AIExplained #TechLife",
    "created_at": "2026-10-20T04:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0008/",
    "metrics": {
     "likes": 4922,
@@ -184,9 +184,9 @@
   },
   {
    "id": "ig_1009",
-   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#学习方法 #效率提升 #科技生活 #数字游民 #职场效率 #AIGC #工作流",
+   "text": "[Carousel] A day of learning English with AI\n\nSpeaking practice in the morning, vocabulary review at noon, an AI quiz at night. Which would you try first? Tell me in the comments.\n\n#LearningTips #Productivity #TechLife #DigitalNomad #WorkProductivity #AIGC #Workflow",
    "created_at": "2026-10-18T13:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0009/",
    "metrics": {
     "likes": 3872,
@@ -202,9 +202,9 @@
   },
   {
    "id": "ig_1010",
-   "text": "【轮播】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#效率提升 #人工智能 #提示词 #学习方法 #数字游民 #ChatGPT #科技生活",
+   "text": "[Carousel] Can you use AI-generated images commercially?\n\nCheck three things: platform terms, source material, and whether faces or trademarks are involved. If unsure, don't use it commercially.\n\n#Productivity #ArtificialIntelligence #Prompts #LearningTips #DigitalNomad #ChatGPT #TechLife",
    "created_at": "2026-10-16T12:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0010/",
    "metrics": {
     "likes": 4755,
@@ -220,9 +220,9 @@
   },
   {
    "id": "ig_1011",
-   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#AI科普 #提示词 #工作流 #ChatGPT #科技生活 #AI工具 #AIGC",
+   "text": "[Reels] Save this! A collection of AI workflow templates\n\n4 templates for writing, spreadsheets, slides and posters. Swipe to the last slide; how to get them is on my profile.\n\n#AIExplained #Prompts #Workflow #ChatGPT #TechLife #AITools #AIGC",
    "created_at": "2026-10-15T12:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0011/",
    "metrics": {
     "likes": 6840,
@@ -238,9 +238,9 @@
   },
   {
    "id": "ig_1012",
-   "text": "【单图】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#AIGC #AI科普 #效率提升 #学习方法 #提示词 #AI工具 #工作流",
+   "text": "[Single image] An LLM's \"context window\" explained in one image\n\nThe context window is like AI's short-term memory: how much text it can read at once. Anything beyond that, it forgets.\n\n#AIGC #AIExplained #Productivity #LearningTips #Prompts #AITools #Workflow",
    "created_at": "2026-10-13T13:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0012/",
    "metrics": {
     "likes": 2504,
@@ -256,9 +256,9 @@
   },
   {
    "id": "ig_1013",
-   "text": "【单图】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#效率提升 #AI工具 #职场效率 #数字游民 #学习方法 #科技生活 #AIGC",
+   "text": "[Single image] Reels: learn to write a good prompt in 60 seconds\n\nFirst 3 seconds: does AI keep missing the point? The next 3 shots show you how to fix it.\n\n#Productivity #AITools #WorkProductivity #DigitalNomad #LearningTips #TechLife #AIGC",
    "created_at": "2026-10-12T13:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0013/",
    "metrics": {
     "likes": 2826,
@@ -274,9 +274,9 @@
   },
   {
    "id": "ig_1014",
-   "text": "【Reels】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#工作流 #科技生活 #数字游民 #人工智能 #AI工具 #AIGC #学习方法",
+   "text": "[Reels] AI product tiers: how to choose without overpaying\n\nFree tiers are for trying it out, personal plans for heavy use, team plans depend on collaboration needs. Check the official pages for current tiers.\n\n#Workflow #TechLife #DigitalNomad #ArtificialIntelligence #AITools #AIGC #LearningTips",
    "created_at": "2026-10-10T14:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0014/",
    "metrics": {
     "likes": 2578,
@@ -292,9 +292,9 @@
   },
   {
    "id": "ig_1015",
-   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#人工智能 #工作流 #科技生活 #ChatGPT #提示词 #数字游民 #效率提升",
+   "text": "[Carousel] A day of learning English with AI\n\nSpeaking practice in the morning, vocabulary review at noon, an AI quiz at night. Which would you try first? Tell me in the comments.\n\n#ArtificialIntelligence #Workflow #TechLife #ChatGPT #Prompts #DigitalNomad #Productivity",
    "created_at": "2026-10-08T00:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0015/",
    "metrics": {
     "likes": 5829,
@@ -310,9 +310,9 @@
   },
   {
    "id": "ig_1016",
-   "text": "【轮播】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#提示词 #数字游民 #学习方法 #工作流 #AIGC #AI工具 #科技生活",
+   "text": "[Carousel] Can you use AI-generated images commercially?\n\nCheck three things: platform terms, source material, and whether faces or trademarks are involved. If unsure, don't use it commercially.\n\n#Prompts #DigitalNomad #LearningTips #Workflow #AIGC #AITools #TechLife",
    "created_at": "2026-10-07T00:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0016/",
    "metrics": {
     "likes": 5042,
@@ -328,9 +328,9 @@
   },
   {
    "id": "ig_1017",
-   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#科技生活 #职场效率 #AI科普 #提示词 #数字游民 #AI工具 #AIGC",
+   "text": "[Reels] Save this! A collection of AI workflow templates\n\n4 templates for writing, spreadsheets, slides and posters. Swipe to the last slide; how to get them is on my profile.\n\n#TechLife #WorkProductivity #AIExplained #Prompts #DigitalNomad #AITools #AIGC",
    "created_at": "2026-10-05T12:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0017/",
    "metrics": {
     "likes": 3553,
@@ -346,9 +346,9 @@
   },
   {
    "id": "ig_1018",
-   "text": "【Reels】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#提示词 #数字游民 #工作流 #ChatGPT #AIGC #人工智能 #科技生活",
+   "text": "[Reels] An LLM's \"context window\" explained in one image\n\nThe context window is like AI's short-term memory: how much text it can read at once. Anything beyond that, it forgets.\n\n#Prompts #DigitalNomad #Workflow #ChatGPT #AIGC #ArtificialIntelligence #TechLife",
    "created_at": "2026-10-04T13:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0018/",
    "metrics": {
     "likes": 6442,
@@ -364,9 +364,9 @@
   },
   {
    "id": "ig_1019",
-   "text": "【轮播】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#科技生活 #AI工具 #AIGC #效率提升 #职场效率 #工作流 #人工智能",
+   "text": "[Carousel] Reels: learn to write a good prompt in 60 seconds\n\nFirst 3 seconds: does AI keep missing the point? The next 3 shots show you how to fix it.\n\n#TechLife #AITools #AIGC #Productivity #WorkProductivity #Workflow #ArtificialIntelligence",
    "created_at": "2026-10-02T12:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0019/",
    "metrics": {
     "likes": 7139,
@@ -382,9 +382,9 @@
   },
   {
    "id": "ig_1020",
-   "text": "【轮播】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#工作流 #人工智能 #科技生活 #效率提升 #AI科普 #AIGC #职场效率",
+   "text": "[Carousel] AI product tiers: how to choose without overpaying\n\nFree tiers are for trying it out, personal plans for heavy use, team plans depend on collaboration needs. Check the official pages for current tiers.\n\n#Workflow #ArtificialIntelligence #TechLife #Productivity #AIExplained #AIGC #WorkProductivity",
    "created_at": "2026-09-30T04:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0020/",
    "metrics": {
     "likes": 1194,
@@ -400,9 +400,9 @@
   },
   {
    "id": "ig_1021",
-   "text": "【Reels】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#人工智能 #AI工具 #工作流 #ChatGPT #AIGC #效率提升 #提示词",
+   "text": "[Reels] A day of learning English with AI\n\nSpeaking practice in the morning, vocabulary review at noon, an AI quiz at night. Which would you try first? Tell me in the comments.\n\n#ArtificialIntelligence #AITools #Workflow #ChatGPT #AIGC #Productivity #Prompts",
    "created_at": "2026-09-29T14:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0021/",
    "metrics": {
     "likes": 4826,
@@ -418,9 +418,9 @@
   },
   {
    "id": "ig_1022",
-   "text": "【单图】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#职场效率 #人工智能 #AI工具 #数字游民 #提示词 #效率提升 #ChatGPT",
+   "text": "[Single image] Can you use AI-generated images commercially?\n\nCheck three things: platform terms, source material, and whether faces or trademarks are involved. If unsure, don't use it commercially.\n\n#WorkProductivity #ArtificialIntelligence #AITools #DigitalNomad #Prompts #Productivity #ChatGPT",
    "created_at": "2026-09-27T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0022/",
    "metrics": {
     "likes": 2108,
@@ -436,9 +436,9 @@
   },
   {
    "id": "ig_1023",
-   "text": "【单图】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#职场效率 #AI工具 #工作流 #科技生活 #数字游民 #学习方法 #AIGC",
+   "text": "[Single image] Save this! A collection of AI workflow templates\n\n4 templates for writing, spreadsheets, slides and posters. Swipe to the last slide; how to get them is on my profile.\n\n#WorkProductivity #AITools #Workflow #TechLife #DigitalNomad #LearningTips #AIGC",
    "created_at": "2026-09-26T11:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0023/",
    "metrics": {
     "likes": 2093,
@@ -454,9 +454,9 @@
   },
   {
    "id": "ig_1024",
-   "text": "【轮播】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#工作流 #AI科普 #ChatGPT #AIGC #AI工具 #科技生活 #学习方法",
+   "text": "[Carousel] An LLM's \"context window\" explained in one image\n\nThe context window is like AI's short-term memory: how much text it can read at once. Anything beyond that, it forgets.\n\n#Workflow #AIExplained #ChatGPT #AIGC #AITools #TechLife #LearningTips",
    "created_at": "2026-09-24T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0024/",
    "metrics": {
     "likes": 2361,
@@ -472,9 +472,9 @@
   },
   {
    "id": "ig_1025",
-   "text": "【单图】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#ChatGPT #职场效率 #数字游民 #效率提升 #AIGC #人工智能 #AI工具",
+   "text": "[Single image] Reels: learn to write a good prompt in 60 seconds\n\nFirst 3 seconds: does AI keep missing the point? The next 3 shots show you how to fix it.\n\n#ChatGPT #WorkProductivity #DigitalNomad #Productivity #AIGC #ArtificialIntelligence #AITools",
    "created_at": "2026-09-22T04:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0025/",
    "metrics": {
     "likes": 1704,
@@ -490,9 +490,9 @@
   },
   {
    "id": "ig_1026",
-   "text": "【单图】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#AIGC #人工智能 #学习方法 #提示词 #职场效率 #数字游民 #科技生活",
+   "text": "[Single image] AI product tiers: how to choose without overpaying\n\nFree tiers are for trying it out, personal plans for heavy use, team plans depend on collaboration needs. Check the official pages for current tiers.\n\n#AIGC #ArtificialIntelligence #LearningTips #Prompts #WorkProductivity #DigitalNomad #TechLife",
    "created_at": "2026-09-21T12:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0026/",
    "metrics": {
     "likes": 3620,
@@ -508,9 +508,9 @@
   },
   {
    "id": "ig_1027",
-   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#人工智能 #ChatGPT #AIGC #工作流 #提示词 #AI工具 #数字游民",
+   "text": "[Carousel] A day of learning English with AI\n\nSpeaking practice in the morning, vocabulary review at noon, an AI quiz at night. Which would you try first? Tell me in the comments.\n\n#ArtificialIntelligence #ChatGPT #AIGC #Workflow #Prompts #AITools #DigitalNomad",
    "created_at": "2026-09-19T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0027/",
    "metrics": {
     "likes": 1851,
@@ -526,9 +526,9 @@
   },
   {
    "id": "ig_1028",
-   "text": "【Reels】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#科技生活 #人工智能 #ChatGPT #AIGC #学习方法 #数字游民 #效率提升",
+   "text": "[Reels] Can you use AI-generated images commercially?\n\nCheck three things: platform terms, source material, and whether faces or trademarks are involved. If unsure, don't use it commercially.\n\n#TechLife #ArtificialIntelligence #ChatGPT #AIGC #LearningTips #DigitalNomad #Productivity",
    "created_at": "2026-09-18T14:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0028/",
    "metrics": {
     "likes": 3430,
@@ -544,9 +544,9 @@
   },
   {
    "id": "ig_1029",
-   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#提示词 #AI科普 #人工智能 #职场效率 #ChatGPT #AIGC #数字游民",
+   "text": "[Reels] Save this! A collection of AI workflow templates\n\n4 templates for writing, spreadsheets, slides and posters. Swipe to the last slide; how to get them is on my profile.\n\n#Prompts #AIExplained #ArtificialIntelligence #WorkProductivity #ChatGPT #AIGC #DigitalNomad",
    "created_at": "2026-09-16T12:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0029/",
    "metrics": {
     "likes": 4999,
@@ -562,9 +562,9 @@
   },
   {
    "id": "ig_1030",
-   "text": "【Reels】一张图看懂大模型的「上下文窗口」\n\n上下文窗口就像 AI 的短期记忆：能一次读进多少字。超出的部分它会忘。\n\n#数字游民 #AI科普 #AI工具 #ChatGPT #提示词 #AIGC #职场效率",
+   "text": "[Reels] An LLM's \"context window\" explained in one image\n\nThe context window is like AI's short-term memory: how much text it can read at once. Anything beyond that, it forgets.\n\n#DigitalNomad #AIExplained #AITools #ChatGPT #Prompts #AIGC #WorkProductivity",
    "created_at": "2026-09-14T04:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0030/",
    "metrics": {
     "likes": 3085,
@@ -580,9 +580,9 @@
   },
   {
    "id": "ig_1031",
-   "text": "【轮播】Reels：60 秒学会写好一条提示词\n\n前 3 秒：你是不是也觉得 AI 答非所问？接下来 3 个镜头教你改。\n\n#AI工具 #人工智能 #AIGC #AI科普 #提示词 #工作流 #效率提升",
+   "text": "[Carousel] Reels: learn to write a good prompt in 60 seconds\n\nFirst 3 seconds: does AI keep missing the point? The next 3 shots show you how to fix it.\n\n#AITools #ArtificialIntelligence #AIGC #AIExplained #Prompts #Workflow #Productivity",
    "created_at": "2026-09-13T11:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0031/",
    "metrics": {
     "likes": 3889,
@@ -598,9 +598,9 @@
   },
   {
    "id": "ig_1032",
-   "text": "【Reels】AI 产品分几档？怎么选不花冤枉钱\n\n免费档适合体验，个人订阅适合重度使用，团队版看协作需求。具体档位以官方页面为准。\n\n#AI科普 #职场效率 #工作流 #效率提升 #ChatGPT #AI工具 #人工智能",
+   "text": "[Reels] AI product tiers: how to choose without overpaying\n\nFree tiers are for trying it out, personal plans for heavy use, team plans depend on collaboration needs. Check the official pages for current tiers.\n\n#AIExplained #WorkProductivity #Workflow #Productivity #ChatGPT #AITools #ArtificialIntelligence",
    "created_at": "2026-09-11T00:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0032/",
    "metrics": {
     "likes": 4893,
@@ -616,9 +616,9 @@
   },
   {
    "id": "ig_1033",
-   "text": "【轮播】我用 AI 学英语的一天\n\n早上口语陪练、中午整理生词、晚上让 AI 出小测验。你最想先试哪一个？评论告诉我。\n\n#学习方法 #人工智能 #效率提升 #职场效率 #ChatGPT #提示词 #AIGC",
+   "text": "[Carousel] A day of learning English with AI\n\nSpeaking practice in the morning, vocabulary review at noon, an AI quiz at night. Which would you try first? Tell me in the comments.\n\n#LearningTips #ArtificialIntelligence #Productivity #WorkProductivity #ChatGPT #Prompts #AIGC",
    "created_at": "2026-09-10T14:30:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0033/",
    "metrics": {
     "likes": 3162,
@@ -634,9 +634,9 @@
   },
   {
    "id": "ig_1034",
-   "text": "【Reels】AI 生成图片能商用吗？\n\n看三件事：平台条款、素材来源、是否涉及肖像和商标。拿不准就别商用。\n\n#AI科普 #科技生活 #提示词 #职场效率 #学习方法 #人工智能 #AI工具",
+   "text": "[Reels] Can you use AI-generated images commercially?\n\nCheck three things: platform terms, source material, and whether faces or trademarks are involved. If unsure, don't use it commercially.\n\n#AIExplained #TechLife #Prompts #WorkProductivity #LearningTips #ArtificialIntelligence #AITools",
    "created_at": "2026-09-08T13:00:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0034/",
    "metrics": {
     "likes": 6034,
@@ -652,9 +652,9 @@
   },
   {
    "id": "ig_1035",
-   "text": "【Reels】收藏！AI 工作流模板合集\n\n写作、做表、做 PPT、做海报的 4 套模板，滑到最后一张领取方式见主页。\n\n#效率提升 #AI工具 #科技生活 #学习方法 #工作流 #AI科普 #提示词",
+   "text": "[Reels] Save this! A collection of AI workflow templates\n\n4 templates for writing, spreadsheets, slides and posters. Swipe to the last slide; how to get them is on my profile.\n\n#Productivity #AITools #TechLife #LearningTips #Workflow #AIExplained #Prompts",
    "created_at": "2026-09-06T04:15:00.000Z",
-   "lang": "zh",
+   "lang": "en",
    "url": "https://www.instagram.com/p/DEMOIG_0035/",
    "metrics": {
     "likes": 2038,
