@@ -1532,7 +1532,21 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = self.path.split("?")[0]
         self.pin_account(path)
-        if path in ("/", "/index.html"):
+        if path == "/":
+            # cover page first; ?app, or arriving from the Instagram site's switch button, goes straight into the app
+            q = self.path.split("?", 1)[1] if "?" in self.path else ""
+            ref = (self.headers.get("Referer") or "")
+            if "app" in urllib.parse.parse_qs(q, keep_blank_values=True) or "ig-ops-team-demo" in ref:
+                self.send_response(302); self.send_header("Location", "/app"); self.send_header("Cache-Control", "no-store")
+                self.send_header("Content-Length", "0"); self.end_headers(); return
+            if os.path.exists(os.path.join(BASE, "cover.html")):
+                return self.send_file("cover.html", "text/html; charset=utf-8")
+            return self.send_file("index.html", "text/html; charset=utf-8")
+        if path in ("/app", "/app/", "/index.html", "/cover"):
+            if path == "/app/":
+                self.send_response(301); self.send_header("Location", "/app"); self.send_header("Content-Length", "0"); self.end_headers(); return
+            if path == "/cover":
+                return self.send_file("cover.html", "text/html; charset=utf-8")
             return self.send_file("index.html", "text/html; charset=utf-8")
         if path == "/bench.js":
             return self.send_file("bench.js", "application/javascript; charset=utf-8")

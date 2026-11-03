@@ -23,6 +23,8 @@
 | X 运营团队 | 仓库根目录 | https://x-ops-team-demo.vercel.app/ | 8788 |
 | Instagram 运营团队 | `ig-ops-web/` | https://ig-ops-team-demo.vercel.app/ | 8789 |
 
+**X 版封面：**打开 X 版网址先看到互动封面 `cover.html`（WOLF AI，狼的眼睛跟着鼠标走），点 START 进入应用 `/app`。直接进应用用 https://x-ops-team-demo.vercel.app/app ；从 Instagram 版点切换按钮会直接进 `/app`，不经过封面。
+
 - 两个版本顶部都有「X ⇄ Instagram」切换按钮，中文 / EN 一键切换：中文模式界面全中文，EN 模式全英文；抓取到的帖子保持原文，不做翻译。
 - X 版对标抓取免密钥（fxtwitter + 镜像 + 备用通道，带重试和缓存）；Instagram 版通过 Apify 读取公开主页数据（24 小时缓存）。
 - **密钥放在各自目录的 `.env.local`**（复制 `.env.local.example` 后填写）：X 版需要 `ZENMUX_API_KEY`；Instagram 版需要 `ZENMUX_API_KEY` 和 `APIFY_TOKEN`。`.env.local` 已在 `.gitignore` 里，不会被提交。
