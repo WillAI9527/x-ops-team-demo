@@ -760,14 +760,17 @@ def extract_post(text):
     return re.split(r"\n\s*\**(?:仿写要点|Notes)", text)[0].strip()
 
 
-def imitate(username, post_id, roles, review=True, demo=False, emit=None):
+def imitate(username, post_id, roles, review=True, demo=False, emit=None, post=None):
     kb = jload(os.path.join(adir(username), "kb", "kb.json")) or {}
     it = next((x for x in kb.get("items", []) if x["id"] == post_id), None)
+    if not it and isinstance(post, dict) and str(post.get("id")) == post_id and isinstance(post.get("text"), str) and isinstance(post.get("metrics"), dict):
+        it = {"id": post_id, "rank": post.get("rank", "-"), "topic": str(post.get("topic") or "")[:80], "text": post["text"][:4000],
+              "metrics": {k: post["metrics"].get(k, 0) for k in ("likes", "reposts", "replies", "views", "bookmarks", "quotes")}}
     if not it:
         acc = jload(os.path.join(adir(username), "account.json")) or {}
         p = next((x for x in acc.get("posts", []) if x["id"] == post_id), None)
         if not p:
-            raise RuntimeError("找不到这条帖子")
+            raise RuntimeError(_t("找不到这条帖子", "Post not found"))
         it = {"id": p["id"], "rank": "-", "topic": "", "text": p["text"], "metrics": p["metrics"]}
     roles = roles or list(S.PIPELINE)
     m = it["metrics"]
@@ -1100,7 +1103,7 @@ def handle_post(h, path, body):
         m = re.match(r"^/api/bench/([A-Za-z0-9_]{1,15})/(analyze|imitate|kb)$", path)
         if m:
             u, act = m.groups()
-            if not jload(os.path.join(adir(u), "account.json")):
+            if not jload(os.path.join(adir(u), "account.json")) and not (act == "imitate" and isinstance(body.get("post"), dict)):
                 return h.send_json(404, {"error": "account not found"})
             if act == "kb":
                 return h.send_json(200, {"ok": True, "kb": build_kb(u)})
@@ -1129,11 +1132,11 @@ def handle_post(h, path, body):
                     with lock:
                         emit(e)
                 try:
-                    emit({"event": "done", **imitate(u, pid, roles, *opts, emit=safe)})
+                    emit({"event": "done", **imitate(u, pid, roles, *opts, emit=safe, post=body.get("post"))})
                 except Exception as e:
                     emit({"event": "done", "ok": False, "error": _err(e)})
                 return
-            return h.send_json(200, imitate(u, pid, roles, *opts))
+            return h.send_json(200, imitate(u, pid, roles, *opts, post=body.get("post")))
         if path == "/api/queue":
             it = queue_add(body.get("text"), body.get("mode", "review"), body.get("scheduled_at"), body.get("source"))
             return h.send_json(200, {"ok": True, "item": it, "queue": queue_view()})

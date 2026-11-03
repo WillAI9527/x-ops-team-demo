@@ -41,7 +41,12 @@ async function benchOpen() {
   loadBList(); loadQueue();
 }
 async function loadBList() {
-  const j = await api('/api/bench');
+  let j = await api('/api/bench');
+  if (!j.accounts.length && !window._bSeeded) { window._bSeeded = true; let docs = []; try { docs = JSON.parse(localStorage.getItem('opsc:docs') || '[]'); } catch (e) {}
+    for (const k of docs.slice(-3)) { try { const d = JSON.parse(localStorage.getItem('opsc:doc:' + k) || 'null'); if (d) await api('/api/bench/import', { method: 'POST', body: JSON.stringify({ data: d }) }); } catch (e) {} }
+    if (!docs.length) { const ss = (bCfg.samples || []).filter(x => !/^(LucaAi|YuanAi)/i.test(x) && !(window.ACCOUNT && x.toLowerCase() === String(window.ACCOUNT).toLowerCase()));
+      const pick = ss.find(x => x === 'dotey') || ss[0]; if (pick) { try { await api('/api/bench/import', { method: 'POST', body: JSON.stringify({ sample: pick }) }); } catch (e) {} } }
+    j = await api('/api/bench'); if (j.accounts.length && !bCur) { setTimeout(() => openBench(j.accounts[0].username), 0); } }
   $('#bList').innerHTML = j.accounts.length ? '' : `<span class="hint">${L('还没有', 'None yet')}</span>`;
   for (const a of j.accounts) {
     const b = document.createElement('button'); b.className = 'mode' + (a.username === bCur ? ' active' : '');
@@ -99,7 +104,8 @@ function renderBench() {
     <div><b style="font-size:18.5px" data-no-i18n>${esc(u.name)}</b> <a href="https://x.com/${esc(u.username)}" target="_blank" class="hint">@${esc(u.username)}</a>
     <div class="hint" data-no-i18n>${esc(u.description || '')}</div><div class="hint" data-no-i18n>${L('数据来源：', 'Source: ')}${esc(bSRC(d.source))} · ${d.postCount} ${L('条原创帖', 'original posts')} · ${L('抓取于', 'fetched')} ${esc(d.fetched_at || '')}</div></div>
     <div style="margin-left:auto"><button class="copy" id="bReAn">${an ? L('重新分析', 'Re-analyze') : L('开始分析', 'Analyze')}</button></div></div></div>`;
-  if (!an) { $('#bOut').innerHTML = h; $('#bReAn').onclick = () => runAnalyze(u.username); return; }
+  if (!an) h += `<div class="panel hint">Click <b>Analyze</b> for the full report (audience, themes, best times). You can already use <b>✍️ Rewrite</b> on the top posts below.</div>`;
+  if (an) {
   const st = an.stats, f = st.fan, fr = st.frequency;
   h += `<div class="panel"><b>👥 ${L('粉丝指数', 'Audience index')}</b><div class="bgrid" style="margin-top:8px">
     ${kpi(L('粉丝指数（0–100）', 'Audience index (0–100)'), f.fanIndex, L('粉丝规模 60% + 浏览互动率 40%', '60% follower scale + 40% engagement per view'))}${kpi(L('粉丝', 'Followers'), fmtN(f.followers), L('关注 ', 'Following ') + fmtN(f.following) + L(' · 比 ', ' · ratio ') + f.ratio)}
@@ -126,6 +132,7 @@ function renderBench() {
     ${mo.signals.map(s => `<span class="pill">${esc(L(s.type, MON_EN[s.type] || s.type))} ×${s.count}</span>`).join('') || `<span class="hint">${L('未检测到明显变现信号', 'No clear monetization signals found')}</span>`}</div>`;
   if (an.forMe) h += `<div class="panel"><b>🎯 ${L('对你的账号', 'For your account')}${esc(acctLabel(an.forMe.account || window.ACCOUNT, ' '))}${L('：发帖时间建议', ': posting-time tips')}</b><div style="margin-top:6px">${esc(TIP(an.forMe))}</div><div class="hint">${L('「该学什么」见下方报告最后两节；发帖队列会自动排到这些时段。', '"What to learn" is in the last two sections of the report below; the posting queue schedules into these slots automatically.')}</div></div>`;
   h += `<div class="panel"><b>🧠 ${L('分析报告（Claude 主编）', 'Analysis report (Claude, chief editor)')}</b><div class="md" style="margin-top:6px">${an.report ? md(an.report) : '<span class="hint">' + L('报告生成失败：', 'Report failed: ') + esc((an.errors || []).join('；')) + '</span>'}</div></div>`;
+  }
   // knowledge base
   const kb = d.kb || { items: [] };
   h += `<div class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><b>📚 ${L(`爆款知识库（热度前 ${kb.topPercent || 20}% · ${kb.items.length} 条，文字和图片已存到当前账号的本地目录 `, `Viral library (top ${kb.topPercent || 20}% by heat · ${kb.items.length} posts; text and images saved locally under `)}<span data-no-i18n>bench/${esc(u.username.toLowerCase())}/kb/</span>${L('）', ')')}</b>
@@ -134,46 +141,48 @@ function renderBench() {
     <div id="bKbList" style="margin-top:10px"></div></div><div id="bImit"></div>`;
   $('#bOut').innerHTML = h;
   $('#bReAn').onclick = () => runAnalyze(u.username);
-  $('#bKbRe').onclick = async () => { prog(L('重新下载知识库…', 'Re-downloading the library…')); try { await api(`/api/bench/${u.username}/kb`, { method: 'POST', body: '{}' }); prog(L('知识库已更新', 'Library updated'), false); openBench(u.username); } catch (e) { prog('失败：' + e.message, false); } };
+  if (!kb.items.length && !d._kbTried) { d._kbTried = true; $('#bKbList') && ($('#bKbList').innerHTML = '<div class="hint"><span class="spin"></span>Building the top-post library…</div>');
+    api(`/api/bench/${u.username}/kb`, { method: 'POST', body: '{}' }).then(r => { if (bData === d && r && r.kb) { d.kb = r.kb; renderBench(); } }).catch(() => {}); }
+  $('#bKbRe').onclick = async () => { prog(L('重新下载知识库…', 'Re-downloading the library…')); try { await api(`/api/bench/${u.username}/kb`, { method: 'POST', body: '{}' }); prog(L('知识库已更新', 'Library updated'), false); openBench(u.username); } catch (e) { prog('Failed: ' + e.message, false); } };
   const renderKb = () => {
     const q = $('#bKbQ').value.trim().toLowerCase(), tp = $('#bKbT').value;
     const items = kb.items.filter(x => (!tp || x.topic === tp) && (!q || x.text.toLowerCase().includes(q)));
     $('#bKbList').innerHTML = items.map(x => `<div class="kbitem"><div class="hint">#${x.rank} · <span data-no-i18n>${esc(x.topic || L('未分类', 'Uncategorized'))}</span> · ${esc(x.local_time)} · ${L('热度', 'Heat')} ${x.score} · ❤${x.metrics.likes} 🔁${x.metrics.reposts} 💬${x.metrics.replies} 👁${fmtN(x.metrics.views)} · <a href="${esc(x.url)}" target="_blank">${L('原帖', 'Original')}</a></div>
       <div class="raw-post" data-no-i18n lang="" style="white-space:pre-wrap;margin-top:6px;font-size:16.5px">${esc(x.text)}</div>
       <div>${x.media.filter(m => m.saved).map(m => `<a href="/api/bench/${esc(u.username)}/media/${esc(m.file)}" target="_blank"><img src="/api/bench/${esc(u.username)}/media/${esc(m.file)}" loading="lazy" title="${m.type === 'video' ? L('视频封面', 'Video cover') : L('图片', 'Image')}"></a>`).join('')}</div>
-      <div class="row"><button class="run" data-imit="${esc(x.id)}" style="padding:6px 12px;font-size:15.5px">${L('让 5 个角色仿写这条', 'Have the 5 roles write a version of this')}${window.ACCOUNT && !isDefaultAcct(window.ACCOUNT) ? ' → @' + esc(window.ACCOUNT) : ''}</button></div></div>`).join('') || `<div class="hint">${L('没有匹配的帖子', 'No matching posts')}</div>`;
+      <div class="row"><button class="run" data-imit="${esc(x.id)}" title="The 5 AI roles each rewrite this post for your account, in English. The original post is never changed." style="padding:8px 16px;font-size:16px">✍️ Rewrite${window.ACCOUNT && !isDefaultAcct(window.ACCOUNT) ? ' for @' + esc(window.ACCOUNT) : ''}</button></div></div>`).join('') || `<div class="hint">${L('没有匹配的帖子', 'No matching posts')}</div>`;
     $('#bKbList').querySelectorAll('[data-imit]').forEach(b => b.onclick = () => runImitate(u.username, b.dataset.imit, b));
   };
   $('#bKbQ').oninput = renderKb; $('#bKbT').onchange = renderKb; renderKb();
 }
 async function runImitate(u, pid, btn) {
   const box = $('#bImit'); btn.disabled = true;
-  box.innerHTML = `<div class="panel"><b>✍️ 仿写结果</b>（原帖 #${esc((bData.kb.items.find(x => x.id === pid) || {}).rank + '')}）<span class="hint" id="bImLive"></span><div id="bImCards" style="margin-top:8px"></div></div>`;
+  box.innerHTML = `<div class="panel"><b>✍️ Rewrites</b> (original #${esc((bData.kb.items.find(x => x.id === pid) || {}).rank + '')}, kept as posted)<span class="hint" id="bImLive"></span><div id="bImCards" style="margin-top:8px"></div></div>`;
   box.scrollIntoView({ behavior: 'smooth' });
   const cards = {};
   const ensure = ev => cards[ev.agent] || (cards[ev.agent] = (() => { const el = document.createElement('div'); el.className = 'card';
-    el.innerHTML = `<div class="head"><div><span class="title">${esc(ev.name)}</span><span class="badge">${esc(ev.model || '')}</span></div><span class="status"><span class="spin"></span>生成中…</span></div><div class="body hint">生成中…</div>`; $('#bImCards').appendChild(el); return el; })());
+    el.innerHTML = `<div class="head"><div><span class="title">${esc(ev.name)}</span><span class="badge">${esc(ev.model || '')}</span></div><span class="status"><span class="spin"></span>Writing…</span></div><div class="body hint">Writing…</div>`; $('#bImCards').appendChild(el); return el; })());
   try {
-    const r = await stream(`/api/bench/${u}/imitate`, { postId: pid, ...rvOpts() }, ev => {
-      if (isReviewEv(ev)) { rvLive(ev); const el = ensure(ev); if (ev.event !== 'review') el.querySelector('.status').innerHTML = '<span class="spin"></span>' + (ev.event === 'fix' ? '按审查意见重写…' : '审查中…'); return; }
+    const r = await stream(`/api/bench/${u}/imitate`, { postId: pid, post: (bData.kb && bData.kb.items || []).find(x => x.id === pid) || null, ...rvOpts() }, ev => {
+      if (isReviewEv(ev)) { rvLive(ev); const el = ensure(ev); if (ev.event !== 'review') el.querySelector('.status').innerHTML = '<span class="spin"></span>' + (ev.event === 'fix' ? 'Revising after review…' : 'Reviewing…'); return; }
       if (ev.event === 'start') ensure(ev);
       if (ev.event === 'agent') {
         const el = ensure(ev), st = el.querySelector('.status'), body = el.querySelector('.body');
-        if (!ev.ok) { st.className = 'status err'; st.textContent = '失败'; body.textContent = '出错：' + (ev.error || ''); return; }
-        st.className = 'status ok'; st.textContent = '完成 · ' + (ev.ms / 1000).toFixed(0) + 's';
-        body.className = 'body'; body.innerHTML = `<textarea class="bPost" style="min-height:110px">${esc(ev.post)}</textarea><div class="hint wl">X 加权 ${ev.weighted}/280</div>
-          <details><summary class="hint">完整输出</summary><div style="white-space:pre-wrap">${esc(ev.output)}</div></details>
-          <div class="row"><select class="bMode"><option value="review">审核后发</option><option value="auto">全自动发</option></select><button class="copy bQ">加入发帖队列（自动排最佳时段）</button><a class="copy bIntent" target="_blank" href="${esc(ev.intent)}">用 x.com 打开发帖框</a></div>`;
+        if (!ev.ok) { st.className = 'status err'; st.textContent = 'Failed'; body.textContent = 'Error: ' + (ev.error || ''); return; }
+        st.className = 'status ok'; st.textContent = 'Done · ' + (ev.ms / 1000).toFixed(0) + 's';
+        body.className = 'body'; body.innerHTML = `<textarea class="bPost" style="min-height:110px">${esc(ev.post)}</textarea><div class="hint wl">X weighted length ${ev.weighted}/280</div>
+          <details><summary class="hint">Full output</summary><div style="white-space:pre-wrap">${esc(ev.output)}</div></details>
+          <div class="row"><select class="bMode"><option value="review">Publish after approval</option><option value="auto">Publish automatically</option></select><button class="copy bQ">Add to post queue (best time)</button><a class="copy bIntent" target="_blank" href="${esc(ev.intent)}">Open in x.com composer</a></div>`;
         if (ev.review) { el.querySelector('.title').insertAdjacentHTML('afterend', rvBadge(ev.review)); el.insertAdjacentHTML('beforeend', rvDetails(ev.review)); wireRv(el); }
         const ta = body.querySelector('.bPost');
         ta.oninput = () => { body.querySelector('.bIntent').href = 'https://x.com/intent/post?text=' + encodeURIComponent(ta.value); };
         body.querySelector('.bQ').onclick = async e => { try { const j = await api('/api/queue', { method: 'POST', body: JSON.stringify({ text: ta.value, mode: body.querySelector('.bMode').value, source: { username: u, postId: pid, agent: ev.agent } }) });
-          e.target.textContent = '已排到 ' + fmtT(j.item.scheduled_at); e.target.disabled = true; renderQueue(j.queue); } catch (err) { alert(err.message); } };
+          e.target.textContent = 'Scheduled for ' + fmtT(j.item.scheduled_at); e.target.disabled = true; renderQueue(j.queue); } catch (err) { alert(err.message); } };
       }
     });
     if (r && r.review) $('#bImLive').textContent = ' · ' + rvSumLine(r.review);
-    if (r && r.ok === false && r.error) $('#bImLive').textContent = ' · 失败：' + r.error;
-  } catch (e) { $('#bImLive').textContent = ' · 失败：' + e.message; }
+    if (r && r.ok === false && r.error) $('#bImLive').textContent = ' · Failed: ' + r.error;
+  } catch (e) { $('#bImLive').textContent = ' · Failed: ' + e.message; }
   finally { btn.disabled = false; $('#rvLive').textContent = ''; }
 }
 // ---------------- queue ----------------
