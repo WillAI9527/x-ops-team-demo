@@ -1517,6 +1517,9 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Origin", os.environ.get("CORS_ORIGIN", "*"))
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Account")
+        self.send_header("Access-Control-Expose-Headers", "X-Account-Missing")
+        if getattr(self, "_acct_missing", None):
+            self.send_header("X-Account-Missing", self._acct_missing)
 
     def send_json(self, code, obj):
         if code >= 400 and isinstance(obj, dict) and isinstance(obj.get("error"), str) and req_lang() == "en" \
@@ -1591,9 +1594,15 @@ class Handler(BaseHTTPRequestHandler):
         account, so another tab switching the global active account can't mix data / names."""
         _TL.handle = None
         _TL.lang = "en"   # English-only UI: model output and server messages are always English
+        self._acct_missing = None
         h = (self.headers.get("X-Account") or "").lstrip("@")
-        if h and path not in ("/api/accounts", "/api/accounts/switch") and HANDLE_RE.match(h) and profile(h):
-            _TL.handle = canon_handle(h)
+        if h and path not in ("/api/accounts", "/api/accounts/switch") and HANDLE_RE.match(h):
+            if profile(h):
+                _TL.handle = canon_handle(h)
+            else:
+                # serverless: this instance's /tmp doesn't have the account the page shows (it was added on
+                # another instance). Tell the browser so it can re-seed it from its cache and retry.
+                self._acct_missing = h
 
     def do_GET(self):
         path = self.path.split("?")[0]

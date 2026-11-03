@@ -488,21 +488,53 @@
   const restoreDoc = async u => { const d = get('doc:' + u.toLowerCase()); if (!d) return false;
     const r = await _f('/api/bench/import', { method: 'POST', headers: J, body: JSON.stringify({ data: d }) }).catch(() => null); return !!(r && r.ok); };
   let reseeding = null;
+  const lc = h => String(h || '').replace(/^@/, '').toLowerCase();
+  // 'mine' = the account THIS browser chose (add / switch). Each Vercel instance keeps its own /tmp copy of the
+  // accounts and of the "active" one, so a reload can land on an instance that never saw the account just added.
+  const restoreBody = (p, activate) => JSON.stringify({ restore: p, activate, self: get('self:' + lc(p.handle)) || undefined });
   const reseedProfiles = (missing, active) => reseeding || (reseeding = Promise.all(missing.map(p => _f('/api/accounts', { method: 'POST', headers: J,
-    body: JSON.stringify({ restore: p, activate: p.handle === active }) }).catch(() => null))).finally(() => { reseeding = null; }));
+    body: restoreBody(p, lc(p.handle) === lc(active)) }).catch(() => null))).finally(() => { reseeding = null; }));
   window.fetch = async (u, o) => {
-    const url = String(u && u.url || u), method = ((o && o.method) || 'GET').toUpperCase();
+    const url = String(u && u.url || u), method = ((o && o.method) || 'GET').toUpperCase(), path = url.split('?')[0];
     let r = await _f(u, o);
     try {
-      if (/\/api\/accounts$/.test(url.split('?')[0]) && method === 'GET' && r.ok) {
-        const j = await r.clone().json(), profs = get('profiles') || {};
-        const have = new Set((j.accounts || []).map(p => (p.handle || '').toLowerCase()));
-        const missing = Object.values(profs).filter(p => p && p.handle && !have.has(p.handle.toLowerCase()));
-        (j.accounts || []).forEach(p => { if (p && p.handle) profs[p.handle.toLowerCase()] = Object.assign({}, profs[p.handle.toLowerCase()], p); });
-        if (j.profile && j.active) profs[j.active.toLowerCase()] = Object.assign({}, profs[j.active.toLowerCase()], j.profile, { handle: j.active });
-        if (j.active) put('active', j.active);
+      const miss = r.headers.get('X-Account-Missing');
+      if (miss && !/\/api\/accounts/.test(path)) {   // this instance lacks the page's account: re-seed it, then retry once
+        const p = (get('profiles') || {})[lc(miss)];
+        for (let i = 0; p && i < 2 && r.headers.get('X-Account-Missing'); i++) { await _f('/api/accounts', { method: 'POST', headers: J, body: restoreBody(p, false) }).catch(() => null); r = await _f(u, o); }
+      }
+      if (/\/api\/accounts(\/switch)?$/.test(path) && method === 'POST' && r.ok) {
+        const j = await r.clone().json(); let b = {}; try { b = JSON.parse((o && o.body) || '{}'); } catch (e) {}
+        if (j.active && !b.restore) {
+          const profs = get('profiles') || {}; profs[lc(j.active)] = Object.assign({}, profs[lc(j.active)], j.profile || {}, { handle: j.active });
+          put('profiles', profs); put('mine', j.active); put('active', j.active);
+          if (j.self && j.self.user) put('self:' + lc(j.active), j.self);
+        }
+      } else if (/\/api\/accounts$/.test(path) && method === 'GET' && r.ok) {
+        const j = await r.clone().json(), profs = get('profiles') || {}, mine = get('mine');
+        const have = new Set((j.accounts || []).map(p => lc(p.handle)));
+        const missing = Object.values(profs).filter(p => p && p.handle && !have.has(lc(p.handle)));
+        (j.accounts || []).forEach(p => { if (p && p.handle) profs[lc(p.handle)] = Object.assign({}, profs[lc(p.handle)], p); });
+        if (j.profile && j.active) profs[lc(j.active)] = Object.assign({}, profs[lc(j.active)], j.profile, { handle: j.active });
         put('profiles', profs);
-        if (missing.length) { await reseedProfiles(missing, get('active')); r = await _f(u, o); }
+        const want = mine && profs[lc(mine)] ? mine : (j.active || get('active'));
+        let again = false;
+        if (missing.length) { await reseedProfiles(missing, want); again = true; }
+        if (want && j.active && lc(j.active) !== lc(want) && (have.has(lc(want)) || missing.some(p => lc(p.handle) === lc(want)))) {
+          if (have.has(lc(want))) await _f('/api/accounts/switch', { method: 'POST', headers: J, body: JSON.stringify({ handle: want }) }).catch(() => null);
+          again = true;
+        }
+        if (again) r = await _f(u, o);
+        try {
+          const k = await r.clone().json();
+          if (want && profs[lc(want)] && lc(k.active) !== lc(want)) {   // retry hit yet another instance: show this browser's account anyway
+            k.active = profs[lc(want)].handle || want; k.profile = Object.assign({}, profs[lc(want)]);
+            const hs = new Set((k.accounts || []).map(p => lc(p.handle)));
+            if (!hs.has(lc(want))) (k.accounts = k.accounts || []).push(profs[lc(want)]);
+            r = new Response(JSON.stringify(k), { status: 200, headers: { 'Content-Type': 'application/json' } });
+          }
+          if (k.active) put('active', k.active);
+        } catch (e) {}
       } else if (/\/api\/bench\/(fetch|import)$/.test(url) && method === 'POST' && r.ok) {
         const j = await r.clone().json(); let b = {}; try { b = JSON.parse((o && o.body) || '{}'); } catch (e) {}
         saveDoc(j.doc || b.data);
@@ -511,7 +543,10 @@
         const m = url.match(/\/api\/bench\/([A-Za-z0-9_.]{1,30})(\/|$|\?)/);
         if (m && !/^(fetch|import|config|avatar)$/.test(m[1])) {
           const e = r.status === 400 ? await r.clone().text() : '';
-          if ((r.status === 404 || /not found|没有|不存在|先抓取|找不到/.test(e)) && await restoreDoc(m[1])) r = await _f(u, o);
+          if (r.status === 404 || /not found|没有|不存在|先抓取|找不到/.test(e)) {
+            // each retry can land on yet another serverless instance: re-seed and retry up to 3 times
+            for (let i = 0; i < 3 && (r.status === 404 || r.status === 400) && await restoreDoc(m[1]); i++) r = await _f(u, o);
+          }
         }
       }
     } catch (e) {}
@@ -1562,7 +1597,7 @@ window.IG = IG;
     $('#tbCrumb').textContent = title(h) + ' /';
     $('#sbAcct').textContent = T('账号：', 'Account: ') + title(h);
     menu.innerHTML = (A.accounts || []).map(x => `<button type="button" class="mi${same(x.handle, h) ? ' cur' : ''}" role="menuitem" data-h="${esc(x.handle)}">${avatar(x)}<span class="mi-t" data-no-i18n><span>${esc(title(x.handle))}</span><small>${esc(x.quick ? T('示例数据', 'Sample data') : (BUILTIN_EN(x.short || x.positioning) || ''))}</small></span></button>`).join('') +
-      `<hr><button type="button" class="mi" role="menuitem" data-act="re">↻ ${T('用 Apify 刷新账号资料', 'Refresh profile via Apify')}</button><button type="button" class="mi" role="menuitem" data-act="add">+ ${T('添加账号…', 'Add account…')}</button>`;
+      `<hr>${(p.quick || same(h, 'ig_demo')) ? '' : `<button type="button" class="mi" role="menuitem" data-act="re">↻ ${T('用 Apify 刷新账号资料', 'Refresh profile via Apify')}</button>`}<button type="button" class="mi" role="menuitem" data-act="add">+ ${T('添加账号…', 'Add account…')}</button>`;
     menu.querySelectorAll('.mi').forEach(m => m.onclick = () => act(m));
   }
   function toggle(v) { card.classList.toggle('open', v); btn.setAttribute('aria-expanded', String(v)); }

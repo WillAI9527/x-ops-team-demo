@@ -91,7 +91,7 @@ $('#bSample').onchange = async e => {
 };
 async function openBench(u) {
   bCur = u; loadBList(); location.hash = 'bench/' + u;
-  bData = await api('/api/bench/' + u);
+  try { bData = await api('/api/bench/' + u); } catch (e) { prog(L('打开 @' + u + ' 失败：', 'Could not open @' + u + ': ') + e.message + L('，请再抓取一次。', '. Please fetch it again.'), false); return; }
   // serverless: another instance may not have this account's analysis yet -> hand back the browser's copy
   const ck = 'opsc:an:' + u.toLowerCase() + ':' + (window.LANG === 'en' ? 'en' : 'zh');
   if (!bData.analysis) { try { const c = JSON.parse(localStorage.getItem(ck) || 'null'); const doc = JSON.parse(localStorage.getItem('opsc:doc:' + u.toLowerCase()) || 'null');

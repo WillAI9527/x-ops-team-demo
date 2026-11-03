@@ -1103,7 +1103,13 @@ def handle_add_account(h, body):
                 return h.send_json(400, {"error": "bad handle"})
             if not S.profile(ru):
                 rp["handle"] = ru
-                jsave(os.path.join(S.acct_dir(ru), "profile.json"), {k: v for k, v in rp.items() if isinstance(v, (str, int, float, bool)) or v is None})
+                jsave(os.path.join(S.acct_dir(ru), "profile.json"), {k: v for k, v in rp.items() if isinstance(v, (str, int, float, bool, list)) or v is None})
+            sf = os.path.join(S.acct_dir(ru), "self.json")
+            if isinstance(body.get("self"), dict) and not os.path.isfile(sf):   # the account's own fetched posts (browser cache)
+                try:
+                    jsave(sf, normalize(body["self"]))
+                except Exception:
+                    pass
             if body.get("activate"):
                 S.set_active(ru)
             return h.send_json(200, {"ok": True, "restored": ru})
@@ -1120,12 +1126,17 @@ def handle_add_account(h, body):
         else:
             if not S.HANDLE_RE.match(u):
                 return h.send_json(400, {"error": "Instagram 用户名不合法（1–30 位字母、数字、下划线或点）"})
+            sample_names = {n[:-5].lower() for n in os.listdir(os.path.join(S.BASE, "samples")) if n.endswith(".json")}
+            if u.lower() == str(getattr(S, "IG_DEFAULT", "ig_demo")).lower() or u.lower() in sample_names:
+                # the built-in sample account is not a real Instagram user: never "refresh" it via Apify
+                # (that would pull a stranger's account that happens to have the same name)
+                return h.send_json(400, {"error": "This is the built-in sample account, so there is nothing to refresh. Use \"Add account…\" to add your own Instagram account."})
             doc = None
             if apify_ok():
                 try:
                     doc = fetch_x(u, force=bool(body.get("force")))   # 24 h cache unless force
                 except Exception as e:
-                    warn = str(e)
+                    warn = S.en_error(str(e)) if re.search(r"[\u4e00-\u9fff]", str(e)) else str(e)
         if doc:
             u = doc["user"]["username"]
         u = S.canon_handle(u)   # v1.6: reuse existing folder regardless of letter case
@@ -1168,7 +1179,7 @@ def handle_add_account(h, body):
         prof.setdefault("name", u)
         jsave(os.path.join(S.acct_dir(u), "profile.json"), prof)
         S.set_active(u)
-        return h.send_json(200, {"ok": True, "active": u, "profile": prof, "warning": warn})
+        return h.send_json(200, {"ok": True, "active": u, "profile": prof, "warning": warn, "self": doc})
     except (ValueError, RuntimeError, OSError) as e:
         return h.send_json(400, {"error": str(e)})
 
